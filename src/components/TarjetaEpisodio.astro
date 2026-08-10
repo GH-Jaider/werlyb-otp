@@ -1,0 +1,252 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { loading } from '../lib/ddragon';
+
+interface Props {
+  episodio: CollectionEntry<'episodios'>;
+}
+
+const { episodio } = Astro.props;
+const d = episodio.data;
+const num = String(d.orden).padStart(2, '0');
+
+const fmt = (dt: Date) =>
+  dt
+    .toLocaleDateString('es-ES', { day: 'numeric', month: 'short', timeZone: 'UTC' })
+    .replace(/\./g, '');
+
+const fechas = d.videos
+  .map((v) => v.fecha)
+  .filter((f): f is Date => f instanceof Date);
+
+let fecha: string | null = null;
+let fechaCorta: string | null = null;
+if (fechas.length === 1) {
+  fecha = fmt(fechas[0]);
+  fechaCorta = fecha;
+} else if (fechas.length > 1) {
+  fecha = `${fmt(fechas[0])} – ${fmt(fechas[fechas.length - 1])}`;
+  fechaCorta = fmt(fechas[0]);
+}
+
+const balance =
+  d.victorias != null && d.derrotas != null ? `${d.victorias}V–${d.derrotas}D` : null;
+
+const statsJuego = [
+  d.partidas != null ? `${d.partidas} partidas` : null,
+  balance,
+  d.kda != null ? `${d.kda.toFixed(1)} KDA` : null,
+]
+  .filter(Boolean)
+  .join(' · ');
+
+const stats =
+  statsJuego ||
+  (d.videos.length > 0
+    ? `${d.videos.length} ${d.videos.length === 1 ? 'vídeo' : 'vídeos'}`
+    : '');
+---
+
+<a class="tarjeta" href={`/ep/${episodio.id}/`}>
+  <div class="arte fondo">
+    <img src={loading(d.campeon)} alt="" loading="lazy" width="308" height="560" />
+  </div>
+  <div class="velo" aria-hidden="true"></div>
+  <div class="cabecera">
+    <span class="num">EP.{num}</span>
+    {fecha && <span class="fecha completa">{fecha}</span>}
+    {fechaCorta && <span class="fecha corta">{fechaCorta}</span>}
+  </div>
+  <div class="info">
+    <h3 class="campeon titular">{d.nombreCampeon}</h3>
+    {
+      d.coach ? (
+        <p class="coach">
+          con <b>{d.coach}</b> de coach
+        </p>
+      ) : (
+        <p class="coach sin">coach por confirmar</p>
+      )
+    }
+    {
+      stats ? (
+        <p class="datos">{stats}</p>
+      ) : (
+        <p class="datos pendiente">arco por documentar</p>
+      )
+    }
+  </div>
+</a>
+
+<style>
+  .tarjeta {
+    position: relative;
+    display: block;
+    aspect-ratio: 308 / 440;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    background: var(--surface);
+    transition:
+      border-color 0.25s ease,
+      box-shadow 0.25s ease,
+      transform 0.25s ease;
+  }
+
+  .fondo {
+    position: absolute;
+    inset: 0;
+  }
+
+  .fondo img {
+    object-position: top center;
+    transition: transform 0.45s ease;
+  }
+
+  .velo {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(10, 10, 12, 0.55) 0%,
+      rgba(10, 10, 12, 0.05) 30%,
+      rgba(10, 10, 12, 0.1) 52%,
+      rgba(10, 10, 12, 0.92) 82%,
+      #0a0a0c 100%
+    );
+    pointer-events: none;
+  }
+
+  .tarjeta:hover,
+  .tarjeta:focus-visible {
+    border-color: rgba(245, 52, 43, 0.65);
+    box-shadow: 0 6px 40px rgba(245, 52, 43, 0.14);
+    transform: translateY(-3px);
+  }
+
+  .tarjeta:hover .fondo img {
+    transform: scale(1.045);
+  }
+
+  .cabecera {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 14px 16px;
+  }
+
+  .num {
+    font-family: var(--display);
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    color: var(--red);
+    text-shadow: 0 1px 12px rgba(10, 10, 12, 0.8);
+  }
+
+  .fecha {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text);
+    opacity: 0.85;
+    text-shadow: 0 1px 10px rgba(10, 10, 12, 0.95);
+    white-space: nowrap;
+  }
+
+  .fecha.corta {
+    display: none;
+  }
+
+  .info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .campeon {
+    font-size: clamp(26px, 2.6vw, 34px);
+    color: var(--text);
+  }
+
+  .coach {
+    margin: 0;
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  .coach b {
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  .coach.sin {
+    color: var(--faint);
+    font-style: italic;
+  }
+
+  .datos {
+    margin: 2px 0 0;
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    font-variant-numeric: tabular-nums;
+    color: var(--text);
+  }
+
+  .datos.pendiente {
+    color: var(--faint);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+
+  @media (max-width: 560px) {
+    .fecha.completa {
+      display: none;
+    }
+    .fecha.corta {
+      display: inline;
+    }
+    .campeon {
+      font-size: 20px;
+    }
+    .coach {
+      font-size: 12.5px;
+    }
+    .num {
+      font-size: 16px;
+    }
+    .cabecera {
+      padding: 11px 12px;
+    }
+    .info {
+      padding: 0 12px 12px;
+    }
+    .datos {
+      font-size: 10.5px;
+    }
+    .datos.pendiente {
+      font-size: 9.5px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tarjeta:hover {
+      transform: none;
+    }
+    .tarjeta:hover .fondo img {
+      transform: none;
+    }
+  }
+</style>

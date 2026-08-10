@@ -1,0 +1,141 @@
+---
+import '@fontsource/anton';
+import '@fontsource/archivo/400.css';
+import '@fontsource/archivo/500.css';
+import '@fontsource/archivo/700.css';
+import '@fontsource/ibm-plex-mono/400.css';
+import '@fontsource/ibm-plex-mono/500.css';
+import '../styles/global.css';
+import { SERIE } from '../data/serie';
+
+interface Props {
+  titulo: string;
+  descripcion?: string;
+  ogImage?: string;
+}
+
+const { titulo, descripcion = SERIE.descripcion, ogImage } = Astro.props;
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : undefined;
+
+const redes = [
+  { nombre: 'Twitch de Werlyb', url: SERIE.redes.twitch },
+  { nombre: 'YouTube', url: SERIE.redes.youtube },
+  { nombre: 'X', url: SERIE.redes.x },
+].filter((r) => r.url);
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{titulo}</title>
+    <meta name="description" content={descripcion} />
+    <meta name="theme-color" content="#0a0a0c" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {canonical && <link rel="canonical" href={canonical} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SERIE.titulo} />
+    <meta property="og:title" content={titulo} />
+    <meta property="og:description" content={descripcion} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+  </head>
+  <body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <slot />
+    <footer class="pie">
+      <div class="contenedor pie-grid">
+        <p class="pie-marca titular">
+          Siendo <span>OTP</span><br />por un día
+        </p>
+        <div class="pie-texto">
+          <p>
+            Proyecto fan hecho por la comunidad. Web no oficial, sin afiliación con Werlyb,
+            Team Heretics ni Riot Games.
+          </p>
+          <p>
+            Este proyecto se creó bajo la política «Legal Jibber Jabber» de Riot Games usando
+            recursos propiedad de Riot Games. Riot Games no lo respalda ni lo patrocina.
+          </p>
+        </div>
+        {
+          redes.length > 0 && (
+            <nav class="pie-redes" aria-label="Enlaces de la serie">
+              {redes.map((r) => (
+                <a href={r.url} rel="noopener">
+                  {r.nombre} ↗
+                </a>
+              ))}
+            </nav>
+          )
+        }
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .pie {
+    border-top: 1px solid var(--line);
+    margin-top: clamp(72px, 10vw, 120px);
+    padding: 52px 0 72px;
+  }
+
+  .pie-grid {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .pie-marca {
+    font-size: 24px;
+    line-height: 0.92;
+    color: var(--text);
+  }
+
+  .pie-marca span {
+    color: var(--red);
+  }
+
+  .pie-texto {
+    max-width: 58ch;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pie-texto p {
+    margin: 0;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--faint);
+  }
+
+  .pie-redes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pie-redes a {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--gold);
+  }
+
+  .pie-redes a:hover {
+    color: var(--text);
+  }
+
+  @media (max-width: 760px) {
+    .pie-grid {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+  }
+</style>

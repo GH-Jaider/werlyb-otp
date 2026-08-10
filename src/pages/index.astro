@@ -1,0 +1,358 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import TarjetaEpisodio from '../components/TarjetaEpisodio.astro';
+import { SERIE } from '../data/serie';
+import { splash, cuadrado } from '../lib/ddragon';
+
+const episodios = (await getCollection('episodios')).sort(
+  (a, b) => b.data.orden - a.data.orden,
+);
+const ultimo = episodios[0];
+const totalVideos = episodios.reduce((n, e) => n + e.data.videos.length, 0);
+
+const formato = [
+  {
+    etiqueta: 'El campeón',
+    texto:
+      'Se acabó rotar el pool de ex-pro: los días que haga falta encadenando partidas con el mismo campeón, hasta pensar como él.',
+  },
+  {
+    etiqueta: 'El coach',
+    texto:
+      'Un one-trick de verdad — de los de cientos de miles de puntos de maestría — marca la build, las runas y los matchups.',
+  },
+  {
+    etiqueta: 'El archivo',
+    texto:
+      'Cada arco queda registrado aquí: sus vídeos día a día, quién vino de coach y, cuando estén contadas, las stats.',
+  },
+];
+---
+
+<Base
+  titulo={`${SERIE.titulo} · tracker fan de la serie de Werlyb`}
+  ogImage={ultimo ? splash(ultimo.data.campeon) : undefined}
+>
+  <header class="portada">
+    {
+      ultimo && (
+        <div class="arte fondo">
+          <img
+            src={splash(ultimo.data.campeon)}
+            alt=""
+            fetchpriority="high"
+            width="1215"
+            height="717"
+          />
+        </div>
+      )
+    }
+    <div class="velo" aria-hidden="true"></div>
+    <div class="contenedor portada-contenido">
+      <p class="etiqueta sello">Proyecto fan · La serie de Werlyb</p>
+      <h1 class="titular grande">
+        <span>Siendo</span>
+        <span>OTP</span>
+        <span>por un día</span>
+      </h1>
+      <p class="claim">{SERIE.claim}</p>
+      <div class="chips">
+        {
+          ultimo && (
+            <a class="chip destacado" href={`/ep/${ultimo.id}/`}>
+              Último episodio · {ultimo.data.nombreCampeon} →
+            </a>
+          )
+        }
+        <a class="chip" href="#episodios">{episodios.length} episodios ↓</a>
+        {
+          SERIE.playlist && (
+            <a class="chip" href={SERIE.playlist} rel="noopener">
+              Playlist en YouTube ↗
+            </a>
+          )
+        }
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="contenedor formato" aria-label="El formato de la serie">
+      {
+        formato.map((f) => (
+          <div class="pieza">
+            <span class="etiqueta roja">{f.etiqueta}</span>
+            <p>{f.texto}</p>
+          </div>
+        ))
+      }
+    </section>
+
+    <section id="episodios" class="contenedor seccion">
+      <div class="cabecera-seccion">
+        <h2 class="titular seccion-titulo">El archivo</h2>
+        <span class="etiqueta">
+          {episodios.length} arcos · {totalVideos} vídeos · se actualiza con la serie
+        </span>
+      </div>
+      <div class="parrilla">
+        {episodios.map((e) => <TarjetaEpisodio episodio={e} />)}
+      </div>
+    </section>
+
+    <section class="contenedor seccion" aria-labelledby="pide-titulo">
+      <div class="cabecera-seccion">
+        <h2 id="pide-titulo" class="titular seccion-titulo">Pide tu OTP</h2>
+        <span class="etiqueta">los que suenan para próximos episodios</span>
+      </div>
+      <ul class="candidatos">
+        {
+          SERIE.candidatos.map((c) => (
+            <li class="candidato">
+              <img src={cuadrado(c.ddragonId)} alt="" width="48" height="48" loading="lazy" />
+              <div class="candidato-nombre">
+                <b>{c.nombre}</b>
+                <span class="etiqueta">en la lista</span>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="pide-texto">
+        ¿Que tu main merece episodio?{' '}
+        {
+          SERIE.redes.twitch ? (
+            <a href={SERIE.redes.twitch} rel="noopener">
+              Suéltalo en el chat de Werlyb
+            </a>
+          ) : (
+            'Suéltalo en el chat de Werlyb'
+          )
+        }
+        — así salió el arco de Riven: «Lo pedísteis, lo tenéis».
+      </p>
+    </section>
+  </main>
+</Base>
+
+<style>
+  /* ── Portada ── */
+  .portada {
+    position: relative;
+    min-height: min(92vh, 900px);
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  .fondo {
+    position: absolute;
+    inset: 0;
+  }
+
+  .velo {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(10, 10, 12, 0.62) 0%,
+        rgba(10, 10, 12, 0.25) 34%,
+        rgba(10, 10, 12, 0.55) 62%,
+        #0a0a0c 97%
+      ),
+      linear-gradient(90deg, rgba(10, 10, 12, 0.55) 0%, rgba(10, 10, 12, 0) 55%);
+    pointer-events: none;
+  }
+
+  .portada-contenido {
+    position: relative;
+    width: 100%;
+    padding-top: 18vh;
+    padding-bottom: clamp(40px, 7vh, 80px);
+  }
+
+  .sello {
+    color: var(--gold);
+    margin: 0 0 18px;
+  }
+
+  .grande {
+    font-size: clamp(68px, 14.5vw, 184px);
+    color: var(--red);
+    text-shadow: 0 0 70px rgba(245, 52, 43, 0.32);
+  }
+
+  .grande span {
+    display: block;
+  }
+
+  .claim {
+    margin: 26px 0 0;
+    font-size: clamp(17px, 2vw, 21px);
+    font-weight: 500;
+    color: var(--text);
+    max-width: 44ch;
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .chip {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--text);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 10px 18px;
+    background: rgba(10, 10, 12, 0.55);
+    backdrop-filter: blur(4px);
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+
+  .chip:hover {
+    border-color: var(--muted);
+  }
+
+  .chip.destacado {
+    color: #0a0a0c;
+    background: var(--red);
+    border-color: var(--red);
+    font-weight: 500;
+  }
+
+  .chip.destacado:hover {
+    background: var(--red-hot);
+    border-color: var(--red-hot);
+  }
+
+  /* ── El formato ── */
+  .formato {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(24px, 4vw, 56px);
+    padding-top: clamp(56px, 8vw, 96px);
+  }
+
+  .pieza .roja {
+    color: var(--red);
+  }
+
+  .pieza p {
+    margin: 12px 0 0;
+    font-size: 15.5px;
+    line-height: 1.6;
+    color: var(--muted);
+    max-width: 38ch;
+  }
+
+  /* ── Secciones ── */
+  .seccion {
+    padding-top: clamp(64px, 9vw, 110px);
+  }
+
+  .cabecera-seccion {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 18px;
+    margin-bottom: 28px;
+  }
+
+  .seccion-titulo {
+    font-size: clamp(38px, 5.5vw, 64px);
+    color: var(--text);
+  }
+
+  .parrilla {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 18px;
+  }
+
+  /* ── Pide tu OTP ── */
+  .candidatos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .candidato {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 11px 20px 11px 12px;
+  }
+
+  .candidato img {
+    border-radius: 6px;
+    filter: saturate(0.85);
+  }
+
+  .candidato-nombre {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .candidato-nombre b {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .candidato-nombre .etiqueta {
+    font-size: 10.5px;
+    color: var(--faint);
+  }
+
+  .pide-texto {
+    margin: 26px 0 0;
+    font-size: 16px;
+    color: var(--muted);
+    max-width: 58ch;
+  }
+
+  .pide-texto a {
+    color: var(--gold);
+    text-decoration-color: rgba(200, 170, 110, 0.4);
+    text-underline-offset: 3px;
+  }
+
+  .pide-texto a:hover {
+    color: var(--text);
+  }
+
+  @media (max-width: 860px) {
+    .formato {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+    .portada {
+      min-height: 78vh;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .parrilla {
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+  }
+</style>

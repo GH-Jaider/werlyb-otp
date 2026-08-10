@@ -1,0 +1,641 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { SERIE } from '../../data/serie';
+import { splash } from '../../lib/ddragon';
+import { youtubeId } from '../../lib/video';
+
+export async function getStaticPaths() {
+  const episodios = await getCollection('episodios');
+  const ordenados = [...episodios].sort((a, b) => a.data.orden - b.data.orden);
+  return ordenados.map((episodio, i) => ({
+    params: { slug: episodio.id },
+    props: {
+      episodio,
+      anterior: ordenados[i - 1] ?? null,
+      siguiente: ordenados[i + 1] ?? null,
+    },
+  }));
+}
+
+const { episodio, anterior, siguiente } = Astro.props;
+const d = episodio.data;
+const num = String(d.orden).padStart(2, '0');
+const { Content } = await render(episodio);
+const hayNotas = Boolean(episodio.body?.trim());
+
+const fechas = d.videos
+  .map((v) => v.fecha)
+  .filter((f): f is Date => f instanceof Date);
+
+const larga = {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+} as const;
+let rango: string | null = null;
+if (fechas.length > 0) {
+  const a = fechas[0];
+  const b = fechas[fechas.length - 1];
+  if (a.getTime() === b.getTime()) {
+    rango = a.toLocaleDateString('es-ES', larga);
+  } else if (a.getUTCMonth() === b.getUTCMonth() && a.getUTCFullYear() === b.getUTCFullYear()) {
+    rango = `${a.getUTCDate()} – ${b.toLocaleDateString('es-ES', larga)}`;
+  } else {
+    rango = `${a.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', timeZone: 'UTC' })} – ${b.toLocaleDateString('es-ES', larga)}`;
+  }
+}
+
+const fechaCorta = (dt: Date) =>
+  dt
+    .toLocaleDateString('es-ES', { day: 'numeric', month: 'short', timeZone: 'UTC' })
+    .replace(/\./g, '');
+
+const balance =
+  d.victorias != null && d.derrotas != null ? `${d.victorias}V – ${d.derrotas}D` : null;
+const hayStats = d.partidas != null || balance !== null || d.kda != null;
+const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
+---
+
+<Base
+  titulo={`EP.${num} · ${d.nombreCampeon} — ${SERIE.titulo}`}
+  descripcion={`Episodio ${num} de ${SERIE.titulo}: Werlyb se hace OTP de ${d.nombreCampeon}${d.coach ? ` con ${d.coach} de coach` : ''} — ${d.videos.length} ${d.videos.length === 1 ? 'vídeo' : 'vídeos'} del arco.`}
+  ogImage={splash(d.campeon)}
+>
+  <nav class="contenedor migas" aria-label="Volver">
+    <a class="volver" href="/#episodios">← Todos los episodios</a>
+    <a class="marca-mini titular" href="/">Siendo <span>OTP</span> por un día</a>
+  </nav>
+
+  <header class="cabecera-ep">
+    <div class="arte fondo">
+      <img
+        src={splash(d.campeon)}
+        alt={`Splash art de ${d.nombreCampeon}`}
+        fetchpriority="high"
+        width="1215"
+        height="717"
+      />
+    </div>
+    <div class="velo" aria-hidden="true"></div>
+    <div class="contenedor titulo-ep">
+      <p class="etiqueta linea-ep">
+        <span class="num">Episodio {num}</span>
+        {rango && <span class="sep">·</span>}
+        {rango && <span>{rango}</span>}
+      </p>
+      <h1 class="titular nombre">{d.nombreCampeon}</h1>
+      {d.tituloCampeon && <p class="apodo">{d.tituloCampeon}</p>}
+    </div>
+  </header>
+
+  <main id="contenido" class="contenedor cuerpo">
+    <div class="principal">
+      {
+        ytId && (
+          <div class="vod-marco">
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${ytId}`}
+              title={`${d.videos[0].titulo} — episodio ${num}, ${d.nombreCampeon}`}
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            />
+          </div>
+        )
+      }
+
+      {
+        d.videos.length > 0 && (
+          <section class="lista-videos" aria-label="Vídeos del arco">
+            <h2 class="etiqueta lista-titulo">
+              El arco · {d.videos.length} {d.videos.length === 1 ? 'vídeo' : 'vídeos'}
+            </h2>
+            <ol>
+              {d.videos.map((v, i) => (
+                <li>
+                  <a class="video-fila" href={v.url} rel="noopener">
+                    <span class="v-num">{String(i + 1).padStart(2, '0')}</span>
+                    <span class="v-titulo">{v.titulo}</span>
+                    {v.fecha && <span class="v-fecha">{fechaCorta(v.fecha)}</span>}
+                    <span class="v-ir" aria-hidden="true">
+                      ↗
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </section>
+        )
+      }
+
+      {
+        hayNotas ? (
+          <article class="notas">
+            <h2 class="etiqueta">Notas del arco</h2>
+            <div class="prosa">
+              <Content />
+            </div>
+          </article>
+        ) : (
+          <div class="pendiente-caja">
+            <p>
+              {d.videos.length > 0
+                ? 'Las notas de este arco están por documentar: la build que marcó el coach, los momentos y el balance.'
+                : 'Los vídeos y las notas de este arco están por documentar. La serie va por delante de este archivo.'}
+            </p>
+          </div>
+        )
+      }
+    </div>
+
+    <aside class="ficha" aria-label="Ficha del día">
+      <h2 class="etiqueta ficha-titulo">Ficha del arco</h2>
+      <dl>
+        <div class="fila">
+          <dt class="etiqueta">Coach</dt>
+          <dd>
+            {
+              d.coach ? (
+                <>
+                  {d.canalCoach ? (
+                    <a href={d.canalCoach} rel="noopener">
+                      {d.coach} ↗
+                    </a>
+                  ) : (
+                    d.coach
+                  )}
+                  <span class="detalle">OTP de {d.nombreCampeon}</span>
+                </>
+              ) : (
+                <span class="sin-dato">Por confirmar</span>
+              )
+            }
+          </dd>
+        </div>
+        {
+          d.videos.length > 0 && (
+            <div class="fila">
+              <dt class="etiqueta">Vídeos del arco</dt>
+              <dd class="dato">{d.videos.length}</dd>
+            </div>
+          )
+        }
+        {
+          d.partidas != null && (
+            <div class="fila">
+              <dt class="etiqueta">Partidas</dt>
+              <dd class="dato">{d.partidas}</dd>
+            </div>
+          )
+        }
+        {
+          balance && (
+            <div class="fila">
+              <dt class="etiqueta">Balance</dt>
+              <dd class="dato">{balance}</dd>
+            </div>
+          )
+        }
+        {
+          d.kda != null && (
+            <div class="fila">
+              <dt class="etiqueta">KDA</dt>
+              <dd class="dato">{d.kda.toFixed(1)}</dd>
+            </div>
+          )
+        }
+        {
+          d.build && d.build.length > 0 && (
+            <div class="fila">
+              <dt class="etiqueta">Build del coach</dt>
+              <dd>
+                <ol class="lista">
+                  {d.build.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ol>
+              </dd>
+            </div>
+          )
+        }
+        {
+          d.runas && d.runas.length > 0 && (
+            <div class="fila">
+              <dt class="etiqueta">Runas</dt>
+              <dd>
+                <ul class="lista">
+                  {d.runas.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              </dd>
+            </div>
+          )
+        }
+      </dl>
+      {
+        !hayStats && (
+          <p class="ficha-pendiente">Las stats del arco se añadirán cuando estén contadas.</p>
+        )
+      }
+    </aside>
+  </main>
+
+  <nav class="contenedor vecinos" aria-label="Más episodios">
+    {
+      anterior ? (
+        <a class="vecino" href={`/ep/${anterior.id}/`}>
+          <span class="etiqueta">← EP.{String(anterior.data.orden).padStart(2, '0')}</span>
+          <span class="vecino-nombre titular">{anterior.data.nombreCampeon}</span>
+        </a>
+      ) : (
+        <span />
+      )
+    }
+    {
+      siguiente && (
+        <a class="vecino derecha" href={`/ep/${siguiente.id}/`}>
+          <span class="etiqueta">EP.{String(siguiente.data.orden).padStart(2, '0')} →</span>
+          <span class="vecino-nombre titular">{siguiente.data.nombreCampeon}</span>
+        </a>
+      )
+    }
+  </nav>
+</Base>
+
+<style>
+  .migas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .volver {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--muted);
+  }
+
+  .volver:hover {
+    color: var(--text);
+  }
+
+  .marca-mini {
+    font-size: 15px;
+    color: var(--text);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+  }
+
+  .marca-mini span {
+    color: var(--red);
+  }
+
+  /* ── Cabecera del episodio ── */
+  .cabecera-ep {
+    position: relative;
+    margin-top: -66px;
+    min-height: clamp(380px, 52vh, 560px);
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  .fondo {
+    position: absolute;
+    inset: 0;
+  }
+
+  .fondo img {
+    object-position: center 22%;
+  }
+
+  .velo {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(10, 10, 12, 0.85) 0%,
+        rgba(10, 10, 12, 0.15) 38%,
+        rgba(10, 10, 12, 0.6) 70%,
+        #0a0a0c 98%
+      ),
+      linear-gradient(90deg, rgba(10, 10, 12, 0.5) 0%, rgba(10, 10, 12, 0) 50%);
+    pointer-events: none;
+  }
+
+  .titulo-ep {
+    position: relative;
+    width: 100%;
+    padding-bottom: 34px;
+  }
+
+  .linea-ep {
+    display: flex;
+    gap: 10px;
+    margin: 0 0 10px;
+  }
+
+  .linea-ep .num {
+    color: var(--red);
+  }
+
+  .linea-ep .sep {
+    color: var(--faint);
+  }
+
+  .nombre {
+    font-size: clamp(56px, 9vw, 118px);
+    color: var(--text);
+  }
+
+  .apodo {
+    margin: 8px 0 0;
+    font-size: 16px;
+    color: var(--muted);
+  }
+
+  /* ── Cuerpo ── */
+  .cuerpo {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: clamp(28px, 4vw, 56px);
+    padding-top: clamp(36px, 5vw, 56px);
+  }
+
+  .principal {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .principal > * {
+    width: 100%;
+  }
+
+  .vod-marco {
+    aspect-ratio: 16 / 9;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+
+  .vod-marco iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+
+  .lista-videos ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .lista-titulo {
+    margin: 0 0 10px;
+  }
+
+  .lista-videos li + li {
+    border-top: 1px solid var(--line-soft);
+  }
+
+  .video-fila {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr) auto 20px;
+    align-items: baseline;
+    gap: 12px;
+    padding: 14px 18px;
+    text-decoration: none;
+    background: var(--surface);
+    transition: background 0.15s ease;
+  }
+
+  .video-fila:hover {
+    background: var(--surface-2);
+  }
+
+  .v-num {
+    font-family: var(--display);
+    font-size: 17px;
+    color: var(--red);
+  }
+
+  .v-titulo {
+    font-size: 15.5px;
+    font-weight: 600;
+    color: var(--text);
+    overflow-wrap: anywhere;
+  }
+
+  .v-fecha {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  .v-ir {
+    font-size: 13px;
+    color: var(--faint);
+    text-align: right;
+  }
+
+  .video-fila:hover .v-ir {
+    color: var(--gold);
+  }
+
+  .notas {
+    margin: 0;
+  }
+
+  .prosa {
+    margin-top: 14px;
+    max-width: 66ch;
+    color: var(--text);
+  }
+
+  .prosa :global(p) {
+    margin: 0 0 14px;
+    line-height: 1.7;
+  }
+
+  .prosa :global(a) {
+    color: var(--gold);
+  }
+
+  .prosa :global(strong) {
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  .pendiente-caja {
+    margin-top: 0;
+    border: 1px dashed var(--line);
+    border-radius: 10px;
+    padding: 22px 24px;
+  }
+
+  .pendiente-caja p {
+    margin: 0;
+    max-width: 56ch;
+    font-size: 15px;
+    color: var(--faint);
+  }
+
+  /* ── Ficha ── */
+  .ficha {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--surface);
+    padding: 22px 24px;
+    align-self: start;
+  }
+
+  .ficha-titulo {
+    margin: 0 0 6px;
+    color: var(--red);
+  }
+
+  dl {
+    margin: 0;
+  }
+
+  .fila {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line-soft);
+  }
+
+  .fila:last-child {
+    border-bottom: 0;
+  }
+
+  dt {
+    font-size: 10.5px;
+    color: var(--faint);
+    margin-bottom: 4px;
+  }
+
+  dd {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  dd a {
+    color: var(--gold);
+    text-decoration-color: rgba(200, 170, 110, 0.4);
+    text-underline-offset: 3px;
+  }
+
+  dd a:hover {
+    color: var(--text);
+  }
+
+  dd .detalle {
+    display: block;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 400;
+    margin-top: 3px;
+  }
+
+  dd.dato {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  .lista {
+    margin: 4px 0 0;
+    padding-left: 18px;
+    font-weight: 400;
+    font-size: 14.5px;
+    color: var(--text);
+  }
+
+  .lista li {
+    margin: 3px 0;
+  }
+
+  .ficha-pendiente {
+    margin: 14px 0 0;
+    font-size: 13px;
+    color: var(--faint);
+  }
+
+  .sin-dato {
+    color: var(--faint);
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  /* ── Prev / next ── */
+  .vecinos {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: clamp(48px, 7vw, 80px);
+  }
+
+  .vecino {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-decoration: none;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 22px;
+    min-width: 200px;
+    transition: border-color 0.2s ease;
+  }
+
+  .vecino:hover {
+    border-color: rgba(245, 52, 43, 0.6);
+  }
+
+  .vecino.derecha {
+    text-align: right;
+    margin-left: auto;
+  }
+
+  .vecino-nombre {
+    font-size: 26px;
+    color: var(--text);
+  }
+
+  @media (max-width: 860px) {
+    .cuerpo {
+      grid-template-columns: 1fr;
+    }
+    .cabecera-ep {
+      margin-top: -62px;
+    }
+    .marca-mini {
+      display: none;
+    }
+  }
+</style>

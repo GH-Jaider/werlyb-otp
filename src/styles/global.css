@@ -1,0 +1,147 @@
+/* ============================================================
+   SIENDO OTP POR UN DÍA — sistema de diseño
+   Un solo mundo visual: el negro y el rojo del tráiler.
+   El dorado de League queda reservado para los datos.
+   ============================================================ */
+
+:root {
+  --bg: #0a0a0c;
+  --surface: #131316;
+  --surface-2: #1a1a1f;
+  --line: #26262c;
+  --line-soft: #1e1e23;
+  --red: #f5342b;
+  --red-hot: #ff5147;
+  --gold: #c8aa6e;
+  --text: #efebe4;
+  --muted: #9b968e;
+  --faint: #6a655d;
+
+  --display: 'Anton', 'Arial Narrow', 'Helvetica Neue', sans-serif;
+  --body: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--red);
+  color: #0a0a0c;
+}
+
+:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Contenedor principal */
+.contenedor {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: clamp(20px, 4vw, 40px);
+}
+
+/* Etiqueta mono — la voz de los datos en toda la web */
+.etiqueta {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Titular de sección — la voz del tráiler */
+.titular {
+  font-family: var(--display);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 0.9;
+  margin: 0;
+  text-wrap: balance;
+}
+
+/* Tratamiento de arte: saturación contenida + trama de semitono,
+   el look impreso de los reels */
+.arte {
+  position: relative;
+  overflow: hidden;
+}
+
+.arte > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.82) contrast(1.06) brightness(0.92);
+}
+
+.arte::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(5, 5, 6, 0.5) 1px, transparent 1.3px);
+  background-size: 4px 4px;
+  pointer-events: none;
+}
+
+/* Salto de accesibilidad */
+.salto {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: var(--red);
+  color: #0a0a0c;
+  font-family: var(--mono);
+  font-size: 13px;
+  padding: 10px 16px;
+}
+
+.salto:focus {
+  left: 12px;
+  top: 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
