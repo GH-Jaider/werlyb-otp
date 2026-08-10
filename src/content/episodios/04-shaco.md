@@ -4,6 +4,7 @@ campeon: Shaco
 nombreCampeon: Shaco
 tituloCampeon: El Bufón Siniestro
 coach: Pochipoom
+rolCoach: OTP de Shaco
 canalCoach: https://www.youtube.com/@PochiPoomLOL
 videos:
   - titulo: 'Si, OTP Shaco con Pochipoom'

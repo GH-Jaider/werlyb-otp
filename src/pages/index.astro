@@ -15,12 +15,12 @@ const formato = [
   {
     etiqueta: 'El campeón',
     texto:
-      'Se acabó rotar el pool de ex-pro: los días que haga falta encadenando partidas con el mismo campeón, hasta pensar como él.',
+      'Se acabó rotar el pool de ex-pro: los días que hagan falta encadenando partidas con el mismo campeón, hasta pensar como él.',
   },
   {
     etiqueta: 'El coach',
     texto:
-      'Un one-trick de verdad — de los de cientos de miles de puntos de maestría — marca la build, las runas y los matchups.',
+      'Cuando toca, un one-trick de verdad — de los de cientos de miles de puntos de maestría — marca la build, las runas y los matchups.',
   },
   {
     etiqueta: 'El archivo',
@@ -61,15 +61,17 @@ const formato = [
         {
           ultimo && (
             <a class="chip destacado" href={`/ep/${ultimo.id}/`}>
-              Último episodio · {ultimo.data.nombreCampeon} →
+              Último episodio · {ultimo.data.nombreCampeon} <span aria-hidden="true">→</span>
             </a>
           )
         }
-        <a class="chip" href="#episodios">{episodios.length} episodios ↓</a>
+        <a class="chip" href="#episodios">
+          {episodios.length} episodios <span aria-hidden="true">↓</span>
+        </a>
         {
           SERIE.playlist && (
             <a class="chip" href={SERIE.playlist} rel="noopener">
-              Playlist en YouTube ↗
+              Playlist en YouTube <span aria-hidden="true">↗</span>
             </a>
           )
         }
@@ -93,7 +95,7 @@ const formato = [
       <div class="cabecera-seccion">
         <h2 class="titular seccion-titulo">El archivo</h2>
         <span class="etiqueta">
-          {episodios.length} arcos · {totalVideos} vídeos · se actualiza con la serie
+          {episodios.length} episodios · {totalVideos} vídeos · se actualiza con la serie
         </span>
       </div>
       <div class="parrilla">
@@ -104,7 +106,7 @@ const formato = [
     <section class="contenedor seccion" aria-labelledby="pide-titulo">
       <div class="cabecera-seccion">
         <h2 id="pide-titulo" class="titular seccion-titulo">Pide tu OTP</h2>
-        <span class="etiqueta">los que suenan para próximos episodios</span>
+        <span class="etiqueta">los que queremos ver en próximos episodios</span>
       </div>
       <ul class="candidatos">
         {
@@ -193,7 +195,8 @@ const formato = [
     font-size: clamp(17px, 2vw, 21px);
     font-weight: 500;
     color: var(--text);
-    max-width: 44ch;
+    max-width: 54ch;
+    text-wrap: balance;
   }
 
   .chips {
@@ -214,6 +217,7 @@ const formato = [
     border-radius: 999px;
     padding: 10px 18px;
     background: rgba(10, 10, 12, 0.55);
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     transition: border-color 0.2s ease, color 0.2s ease;
   }

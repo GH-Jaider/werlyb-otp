@@ -23,6 +23,7 @@ campeon: Kled              # ID exacto de Data Dragon (con esto salen solas las 
 nombreCampeon: Kled
 tituloCampeon: El Jinete Cascarrabias
 coach: NombreDelCoach
+# rolCoach: OTP de Kled        # solo si está contrastado; si no, no se pinta
 # canalCoach: https://www.twitch.tv/...
 videos:
   - titulo: 'OTP Kled, día 1'

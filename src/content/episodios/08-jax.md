@@ -4,6 +4,7 @@ campeon: Jax
 nombreCampeon: Jax
 tituloCampeon: El Maestro de Armas
 coach: Jorge Casanovas
+rolCoach: OTP de Jax
 videos:
   - titulo: 'OTP Jax con Jorge Casanovas'
     url: https://www.youtube.com/watch?v=pDUGBH1TYps

@@ -4,6 +4,7 @@ campeon: Jayce
 nombreCampeon: Jayce
 tituloCampeon: El Defensor del Mañana
 coach: Holdem Hammers
+rolCoach: OTP de Jayce
 canalCoach: https://www.twitch.tv/holdemhammers
 videos:
   - titulo: 'OTP Jayce con Holdem Hammers'

@@ -4,6 +4,7 @@ campeon: LeeSin
 nombreCampeon: Lee Sin
 tituloCampeon: El Monje Ciego
 coach: Josedeodo
+rolCoach: OTP de Lee Sin
 canalCoach: https://www.twitch.tv/josedeodo
 videos:
   - titulo: 'OTP Lee sin con Josedeodo'

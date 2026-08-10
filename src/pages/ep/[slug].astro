@@ -64,7 +64,7 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
   ogImage={splash(d.campeon)}
 >
   <nav class="contenedor migas" aria-label="Volver">
-    <a class="volver" href="/#episodios">← Todos los episodios</a>
+    <a class="volver" href="/#episodios"><span aria-hidden="true">←</span> Todos los episodios</a>
     <a class="marca-mini titular" href="/">Siendo <span>OTP</span> por un día</a>
   </nav>
 
@@ -142,7 +142,7 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
           <div class="pendiente-caja">
             <p>
               {d.videos.length > 0
-                ? 'Las notas de este arco están por documentar: la build que marcó el coach, los momentos y el balance.'
+                ? 'Las notas de este arco están por documentar: la build, los momentos clave y el balance.'
                 : 'Los vídeos y las notas de este arco están por documentar. La serie va por delante de este archivo.'}
             </p>
           </div>
@@ -150,7 +150,7 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
       }
     </div>
 
-    <aside class="ficha" aria-label="Ficha del día">
+    <aside class="ficha" aria-label="Ficha del arco">
       <h2 class="etiqueta ficha-titulo">Ficha del arco</h2>
       <dl>
         <div class="fila">
@@ -161,12 +161,12 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
                 <>
                   {d.canalCoach ? (
                     <a href={d.canalCoach} rel="noopener">
-                      {d.coach} ↗
+                      {d.coach} <span aria-hidden="true">↗</span>
                     </a>
                   ) : (
                     d.coach
                   )}
-                  <span class="detalle">OTP de {d.nombreCampeon}</span>
+                  {d.rolCoach && <span class="detalle">{d.rolCoach}</span>}
                 </>
               ) : (
                 <span class="sin-dato">Por confirmar</span>
@@ -247,7 +247,9 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
     {
       anterior ? (
         <a class="vecino" href={`/ep/${anterior.id}/`}>
-          <span class="etiqueta">← EP.{String(anterior.data.orden).padStart(2, '0')}</span>
+          <span class="etiqueta">
+            <span aria-hidden="true">←</span> EP.{String(anterior.data.orden).padStart(2, '0')}
+          </span>
           <span class="vecino-nombre titular">{anterior.data.nombreCampeon}</span>
         </a>
       ) : (
@@ -257,7 +259,9 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
     {
       siguiente && (
         <a class="vecino derecha" href={`/ep/${siguiente.id}/`}>
-          <span class="etiqueta">EP.{String(siguiente.data.orden).padStart(2, '0')} →</span>
+          <span class="etiqueta">
+            EP.{String(siguiente.data.orden).padStart(2, '0')} <span aria-hidden="true">→</span>
+          </span>
           <span class="vecino-nombre titular">{siguiente.data.nombreCampeon}</span>
         </a>
       )
@@ -343,12 +347,14 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
 
   .linea-ep {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin: 0 0 10px;
   }
 
   .linea-ep .num {
     color: var(--red);
+    white-space: nowrap;
   }
 
   .linea-ep .sep {
@@ -356,7 +362,7 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
   }
 
   .nombre {
-    font-size: clamp(56px, 9vw, 118px);
+    font-size: clamp(40px, 14vw, 118px);
     color: var(--text);
   }
 
@@ -635,6 +641,22 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
       margin-top: -62px;
     }
     .marca-mini {
+      display: none;
+    }
+    .vecinos {
+      flex-wrap: wrap;
+    }
+    .vecino {
+      min-width: 0;
+      flex: 1 1 100%;
+    }
+    .vecino.derecha {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .linea-ep .sep {
       display: none;
     }
   }

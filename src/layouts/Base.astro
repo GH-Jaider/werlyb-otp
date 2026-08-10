@@ -15,7 +15,10 @@ interface Props {
 }
 
 const { titulo, descripcion = SERIE.descripcion, ogImage } = Astro.props;
-const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : undefined;
+const canonical =
+  Astro.site && Astro.url.pathname !== '/404/'
+    ? new URL(Astro.url.pathname, Astro.site).href
+    : undefined;
 
 const redes = [
   { nombre: 'Twitch de Werlyb', url: SERIE.redes.twitch },
@@ -64,7 +67,7 @@ const redes = [
             <nav class="pie-redes" aria-label="Enlaces de la serie">
               {redes.map((r) => (
                 <a href={r.url} rel="noopener">
-                  {r.nombre} ↗
+                  {r.nombre} <span aria-hidden="true">↗</span>
                 </a>
               ))}
             </nav>

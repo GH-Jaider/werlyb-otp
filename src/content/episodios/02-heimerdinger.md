@@ -4,6 +4,7 @@ campeon: Heimerdinger
 nombreCampeon: Heimerdinger
 tituloCampeon: El Inventor Venerado
 coach: Caresapo
+rolCoach: OTP de Heimerdinger
 canalCoach: https://www.twitch.tv/caresapo
 videos:
   - titulo: 'Donde me he metido...'

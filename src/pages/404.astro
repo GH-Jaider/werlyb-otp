@@ -7,7 +7,7 @@ import { SERIE } from '../data/serie';
   <main id="contenido" class="contenedor cuatrocero">
     <p class="etiqueta roja">Error 404</p>
     <h1 class="titular grande">Este campeón<br />no está en el pool</h1>
-    <a class="volver" href="/">← Volver al archivo</a>
+    <a class="volver" href="/"><span aria-hidden="true">←</span> Volver al archivo</a>
   </main>
 </Base>
 
@@ -27,6 +27,7 @@ import { SERIE } from '../data/serie';
 
   .grande {
     font-size: clamp(48px, 9vw, 110px);
+    line-height: 1;
     color: var(--text);
   }
 

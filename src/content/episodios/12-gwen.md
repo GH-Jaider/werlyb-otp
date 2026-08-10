@@ -4,6 +4,7 @@ campeon: Gwen
 nombreCampeon: Gwen
 tituloCampeon: La Costurera Consagrada
 coach: SOL1XD
+rolCoach: OTP de Gwen
 canalCoach: https://www.youtube.com/@Sol1XD
 videos:
   - titulo: 'OTP Gwen con SOL1XD'

@@ -4,6 +4,7 @@ campeon: Nami
 nombreCampeon: Nami
 tituloCampeon: La Invocadora de Mareas
 coach: Carmen Sandwich
+rolCoach: OTP de Nami
 canalCoach: https://www.youtube.com/@CarmenSandwich
 videos:
   - titulo: 'Estoy jodid* : OTP Nami'

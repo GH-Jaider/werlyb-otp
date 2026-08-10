@@ -4,6 +4,8 @@ campeon: Mordekaiser
 nombreCampeon: Mordekaiser
 tituloCampeon: La Pesadilla de Hierro
 coach: Manute
+rolCoach: OTP de Mordekaiser
+canalCoach: https://www.youtube.com/@Manutegaming
 videos:
   - titulo: 'Manute me enseña a jugar Mordekaiser'
     url: https://www.youtube.com/watch?v=KkWj1Xa5QK0

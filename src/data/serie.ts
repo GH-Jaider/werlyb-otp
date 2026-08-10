@@ -6,7 +6,7 @@ export const SERIE = {
   titulo: 'Siendo OTP por un día',
   claim: 'Un campeón. Un coach one-trick. Los días que hagan falta.',
   descripcion:
-    'Tracker fan de la serie de Werlyb: cada arco, un campeón distinto con un one-trick de alto elo como coach. Episodios, coaches, vídeos y stats.',
+    'Tracker fan de la serie de Werlyb: cada episodio, un campeón distinto y, casi siempre, un one-trick como coach. Episodios, coaches, vídeos y stats.',
   playlist:
     'https://www.youtube.com/playlist?list=PLr8p9eQ_HwEEuZF5Rdi-WBlL84QFBSzze' as string | null,
   redes: {

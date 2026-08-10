@@ -4,6 +4,7 @@ campeon: Nautilus
 nombreCampeon: Nautilus
 tituloCampeon: El Titán Abisal
 coach: Nautalio
+rolCoach: OTP de Nautilus
 canalCoach: https://www.twitch.tv/nautalio
 videos:
   - titulo: 'OTP Nautilus... con Nautalio'
