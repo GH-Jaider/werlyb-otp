@@ -1,0 +1,18 @@
+# Actualizaciones de dependencias por PR, con cooldown de 3 dias
+# para no adoptar versiones recien publicadas.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    versioning-strategy: increase
+    cooldown:
+      default-days: 3
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 3

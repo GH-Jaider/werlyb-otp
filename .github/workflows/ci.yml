@@ -1,0 +1,33 @@
+# Verifica que el lockfile este intacto (instalacion inmutable, sin scripts)
+# y que el build funcione. Falla si alguien altero pnpm-lock.yaml a mano.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Instalar dependencias (inmutable, sin scripts)
+        run: pnpm install --frozen-lockfile --ignore-scripts
+
+      - name: Auditar vulnerabilidades conocidas
+        # Informativo por ahora: astro 5.x tiene avisos cuya correccion requiere
+        # migrar a astro >= 6. Quitar continue-on-error tras esa migracion.
+        run: pnpm audit --prod
+        continue-on-error: true
+
+      - name: Build
+        run: pnpm build

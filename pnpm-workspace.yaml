@@ -1,0 +1,9 @@
+packages:
+  - '.'
+
+# Cooldown de 3 dias (en minutos) antes de aceptar versiones recien publicadas
+minimumReleaseAge: 4320
+
+# Lista blanca de dependencias con permiso para ejecutar scripts de build.
+# Si una dependencia lo necesita de verdad (p. ej. sharp o esbuild), agregarla aca.
+onlyBuiltDependencies: []
