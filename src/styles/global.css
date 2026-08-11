@@ -55,7 +55,7 @@ a {
 }
 
 ::selection {
-  background: var(--red);
+  background: var(--acento, var(--red));
   color: #0a0a0c;
 }
 
