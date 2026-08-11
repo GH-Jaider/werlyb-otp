@@ -16,12 +16,12 @@ const episodios = defineCollection({
     tituloCampeon: z.string().optional(), // "El Monje Ciego"
     coach: z.string().optional(),
     rolCoach: z.string().optional(), // p. ej. "OTP de Nami" — solo si está contrastado
-    canalCoach: z.string().url().optional(),
+    canalCoach: z.url().optional(),
     videos: z
       .array(
         z.object({
           titulo: z.string(),
-          url: z.string().url(),
+          url: z.url(),
           fecha: z.coerce.date().optional(),
         }),
       )

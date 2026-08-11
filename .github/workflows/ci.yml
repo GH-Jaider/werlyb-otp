@@ -24,10 +24,7 @@ jobs:
         run: pnpm install --frozen-lockfile --ignore-scripts
 
       - name: Auditar vulnerabilidades conocidas
-        # Informativo por ahora: astro 5.x tiene avisos cuya correccion requiere
-        # migrar a astro >= 6. Quitar continue-on-error tras esa migracion.
         run: pnpm audit --prod
-        continue-on-error: true
 
       - name: Build
         run: pnpm build
