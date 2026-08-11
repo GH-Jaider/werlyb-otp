@@ -1,14 +1,665 @@
 {
-  "actualizado": "2026-08-11T00:44:27.972Z",
+  "actualizado": "2026-08-11T01:26:29.000Z",
   "ddragon": "16.15.1",
   "cuentas": [
+    "lllIlIIIIlIll#EUW",
     "illo wely#EUW"
   ],
   "resumen": {
-    "partidas": 0,
-    "victorias": 0,
-    "derrotas": 0,
-    "kda": 0
+    "partidas": 11,
+    "victorias": 6,
+    "derrotas": 5,
+    "kda": 1.6
   },
-  "partidas": []
+  "partidas": [
+    {
+      "matchId": "EUW1_7826961721",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-20T12:07:51.289Z",
+      "duracionSeg": 1385,
+      "cola": "Otra cola",
+      "victoria": false,
+      "nivel": 13,
+      "kills": 0,
+      "deaths": 6,
+      "assists": 4,
+      "cs": 0,
+      "items": [
+        {
+          "nombre": "Filo del crepúsculo",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/447121.png"
+        },
+        {
+          "nombre": "Orbe del guardián",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/223112.png"
+        },
+        {
+          "nombre": "Botas de mercurio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/223111.png"
+        },
+        {
+          "nombre": "Corazón de acero",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/223084.png"
+        },
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/222517.png"
+        },
+        null
+      ],
+      "trinket": {
+        "nombre": "Barredor arcano",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3348.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerCherryFlash.png"
+        },
+        {
+          "nombre": "Huida",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerCherryHold.png"
+        }
+      ],
+      "runaPrincipal": null,
+      "estiloSecundario": null,
+      "n": 1
+    },
+    {
+      "matchId": "EUW1_7829191050",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-22T15:01:22.221Z",
+      "duracionSeg": 1565,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 16,
+      "kills": 4,
+      "deaths": 5,
+      "assists": 10,
+      "cs": 172,
+      "items": [
+        {
+          "nombre": "Égida de fuego solar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3068.png"
+        },
+        {
+          "nombre": "Desesperanza eterna",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2502.png"
+        },
+        {
+          "nombre": "Cinturón de gigante",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1011.png"
+        },
+        {
+          "nombre": "Gema avivadora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3067.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Cristal de rubí",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1028.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Garras del inmortal",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 2
+    },
+    {
+      "matchId": "EUW1_7829248189",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-22T15:58:23.598Z",
+      "duracionSeg": 1520,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 16,
+      "kills": 4,
+      "deaths": 4,
+      "assists": 10,
+      "cs": 158,
+      "items": [
+        {
+          "nombre": "Desesperanza eterna",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2502.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Manto de anulación de magia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1033.png"
+        },
+        {
+          "nombre": "Égida de fuego solar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3068.png"
+        },
+        null,
+        null
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Garras del inmortal",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 3
+    },
+    {
+      "matchId": "EUW1_7829299161",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-22T16:46:39.431Z",
+      "duracionSeg": 1166,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 14,
+      "kills": 0,
+      "deaths": 4,
+      "assists": 4,
+      "cs": 144,
+      "items": [
+        {
+          "nombre": "Fulgor vano",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6664.png"
+        },
+        {
+          "nombre": "Hábito del espectro",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3211.png"
+        },
+        {
+          "nombre": "Guardián de control",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+        },
+        {
+          "nombre": "Botas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1001.png"
+        },
+        {
+          "nombre": "Gema avivadora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3067.png"
+        },
+        null
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Garras del inmortal",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 4
+    },
+    {
+      "matchId": "EUW1_7829334119",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-22T17:12:46.736Z",
+      "duracionSeg": 2001,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 4,
+      "deaths": 5,
+      "assists": 10,
+      "cs": 220,
+      "items": [
+        {
+          "nombre": "Chaleco de zarzas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3076.png"
+        },
+        {
+          "nombre": "Desesperanza eterna",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2502.png"
+        },
+        null,
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Égida de fuego solar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3068.png"
+        },
+        {
+          "nombre": "Rostro espiritual",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3065.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Garras del inmortal",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 5
+    },
+    {
+      "matchId": "EUW1_7829380441",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-22T17:50:59.784Z",
+      "duracionSeg": 2004,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 18,
+      "kills": 1,
+      "deaths": 6,
+      "assists": 9,
+      "cs": 214,
+      "items": [
+        {
+          "nombre": "Desesperanza eterna",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2502.png"
+        },
+        {
+          "nombre": "Fulgor vano",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6664.png"
+        },
+        {
+          "nombre": "Gema avivadora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3067.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Chaleco de zarzas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3076.png"
+        },
+        {
+          "nombre": "Chaleco de cadenas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1031.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Garras del inmortal",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 6
+    },
+    {
+      "matchId": "EUW1_7829442647",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-22T18:31:07.323Z",
+      "duracionSeg": 936,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 10,
+      "kills": 1,
+      "deaths": 5,
+      "assists": 1,
+      "cs": 84,
+      "items": [
+        {
+          "nombre": "Escudo de Doran",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1054.png"
+        },
+        {
+          "nombre": "Rescoldo de Bami",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6660.png"
+        },
+        {
+          "nombre": "Armadura de tela",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1029.png"
+        },
+        {
+          "nombre": "Cristal de rubí",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1028.png"
+        },
+        {
+          "nombre": "Botas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1001.png"
+        },
+        {
+          "nombre": "Chaleco de zarzas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3076.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Garras del inmortal",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 7
+    },
+    {
+      "matchId": "EUW1_7829474175",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-22T18:57:11.178Z",
+      "duracionSeg": 1556,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 15,
+      "kills": 3,
+      "deaths": 5,
+      "assists": 7,
+      "cs": 176,
+      "items": [
+        {
+          "nombre": "Égida de fuego solar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3068.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Alternador hextech",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3145.png"
+        },
+        {
+          "nombre": "Desesperanza eterna",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2502.png"
+        },
+        {
+          "nombre": "Tomo amplificador",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1052.png"
+        },
+        {
+          "nombre": "Chaleco de zarzas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3076.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Garras del inmortal",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 8
+    },
+    {
+      "matchId": "EUW1_7829519447",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-22T19:29:02.277Z",
+      "duracionSeg": 1813,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 17,
+      "kills": 3,
+      "deaths": 6,
+      "assists": 12,
+      "cs": 198,
+      "items": [
+        {
+          "nombre": "Desesperanza eterna",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2502.png"
+        },
+        {
+          "nombre": "Fulgor vano",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6664.png"
+        },
+        null,
+        {
+          "nombre": "Gema avivadora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3067.png"
+        },
+        {
+          "nombre": "Manto de anulación de magia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1033.png"
+        },
+        {
+          "nombre": "Botas de mercurio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3111.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Garras del inmortal",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 9
+    },
+    {
+      "matchId": "EUW1_7829582039",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-22T20:06:38.807Z",
+      "duracionSeg": 1698,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 15,
+      "kills": 0,
+      "deaths": 7,
+      "assists": 2,
+      "cs": 176,
+      "items": [
+        {
+          "nombre": "Chaleco de cadenas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1031.png"
+        },
+        {
+          "nombre": "Égida de fuego solar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3068.png"
+        },
+        {
+          "nombre": "Gema avivadora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3067.png"
+        },
+        {
+          "nombre": "Chaleco de zarzas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3076.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Cristal de rubí",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1028.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Garras del inmortal",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 10
+    },
+    {
+      "matchId": "EUW1_7829631845",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-22T20:39:47.155Z",
+      "duracionSeg": 926,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 11,
+      "kills": 0,
+      "deaths": 4,
+      "assists": 2,
+      "cs": 78,
+      "items": [
+        {
+          "nombre": "Escudo de Doran",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1054.png"
+        },
+        {
+          "nombre": "Égida de fuego solar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3068.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        null,
+        null,
+        null
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Garras del inmortal",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 11
+    }
+  ]
 }

@@ -67,6 +67,7 @@ const hayStats = partidasTotales != null || balance !== null || kdaArco != null;
 
 const winrate =
   resumen && resumen.partidas > 0 ? Math.round((resumen.victorias / resumen.partidas) * 100) : null;
+const cuentasUsadas = datos ? [...new Set(datos.partidas.map((p) => p.cuenta))] : [];
 const actualizado = datos
   ? new Date(datos.actualizado)
       .toLocaleDateString('es-ES', {
@@ -171,8 +172,8 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
               ))}
             </ol>
             <p class="partidas-fuente">
-              Datos de la API oficial de Riot · cuenta {datos.cuentas.join(' · ')} · actualizado{' '}
-              {actualizado}
+              Datos de la API oficial de Riot · {cuentasUsadas.length === 1 ? 'cuenta' : 'cuentas'}{' '}
+              {cuentasUsadas.join(' · ')} · actualizado {actualizado}
             </p>
           </section>
         )

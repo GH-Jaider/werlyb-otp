@@ -1,14 +1,742 @@
 {
-  "actualizado": "2026-08-11T00:44:30.669Z",
+  "actualizado": "2026-08-11T01:28:58.080Z",
   "ddragon": "16.15.1",
   "cuentas": [
+    "lllIlIIIIlIll#EUW",
     "illo wely#EUW"
   ],
   "resumen": {
-    "partidas": 0,
-    "victorias": 0,
-    "derrotas": 0,
-    "kda": 0
+    "partidas": 12,
+    "victorias": 6,
+    "derrotas": 6,
+    "kda": 1.9
   },
-  "partidas": []
+  "partidas": [
+    {
+      "matchId": "EUW1_7874372405",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-06-02T19:02:14.604Z",
+      "duracionSeg": 1651,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 15,
+      "kills": 0,
+      "deaths": 4,
+      "assists": 3,
+      "cs": 175,
+      "items": [
+        {
+          "nombre": "Guardián de control",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+        },
+        {
+          "nombre": "Amanecer y anochecer",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2510.png"
+        },
+        {
+          "nombre": "Cintomisil hextech",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3152.png"
+        },
+        {
+          "nombre": "Tomo amplificador",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1052.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        null
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Toque de muerte ígnea",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/DeathfireTouch/DEATHFIRE_TOUCH_KEYSTONE.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 1
+    },
+    {
+      "matchId": "EUW1_7874429068",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-06-02T19:33:34.242Z",
+      "duracionSeg": 1542,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 17,
+      "kills": 8,
+      "deaths": 0,
+      "assists": 5,
+      "cs": 229,
+      "items": [
+        {
+          "nombre": "Yelmo de Doran",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1120.png"
+        },
+        {
+          "nombre": "Reloj de arena de Zhonya",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3157.png"
+        },
+        null,
+        {
+          "nombre": "Rompecascos",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3181.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Fuerza de trinidad",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Garras del inmortal",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 2
+    },
+    {
+      "matchId": "EUW1_7874475173",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-06-02T20:03:08.857Z",
+      "duracionSeg": 1519,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 15,
+      "kills": 3,
+      "deaths": 6,
+      "assists": 2,
+      "cs": 197,
+      "items": [
+        {
+          "nombre": "Yelmo de Doran",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1120.png"
+        },
+        {
+          "nombre": "Cortasendas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6631.png"
+        },
+        null,
+        {
+          "nombre": "Fuerza de trinidad",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+        },
+        null,
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Lluvia de cuchillas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/HailOfBlades/HailOfBlades.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 3
+    },
+    {
+      "matchId": "EUW1_7874519384",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-06-02T20:31:59.555Z",
+      "duracionSeg": 2061,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 20,
+      "kills": 8,
+      "deaths": 7,
+      "assists": 17,
+      "cs": 250,
+      "items": [
+        {
+          "nombre": "Reloj de arena de Zhonya",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3157.png"
+        },
+        {
+          "nombre": "Cortasendas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6631.png"
+        },
+        {
+          "nombre": "Presagio de Randuin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3143.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Fuerza de trinidad",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+        },
+        {
+          "nombre": "Guardián de control",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Compás letal",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/LethalTempo/LethalTempoTemp.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 4
+    },
+    {
+      "matchId": "EUW1_7874613623",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-06-02T21:33:28.246Z",
+      "duracionSeg": 1911,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 18,
+      "kills": 8,
+      "deaths": 8,
+      "assists": 2,
+      "cs": 261,
+      "items": [
+        {
+          "nombre": "Joya de la plaga",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4630.png"
+        },
+        {
+          "nombre": "Reloj de arena de Zhonya",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3157.png"
+        },
+        {
+          "nombre": "Cintomisil hextech",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3152.png"
+        },
+        {
+          "nombre": "Vara explosiva",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1026.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Amanecer y anochecer",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2510.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Tensión del saqueador de tormentas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 5
+    },
+    {
+      "matchId": "EUW1_7874648226",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-06-02T22:09:38.153Z",
+      "duracionSeg": 1784,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 16,
+      "kills": 3,
+      "deaths": 12,
+      "assists": 7,
+      "cs": 229,
+      "items": [
+        {
+          "nombre": "Yelmo de Doran",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1120.png"
+        },
+        {
+          "nombre": "Cortasendas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6631.png"
+        },
+        {
+          "nombre": "Tuneladora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2021.png"
+        },
+        {
+          "nombre": "Fuerza de trinidad",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Cristal de rubí",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1028.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Compás letal",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/LethalTempo/LethalTempoTemp.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 6
+    },
+    {
+      "matchId": "EUW1_7874682176",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-06-02T22:44:02.344Z",
+      "duracionSeg": 910,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 10,
+      "kills": 3,
+      "deaths": 5,
+      "assists": 2,
+      "cs": 105,
+      "items": [
+        {
+          "nombre": "Fuerza de trinidad",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+        },
+        {
+          "nombre": "Guardián de control",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        null,
+        {
+          "nombre": "Yelmo de Doran",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1120.png"
+        },
+        null
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 7
+    },
+    {
+      "matchId": "EUW1_7874718113",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-06-02T23:31:32.163Z",
+      "duracionSeg": 1263,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 13,
+      "kills": 9,
+      "deaths": 5,
+      "assists": 9,
+      "cs": 149,
+      "items": [
+        {
+          "nombre": "Fuerza de trinidad",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+        },
+        {
+          "nombre": "Sable-pistola hextech",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3146.png"
+        },
+        {
+          "nombre": "Armadura de tela",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1029.png"
+        },
+        {
+          "nombre": "Armadura de tela",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1029.png"
+        },
+        {
+          "nombre": "Grebas codiciosas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3008.png"
+        },
+        {
+          "nombre": "Mota brillante",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2022.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 8
+    },
+    {
+      "matchId": "EUW1_7874732986",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-06-02T23:56:59.468Z",
+      "duracionSeg": 1568,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 12,
+      "kills": 3,
+      "deaths": 9,
+      "assists": 10,
+      "cs": 60,
+      "items": [
+        {
+          "nombre": "Firmamento desgarrado",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Detracción celestial",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3869.png"
+        },
+        {
+          "nombre": "Fuerza de trinidad",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+        },
+        {
+          "nombre": "Tomo amplificador",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1052.png"
+        },
+        {
+          "nombre": "Tomo amplificador",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1052.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Lluvia de cuchillas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/HailOfBlades/HailOfBlades.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 9
+    },
+    {
+      "matchId": "EUW1_7874744403",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-06-03T00:27:44.089Z",
+      "duracionSeg": 1684,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 15,
+      "kills": 8,
+      "deaths": 9,
+      "assists": 7,
+      "cs": 171,
+      "items": [
+        {
+          "nombre": "Firmamento desgarrado",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+        },
+        {
+          "nombre": "Grebas codiciosas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3008.png"
+        },
+        {
+          "nombre": "Llamada del verdugo",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3123.png"
+        },
+        {
+          "nombre": "Martillo de guerra de Caulfield",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3133.png"
+        },
+        {
+          "nombre": "Fuerza de trinidad",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+        },
+        {
+          "nombre": "Creagrietas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4633.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 10
+    },
+    {
+      "matchId": "EUW1_7875193983",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-06-03T16:17:57.334Z",
+      "duracionSeg": 1663,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 10,
+      "deaths": 3,
+      "assists": 7,
+      "cs": 210,
+      "items": [
+        {
+          "nombre": "Espada de Doran",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1055.png"
+        },
+        {
+          "nombre": "Amanecer y anochecer",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2510.png"
+        },
+        {
+          "nombre": "Botas de mercurio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3111.png"
+        },
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+        },
+        {
+          "nombre": "Manto de anulación de magia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1033.png"
+        },
+        {
+          "nombre": "Cuchilla negra",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3071.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Garras del inmortal",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 11
+    },
+    {
+      "matchId": "EUW1_7875237075",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-06-03T16:54:20.001Z",
+      "duracionSeg": 1467,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 16,
+      "kills": 9,
+      "deaths": 7,
+      "assists": 1,
+      "cs": 174,
+      "items": [
+        {
+          "nombre": "Firmamento desgarrado",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Tuneladora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2021.png"
+        },
+        {
+          "nombre": "Chaleco de zarzas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3076.png"
+        },
+        {
+          "nombre": "Amanecer y anochecer",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2510.png"
+        },
+        {
+          "nombre": "Malla del guardián",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3082.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Garras del inmortal",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 12
+    }
+  ]
 }

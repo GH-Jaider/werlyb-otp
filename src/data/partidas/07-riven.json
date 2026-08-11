@@ -1,14 +1,491 @@
 {
-  "actualizado": "2026-08-11T00:44:29.300Z",
+  "actualizado": "2026-08-11T01:27:45.847Z",
   "ddragon": "16.15.1",
   "cuentas": [
+    "lllIlIIIIlIll#EUW",
     "illo wely#EUW"
   ],
   "resumen": {
-    "partidas": 0,
-    "victorias": 0,
-    "derrotas": 0,
-    "kda": 0
+    "partidas": 8,
+    "victorias": 5,
+    "derrotas": 3,
+    "kda": 2.5
   },
-  "partidas": []
+  "partidas": [
+    {
+      "matchId": "EUW1_7854819490",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-05-15T18:46:17.031Z",
+      "duracionSeg": 1530,
+      "cola": "Otra cola",
+      "victoria": false,
+      "nivel": 13,
+      "kills": 5,
+      "deaths": 8,
+      "assists": 4,
+      "cs": 4,
+      "items": [
+        {
+          "nombre": "Desgarrador divino",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/446632.png"
+        },
+        {
+          "nombre": "Grebas codiciosas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/223008.png"
+        },
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/226333.png"
+        },
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/222517.png"
+        },
+        null,
+        null
+      ],
+      "trinket": {
+        "nombre": "Barredor arcano",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3348.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerCherryFlash.png"
+        },
+        {
+          "nombre": "Huida",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerCherryHold.png"
+        }
+      ],
+      "runaPrincipal": null,
+      "estiloSecundario": null,
+      "n": 1
+    },
+    {
+      "matchId": "EUW1_7859021577",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-05-19T14:10:53.517Z",
+      "duracionSeg": 1695,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 15,
+      "kills": 4,
+      "deaths": 9,
+      "assists": 1,
+      "cs": 226,
+      "items": [
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+        },
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2517.png"
+        },
+        {
+          "nombre": "Sorbemaleficios",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3155.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        null,
+        {
+          "nombre": "Arco axiomático",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6696.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 2
+    },
+    {
+      "matchId": "EUW1_7859050956",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-05-19T14:46:42.831Z",
+      "duracionSeg": 1144,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 12,
+      "kills": 2,
+      "deaths": 5,
+      "assists": 2,
+      "cs": 140,
+      "items": [
+        {
+          "nombre": "Espada de Doran",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1055.png"
+        },
+        {
+          "nombre": "Martillo de guerra de Caulfield",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3133.png"
+        },
+        {
+          "nombre": "Arco axiomático",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6696.png"
+        },
+        {
+          "nombre": "Espada larga",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1036.png"
+        },
+        {
+          "nombre": "Pico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1037.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 3
+    },
+    {
+      "matchId": "EUW1_7859086809",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-05-19T15:22:59.822Z",
+      "duracionSeg": 1695,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 14,
+      "deaths": 6,
+      "assists": 7,
+      "cs": 298,
+      "items": [
+        {
+          "nombre": "Firmamento desgarrado",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+        },
+        {
+          "nombre": "Guja sombría",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3179.png"
+        },
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2517.png"
+        },
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+        },
+        {
+          "nombre": "Lucidez carmesí",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3171.png"
+        },
+        {
+          "nombre": "Fauces de Malmortius",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3156.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 4
+    },
+    {
+      "matchId": "EUW1_7861249004",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-05-21T16:38:24.619Z",
+      "duracionSeg": 1807,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 16,
+      "kills": 5,
+      "deaths": 7,
+      "assists": 7,
+      "cs": 209,
+      "items": [
+        {
+          "nombre": "Hábito del espectro",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3211.png"
+        },
+        {
+          "nombre": "Colmillo de serpiente",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6695.png"
+        },
+        {
+          "nombre": "Gema avivadora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3067.png"
+        },
+        {
+          "nombre": "Fauces de Malmortius",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3156.png"
+        },
+        {
+          "nombre": "Rookern kaénico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2504.png"
+        },
+        {
+          "nombre": "Senda inmortal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3168.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 5
+    },
+    {
+      "matchId": "EUW1_7861297828",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-05-21T17:17:37.951Z",
+      "duracionSeg": 1679,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 19,
+      "kills": 14,
+      "deaths": 4,
+      "assists": 8,
+      "cs": 230,
+      "items": [
+        {
+          "nombre": "Firmamento desgarrado",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+        },
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2517.png"
+        },
+        {
+          "nombre": "Arco axiomático",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6696.png"
+        },
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Últimas palabras",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3035.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 6
+    },
+    {
+      "matchId": "EUW1_7861335339",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-05-21T17:52:42.974Z",
+      "duracionSeg": 1769,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 17,
+      "kills": 15,
+      "deaths": 4,
+      "assists": 5,
+      "cs": 246,
+      "items": [
+        {
+          "nombre": "Firmamento desgarrado",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+        },
+        {
+          "nombre": "Fauces de Malmortius",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3156.png"
+        },
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+        },
+        {
+          "nombre": "Senda inmortal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3168.png"
+        },
+        {
+          "nombre": "Manto de anulación de magia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1033.png"
+        },
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2517.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 7
+    },
+    {
+      "matchId": "EUW1_7862157819",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-05-22T14:45:14.739Z",
+      "duracionSeg": 1400,
+      "cola": "Otra cola",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 12,
+      "deaths": 5,
+      "assists": 14,
+      "cs": 1,
+      "items": [
+        {
+          "nombre": "Grebas codiciosas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/223008.png"
+        },
+        {
+          "nombre": "Yelmo de hemomancia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/447103.png"
+        },
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/222517.png"
+        },
+        {
+          "nombre": "Soberbia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/226697.png"
+        },
+        {
+          "nombre": "Jutte de kinkou",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/447116.png"
+        },
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/226333.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Barredor arcano",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3348.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerCherryFlash.png"
+        },
+        {
+          "nombre": "Huida",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerCherryHold.png"
+        }
+      ],
+      "runaPrincipal": null,
+      "estiloSecundario": null,
+      "n": 8
+    }
+  ]
 }

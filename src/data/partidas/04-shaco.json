@@ -1,14 +1,618 @@
 {
-  "actualizado": "2026-08-11T00:44:25.255Z",
+  "actualizado": "2026-08-11T01:24:55.675Z",
   "ddragon": "16.15.1",
   "cuentas": [
+    "lllIlIIIIlIll#EUW",
     "illo wely#EUW"
   ],
   "resumen": {
-    "partidas": 0,
-    "victorias": 0,
-    "derrotas": 0,
-    "kda": 0
+    "partidas": 10,
+    "victorias": 6,
+    "derrotas": 4,
+    "kda": 2.6
   },
-  "partidas": []
+  "partidas": [
+    {
+      "matchId": "EUW1_7813152858",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-07T14:53:47.302Z",
+      "duracionSeg": 1900,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 16,
+      "kills": 9,
+      "deaths": 7,
+      "assists": 7,
+      "cs": 230,
+      "items": [
+        {
+          "nombre": "Recaudadora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6676.png"
+        },
+        {
+          "nombre": "Espada ciclovoltaica",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6699.png"
+        },
+        {
+          "nombre": "Carcaj del mediodía",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6670.png"
+        },
+        {
+          "nombre": "Filo infinito",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3031.png"
+        },
+        {
+          "nombre": "Grebas de berserker",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3006.png"
+        },
+        {
+          "nombre": "Espada larga",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1036.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Lluvia de cuchillas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/HailOfBlades/HailOfBlades.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 1
+    },
+    {
+      "matchId": "EUW1_7813201687",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-07T15:44:36.623Z",
+      "duracionSeg": 1957,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 17,
+      "kills": 8,
+      "deaths": 9,
+      "assists": 8,
+      "cs": 217,
+      "items": [
+        {
+          "nombre": "Hoja del rey arruinado",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3153.png"
+        },
+        {
+          "nombre": "Colmillo de serpiente",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6695.png"
+        },
+        {
+          "nombre": "Capa de agilidad",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1018.png"
+        },
+        {
+          "nombre": "Recuerdos de lord Dominik",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3036.png"
+        },
+        {
+          "nombre": "Grebas de berserker",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3006.png"
+        },
+        {
+          "nombre": "Pico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1037.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Lluvia de cuchillas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/HailOfBlades/HailOfBlades.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 2
+    },
+    {
+      "matchId": "EUW1_7813239418",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-07T16:27:39.561Z",
+      "duracionSeg": 1986,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 5,
+      "deaths": 4,
+      "assists": 15,
+      "cs": 244,
+      "items": [
+        {
+          "nombre": "Tormento de Liandry",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6653.png"
+        },
+        {
+          "nombre": "Reloj de arena de Zhonya",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3157.png"
+        },
+        {
+          "nombre": "Códice diabólico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3108.png"
+        },
+        {
+          "nombre": "Antorcha de fuego negro",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2503.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Tomo amplificador",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1052.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Cometa arcano",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 3
+    },
+    {
+      "matchId": "EUW1_7813294983",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-07T17:13:00.138Z",
+      "duracionSeg": 1975,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 12,
+      "deaths": 6,
+      "assists": 14,
+      "cs": 225,
+      "items": [
+        {
+          "nombre": "Tormento de Liandry",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6653.png"
+        },
+        {
+          "nombre": "Antorcha de fuego negro",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2503.png"
+        },
+        null,
+        {
+          "nombre": "Florescencia sepulcral",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3137.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Llamasombría",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Cometa arcano",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 4
+    },
+    {
+      "matchId": "EUW1_7813350857",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-07T17:56:55.360Z",
+      "duracionSeg": 1866,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 16,
+      "kills": 4,
+      "deaths": 6,
+      "assists": 11,
+      "cs": 242,
+      "items": [
+        {
+          "nombre": "Tormento de Liandry",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6653.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Antorcha de fuego negro",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2503.png"
+        },
+        {
+          "nombre": "Florescencia sepulcral",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3137.png"
+        },
+        {
+          "nombre": "Vara innecesariamente grande",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1058.png"
+        },
+        {
+          "nombre": "Sello oscuro",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1082.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Cometa arcano",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 5
+    },
+    {
+      "matchId": "EUW1_7813472524",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-07T19:19:24.121Z",
+      "duracionSeg": 1470,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 12,
+      "kills": 5,
+      "deaths": 8,
+      "assists": 0,
+      "cs": 115,
+      "items": [
+        {
+          "nombre": "Recaudadora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6676.png"
+        },
+        {
+          "nombre": "Pico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1037.png"
+        },
+        {
+          "nombre": "Espada ciclovoltaica",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6699.png"
+        },
+        {
+          "nombre": "Capa de agilidad",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1018.png"
+        },
+        {
+          "nombre": "Calzado ligeramente mágico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2422.png"
+        },
+        null
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Lluvia de cuchillas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/HailOfBlades/HailOfBlades.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 6
+    },
+    {
+      "matchId": "EUW1_7813525763",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-07T19:57:38.106Z",
+      "duracionSeg": 1214,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 11,
+      "kills": 1,
+      "deaths": 4,
+      "assists": 10,
+      "cs": 23,
+      "items": [
+        {
+          "nombre": "Antorcha de fuego negro",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2503.png"
+        },
+        {
+          "nombre": "Sello oscuro",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1082.png"
+        },
+        {
+          "nombre": "Perforaplanos de Zaz'Zak",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3871.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Tomo amplificador",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1052.png"
+        },
+        null
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Cometa arcano",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 7
+    },
+    {
+      "matchId": "EUW1_7813620668",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-07T21:06:00.510Z",
+      "duracionSeg": 1788,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 10,
+      "deaths": 1,
+      "assists": 10,
+      "cs": 265,
+      "items": [
+        {
+          "nombre": "Tormento de Liandry",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6653.png"
+        },
+        {
+          "nombre": "Antorcha de fuego negro",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2503.png"
+        },
+        {
+          "nombre": "Florescencia sepulcral",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3137.png"
+        },
+        {
+          "nombre": "Tomo amplificador",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1052.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        null
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Cometa arcano",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 8
+    },
+    {
+      "matchId": "EUW1_7813685777",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-07T21:59:00.298Z",
+      "duracionSeg": 1186,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 10,
+      "kills": 2,
+      "deaths": 2,
+      "assists": 9,
+      "cs": 18,
+      "items": [
+        {
+          "nombre": "Antorcha de fuego negro",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2503.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Perforaplanos de Zaz'Zak",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3871.png"
+        },
+        {
+          "nombre": "Cenizas predestinadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2508.png"
+        },
+        null,
+        null
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Cometa arcano",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 9
+    },
+    {
+      "matchId": "EUW1_7813713836",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-07T22:28:26.379Z",
+      "duracionSeg": 1681,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 13,
+      "kills": 3,
+      "deaths": 8,
+      "assists": 1,
+      "cs": 172,
+      "items": [
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Antorcha de fuego negro",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2503.png"
+        },
+        {
+          "nombre": "Tomo amplificador",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1052.png"
+        },
+        {
+          "nombre": "Tormento de Liandry",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6653.png"
+        },
+        {
+          "nombre": "Tomo amplificador",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1052.png"
+        },
+        {
+          "nombre": "Mota brillante",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2022.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Cometa arcano",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 10
+    }
+  ]
 }

@@ -1,14 +1,624 @@
 {
-  "actualizado": "2026-08-11T00:44:21.199Z",
+  "actualizado": "2026-08-11T01:22:52.754Z",
   "ddragon": "16.15.1",
   "cuentas": [
+    "lllIlIIIIlIll#EUW",
     "illo wely#EUW"
   ],
   "resumen": {
-    "partidas": 0,
-    "victorias": 0,
-    "derrotas": 0,
-    "kda": 0
+    "partidas": 10,
+    "victorias": 7,
+    "derrotas": 3,
+    "kda": 2.8
   },
-  "partidas": []
+  "partidas": [
+    {
+      "matchId": "EUW1_7791648849",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-21T19:17:51.650Z",
+      "duracionSeg": 1830,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 16,
+      "deaths": 7,
+      "assists": 9,
+      "cs": 218,
+      "items": [
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3161.png"
+        },
+        {
+          "nombre": "Botas de mercurio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3111.png"
+        },
+        {
+          "nombre": "Calibrador de Sterak",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3053.png"
+        },
+        {
+          "nombre": "Cuchilla negra",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3071.png"
+        },
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2517.png"
+        },
+        {
+          "nombre": "Lágrima de la diosa",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3070.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 1
+    },
+    {
+      "matchId": "EUW1_7791719521",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-21T19:53:06.719Z",
+      "duracionSeg": 1938,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 18,
+      "kills": 7,
+      "deaths": 10,
+      "assists": 11,
+      "cs": 233,
+      "items": [
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2517.png"
+        },
+        {
+          "nombre": "Malla de espinas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3075.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Lágrima de la diosa",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3070.png"
+        },
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3161.png"
+        },
+        {
+          "nombre": "Convergencia de Zeke",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3050.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 2
+    },
+    {
+      "matchId": "EUW1_7791787343",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-21T20:31:55.775Z",
+      "duracionSeg": 1161,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 14,
+      "kills": 3,
+      "deaths": 2,
+      "assists": 6,
+      "cs": 172,
+      "items": [
+        {
+          "nombre": "Convergencia de Zeke",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3050.png"
+        },
+        {
+          "nombre": "Soberbia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6697.png"
+        },
+        {
+          "nombre": "Pico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1037.png"
+        },
+        {
+          "nombre": "Botas de rapidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+        },
+        {
+          "nombre": "Tuneladora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2021.png"
+        },
+        {
+          "nombre": "Cristal de rubí",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1028.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 3
+    },
+    {
+      "matchId": "EUW1_7791841999",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-21T20:55:21.693Z",
+      "duracionSeg": 1457,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 15,
+      "kills": 5,
+      "deaths": 7,
+      "assists": 13,
+      "cs": 172,
+      "items": [
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3161.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Botas de rapidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+        },
+        {
+          "nombre": "Martillo de guerra de Caulfield",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3133.png"
+        },
+        {
+          "nombre": "Sello de acero",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2019.png"
+        },
+        null
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Tensión del saqueador de tormentas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 4
+    },
+    {
+      "matchId": "EUW1_7791901370",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-21T21:25:56.860Z",
+      "duracionSeg": 1548,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 17,
+      "kills": 9,
+      "deaths": 6,
+      "assists": 15,
+      "cs": 236,
+      "items": [
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3161.png"
+        },
+        {
+          "nombre": "Soberbia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6697.png"
+        },
+        null,
+        {
+          "nombre": "Tuneladora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2021.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2517.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Tensión del saqueador de tormentas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 5
+    },
+    {
+      "matchId": "EUW1_7791969114",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-21T21:57:22.641Z",
+      "duracionSeg": 1457,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 13,
+      "kills": 1,
+      "deaths": 9,
+      "assists": 2,
+      "cs": 146,
+      "items": [
+        {
+          "nombre": "Tuneladora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2021.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Guardián de control",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+        },
+        {
+          "nombre": "Pico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1037.png"
+        },
+        {
+          "nombre": "Botas de rapidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+        },
+        {
+          "nombre": "Lágrima de la diosa",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3070.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Tensión del saqueador de tormentas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 6
+    },
+    {
+      "matchId": "EUW1_7792055149",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-21T22:39:10.478Z",
+      "duracionSeg": 925,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 12,
+      "kills": 3,
+      "deaths": 0,
+      "assists": 4,
+      "cs": 149,
+      "items": [
+        {
+          "nombre": "Soberbia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6697.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Guardián de control",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+        },
+        null,
+        null,
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Tensión del saqueador de tormentas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 7
+    },
+    {
+      "matchId": "EUW1_7792092189",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-21T22:58:55.065Z",
+      "duracionSeg": 2095,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 16,
+      "deaths": 5,
+      "assists": 7,
+      "cs": 350,
+      "items": [
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3161.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Calibrador de Sterak",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3053.png"
+        },
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2517.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Tensión del saqueador de tormentas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 8
+    },
+    {
+      "matchId": "EUW1_7795063884",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-23T16:40:34.007Z",
+      "duracionSeg": 1498,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 16,
+      "kills": 7,
+      "deaths": 4,
+      "assists": 3,
+      "cs": 238,
+      "items": [
+        {
+          "nombre": "Botas de mercurio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3111.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Guardián de control",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+        },
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3161.png"
+        },
+        {
+          "nombre": "Sorbemaleficios",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3155.png"
+        },
+        {
+          "nombre": "Soberbia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6697.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Tensión del saqueador de tormentas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 9
+    },
+    {
+      "matchId": "EUW1_7795676921",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-23T21:55:08.010Z",
+      "duracionSeg": 1004,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 11,
+      "kills": 4,
+      "deaths": 3,
+      "assists": 5,
+      "cs": 120,
+      "items": [
+        {
+          "nombre": "Pico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1037.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Espada larga",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1036.png"
+        },
+        {
+          "nombre": "Mota brillante",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2022.png"
+        },
+        {
+          "nombre": "Cristal de rubí",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1028.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Ojo del Heraldo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3513.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Tensión del saqueador de tormentas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 10
+    }
+  ]
 }

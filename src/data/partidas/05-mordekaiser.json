@@ -1,14 +1,627 @@
 {
-  "actualizado": "2026-08-11T00:44:26.623Z",
+  "actualizado": "2026-08-11T01:25:31.159Z",
   "ddragon": "16.15.1",
   "cuentas": [
+    "lllIlIIIIlIll#EUW",
     "illo wely#EUW"
   ],
   "resumen": {
-    "partidas": 0,
-    "victorias": 0,
-    "derrotas": 0,
-    "kda": 0
+    "partidas": 10,
+    "victorias": 3,
+    "derrotas": 7,
+    "kda": 1.3
   },
-  "partidas": []
+  "partidas": [
+    {
+      "matchId": "EUW1_7815168322",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-09T16:59:53.675Z",
+      "duracionSeg": 2202,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 18,
+      "kills": 10,
+      "deaths": 14,
+      "assists": 5,
+      "cs": 208,
+      "items": [
+        {
+          "nombre": "Creagrietas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4633.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Cintomisil hextech",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3152.png"
+        },
+        {
+          "nombre": "Chaleco de zarzas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3076.png"
+        },
+        {
+          "nombre": "Cetro de cristal de Rylai",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+        },
+        {
+          "nombre": "Rostro espiritual",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3065.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 1
+    },
+    {
+      "matchId": "EUW1_7815219891",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-09T17:41:58.782Z",
+      "duracionSeg": 2052,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 17,
+      "kills": 4,
+      "deaths": 11,
+      "assists": 4,
+      "cs": 187,
+      "items": [
+        {
+          "nombre": "Gema avivadora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3067.png"
+        },
+        {
+          "nombre": "Creagrietas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4633.png"
+        },
+        {
+          "nombre": "Cintomisil hextech",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3152.png"
+        },
+        {
+          "nombre": "Armadura de tela",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1029.png"
+        },
+        {
+          "nombre": "Cetro de cristal de Rylai",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 2
+    },
+    {
+      "matchId": "EUW1_7815262306",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-09T18:23:08.978Z",
+      "duracionSeg": 1219,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 14,
+      "kills": 2,
+      "deaths": 3,
+      "assists": 1,
+      "cs": 204,
+      "items": [
+        {
+          "nombre": "Cetro de cristal de Rylai",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+        },
+        {
+          "nombre": "Creagrietas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4633.png"
+        },
+        null,
+        null,
+        {
+          "nombre": "Chaleco de zarzas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3076.png"
+        },
+        {
+          "nombre": "Botas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1001.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 3
+    },
+    {
+      "matchId": "EUW1_7815312459",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-09T18:53:46.148Z",
+      "duracionSeg": 1855,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 16,
+      "kills": 11,
+      "deaths": 12,
+      "assists": 3,
+      "cs": 207,
+      "items": [
+        {
+          "nombre": "Experimento de hexarmadura",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3073.png"
+        },
+        {
+          "nombre": "Botas de rapidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+        },
+        {
+          "nombre": "Rostro espiritual",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3065.png"
+        },
+        {
+          "nombre": "Cetro de cristal de Rylai",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+        },
+        {
+          "nombre": "Creagrietas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4633.png"
+        },
+        {
+          "nombre": "Disfraz encantado",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3147.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 4
+    },
+    {
+      "matchId": "EUW1_7815362344",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-09T19:33:40.814Z",
+      "duracionSeg": 1410,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 15,
+      "kills": 4,
+      "deaths": 6,
+      "assists": 0,
+      "cs": 219,
+      "items": [
+        {
+          "nombre": "Botas de rapidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+        },
+        {
+          "nombre": "Creagrietas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4633.png"
+        },
+        {
+          "nombre": "Cetro de cristal de Rylai",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+        },
+        {
+          "nombre": "Experimento de hexarmadura",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3073.png"
+        },
+        {
+          "nombre": "Armadura de tela",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1029.png"
+        },
+        {
+          "nombre": "Armadura de tela",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1029.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 5
+    },
+    {
+      "matchId": "EUW1_7815402414",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-09T20:02:26.783Z",
+      "duracionSeg": 1761,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 1,
+      "deaths": 4,
+      "assists": 3,
+      "cs": 260,
+      "items": [
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Creagrietas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4633.png"
+        },
+        null,
+        {
+          "nombre": "Hábito del espectro",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3211.png"
+        },
+        {
+          "nombre": "Chaleco de zarzas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3076.png"
+        },
+        {
+          "nombre": "Cetro de cristal de Rylai",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 6
+    },
+    {
+      "matchId": "EUW1_7816140697",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-10T16:09:57.397Z",
+      "duracionSeg": 1672,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 17,
+      "kills": 5,
+      "deaths": 11,
+      "assists": 3,
+      "cs": 215,
+      "items": [
+        {
+          "nombre": "Tuneladora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2021.png"
+        },
+        {
+          "nombre": "Cetro de cristal de Rylai",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+        },
+        {
+          "nombre": "Bacteriófago",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3044.png"
+        },
+        {
+          "nombre": "Chaleco de zarzas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3076.png"
+        },
+        {
+          "nombre": "Creagrietas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4633.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 7
+    },
+    {
+      "matchId": "EUW1_7816183430",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-10T16:54:05.396Z",
+      "duracionSeg": 1833,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 9,
+      "deaths": 5,
+      "assists": 10,
+      "cs": 258,
+      "items": [
+        {
+          "nombre": "Experimento de hexarmadura",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3073.png"
+        },
+        {
+          "nombre": "Botas de rapidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+        },
+        {
+          "nombre": "Malla de espinas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3075.png"
+        },
+        {
+          "nombre": "Creagrietas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4633.png"
+        },
+        {
+          "nombre": "Chaleco de cadenas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1031.png"
+        },
+        {
+          "nombre": "Cetro de cristal de Rylai",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 8
+    },
+    {
+      "matchId": "EUW1_7816277058",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-10T18:10:27.750Z",
+      "duracionSeg": 1688,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 17,
+      "kills": 13,
+      "deaths": 5,
+      "assists": 8,
+      "cs": 204,
+      "items": [
+        {
+          "nombre": "Disfraz encantado",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3147.png"
+        },
+        {
+          "nombre": "Cetro de cristal de Rylai",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+        },
+        {
+          "nombre": "Creagrietas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4633.png"
+        },
+        {
+          "nombre": "Experimento de hexarmadura",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3073.png"
+        },
+        {
+          "nombre": "Rostro espiritual",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3065.png"
+        },
+        {
+          "nombre": "Botas de rapidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 9
+    },
+    {
+      "matchId": "EUW1_7816315365",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-04-10T18:43:05.304Z",
+      "duracionSeg": 1878,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 15,
+      "kills": 5,
+      "deaths": 9,
+      "assists": 4,
+      "cs": 234,
+      "items": [
+        {
+          "nombre": "Botas de rapidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+        },
+        {
+          "nombre": "Experimento de hexarmadura",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3073.png"
+        },
+        {
+          "nombre": "Creagrietas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4633.png"
+        },
+        {
+          "nombre": "Malla de espinas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3075.png"
+        },
+        {
+          "nombre": "Cetro de cristal de Rylai",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+        },
+        {
+          "nombre": "Guardián de control",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 10
+    }
+  ]
 }
