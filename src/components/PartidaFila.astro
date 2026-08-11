@@ -1,0 +1,312 @@
+---
+import type { Partida } from '../lib/partidas';
+
+interface Props {
+  partida: Partida;
+}
+
+const { partida: p } = Astro.props;
+
+const fecha = new Date(p.inicio)
+  .toLocaleDateString('es-ES', { day: 'numeric', month: 'short', timeZone: 'Europe/Madrid' })
+  .replace(/\./g, '');
+const hora = new Date(p.inicio).toLocaleTimeString('es-ES', {
+  hour: '2-digit',
+  minute: '2-digit',
+  timeZone: 'Europe/Madrid',
+});
+const duracion = `${Math.floor(p.duracionSeg / 60)}m ${String(p.duracionSeg % 60).padStart(2, '0')}s`;
+
+const kit = [p.hechizos[0], p.runaPrincipal, p.hechizos[1], p.estiloSecundario];
+const huecos = [...p.items];
+while (huecos.length < 6) huecos.push(null);
+---
+
+<li class="partida" data-resultado={p.victoria ? 'v' : 'd'}>
+  <span class="pnum" aria-hidden="true">#{p.n}</span>
+  <span class="barra" aria-hidden="true"></span>
+
+  <div class="res">
+    <p class="veredicto">
+      <b>{p.victoria ? 'Victoria' : 'Derrota'}</b>
+      <span class="cola">· {p.cola}</span>
+      <span class="nivel">nv. {p.nivel}</span>
+    </p>
+    <p class="cuando">{fecha} · {hora} · {duracion}</p>
+  </div>
+
+  <div class="kit">
+    <ul class="runas" aria-label="Hechizos y runas">
+      {
+        kit.map((k) => (
+          <li>{k ? <img src={k.icono} alt="" title={k.nombre} loading="lazy" width="22" height="22" /> : <span class="hueco" />}</li>
+        ))
+      }
+    </ul>
+    <ul class="items" aria-label="Objetos">
+      {
+        huecos.map((item) => (
+          <li>
+            {item ? (
+              <img src={item.icono} alt="" title={item.nombre} loading="lazy" width="26" height="26" />
+            ) : (
+              <span class="hueco" />
+            )}
+          </li>
+        ))
+      }
+      <li class="trinket">
+        {
+          p.trinket ? (
+            <img src={p.trinket.icono} alt="" title={p.trinket.nombre} loading="lazy" width="26" height="26" />
+          ) : (
+            <span class="hueco" />
+          )
+        }
+      </li>
+    </ul>
+  </div>
+
+  <div class="cifras">
+    <span class="cs"
+      ><b>{p.cs}</b>
+      <span class="cifra-etiqueta">CS</span></span
+    >
+    <span class="kda"
+      >{p.kills} / <b class="muertes">{p.deaths}</b> / {p.assists}
+      <span class="cifra-etiqueta">KDA</span></span
+    >
+  </div>
+</li>
+
+<style>
+  .partida {
+    display: grid;
+    grid-template-columns: 40px 3px minmax(150px, 1fr) auto auto;
+    grid-template-areas: 'num barra res kit cifras';
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px 12px 12px;
+    background: var(--surface);
+  }
+
+  .pnum {
+    grid-area: num;
+    font-family: var(--display);
+    font-size: 17px;
+    text-align: center;
+    color: var(--muted);
+  }
+
+  .barra {
+    grid-area: barra;
+    align-self: stretch;
+    border-radius: 2px;
+    background: var(--win);
+  }
+
+  .partida[data-resultado='d'] .barra {
+    background: var(--red);
+  }
+
+  .res {
+    grid-area: res;
+  }
+
+  .veredicto {
+    margin: 0;
+    font-size: 14.5px;
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+  }
+
+  .veredicto b {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-size: 13px;
+    color: var(--win);
+  }
+
+  .partida[data-resultado='d'] .veredicto b {
+    color: var(--red);
+  }
+
+  .cola {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .nivel {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    color: var(--faint);
+  }
+
+  .cuando {
+    margin: 3px 0 0;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--faint);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .kit {
+    grid-area: kit;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .runas,
+  .items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+  }
+
+  .runas {
+    grid-template-columns: repeat(2, 22px);
+    gap: 3px;
+  }
+
+  .items {
+    grid-template-columns: repeat(7, 26px);
+    gap: 3px;
+  }
+
+  .runas img,
+  .items img,
+  .hueco {
+    display: block;
+    border-radius: 4px;
+    background: var(--surface-2);
+    border: 1px solid var(--line-soft);
+  }
+
+  .runas img,
+  .runas .hueco {
+    width: 22px;
+    height: 22px;
+  }
+
+  .items img,
+  .items .hueco {
+    width: 26px;
+    height: 26px;
+  }
+
+  .items .trinket {
+    margin-left: 5px;
+  }
+
+  .cifras {
+    grid-area: cifras;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    justify-content: flex-end;
+    min-width: 150px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .cs,
+  .kda {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--text);
+    white-space: nowrap;
+  }
+
+  .cs b,
+  .kda {
+    font-weight: 500;
+  }
+
+  .muertes {
+    color: var(--red);
+    font-weight: 600;
+  }
+
+  .cifra-etiqueta {
+    display: block;
+    font-size: 9.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin-top: 2px;
+  }
+
+  @media (max-width: 760px) {
+    .partida {
+      grid-template-columns: 34px 3px 1fr auto;
+      grid-template-areas:
+        'num barra res cifras'
+        'num barra kit kit';
+      row-gap: 10px;
+      padding-right: 12px;
+    }
+
+    .pnum {
+      font-size: 15px;
+    }
+
+    .cifras {
+      min-width: 0;
+      gap: 14px;
+    }
+
+    .kit {
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .items {
+      grid-template-columns: repeat(7, 22px);
+    }
+
+    .items img,
+    .items .hueco {
+      width: 22px;
+      height: 22px;
+    }
+
+    .runas {
+      grid-template-columns: repeat(4, 22px);
+    }
+  }
+
+  @media (max-width: 560px) {
+    .partida {
+      grid-template-columns: 28px 3px 1fr;
+      grid-template-areas:
+        'num barra res'
+        'num barra cifras'
+        'num barra kit';
+      row-gap: 8px;
+      gap: 10px;
+    }
+
+    .nivel {
+      display: none;
+    }
+
+    .cifras {
+      justify-content: flex-start;
+      gap: 16px;
+    }
+
+    .cifra-etiqueta {
+      display: inline;
+      margin-left: 4px;
+    }
+  }
+</style>

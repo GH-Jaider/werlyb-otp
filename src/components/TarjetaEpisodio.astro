@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import { loading } from '../lib/ddragon';
+import { partidasDe } from '../lib/partidas';
 
 interface Props {
   episodio: CollectionEntry<'episodios'>;
@@ -29,13 +30,20 @@ if (fechas.length === 1) {
   fechaCorta = fmt(fechas[0]);
 }
 
-const balance =
-  d.victorias != null && d.derrotas != null ? `${d.victorias}V–${d.derrotas}D` : null;
+// Stats: lo manual del frontmatter manda; si no, las partidas bajadas de Riot
+const datosRiot = partidasDe(episodio.id);
+const resumen = datosRiot && datosRiot.resumen.partidas > 0 ? datosRiot.resumen : null;
+const partidasN = d.partidas ?? resumen?.partidas ?? null;
+const victorias = d.victorias ?? resumen?.victorias ?? null;
+const derrotas = d.derrotas ?? resumen?.derrotas ?? null;
+const kdaArco = d.kda ?? resumen?.kda ?? null;
+
+const balance = victorias != null && derrotas != null ? `${victorias}V–${derrotas}D` : null;
 
 const statsJuego = [
-  d.partidas != null ? `${d.partidas} partidas` : null,
+  partidasN != null ? `${partidasN} partidas` : null,
   balance,
-  d.kda != null ? `${d.kda.toFixed(1)} KDA` : null,
+  kdaArco != null ? `${kdaArco.toFixed(1)} KDA` : null,
 ]
   .filter(Boolean)
   .join(' · ');

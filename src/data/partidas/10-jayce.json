@@ -1,0 +1,694 @@
+{
+  "actualizado": "2026-08-11T00:47:22.491Z",
+  "ddragon": "16.15.1",
+  "cuentas": [
+    "illo wely#EUW"
+  ],
+  "resumen": {
+    "partidas": 11,
+    "victorias": 5,
+    "derrotas": 6,
+    "kda": 1.8
+  },
+  "partidas": [
+    {
+      "matchId": "EUW1_7893433819",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-06-20T13:33:31.614Z",
+      "duracionSeg": 1647,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 17,
+      "kills": 11,
+      "deaths": 5,
+      "assists": 9,
+      "cs": 242,
+      "items": [
+        {
+          "nombre": "Eclipse",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6692.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Espada larga",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1036.png"
+        },
+        {
+          "nombre": "Muramana",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3042.png"
+        },
+        {
+          "nombre": "Botas de rapidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+        },
+        {
+          "nombre": "Llamada del verdugo",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3123.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Visión lejana modificada",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3363.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 1
+    },
+    {
+      "matchId": "EUW1_7895624390",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-06-22T14:11:47.348Z",
+      "duracionSeg": 1579,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 15,
+      "kills": 11,
+      "deaths": 11,
+      "assists": 11,
+      "cs": 168,
+      "items": [
+        {
+          "nombre": "Martillo de guerra de Caulfield",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3133.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Filo de la noche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3814.png"
+        },
+        null,
+        {
+          "nombre": "Senda inmortal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3168.png"
+        },
+        {
+          "nombre": "Espada ciclovoltaica",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6699.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Visión lejana modificada",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3363.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Electrocutar",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/Electrocute/Electrocute.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 2
+    },
+    {
+      "matchId": "EUW1_7895665258",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-06-22T14:52:20.514Z",
+      "duracionSeg": 2187,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 18,
+      "kills": 9,
+      "deaths": 15,
+      "assists": 15,
+      "cs": 257,
+      "items": [
+        {
+          "nombre": "Recordatorio letal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3033.png"
+        },
+        {
+          "nombre": "Espada ciclovoltaica",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6699.png"
+        },
+        {
+          "nombre": "Sello de acero",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2019.png"
+        },
+        {
+          "nombre": "Senda inmortal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3168.png"
+        },
+        {
+          "nombre": "Eclipse",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6692.png"
+        },
+        {
+          "nombre": "Filo de la noche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3814.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Electrocutar",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/Electrocute/Electrocute.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 3
+    },
+    {
+      "matchId": "EUW1_7895724644",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-06-22T15:44:37.510Z",
+      "duracionSeg": 1427,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 15,
+      "kills": 7,
+      "deaths": 2,
+      "assists": 1,
+      "cs": 213,
+      "items": [
+        {
+          "nombre": "Espada de Doran",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1055.png"
+        },
+        {
+          "nombre": "Espada larga",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1036.png"
+        },
+        {
+          "nombre": "Eclipse",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6692.png"
+        },
+        {
+          "nombre": "Avance blindado",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3174.png"
+        },
+        {
+          "nombre": "Llamada del verdugo",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3123.png"
+        },
+        {
+          "nombre": "Espada ciclovoltaica",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6699.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 4
+    },
+    {
+      "matchId": "EUW1_7895762792",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-06-22T16:18:21.482Z",
+      "duracionSeg": 2226,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 16,
+      "kills": 9,
+      "deaths": 15,
+      "assists": 5,
+      "cs": 239,
+      "items": [
+        {
+          "nombre": "Filo de la noche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3814.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Rencor de Serylda",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6694.png"
+        },
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3161.png"
+        },
+        {
+          "nombre": "Marcha veloz",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3170.png"
+        },
+        {
+          "nombre": "Daga dentada",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3134.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Electrocutar",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/Electrocute/Electrocute.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 5
+    },
+    {
+      "matchId": "EUW1_7905519360",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-01T16:53:34.713Z",
+      "duracionSeg": 951,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 10,
+      "kills": 2,
+      "deaths": 8,
+      "assists": 1,
+      "cs": 87,
+      "items": [
+        {
+          "nombre": "Espada de Doran",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1055.png"
+        },
+        {
+          "nombre": "Eclipse",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6692.png"
+        },
+        {
+          "nombre": "Botas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1001.png"
+        },
+        {
+          "nombre": "Espada larga",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1036.png"
+        },
+        {
+          "nombre": "Lágrima de la diosa",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3070.png"
+        },
+        {
+          "nombre": "Espada larga",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1036.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 6
+    },
+    {
+      "matchId": "EUW1_7905551514",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-01T17:16:11.298Z",
+      "duracionSeg": 1770,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 17,
+      "kills": 7,
+      "deaths": 4,
+      "assists": 4,
+      "cs": 270,
+      "items": [
+        {
+          "nombre": "Espada ciclovoltaica",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6699.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Quiebrabastiones",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2520.png"
+        },
+        {
+          "nombre": "Colmillo de serpiente",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6695.png"
+        },
+        {
+          "nombre": "Últimas palabras",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3035.png"
+        },
+        {
+          "nombre": "Filo de la noche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3814.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Primer golpe",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 7
+    },
+    {
+      "matchId": "EUW1_7905588963",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-01T17:52:00.680Z",
+      "duracionSeg": 1775,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 17,
+      "kills": 14,
+      "deaths": 10,
+      "assists": 13,
+      "cs": 210,
+      "items": [
+        {
+          "nombre": "Filo de la noche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3814.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Eclipse",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6692.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Guja sombría",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3179.png"
+        },
+        {
+          "nombre": "Sorbemaleficios",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3155.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Primer golpe",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 8
+    },
+    {
+      "matchId": "EUW1_7905639545",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-01T18:28:07.402Z",
+      "duracionSeg": 2229,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 10,
+      "deaths": 11,
+      "assists": 12,
+      "cs": 241,
+      "items": [
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3161.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Filo de la noche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3814.png"
+        },
+        {
+          "nombre": "Eclipse",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6692.png"
+        },
+        {
+          "nombre": "Sorbemaleficios",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3155.png"
+        },
+        {
+          "nombre": "Botas de rapidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 9
+    },
+    {
+      "matchId": "EUW1_7905699519",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-01T19:10:40.214Z",
+      "duracionSeg": 1711,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 14,
+      "kills": 7,
+      "deaths": 8,
+      "assists": 7,
+      "cs": 152,
+      "items": [
+        {
+          "nombre": "Filo de la noche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3814.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Espada larga",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1036.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Quiebrabastiones",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2520.png"
+        },
+        {
+          "nombre": "Últimas palabras",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3035.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Primer golpe",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 10
+    },
+    {
+      "matchId": "EUW1_7905748859",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-01T19:45:27.517Z",
+      "duracionSeg": 2068,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 16,
+      "kills": 12,
+      "deaths": 12,
+      "assists": 5,
+      "cs": 249,
+      "items": [
+        {
+          "nombre": "Fauces de Malmortius",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3156.png"
+        },
+        {
+          "nombre": "Trituradoras encadenadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3173.png"
+        },
+        {
+          "nombre": "Tuneladora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2021.png"
+        },
+        {
+          "nombre": "Filo de la noche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3814.png"
+        },
+        {
+          "nombre": "Espada ciclovoltaica",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6699.png"
+        },
+        {
+          "nombre": "Rencor de Serylda",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6694.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Electrocutar",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/Electrocute/Electrocute.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Precisión",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
+      },
+      "n": 11
+    }
+  ]
+}

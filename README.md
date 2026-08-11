@@ -58,6 +58,28 @@ para Wukong, `Fiddlesticks` sin mayúscula intermedia…).
 Los campeones "que suenan" de la sección **Pide tu OTP** y los enlaces de redes se editan
 en `src/data/serie.ts`.
 
+## Partidas (API de Riot)
+
+Las partidas de cada arco se bajan de la API oficial de Riot y quedan guardadas como JSON
+en `src/data/partidas/` — la web sigue siendo estática y no depende de que la key viva.
+
+```bash
+RIOT_API_KEY=RGAPI-... npm run partidas
+```
+
+- Las cuentas de Werlyb se listan en `src/data/cuentas.json` (Riot ID + región de routing).
+- El script toma la ventana de fechas de los vídeos de cada arco (con margen), filtra por el
+  campeón y descarta remakes. Los iconos de ítems/runas/hechizos quedan resueltos a URLs de
+  Data Dragon dentro del JSON.
+- En las páginas de episodio, los campos manuales del frontmatter (`partidas`, `victorias`…)
+  mandan sobre lo descargado, por si hay que corregir algo a mano.
+- La key se pasa SIEMPRE por variable de entorno; nunca se guarda en el repo.
+
+Para la actualización automática nocturna: sube el repo a GitHub, crea el secret
+`RIOT_API_KEY` (con una **Personal App Key**, que no caduca) y el workflow
+`.github/workflows/partidas.yml` hace el resto — si hay partidas nuevas, committea y
+Vercel redespliega solo.
+
 ## Desarrollo
 
 ```bash

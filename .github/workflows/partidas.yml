@@ -1,0 +1,38 @@
+# Actualiza las partidas de la serie cada noche con la API de Riot.
+# Requiere el secret RIOT_API_KEY (una Personal App Key, que no caduca).
+# Si hay partidas nuevas, committea y Vercel redespliega solo.
+name: Actualizar partidas
+
+on:
+  schedule:
+    - cron: '0 4 * * *' # 04:00 UTC, cada día
+  workflow_dispatch: {}
+
+jobs:
+  partidas:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Bajar partidas de la API de Riot
+        run: node scripts/partidas.mjs
+        env:
+          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
+
+      - name: Commit si hay cambios
+        run: |
+          git config user.name "werlyb-otp-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/partidas
+          if git diff --cached --quiet; then
+            echo "Sin partidas nuevas."
+          else
+            git commit -m "Partidas actualizadas ($(date -u +%F))"
+            git push
+          fi

@@ -1,0 +1,325 @@
+{
+  "actualizado": "2026-08-11T00:46:36.510Z",
+  "ddragon": "16.15.1",
+  "cuentas": [
+    "illo wely#EUW"
+  ],
+  "resumen": {
+    "partidas": 5,
+    "victorias": 2,
+    "derrotas": 3,
+    "kda": 2.7
+  },
+  "partidas": [
+    {
+      "matchId": "EUW1_7894444138",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-06-21T12:17:49.364Z",
+      "duracionSeg": 1941,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 14,
+      "kills": 5,
+      "deaths": 11,
+      "assists": 14,
+      "cs": 32,
+      "items": [
+        {
+          "nombre": "Bastón de aguas fluidas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6616.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Trineo del solsticio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3876.png"
+        },
+        {
+          "nombre": "Mandato imperial",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4005.png"
+        },
+        {
+          "nombre": "Sello oscuro",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1082.png"
+        },
+        {
+          "nombre": "Ecos de Helia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6620.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Invocar a Aery",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/SummonAery/SummonAery.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 1
+    },
+    {
+      "matchId": "EUW1_7894489623",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-06-21T12:54:36.319Z",
+      "duracionSeg": 2451,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 17,
+      "kills": 0,
+      "deaths": 5,
+      "assists": 25,
+      "cs": 34,
+      "items": [
+        {
+          "nombre": "Redención",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3107.png"
+        },
+        {
+          "nombre": "Incensario ardiente",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3504.png"
+        },
+        {
+          "nombre": "Trineo del solsticio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3876.png"
+        },
+        {
+          "nombre": "Ecos de Helia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6620.png"
+        },
+        {
+          "nombre": "Códice diabólico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3108.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Extenuación",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerExhaust.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Invocar a Aery",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/SummonAery/SummonAery.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 2
+    },
+    {
+      "matchId": "EUW1_7894540809",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-06-21T13:40:16.009Z",
+      "duracionSeg": 1963,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 14,
+      "kills": 2,
+      "deaths": 10,
+      "assists": 17,
+      "cs": 41,
+      "items": [
+        {
+          "nombre": "Ecos de Helia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6620.png"
+        },
+        {
+          "nombre": "Renovación de piedra lunar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6617.png"
+        },
+        {
+          "nombre": "Trineo del solsticio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3876.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Bastón de aguas fluidas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6616.png"
+        },
+        {
+          "nombre": "Códice diabólico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3108.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Invocar a Aery",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/SummonAery/SummonAery.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 3
+    },
+    {
+      "matchId": "EUW1_7894588711",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-06-21T14:18:46.902Z",
+      "duracionSeg": 2109,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 15,
+      "kills": 1,
+      "deaths": 10,
+      "assists": 17,
+      "cs": 21,
+      "items": [
+        {
+          "nombre": "Eco de Luden",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6655.png"
+        },
+        {
+          "nombre": "Brazalete quebrado",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2421.png"
+        },
+        {
+          "nombre": "Perforaplanos de Zaz'Zak",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3871.png"
+        },
+        {
+          "nombre": "Incensario ardiente",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3504.png"
+        },
+        {
+          "nombre": "Botas de hechicero",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3020.png"
+        },
+        {
+          "nombre": "Orbe del olvido",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3916.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Invocar a Aery",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/SummonAery/SummonAery.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 4
+    },
+    {
+      "matchId": "EUW1_7894640657",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-06-21T14:58:14.281Z",
+      "duracionSeg": 1480,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 13,
+      "kills": 6,
+      "deaths": 2,
+      "assists": 14,
+      "cs": 32,
+      "items": [
+        {
+          "nombre": "Vara innecesariamente grande",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1058.png"
+        },
+        {
+          "nombre": "Vara innecesariamente grande",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1058.png"
+        },
+        {
+          "nombre": "Perforaplanos de Zaz'Zak",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3871.png"
+        },
+        {
+          "nombre": "Eco de Luden",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6655.png"
+        },
+        {
+          "nombre": "Robaalmas de Mejai",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3041.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Invocar a Aery",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/SummonAery/SummonAery.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 5
+    }
+  ]
+}

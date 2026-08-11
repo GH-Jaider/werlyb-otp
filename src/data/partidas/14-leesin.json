@@ -1,0 +1,558 @@
+{
+  "actualizado": "2026-08-11T00:49:47.986Z",
+  "ddragon": "16.15.1",
+  "cuentas": [
+    "illo wely#EUW"
+  ],
+  "resumen": {
+    "partidas": 9,
+    "victorias": 6,
+    "derrotas": 3,
+    "kda": 2.3
+  },
+  "partidas": [
+    {
+      "matchId": "EUW1_7920327884",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-16T16:23:25.675Z",
+      "duracionSeg": 1312,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 11,
+      "kills": 2,
+      "deaths": 10,
+      "assists": 4,
+      "cs": 109,
+      "items": [
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+        },
+        {
+          "nombre": "Firmamento desgarrado",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+        },
+        {
+          "nombre": "Cristal de rubí",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1028.png"
+        },
+        null,
+        {
+          "nombre": "Calzado ligeramente mágico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2422.png"
+        },
+        null
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 1
+    },
+    {
+      "matchId": "EUW1_7920359685",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-16T16:51:57.288Z",
+      "duracionSeg": 2002,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 12,
+      "deaths": 9,
+      "assists": 12,
+      "cs": 215,
+      "items": [
+        {
+          "nombre": "Soberbia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6697.png"
+        },
+        {
+          "nombre": "Firmamento desgarrado",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+        },
+        {
+          "nombre": "Ángel de la guarda",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3026.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+        },
+        null
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 2
+    },
+    {
+      "matchId": "EUW1_7920399146",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-16T17:30:06.795Z",
+      "duracionSeg": 921,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 11,
+      "kills": 7,
+      "deaths": 3,
+      "assists": 5,
+      "cs": 103,
+      "items": [
+        null,
+        {
+          "nombre": "Soberbia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6697.png"
+        },
+        {
+          "nombre": "Guardián de control",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+        },
+        {
+          "nombre": "Calzado ligeramente mágico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2422.png"
+        },
+        {
+          "nombre": "Tuneladora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2021.png"
+        },
+        {
+          "nombre": "Martillo de guerra de Caulfield",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3133.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 3
+    },
+    {
+      "matchId": "EUW1_7920427642",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-16T17:49:23.109Z",
+      "duracionSeg": 2046,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 6,
+      "deaths": 11,
+      "assists": 18,
+      "cs": 215,
+      "items": [
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+        },
+        {
+          "nombre": "Soberbia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6697.png"
+        },
+        {
+          "nombre": "Guardián de control",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Firmamento desgarrado",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+        },
+        {
+          "nombre": "Rostro espiritual",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3065.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 4
+    },
+    {
+      "matchId": "EUW1_7920686965",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-16T20:59:15.954Z",
+      "duracionSeg": 1868,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 19,
+      "kills": 13,
+      "deaths": 6,
+      "assists": 16,
+      "cs": 215,
+      "items": [
+        {
+          "nombre": "Colmillo de serpiente",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6695.png"
+        },
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2517.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Eclipse",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6692.png"
+        },
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+        },
+        {
+          "nombre": "Hábito del espectro",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3211.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Extenuación",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerExhaust.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 5
+    },
+    {
+      "matchId": "EUW1_7920772866",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-16T22:06:05.135Z",
+      "duracionSeg": 1905,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 5,
+      "deaths": 6,
+      "assists": 8,
+      "cs": 235,
+      "items": [
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+        },
+        {
+          "nombre": "Eclipse",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6692.png"
+        },
+        null,
+        {
+          "nombre": "Fauces de Malmortius",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3156.png"
+        },
+        {
+          "nombre": "Botas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1001.png"
+        },
+        {
+          "nombre": "Firmamento desgarrado",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Extenuación",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerExhaust.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 6
+    },
+    {
+      "matchId": "EUW1_7920808010",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-16T22:41:46.469Z",
+      "duracionSeg": 1591,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 14,
+      "kills": 8,
+      "deaths": 9,
+      "assists": 7,
+      "cs": 142,
+      "items": [
+        {
+          "nombre": "Espada de Doran",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1055.png"
+        },
+        {
+          "nombre": "Eclipse",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6692.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Firmamento desgarrado",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+        },
+        {
+          "nombre": "Armadura de tela",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1029.png"
+        },
+        {
+          "nombre": "Sorbemaleficios",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3155.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Extenuación",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerExhaust.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 7
+    },
+    {
+      "matchId": "EUW1_7924517706",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-20T18:01:56.373Z",
+      "duracionSeg": 825,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 11,
+      "kills": 1,
+      "deaths": 2,
+      "assists": 2,
+      "cs": 125,
+      "items": [
+        {
+          "nombre": "Escudo de Doran",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1054.png"
+        },
+        {
+          "nombre": "Hidra voraz",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3074.png"
+        },
+        {
+          "nombre": "Pico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1037.png"
+        },
+        {
+          "nombre": "Espada larga",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1036.png"
+        },
+        {
+          "nombre": "Preferencia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1083.png"
+        },
+        {
+          "nombre": "Botas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1001.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Extenuación",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerExhaust.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 8
+    },
+    {
+      "matchId": "EUW1_7925445406",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-21T17:05:26.582Z",
+      "duracionSeg": 1813,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 18,
+      "kills": 11,
+      "deaths": 5,
+      "assists": 2,
+      "cs": 253,
+      "items": [
+        {
+          "nombre": "Ángel de la guarda",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3026.png"
+        },
+        {
+          "nombre": "Eclipse",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6692.png"
+        },
+        {
+          "nombre": "Martillo de guerra de Caulfield",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3133.png"
+        },
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Firmamento desgarrado",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Extenuación",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerExhaust.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 9
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+/**
+ * Backfill de partidas de la serie desde la API oficial de Riot (Match-V5).
+ *
+ * Uso:  RIOT_API_KEY=RGAPI-... node scripts/partidas.mjs
+ *
+ * Por cada episodio (src/content/episodios/*.md) toma la ventana de fechas de
+ * sus vídeos (con margen), baja las partidas de las cuentas de
+ * src/data/cuentas.json, filtra por el campeón del arco y guarda un JSON en
+ * src/data/partidas/<episodio>.json con las URLs de iconos ya resueltas
+ * (Data Dragon), para que la web siga siendo 100 % estática.
+ *
+ * La key NUNCA se guarda en el repo: solo viaja por variable de entorno.
+ */
+import { readFile, readdir, writeFile, mkdir } from 'node:fs/promises';
+import path from 'node:path';
+
+const API_KEY = process.env.RIOT_API_KEY;
+if (!API_KEY) {
+  console.error('Falta RIOT_API_KEY. Uso: RIOT_API_KEY=RGAPI-... node scripts/partidas.mjs');
+  process.exit(1);
+}
+
+const RAIZ = path.resolve(import.meta.dirname, '..');
+const DIR_EPISODIOS = path.join(RAIZ, 'src/content/episodios');
+const DIR_SALIDA = path.join(RAIZ, 'src/data/partidas');
+const CUENTAS = JSON.parse(await readFile(path.join(RAIZ, 'src/data/cuentas.json'), 'utf8'));
+
+const MARGEN_ANTES_DIAS = 5; // los vídeos se publican días después de jugarse
+const MARGEN_DESPUES_DIAS = 2;
+
+const COLAS = {
+  420: 'SoloQ',
+  440: 'Flex',
+  400: 'Normal',
+  430: 'Normal',
+  450: 'ARAM',
+  490: 'Quickplay',
+  700: 'Clash',
+};
+
+// ── Rate limiter: la key de desarrollo permite 100 peticiones / 2 min ──
+let ultimaPeticion = 0;
+const INTERVALO_MS = 1350; // ~89 peticiones / 2 min, con colchón
+
+async function riot(url, intento = 0) {
+  const espera = ultimaPeticion + INTERVALO_MS - Date.now();
+  if (espera > 0) await new Promise((r) => setTimeout(r, espera));
+  ultimaPeticion = Date.now();
+
+  const res = await fetch(url, { headers: { 'X-Riot-Token': API_KEY } });
+  if (res.status === 429 && intento < 5) {
+    const retry = Number(res.headers.get('retry-after') ?? 10);
+    console.log(`  · 429, esperando ${retry}s…`);
+    await new Promise((r) => setTimeout(r, (retry + 1) * 1000));
+    return riot(url, intento + 1);
+  }
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`Riot ${res.status} en ${url}`);
+  return res.json();
+}
+
+// ── Data Dragon: mapas de iconos (una sola vez, sin key) ──
+async function ddragon(url) {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`ddragon ${res.status} en ${url}`);
+  return res.json();
+}
+
+const versiones = await ddragon('https://ddragon.leagueoflegends.com/api/versions.json');
+const V = versiones[0];
+const CDN = 'https://ddragon.leagueoflegends.com/cdn';
+
+const hechizosData = await ddragon(`${CDN}/${V}/data/es_ES/summoner.json`);
+const hechizoPorClave = {}; // 4 -> { nombre: "Flash", icono: url }
+for (const h of Object.values(hechizosData.data)) {
+  hechizoPorClave[h.key] = { nombre: h.name, icono: `${CDN}/${V}/img/spell/${h.id}.png` };
+}
+
+const runasData = await ddragon(`${CDN}/${V}/data/es_ES/runesReforged.json`);
+const runaPorId = {}; // perkId/styleId -> { nombre, icono }
+for (const estilo of runasData) {
+  runaPorId[estilo.id] = { nombre: estilo.name, icono: `${CDN}/img/${estilo.icon}` };
+  for (const fila of estilo.slots) {
+    for (const runa of fila.runes) {
+      runaPorId[runa.id] = { nombre: runa.name, icono: `${CDN}/img/${runa.icon}` };
+    }
+  }
+}
+
+const itemsData = await ddragon(`${CDN}/${V}/data/es_ES/item.json`);
+const itemPorId = {}; // 3153 -> { nombre, icono }
+for (const [id, item] of Object.entries(itemsData.data)) {
+  itemPorId[id] = { nombre: item.name, icono: `${CDN}/${V}/img/item/${id}.png` };
+}
+
+// ── Episodios: parseo mínimo del frontmatter que necesitamos ──
+async function leerEpisodios() {
+  const archivos = (await readdir(DIR_EPISODIOS)).filter((f) => f.endsWith('.md'));
+  const episodios = [];
+  for (const archivo of archivos) {
+    const crudo = await readFile(path.join(DIR_EPISODIOS, archivo), 'utf8');
+    const campeon = crudo.match(/^campeon:\s*(\S+)/m)?.[1];
+    const fechas = [...crudo.matchAll(/fecha:\s*(\d{4}-\d{2}-\d{2})/g)].map((m) => m[1]).sort();
+    if (!campeon || fechas.length === 0) continue;
+    episodios.push({ id: archivo.replace(/\.md$/, ''), campeon, fechas });
+  }
+  return episodios.sort((a, b) => a.id.localeCompare(b.id));
+}
+
+// ── Cuentas → puuid ──
+const cuentas = [];
+for (const c of CUENTAS) {
+  const [nombre, tag] = c.riotId.split('#');
+  const cuenta = await riot(
+    `https://${c.region}.api.riotgames.com/riot/account/v1/accounts/by-riot-id/${encodeURIComponent(nombre)}/${encodeURIComponent(tag)}`,
+  );
+  if (!cuenta) {
+    console.warn(`⚠ Cuenta no encontrada: ${c.riotId}`);
+    continue;
+  }
+  cuentas.push({ ...c, puuid: cuenta.puuid });
+  console.log(`Cuenta OK: ${c.riotId}`);
+}
+if (cuentas.length === 0) {
+  console.error('Ninguna cuenta válida.');
+  process.exit(1);
+}
+
+// ── Backfill ──
+const cacheDetalles = new Map(); // matchId -> detalle (ventanas solapadas)
+await mkdir(DIR_SALIDA, { recursive: true });
+
+const DIA_MS = 24 * 60 * 60 * 1000;
+const episodios = await leerEpisodios();
+console.log(`${episodios.length} episodios con fechas\n`);
+
+for (const ep of episodios) {
+  const desde = Math.floor((Date.parse(ep.fechas[0]) - MARGEN_ANTES_DIAS * DIA_MS) / 1000);
+  const hasta = Math.floor(
+    (Date.parse(ep.fechas[ep.fechas.length - 1]) + (MARGEN_DESPUES_DIAS + 1) * DIA_MS) / 1000,
+  );
+  console.log(`── ${ep.id} (${ep.campeon}) · ${ep.fechas[0]} → ${ep.fechas[ep.fechas.length - 1]}`);
+
+  const partidas = [];
+  for (const cuenta of cuentas) {
+    let inicio = 0;
+    while (true) {
+      const ids = await riot(
+        `https://${cuenta.region}.api.riotgames.com/lol/match/v5/matches/by-puuid/${cuenta.puuid}/ids?startTime=${desde}&endTime=${hasta}&start=${inicio}&count=100`,
+      );
+      if (!ids || ids.length === 0) break;
+
+      for (const matchId of ids) {
+        let detalle = cacheDetalles.get(matchId);
+        if (detalle === undefined) {
+          detalle = await riot(
+            `https://${cuenta.region}.api.riotgames.com/lol/match/v5/matches/${matchId}`,
+          );
+          cacheDetalles.set(matchId, detalle);
+        }
+        if (!detalle) continue;
+
+        const p = detalle.info.participants.find((x) => x.puuid === cuenta.puuid);
+        if (!p || p.championName !== ep.campeon) continue;
+        if (detalle.info.gameDuration < 300) continue; // remakes fuera
+
+        const items = [p.item0, p.item1, p.item2, p.item3, p.item4, p.item5]
+          .map((id) => (id > 0 ? (itemPorId[id] ?? null) : null));
+        const trinket = p.item6 > 0 ? (itemPorId[p.item6] ?? null) : null;
+        const claveRuna = p.perks?.styles?.[0]?.selections?.[0]?.perk;
+        const estiloSec = p.perks?.styles?.[1]?.style;
+
+        partidas.push({
+          matchId,
+          cuenta: cuenta.riotId,
+          inicio: new Date(detalle.info.gameStartTimestamp).toISOString(),
+          duracionSeg: detalle.info.gameDuration,
+          cola: COLAS[detalle.info.queueId] ?? 'Otra cola',
+          victoria: p.win,
+          nivel: p.champLevel,
+          kills: p.kills,
+          deaths: p.deaths,
+          assists: p.assists,
+          cs: p.totalMinionsKilled + p.neutralMinionsKilled,
+          items,
+          trinket,
+          hechizos: [p.summoner1Id, p.summoner2Id].map((k) => hechizoPorClave[k] ?? null),
+          runaPrincipal: claveRuna ? (runaPorId[claveRuna] ?? null) : null,
+          estiloSecundario: estiloSec ? (runaPorId[estiloSec] ?? null) : null,
+        });
+      }
+      if (ids.length < 100) break;
+      inicio += 100;
+    }
+  }
+
+  partidas.sort((a, b) => a.inicio.localeCompare(b.inicio));
+  partidas.forEach((p, i) => (p.n = i + 1));
+
+  const victorias = partidas.filter((p) => p.victoria).length;
+  const kills = partidas.reduce((s, p) => s + p.kills, 0);
+  const deaths = partidas.reduce((s, p) => s + p.deaths, 0);
+  const assists = partidas.reduce((s, p) => s + p.assists, 0);
+
+  const salida = {
+    actualizado: new Date().toISOString(),
+    ddragon: V,
+    cuentas: cuentas.map((c) => c.riotId),
+    resumen: {
+      partidas: partidas.length,
+      victorias,
+      derrotas: partidas.length - victorias,
+      kda: deaths > 0 ? Number(((kills + assists) / deaths).toFixed(1)) : kills + assists,
+    },
+    partidas,
+  };
+
+  await writeFile(path.join(DIR_SALIDA, `${ep.id}.json`), JSON.stringify(salida, null, 2));
+  console.log(`   ${partidas.length} partidas (${victorias}V–${partidas.length - victorias}D)\n`);
+}
+
+console.log('Backfill completo.');

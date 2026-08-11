@@ -1,0 +1,617 @@
+{
+  "actualizado": "2026-08-11T00:48:11.349Z",
+  "ddragon": "16.15.1",
+  "cuentas": [
+    "illo wely#EUW"
+  ],
+  "resumen": {
+    "partidas": 10,
+    "victorias": 8,
+    "derrotas": 2,
+    "kda": 3.7
+  },
+  "partidas": [
+    {
+      "matchId": "EUW1_7910466928",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-06T13:44:41.254Z",
+      "duracionSeg": 1124,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 12,
+      "kills": 2,
+      "deaths": 2,
+      "assists": 6,
+      "cs": 127,
+      "items": [
+        null,
+        {
+          "nombre": "Arnés de protoplasma",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2525.png"
+        },
+        {
+          "nombre": "Brillo",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3057.png"
+        },
+        {
+          "nombre": "Chaleco de cadenas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1031.png"
+        },
+        {
+          "nombre": "Calzado ligeramente mágico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2422.png"
+        },
+        {
+          "nombre": "Cristal de rubí",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1028.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Pies veloces",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 1
+    },
+    {
+      "matchId": "EUW1_7910485185",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-06T14:07:20.164Z",
+      "duracionSeg": 925,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 8,
+      "kills": 0,
+      "deaths": 7,
+      "assists": 1,
+      "cs": 64,
+      "items": [
+        {
+          "nombre": "Cría de Caminabrisas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1102.png"
+        },
+        {
+          "nombre": "Arnés de protoplasma",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2525.png"
+        },
+        {
+          "nombre": "Manto de anulación de magia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1033.png"
+        },
+        {
+          "nombre": "Calzado ligeramente mágico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2422.png"
+        },
+        null,
+        null
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Pies veloces",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 2
+    },
+    {
+      "matchId": "EUW1_7910507514",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-06T14:26:51.200Z",
+      "duracionSeg": 1671,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 17,
+      "kills": 12,
+      "deaths": 0,
+      "assists": 11,
+      "cs": 249,
+      "items": [
+        {
+          "nombre": "Botas de mercurio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3111.png"
+        },
+        {
+          "nombre": "Arnés de protoplasma",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2525.png"
+        },
+        {
+          "nombre": "Rostro espiritual",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3065.png"
+        },
+        {
+          "nombre": "Armadura lunar alada",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3066.png"
+        },
+        {
+          "nombre": "Jak'Sho el Proteico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6665.png"
+        },
+        {
+          "nombre": "Fuerza de trinidad",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Pies veloces",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 3
+    },
+    {
+      "matchId": "EUW1_7910537626",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-06T14:59:59.045Z",
+      "duracionSeg": 1386,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 15,
+      "kills": 11,
+      "deaths": 1,
+      "assists": 5,
+      "cs": 188,
+      "items": [
+        {
+          "nombre": "Recordatorio letal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3033.png"
+        },
+        {
+          "nombre": "Fuerza de trinidad",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+        },
+        {
+          "nombre": "Guardián de control",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+        },
+        {
+          "nombre": "Filo infinito",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3031.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        null
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Pies veloces",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 4
+    },
+    {
+      "matchId": "EUW1_7910564804",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-06T15:27:19.853Z",
+      "duracionSeg": 1866,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 16,
+      "kills": 3,
+      "deaths": 7,
+      "assists": 11,
+      "cs": 193,
+      "items": [
+        {
+          "nombre": "Fuerza de trinidad",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+        },
+        {
+          "nombre": "Arnés de protoplasma",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2525.png"
+        },
+        {
+          "nombre": "Chaleco de zarzas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3076.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Rostro espiritual",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3065.png"
+        },
+        {
+          "nombre": "Cristal de rubí",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1028.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Pies veloces",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 5
+    },
+    {
+      "matchId": "EUW1_7910604771",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-06T16:04:31.810Z",
+      "duracionSeg": 1631,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 16,
+      "kills": 8,
+      "deaths": 10,
+      "assists": 4,
+      "cs": 195,
+      "items": [
+        {
+          "nombre": "Arcoescudo inmortal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6673.png"
+        },
+        {
+          "nombre": "Segador de esencia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3508.png"
+        },
+        {
+          "nombre": "Rostro espiritual",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3065.png"
+        },
+        {
+          "nombre": "Botas de mercurio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3111.png"
+        },
+        null,
+        null
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Pies veloces",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 6
+    },
+    {
+      "matchId": "EUW1_7910637268",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-06T16:37:06.550Z",
+      "duracionSeg": 1533,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 16,
+      "kills": 3,
+      "deaths": 4,
+      "assists": 10,
+      "cs": 205,
+      "items": [
+        {
+          "nombre": "Arnés de protoplasma",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2525.png"
+        },
+        {
+          "nombre": "Guantelete de hielo",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6662.png"
+        },
+        {
+          "nombre": "Rostro espiritual",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3065.png"
+        },
+        {
+          "nombre": "Malla del guardián",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3082.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Armadura de tela",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1029.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Pies veloces",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 7
+    },
+    {
+      "matchId": "EUW1_7910673313",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-06T17:07:40.317Z",
+      "duracionSeg": 1459,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 15,
+      "kills": 12,
+      "deaths": 2,
+      "assists": 3,
+      "cs": 180,
+      "items": [
+        {
+          "nombre": "Corazón de hielo",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3110.png"
+        },
+        {
+          "nombre": "Arnés de protoplasma",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2525.png"
+        },
+        {
+          "nombre": "Fuerza de trinidad",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+        },
+        {
+          "nombre": "Rostro espiritual",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3065.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Cristal de rubí",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1028.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Pies veloces",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 8
+    },
+    {
+      "matchId": "EUW1_7910716511",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-06T17:40:21.585Z",
+      "duracionSeg": 2181,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 11,
+      "deaths": 6,
+      "assists": 22,
+      "cs": 229,
+      "items": [
+        {
+          "nombre": "Coraza del muerto",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3742.png"
+        },
+        {
+          "nombre": "Arnés de protoplasma",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2525.png"
+        },
+        {
+          "nombre": "Fuerza de trinidad",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+        },
+        {
+          "nombre": "Corazón de hielo",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3110.png"
+        },
+        {
+          "nombre": "Botas de rapidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+        },
+        {
+          "nombre": "Rostro espiritual",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3065.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Pies veloces",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 9
+    },
+    {
+      "matchId": "EUW1_7912416060",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-08T14:01:25.686Z",
+      "duracionSeg": 1835,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 17,
+      "kills": 16,
+      "deaths": 3,
+      "assists": 5,
+      "cs": 215,
+      "items": [
+        {
+          "nombre": "Fuerza de trinidad",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+        },
+        {
+          "nombre": "Jak'Sho el Proteico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6665.png"
+        },
+        {
+          "nombre": "Rostro espiritual",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3065.png"
+        },
+        {
+          "nombre": "Arnés de protoplasma",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2525.png"
+        },
+        {
+          "nombre": "Botas de mercurio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3111.png"
+        },
+        {
+          "nombre": "Armadura de tela",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1029.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Pies veloces",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 10
+    }
+  ]
+}

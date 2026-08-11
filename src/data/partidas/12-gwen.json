@@ -1,0 +1,620 @@
+{
+  "actualizado": "2026-08-11T00:48:50.541Z",
+  "ddragon": "16.15.1",
+  "cuentas": [
+    "illo wely#EUW"
+  ],
+  "resumen": {
+    "partidas": 10,
+    "victorias": 7,
+    "derrotas": 3,
+    "kda": 1.9
+  },
+  "partidas": [
+    {
+      "matchId": "EUW1_7913448255",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-09T15:09:42.221Z",
+      "duracionSeg": 2169,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 9,
+      "deaths": 9,
+      "assists": 7,
+      "cs": 304,
+      "items": [
+        {
+          "nombre": "Botas del lanzahechizos",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+        },
+        {
+          "nombre": "Perdición del liche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+        },
+        {
+          "nombre": "Bastón del Vacío",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3135.png"
+        },
+        {
+          "nombre": "Sombrero mortal de Rabadon",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+        },
+        {
+          "nombre": "Llamasombría",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+        },
+        {
+          "nombre": "Puñal de Statikk",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3087.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Primer golpe",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 1
+    },
+    {
+      "matchId": "EUW1_7913545863",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-09T16:43:19.583Z",
+      "duracionSeg": 1370,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 12,
+      "kills": 2,
+      "deaths": 7,
+      "assists": 2,
+      "cs": 151,
+      "items": [
+        {
+          "nombre": "Perdición del liche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+        },
+        {
+          "nombre": "Botas del lanzahechizos",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+        },
+        {
+          "nombre": "Llamasombría",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+        },
+        null,
+        null,
+        null
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Primer golpe",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 2
+    },
+    {
+      "matchId": "EUW1_7913575088",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-09T17:11:45.877Z",
+      "duracionSeg": 1549,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 16,
+      "kills": 6,
+      "deaths": 3,
+      "assists": 3,
+      "cs": 228,
+      "items": [
+        {
+          "nombre": "Perdición del liche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+        },
+        {
+          "nombre": "Llamasombría",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+        },
+        {
+          "nombre": "Botas del lanzahechizos",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+        },
+        {
+          "nombre": "Sombrero mortal de Rabadon",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+        },
+        {
+          "nombre": "Joya de la plaga",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4630.png"
+        },
+        null
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Primer golpe",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 3
+    },
+    {
+      "matchId": "EUW1_7913607260",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-09T17:43:14.308Z",
+      "duracionSeg": 1721,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 16,
+      "kills": 5,
+      "deaths": 8,
+      "assists": 10,
+      "cs": 208,
+      "items": [
+        {
+          "nombre": "Bastón del Vacío",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3135.png"
+        },
+        {
+          "nombre": "Perdición del liche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+        },
+        null,
+        {
+          "nombre": "Botas del lanzahechizos",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+        },
+        {
+          "nombre": "Sombrero mortal de Rabadon",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+        },
+        {
+          "nombre": "Llamasombría",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Primer golpe",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 4
+    },
+    {
+      "matchId": "EUW1_7913650095",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-09T18:19:39.317Z",
+      "duracionSeg": 1536,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 16,
+      "kills": 15,
+      "deaths": 6,
+      "assists": 3,
+      "cs": 211,
+      "items": [
+        {
+          "nombre": "Sombrero mortal de Rabadon",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+        },
+        {
+          "nombre": "Perdición del liche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+        },
+        {
+          "nombre": "Botas del lanzahechizos",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+        },
+        {
+          "nombre": "Llamasombría",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+        },
+        {
+          "nombre": "Bastón del Vacío",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3135.png"
+        },
+        {
+          "nombre": "Robaalmas de Mejai",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3041.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Primer golpe",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 5
+    },
+    {
+      "matchId": "EUW1_7914385749",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-10T15:14:53.287Z",
+      "duracionSeg": 1796,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 18,
+      "deaths": 5,
+      "assists": 2,
+      "cs": 260,
+      "items": [
+        {
+          "nombre": "Perdición del liche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+        },
+        {
+          "nombre": "Llamasombría",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+        },
+        {
+          "nombre": "Bastón del Vacío",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3135.png"
+        },
+        {
+          "nombre": "Sombrero mortal de Rabadon",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+        },
+        {
+          "nombre": "Diente de Nashor",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3115.png"
+        },
+        {
+          "nombre": "Botas del lanzahechizos",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Primer golpe",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 6
+    },
+    {
+      "matchId": "EUW1_7914420914",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-10T15:51:40.900Z",
+      "duracionSeg": 1948,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 18,
+      "kills": 9,
+      "deaths": 10,
+      "assists": 6,
+      "cs": 236,
+      "items": [
+        {
+          "nombre": "Perdición del liche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+        },
+        {
+          "nombre": "Bastón del Vacío",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3135.png"
+        },
+        {
+          "nombre": "Velo del hada de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3102.png"
+        },
+        {
+          "nombre": "Llamasombría",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+        },
+        {
+          "nombre": "Sombrero mortal de Rabadon",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+        },
+        {
+          "nombre": "Botas del lanzahechizos",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Primer golpe",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 7
+    },
+    {
+      "matchId": "EUW1_7914452326",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-10T16:29:14.295Z",
+      "duracionSeg": 1510,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 13,
+      "deaths": 6,
+      "assists": 4,
+      "cs": 214,
+      "items": [
+        {
+          "nombre": "Sombrero mortal de Rabadon",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+        },
+        {
+          "nombre": "Botas del lanzahechizos",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+        },
+        {
+          "nombre": "Cintomisil hextech",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3152.png"
+        },
+        {
+          "nombre": "Perdición del liche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+        },
+        {
+          "nombre": "Llamasombría",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+        },
+        {
+          "nombre": "Vara innecesariamente grande",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1058.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Primer golpe",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 8
+    },
+    {
+      "matchId": "EUW1_7914518709",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-10T17:26:38.593Z",
+      "duracionSeg": 1807,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 17,
+      "kills": 8,
+      "deaths": 9,
+      "assists": 2,
+      "cs": 234,
+      "items": [
+        {
+          "nombre": "Perdición del liche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+        },
+        {
+          "nombre": "Brazalete de la buscadora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2420.png"
+        },
+        {
+          "nombre": "Cintomisil hextech",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3152.png"
+        },
+        {
+          "nombre": "Llamasombría",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+        },
+        {
+          "nombre": "Sombrero mortal de Rabadon",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+        },
+        {
+          "nombre": "Botas del lanzahechizos",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Primer golpe",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 9
+    },
+    {
+      "matchId": "EUW1_7914553542",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-10T18:02:49.513Z",
+      "duracionSeg": 1475,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 14,
+      "kills": 4,
+      "deaths": 4,
+      "assists": 2,
+      "cs": 197,
+      "items": [
+        {
+          "nombre": "Botas del lanzahechizos",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+        },
+        {
+          "nombre": "Perdición del liche",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+        },
+        {
+          "nombre": "Cintomisil hextech",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3152.png"
+        },
+        {
+          "nombre": "Vara innecesariamente grande",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1058.png"
+        },
+        {
+          "nombre": "Vara innecesariamente grande",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1058.png"
+        },
+        {
+          "nombre": "Tomo amplificador",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1052.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Teleportar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Primer golpe",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 10
+    }
+  ]
+}

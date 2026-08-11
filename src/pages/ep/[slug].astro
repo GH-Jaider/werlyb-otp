@@ -1,8 +1,10 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import PartidaFila from '../../components/PartidaFila.astro';
 import { SERIE } from '../../data/serie';
 import { splash } from '../../lib/ddragon';
+import { partidasDe } from '../../lib/partidas';
 import { youtubeId } from '../../lib/video';
 
 export async function getStaticPaths() {
@@ -52,9 +54,30 @@ const fechaCorta = (dt: Date) =>
     .toLocaleDateString('es-ES', { day: 'numeric', month: 'short', timeZone: 'UTC' })
     .replace(/\./g, '');
 
-const balance =
-  d.victorias != null && d.derrotas != null ? `${d.victorias}V – ${d.derrotas}D` : null;
-const hayStats = d.partidas != null || balance !== null || d.kda != null;
+// Partidas bajadas de la API de Riot; lo manual del frontmatter manda si existe
+const datos = partidasDe(episodio.id);
+const resumen = datos && datos.resumen.partidas > 0 ? datos.resumen : null;
+const partidasTotales = d.partidas ?? resumen?.partidas ?? null;
+const victorias = d.victorias ?? resumen?.victorias ?? null;
+const derrotas = d.derrotas ?? resumen?.derrotas ?? null;
+const kdaArco = d.kda ?? resumen?.kda ?? null;
+
+const balance = victorias != null && derrotas != null ? `${victorias}V – ${derrotas}D` : null;
+const hayStats = partidasTotales != null || balance !== null || kdaArco != null;
+
+const winrate =
+  resumen && resumen.partidas > 0 ? Math.round((resumen.victorias / resumen.partidas) * 100) : null;
+const actualizado = datos
+  ? new Date(datos.actualizado)
+      .toLocaleDateString('es-ES', {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric',
+        timeZone: 'Europe/Madrid',
+      })
+      .replace(/\./g, '')
+  : null;
+
 const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
 ---
 
@@ -131,6 +154,31 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
       }
 
       {
+        resumen && datos && (
+          <section class="partidas" aria-label="Partidas del arco">
+            <div class="partidas-cabecera">
+              <h2 class="etiqueta lista-titulo">
+                Las partidas · {resumen.partidas}
+              </h2>
+              <span class="partidas-resumen">
+                {resumen.victorias}V – {resumen.derrotas}D
+                {winrate != null && ` · ${winrate} % WR`} · {resumen.kda} KDA
+              </span>
+            </div>
+            <ol class="partidas-lista">
+              {datos.partidas.map((p) => (
+                <PartidaFila partida={p} />
+              ))}
+            </ol>
+            <p class="partidas-fuente">
+              Datos de la API oficial de Riot · cuenta {datos.cuentas.join(' · ')} · actualizado{' '}
+              {actualizado}
+            </p>
+          </section>
+        )
+      }
+
+      {
         hayNotas ? (
           <article class="notas">
             <h2 class="etiqueta">Notas del arco</h2>
@@ -183,10 +231,10 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
           )
         }
         {
-          d.partidas != null && (
+          partidasTotales != null && (
             <div class="fila">
               <dt class="etiqueta">Partidas</dt>
-              <dd class="dato">{d.partidas}</dd>
+              <dd class="dato">{partidasTotales}</dd>
             </div>
           )
         }
@@ -199,10 +247,10 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
           )
         }
         {
-          d.kda != null && (
+          kdaArco != null && (
             <div class="fila">
               <dt class="etiqueta">KDA</dt>
-              <dd class="dato">{d.kda.toFixed(1)}</dd>
+              <dd class="dato">{kdaArco.toFixed(1)}</dd>
             </div>
           )
         }
@@ -468,6 +516,49 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
 
   .video-fila:hover .v-ir {
     color: var(--gold);
+  }
+
+  .partidas-cabecera {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .partidas-cabecera .lista-titulo {
+    margin: 0;
+  }
+
+  .partidas-resumen {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    letter-spacing: 0.06em;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .partidas-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .partidas-lista :global(li + li) {
+    border-top: 1px solid var(--line-soft);
+  }
+
+  .partidas-fuente {
+    margin: 10px 2px 0;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--faint);
   }
 
   .notas {
