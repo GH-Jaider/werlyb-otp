@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#0a0a0c"/>
-  <rect x="1" y="1" width="62" height="62" rx="11" fill="none" stroke="#26262c" stroke-width="2"/>
-  <text x="32" y="44" text-anchor="middle" font-family="Impact, Haettenschweiler, 'Arial Black', sans-serif" font-size="26" letter-spacing="0.5" fill="#f5342b">OTP</text>
-</svg>
