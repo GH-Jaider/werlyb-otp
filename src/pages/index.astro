@@ -34,52 +34,52 @@ const formato = [
   titulo={`${SERIE.titulo} · tracker fan de la serie de Werlyb`}
   ogImage={ultimo ? splash(ultimo.data.campeon) : undefined}
 >
-  <header class="portada">
-    {
-      ultimo && (
-        <div class="arte fondo">
-          <img
-            src={splash(ultimo.data.campeon)}
-            alt=""
-            fetchpriority="high"
-            width="1215"
-            height="717"
-          />
+  <div class="inicio-pantalla">
+    <header class="portada">
+      {
+        ultimo && (
+          <div class="arte fondo">
+            <img
+              src={splash(ultimo.data.campeon)}
+              alt=""
+              fetchpriority="high"
+              width="1215"
+              height="717"
+            />
+          </div>
+        )
+      }
+      <div class="velo" aria-hidden="true"></div>
+      <div class="contenedor portada-contenido">
+        <p class="etiqueta sello">Proyecto fan · La serie de Werlyb</p>
+        <h1 class="titular grande">
+          <span>Siendo</span>
+          <span>OTP</span>
+          <span>por un día</span>
+        </h1>
+        <p class="claim">{SERIE.claim}</p>
+        <div class="chips">
+          {
+            ultimo && (
+              <a class="chip destacado" href={`/ep/${ultimo.id}/`}>
+                Último episodio · {ultimo.data.nombreCampeon} <span aria-hidden="true">→</span>
+              </a>
+            )
+          }
+          <a class="chip" href="#episodios">
+            {episodios.length} episodios <span aria-hidden="true">↓</span>
+          </a>
+          {
+            SERIE.playlist && (
+              <a class="chip" href={SERIE.playlist} rel="noopener">
+                Playlist en YouTube <span aria-hidden="true">↗</span>
+              </a>
+            )
+          }
         </div>
-      )
-    }
-    <div class="velo" aria-hidden="true"></div>
-    <div class="contenedor portada-contenido">
-      <p class="etiqueta sello">Proyecto fan · La serie de Werlyb</p>
-      <h1 class="titular grande">
-        <span>Siendo</span>
-        <span>OTP</span>
-        <span>por un día</span>
-      </h1>
-      <p class="claim">{SERIE.claim}</p>
-      <div class="chips">
-        {
-          ultimo && (
-            <a class="chip destacado" href={`/ep/${ultimo.id}/`}>
-              Último episodio · {ultimo.data.nombreCampeon} <span aria-hidden="true">→</span>
-            </a>
-          )
-        }
-        <a class="chip" href="#episodios">
-          {episodios.length} episodios <span aria-hidden="true">↓</span>
-        </a>
-        {
-          SERIE.playlist && (
-            <a class="chip" href={SERIE.playlist} rel="noopener">
-              Playlist en YouTube <span aria-hidden="true">↗</span>
-            </a>
-          )
-        }
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main id="contenido">
     <section class="contenedor formato" aria-label="El formato de la serie">
       {
         formato.map((f) => (
@@ -90,7 +90,9 @@ const formato = [
         ))
       }
     </section>
+  </div>
 
+  <main id="contenido">
     <section id="episodios" class="contenedor seccion">
       <div class="cabecera-seccion">
         <h2 class="titular seccion-titulo">El archivo</h2>
@@ -139,10 +141,18 @@ const formato = [
 </Base>
 
 <style>
-  /* ── Portada ── */
+  /* ── Primera pantalla: portada + formato llenan el viewport ── */
+  .inicio-pantalla {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100svh;
+  }
+
   .portada {
     position: relative;
-    min-height: min(92vh, 900px);
+    flex: 1;
+    min-height: 0;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
@@ -171,8 +181,8 @@ const formato = [
   .portada-contenido {
     position: relative;
     width: 100%;
-    padding-top: 18vh;
-    padding-bottom: clamp(40px, 7vh, 80px);
+    padding-top: clamp(48px, 10vh, 140px);
+    padding-bottom: clamp(28px, 5vh, 64px);
   }
 
   .sello {
@@ -181,7 +191,7 @@ const formato = [
   }
 
   .grande {
-    font-size: clamp(68px, 14.5vw, 184px);
+    font-size: clamp(52px, min(14.5vw, 16vh), 184px);
     color: var(--red);
     text-shadow: 0 0 70px rgba(245, 52, 43, 0.32);
   }
@@ -243,7 +253,8 @@ const formato = [
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: clamp(24px, 4vw, 56px);
-    padding-top: clamp(56px, 8vw, 96px);
+    padding-top: clamp(32px, 5vh, 72px);
+    padding-bottom: clamp(28px, 5vh, 64px);
   }
 
   .pieza .roja {
@@ -344,12 +355,18 @@ const formato = [
   }
 
   @media (max-width: 860px) {
+    .inicio-pantalla {
+      display: block;
+      min-height: 0;
+    }
+    .portada {
+      min-height: 100vh;
+      min-height: 100svh;
+    }
     .formato {
       grid-template-columns: 1fr;
       gap: 28px;
-    }
-    .portada {
-      min-height: 78vh;
+      padding-top: clamp(48px, 9vw, 72px);
     }
   }
 
