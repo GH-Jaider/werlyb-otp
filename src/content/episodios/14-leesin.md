@@ -3,6 +3,7 @@ orden: 14
 campeon: LeeSin
 nombreCampeon: Lee Sin
 tituloCampeon: El Monje Ciego
+acento: '#d0342c'
 coach: Josedeodo
 rolCoach: OTP de Lee Sin
 canalCoach: https://www.twitch.tv/josedeodo

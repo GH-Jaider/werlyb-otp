@@ -8,12 +8,16 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "partidas": "node scripts/partidas.mjs"
+    "partidas": "node scripts/partidas.mjs",
+    "paleta": "node scripts/paleta.mjs"
   },
   "dependencies": {
     "@fontsource/anton": "5.3.0",
     "@fontsource/archivo": "5.3.0",
     "@fontsource/ibm-plex-mono": "5.3.0",
     "astro": "7.2.0"
+  },
+  "devDependencies": {
+    "sharp": "0.35.3"
   }
 }

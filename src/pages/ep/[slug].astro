@@ -5,6 +5,7 @@ import PartidaFila from '../../components/PartidaFila.astro';
 import { SERIE } from '../../data/serie';
 import { splash } from '../../lib/ddragon';
 import { partidasDe } from '../../lib/partidas';
+import { acentoDe, ROJO_MARCA } from '../../lib/paleta';
 import { youtubeId } from '../../lib/video';
 
 export async function getStaticPaths() {
@@ -23,6 +24,20 @@ export async function getStaticPaths() {
 const { episodio, anterior, siguiente } = Astro.props;
 const d = episodio.data;
 const num = String(d.orden).padStart(2, '0');
+
+// Acento del campeón del arco; si no hay ninguno extraído ni override, el
+// rojo de marca hace de acento
+const acento = acentoDe(d.campeon, d.acento) ?? ROJO_MARCA;
+
+// Cada vecino (anterior/siguiente) lleva SU PROPIO acento, no el de esta
+// página: se empaquetan juntos para que solo haya que comprobar un valor
+// (si el vecino existe, ya trae su color resuelto)
+function vecinoCon(v: typeof anterior) {
+  if (!v) return null;
+  return { entrada: v, acento: acentoDe(v.data.campeon, v.data.acento) ?? ROJO_MARCA };
+}
+const vecinoAnterior = vecinoCon(anterior);
+const vecinoSiguiente = vecinoCon(siguiente);
 const { Content } = await render(episodio);
 const hayNotas = Boolean(episodio.body?.trim());
 
@@ -294,31 +309,39 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
 
   <nav class="contenedor vecinos" aria-label="Más episodios">
     {
-      anterior ? (
-        <a class="vecino" href={`/ep/${anterior.id}/`}>
+      vecinoAnterior ? (
+        <a
+          class="vecino"
+          href={`/ep/${vecinoAnterior.entrada.id}/`}
+          style={`--acento-vecino: ${vecinoAnterior.acento.hex}; --acento-vecino-rgb: ${vecinoAnterior.acento.rgb};`}
+        >
           <span class="etiqueta">
-            <span aria-hidden="true">←</span> EP.{String(anterior.data.orden).padStart(2, '0')}
+            <span aria-hidden="true">←</span> EP.{String(vecinoAnterior.entrada.data.orden).padStart(2, '0')}
           </span>
-          <span class="vecino-nombre titular">{anterior.data.nombreCampeon}</span>
+          <span class="vecino-nombre titular">{vecinoAnterior.entrada.data.nombreCampeon}</span>
         </a>
       ) : (
         <span />
       )
     }
     {
-      siguiente && (
-        <a class="vecino derecha" href={`/ep/${siguiente.id}/`}>
+      vecinoSiguiente && (
+        <a
+          class="vecino derecha"
+          href={`/ep/${vecinoSiguiente.entrada.id}/`}
+          style={`--acento-vecino: ${vecinoSiguiente.acento.hex}; --acento-vecino-rgb: ${vecinoSiguiente.acento.rgb};`}
+        >
           <span class="etiqueta">
-            EP.{String(siguiente.data.orden).padStart(2, '0')} <span aria-hidden="true">→</span>
+            EP.{String(vecinoSiguiente.entrada.data.orden).padStart(2, '0')} <span aria-hidden="true">→</span>
           </span>
-          <span class="vecino-nombre titular">{siguiente.data.nombreCampeon}</span>
+          <span class="vecino-nombre titular">{vecinoSiguiente.entrada.data.nombreCampeon}</span>
         </a>
       )
     }
   </nav>
 </Base>
 
-<style>
+<style define:vars={{ acento: acento.hex, 'acento-rgb': acento.rgb }}>
   .migas {
     display: flex;
     justify-content: space-between;
@@ -402,7 +425,7 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
   }
 
   .linea-ep .num {
-    color: var(--red);
+    color: var(--acento);
     white-space: nowrap;
   }
 
@@ -490,7 +513,7 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
   .v-num {
     font-family: var(--display);
     font-size: 17px;
-    color: var(--red);
+    color: var(--acento);
   }
 
   .v-titulo {
@@ -611,7 +634,7 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
 
   .ficha-titulo {
     margin: 0 0 6px;
-    color: var(--red);
+    color: var(--acento);
   }
 
   dl {
@@ -712,7 +735,7 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
   }
 
   .vecino:hover {
-    border-color: rgba(245, 52, 43, 0.6);
+    border-color: rgba(var(--acento-vecino-rgb), 0.6);
   }
 
   .vecino.derecha {

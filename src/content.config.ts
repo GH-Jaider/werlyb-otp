@@ -32,6 +32,10 @@ const episodios = defineCollection({
     kda: z.number().nonnegative().optional(),
     build: z.array(z.string()).optional(),
     runas: z.array(z.string()).optional(),
+    acento: z
+      .string()
+      .regex(/^#[0-9a-fA-F]{6}$/)
+      .optional(), // anula el color extraído automáticamente en src/data/paleta.json
   }),
 });
 
