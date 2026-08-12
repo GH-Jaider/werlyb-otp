@@ -52,7 +52,12 @@ const Cabeza = expandible ? 'summary' : 'div';
 
 <li class="partida" data-resultado={p.victoria ? 'v' : 'd'}>
   <Envoltura class="det">
-    <Cabeza class="fila">
+    <Cabeza
+      class="fila"
+      aria-label={expandible
+        ? `${p.victoria ? 'Victoria' : 'Derrota'} · partida ${p.n} · ${fecha} · ${p.kills}/${p.deaths}/${p.assists} · desplegar los equipos`
+        : undefined}
+    >
       <span class="pnum" aria-hidden="true">#{p.n}</span>
       <span class="barra" aria-hidden="true"></span>
 
@@ -134,9 +139,11 @@ const Cabeza = expandible ? 'summary' : 'div';
                     >
                       <img src={j.icono} alt="" title={j.campeon} loading="lazy" width="24" height="24" />
                       <span class="j-pos">{POS_CORTA[j.posicion] ?? '—'}</span>
-                      <span class="j-nombre">{j.nombre}</span>
-                      {j.protagonista && <span class="j-marca prota-marca">Werlyb</span>}
-                      {esRivalDeLinea(j) && <span class="j-marca rival-marca">rival de línea</span>}
+                      <span class="j-id">
+                        <span class="j-nombre">{j.nombre}</span>
+                        {j.protagonista && <span class="j-marca prota-marca">Werlyb</span>}
+                        {esRivalDeLinea(j) && <span class="j-marca rival-marca">rival de línea</span>}
+                      </span>
                       <span class="j-kda">
                         {j.kills} / <b>{j.deaths}</b> / {j.assists}
                       </span>
@@ -430,6 +437,13 @@ const Cabeza = expandible ? 'summary' : 'div';
     font-size: 9.5px;
     letter-spacing: 0.1em;
     color: var(--faint);
+  }
+
+  .j-id {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    min-width: 0;
   }
 
   .j-nombre {

@@ -141,7 +141,11 @@ const videos = d.videos.map((v, i) => ({
             <h2 class="etiqueta lista-titulo">
               El arco · {videos.length} {videos.length === 1 ? 'vídeo' : 'vídeos'}
             </h2>
-            <div class="videos-parrilla" data-solo={videos.length === 1 ? 'si' : undefined}>
+            <div
+              class="videos-parrilla"
+              data-solo={videos.length === 1 ? 'si' : undefined}
+              data-n={String(videos.length)}
+            >
               {videos.map((v) => (
                 <a class="video-carta" href={v.url} rel="noopener">
                   <div class="arte v-thumb">
@@ -500,8 +504,20 @@ const videos = d.videos.map((v, i) => ({
     gap: 16px;
   }
 
+  /* 4 vídeos → 2×2 con tarjetas grandes, nunca 3+1 huérfano */
+  .videos-parrilla[data-n='4'] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .videos-parrilla[data-solo='si'] {
     grid-template-columns: minmax(0, 420px);
+  }
+
+  @media (max-width: 520px) {
+    .videos-parrilla,
+    .videos-parrilla[data-n='4'] {
+      grid-template-columns: 1fr;
+    }
   }
 
   .video-carta {
@@ -617,6 +633,12 @@ const videos = d.videos.map((v, i) => ({
     border: 1px solid var(--line);
     border-radius: 10px;
     overflow: hidden;
+  }
+
+  /* el overflow:hidden del marco redondeado recortaría el anillo de foco */
+  .partidas-lista :global(summary.fila:focus-visible) {
+    outline-offset: -3px;
+    border-radius: 6px;
   }
 
   .partidas-lista :global(li + li) {
@@ -818,8 +840,9 @@ const videos = d.videos.map((v, i) => ({
     display: flex;
     flex-direction: column;
     gap: 4px;
-    padding: 14px 18px;
+    padding: 22px 18px 14px;
     width: 100%;
+    background: linear-gradient(0deg, rgba(10, 10, 12, 0.78), rgba(10, 10, 12, 0));
   }
 
   .v-eti {

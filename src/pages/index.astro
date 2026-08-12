@@ -166,7 +166,7 @@ const formato = [
                     <b>{c.nombre}</b>
                     <span class="etiqueta rk-meta">
                       EP.{String(c.orden).padStart(2, '0')}
-                      {c.coach ? ` · con ${c.coach}` : ''}
+                      {c.coach && <span class="rk-coach"> · con {c.coach}</span>}
                     </span>
                   </span>
                   <span
@@ -174,8 +174,8 @@ const formato = [
                     role="img"
                     aria-label={`${c.victorias} victorias y ${c.derrotas} derrotas`}
                   >
-                    <span class="seg v" style={`flex-grow: ${c.victorias}`} />
-                    <span class="seg d" style={`flex-grow: ${c.derrotas}`} />
+                    {c.victorias > 0 && <span class="seg v" style={`flex-grow: ${c.victorias}`} />}
+                    {c.derrotas > 0 && <span class="seg d" style={`flex-grow: ${c.derrotas}`} />}
                   </span>
                   <span class="rk-cifras">
                     <span class="rk-balance">
@@ -392,6 +392,12 @@ const formato = [
     background: var(--surface-2);
   }
 
+  /* el overflow:hidden del marco redondeado recortaría el anillo de foco */
+  .fila-rank:focus-visible {
+    outline-offset: -3px;
+    border-radius: 6px;
+  }
+
   .pos {
     font-size: 22px;
     color: var(--faint);
@@ -514,9 +520,21 @@ const formato = [
   @media (max-width: 760px) {
     .fila-rank {
       grid-template-columns: 32px 34px minmax(0, 1fr) auto;
+      row-gap: 8px;
     }
+    /* la barra V/D pasa a una segunda fila fina a todo el ancho */
     .rk-barra {
-      display: none;
+      grid-column: 3 / -1;
+      grid-row: 2;
+      height: 5px;
+    }
+    .rk-nombre {
+      grid-column: 3;
+      grid-row: 1;
+    }
+    .rk-cifras {
+      grid-column: 4;
+      grid-row: 1;
     }
     .pos {
       font-size: 18px;
@@ -532,14 +550,12 @@ const formato = [
       grid-template-columns: 1fr 1fr;
       gap: 12px;
     }
-    .rk-kda {
+    .rk-kda,
+    .rk-coach {
       display: none;
     }
     .rk-cifras {
       gap: 10px;
-    }
-    .rk-meta {
-      max-width: 160px;
     }
   }
 </style>
