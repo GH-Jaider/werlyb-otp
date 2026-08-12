@@ -576,10 +576,11 @@ const videos = d.videos.map((v, i) => ({
     gap: 16px;
   }
 
-  /* La parrilla conoce el recuento: siempre llena el ancho, sin huérfanos
-     ni columnas fantasma */
+  /* El arco es siempre UNA fila: n vídeos = n columnas. Los arcos de 1 y 2
+     vídeos van centrados y con tope para no hincharse. */
   .videos-parrilla[data-n='2'] {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 460px));
+    justify-content: center;
   }
 
   .videos-parrilla[data-n='3'] {
@@ -587,12 +588,18 @@ const videos = d.videos.map((v, i) => ({
   }
 
   .videos-parrilla[data-n='4'] {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .videos-parrilla[data-solo='si'] {
-    grid-template-columns: minmax(0, 560px);
+    grid-template-columns: minmax(0, 460px);
     justify-content: center;
+  }
+
+  @media (max-width: 980px) {
+    .videos-parrilla[data-n='4'] {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   @media (max-width: 740px) {
