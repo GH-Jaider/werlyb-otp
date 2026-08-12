@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-08-11T04:37:24.233Z",
-  "ddragon": "16.15.1",
+  "actualizado": "2026-08-12T04:41:56.265Z",
+  "ddragon": "16.16.1",
   "cuentas": [
     "lllIlIIIIlIll#EUW",
     "illo wely#EUW"
@@ -27,35 +27,35 @@
       "items": [
         {
           "nombre": "Desgarrador divino",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/446632.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/446632.png"
         },
         {
           "nombre": "Grebas codiciosas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/223008.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/223008.png"
         },
         {
           "nombre": "Baile de la muerte",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/226333.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/226333.png"
         },
         {
           "nombre": "Hambre insaciable",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/222517.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/222517.png"
         },
         null,
         null
       ],
       "trinket": {
         "nombre": "Barredor arcano",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3348.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3348.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerCherryFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerCherryFlash.png"
         },
         {
           "nombre": "Huida",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerCherryHold.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerCherryHold.png"
         }
       ],
       "runaPrincipal": null,
@@ -77,38 +77,38 @@
       "items": [
         {
           "nombre": "Baile de la muerte",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6333.png"
         },
         {
           "nombre": "Hambre insaciable",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2517.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2517.png"
         },
         {
           "nombre": "Sorbemaleficios",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3155.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3155.png"
         },
         {
           "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
         },
         null,
         {
           "nombre": "Arco axiomático",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6696.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6696.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -136,41 +136,41 @@
       "items": [
         {
           "nombre": "Espada de Doran",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1055.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1055.png"
         },
         {
           "nombre": "Martillo de guerra de Caulfield",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3133.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3133.png"
         },
         {
           "nombre": "Arco axiomático",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6696.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6696.png"
         },
         {
           "nombre": "Espada larga",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1036.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1036.png"
         },
         {
           "nombre": "Pico",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1037.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1037.png"
         },
         {
           "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -198,41 +198,41 @@
       "items": [
         {
           "nombre": "Firmamento desgarrado",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6610.png"
         },
         {
           "nombre": "Guja sombría",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3179.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3179.png"
         },
         {
           "nombre": "Hambre insaciable",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2517.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2517.png"
         },
         {
           "nombre": "Baile de la muerte",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6333.png"
         },
         {
           "nombre": "Lucidez carmesí",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3171.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3171.png"
         },
         {
           "nombre": "Fauces de Malmortius",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3156.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3156.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -260,41 +260,41 @@
       "items": [
         {
           "nombre": "Hábito del espectro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3211.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3211.png"
         },
         {
           "nombre": "Colmillo de serpiente",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6695.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6695.png"
         },
         {
           "nombre": "Gema avivadora",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3067.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3067.png"
         },
         {
           "nombre": "Fauces de Malmortius",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3156.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3156.png"
         },
         {
           "nombre": "Rookern kaénico",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2504.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2504.png"
         },
         {
           "nombre": "Senda inmortal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3168.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3168.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -322,41 +322,41 @@
       "items": [
         {
           "nombre": "Firmamento desgarrado",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6610.png"
         },
         {
           "nombre": "Hambre insaciable",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2517.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2517.png"
         },
         {
           "nombre": "Arco axiomático",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6696.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6696.png"
         },
         {
           "nombre": "Baile de la muerte",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6333.png"
         },
         {
           "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
         },
         {
           "nombre": "Últimas palabras",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3035.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3035.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -384,41 +384,41 @@
       "items": [
         {
           "nombre": "Firmamento desgarrado",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6610.png"
         },
         {
           "nombre": "Fauces de Malmortius",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3156.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3156.png"
         },
         {
           "nombre": "Baile de la muerte",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6333.png"
         },
         {
           "nombre": "Senda inmortal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3168.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3168.png"
         },
         {
           "nombre": "Manto de anulación de magia",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1033.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1033.png"
         },
         {
           "nombre": "Hambre insaciable",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2517.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2517.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -446,41 +446,41 @@
       "items": [
         {
           "nombre": "Grebas codiciosas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/223008.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/223008.png"
         },
         {
           "nombre": "Yelmo de hemomancia",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/447103.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/447103.png"
         },
         {
           "nombre": "Hambre insaciable",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/222517.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/222517.png"
         },
         {
           "nombre": "Soberbia",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/226697.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/226697.png"
         },
         {
           "nombre": "Jutte de kinkou",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/447116.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/447116.png"
         },
         {
           "nombre": "Baile de la muerte",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/226333.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/226333.png"
         }
       ],
       "trinket": {
         "nombre": "Barredor arcano",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3348.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3348.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerCherryFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerCherryFlash.png"
         },
         {
           "nombre": "Huida",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerCherryHold.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerCherryHold.png"
         }
       ],
       "runaPrincipal": null,

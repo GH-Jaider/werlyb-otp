@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-08-11T04:33:13.043Z",
-  "ddragon": "16.15.1",
+  "actualizado": "2026-08-12T04:37:45.130Z",
+  "ddragon": "16.16.1",
   "cuentas": [
     "lllIlIIIIlIll#EUW",
     "illo wely#EUW"
@@ -27,41 +27,41 @@
       "items": [
         {
           "nombre": "Robaalmas de Mejai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3041.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3041.png"
         },
         {
           "nombre": "Tormento de Liandry",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6653.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6653.png"
         },
         {
           "nombre": "Perforaplanos de Zaz'Zak",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3871.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3871.png"
         },
         {
           "nombre": "Botas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1001.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1001.png"
         },
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
         },
         {
           "nombre": "Tomo amplificador",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1052.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1052.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -89,38 +89,38 @@
       "items": [
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
         },
         {
           "nombre": "Antorcha de fuego negro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2503.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2503.png"
         },
         {
           "nombre": "Joya de la plaga",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4630.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4630.png"
         },
         {
           "nombre": "Vara explosiva",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1026.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1026.png"
         },
         {
           "nombre": "Sello oscuro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1082.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1082.png"
         },
         null
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -148,41 +148,41 @@
       "items": [
         {
           "nombre": "Bastón del Vacío",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3135.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3135.png"
         },
         {
           "nombre": "Reloj de arena de Zhonya",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3157.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3157.png"
         },
         {
           "nombre": "Vara innecesariamente grande",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1058.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1058.png"
         },
         {
           "nombre": "Botas de hechicero",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3020.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3020.png"
         },
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
         },
         {
           "nombre": "Antorcha de fuego negro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2503.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2503.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -210,38 +210,38 @@
       "items": [
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
         },
         {
           "nombre": "Reloj de arena de Zhonya",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3157.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3157.png"
         },
         null,
         {
           "nombre": "Botas de hechicero",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3020.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3020.png"
         },
         {
           "nombre": "Bastón del Vacío",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3135.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3135.png"
         },
         {
           "nombre": "Antorcha de fuego negro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2503.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2503.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -269,41 +269,41 @@
       "items": [
         {
           "nombre": "Anillo de Doran",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1056.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1056.png"
         },
         {
           "nombre": "Poción reutilizable",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2031.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2031.png"
         },
         {
           "nombre": "Antorcha de fuego negro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2503.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2503.png"
         },
         {
           "nombre": "Sello oscuro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1082.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1082.png"
         },
         {
           "nombre": "Vara innecesariamente grande",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1058.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1058.png"
         },
         {
           "nombre": "Botas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1001.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1001.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -331,38 +331,38 @@
       "items": [
         {
           "nombre": "Antorcha de fuego negro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2503.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2503.png"
         },
         {
           "nombre": "Tormento de Liandry",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6653.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6653.png"
         },
         {
           "nombre": "Vara innecesariamente grande",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1058.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1058.png"
         },
         {
           "nombre": "Botas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1001.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1001.png"
         },
         {
           "nombre": "Vara innecesariamente grande",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1058.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1058.png"
         },
         null
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -390,41 +390,41 @@
       "items": [
         {
           "nombre": "Tormento de Liandry",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6653.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6653.png"
         },
         {
           "nombre": "Reloj de arena de Zhonya",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3157.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3157.png"
         },
         {
           "nombre": "Perforaplanos de Zaz'Zak",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3871.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3871.png"
         },
         {
           "nombre": "Botas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1001.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1001.png"
         },
         {
           "nombre": "Cetro de cristal de Rylai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3116.png"
         },
         {
           "nombre": "Vara innecesariamente grande",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1058.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1058.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -452,38 +452,38 @@
       "items": [
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
         },
         {
           "nombre": "Reloj de arena de Zhonya",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3157.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3157.png"
         },
         {
           "nombre": "Guardián de control",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2055.png"
         },
         {
           "nombre": "Sello oscuro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1082.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1082.png"
         },
         {
           "nombre": "Antorcha de fuego negro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2503.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2503.png"
         },
         null
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -511,38 +511,38 @@
       "items": [
         {
           "nombre": "Antorcha de fuego negro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2503.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2503.png"
         },
         {
           "nombre": "Reloj de arena de Zhonya",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3157.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3157.png"
         },
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
         },
         {
           "nombre": "Guardián de control",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2055.png"
         },
         null,
         {
           "nombre": "Anillo de Doran",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1056.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1056.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -570,38 +570,38 @@
       "items": [
         {
           "nombre": "Cetro de cristal de Rylai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3116.png"
         },
         {
           "nombre": "Reloj de arena de Zhonya",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3157.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3157.png"
         },
         {
           "nombre": "Perforaplanos de Zaz'Zak",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3871.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3871.png"
         },
         {
           "nombre": "Botas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1001.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1001.png"
         },
         {
           "nombre": "Eco de Luden",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6655.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6655.png"
         },
         null
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {

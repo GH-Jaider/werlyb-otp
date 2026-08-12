@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-08-11T04:34:05.708Z",
-  "ddragon": "16.15.1",
+  "actualizado": "2026-08-12T04:38:37.794Z",
+  "ddragon": "16.16.1",
   "cuentas": [
     "lllIlIIIIlIll#EUW",
     "illo wely#EUW"
@@ -27,41 +27,41 @@
       "items": [
         {
           "nombre": "Promesa empírea",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/447105.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/447105.png"
         },
         {
           "nombre": "Perplejidad",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4015.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4015.png"
         },
         {
           "nombre": "Quimiotanque turbo",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/443079.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/443079.png"
         },
         {
           "nombre": "Desconsuelo de Liandry",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/226653.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/226653.png"
         },
         {
           "nombre": "Antorcha de fuego negro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/222503.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/222503.png"
         },
         {
           "nombre": "Sobrecarga tormentosa",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/224646.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/224646.png"
         }
       ],
       "trinket": {
         "nombre": "Barredor arcano",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3348.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3348.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerCherryFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerCherryFlash.png"
         },
         {
           "nombre": "Huida",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerCherryHold.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerCherryHold.png"
         }
       ],
       "runaPrincipal": null,
@@ -83,41 +83,41 @@
       "items": [
         {
           "nombre": "Robaalmas de Mejai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3041.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3041.png"
         },
         {
           "nombre": "Tormento de Liandry",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6653.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6653.png"
         },
         {
           "nombre": "Chaleco de cadenas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1031.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1031.png"
         },
         {
           "nombre": "Cetro de cristal de Rylai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3116.png"
         },
         {
           "nombre": "Botas de rapidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3009.png"
         },
         {
           "nombre": "Arnés de protoplasma",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2525.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2525.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -145,41 +145,41 @@
       "items": [
         {
           "nombre": "Armadura lunar alada",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3066.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3066.png"
         },
         {
           "nombre": "Cetro de cristal de Rylai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3116.png"
         },
         {
           "nombre": "Cintomisil hextech",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3152.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3152.png"
         },
         {
           "nombre": "Botas de rapidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3009.png"
         },
         {
           "nombre": "Arnés de protoplasma",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2525.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2525.png"
         },
         {
           "nombre": "Chaleco de cadenas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1031.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1031.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -207,41 +207,41 @@
       "items": [
         {
           "nombre": "Cetro de cristal de Rylai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3116.png"
         },
         {
           "nombre": "Tormento de Liandry",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6653.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6653.png"
         },
         {
           "nombre": "Chaleco de cadenas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1031.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1031.png"
         },
         {
           "nombre": "Botas de rapidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3009.png"
         },
         {
           "nombre": "Arnés de protoplasma",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2525.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2525.png"
         },
         {
           "nombre": "Capa negatrón",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1057.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1057.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -269,41 +269,41 @@
       "items": [
         {
           "nombre": "Tormento de Liandry",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6653.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6653.png"
         },
         {
           "nombre": "Botas de rapidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3009.png"
         },
         {
           "nombre": "Armadura lunar alada",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3066.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3066.png"
         },
         {
           "nombre": "Jak'Sho el Proteico",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6665.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6665.png"
         },
         {
           "nombre": "Cetro de cristal de Rylai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3116.png"
         },
         {
           "nombre": "Arnés de protoplasma",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2525.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2525.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -331,38 +331,38 @@
       "items": [
         {
           "nombre": "Anillo de Doran",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1056.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1056.png"
         },
         null,
         {
           "nombre": "Botas de rapidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3009.png"
         },
         {
           "nombre": "Tormento de Liandry",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6653.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6653.png"
         },
         {
           "nombre": "Cristal de rubí",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1028.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1028.png"
         },
         {
           "nombre": "Tomo amplificador",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1052.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1052.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -390,41 +390,41 @@
       "items": [
         {
           "nombre": "Tormento de Liandry",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6653.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6653.png"
         },
         {
           "nombre": "Cetro de cristal de Rylai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3116.png"
         },
         {
           "nombre": "Coraza del muerto",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3742.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3742.png"
         },
         {
           "nombre": "Botas de rapidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3009.png"
         },
         {
           "nombre": "Arnés de protoplasma",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2525.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2525.png"
         },
         {
           "nombre": "Capa negatrón",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1057.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1057.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -452,38 +452,38 @@
       "items": [
         {
           "nombre": "Cetro de cristal de Rylai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3116.png"
         },
         {
           "nombre": "Tormento de Liandry",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6653.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6653.png"
         },
         {
           "nombre": "Arnés de protoplasma",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2525.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2525.png"
         },
         {
           "nombre": "Botas de rapidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3009.png"
         },
         {
           "nombre": "Guardián de control",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2055.png"
         },
         null
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -511,41 +511,41 @@
       "items": [
         {
           "nombre": "Arnés de protoplasma",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2525.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2525.png"
         },
         {
           "nombre": "Botas de rapidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3009.png"
         },
         {
           "nombre": "Jak'Sho el Proteico",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6665.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6665.png"
         },
         {
           "nombre": "Cetro de cristal de Rylai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3116.png"
         },
         {
           "nombre": "Robaalmas de Mejai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3041.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3041.png"
         },
         {
           "nombre": "Tormento de Liandry",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6653.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6653.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -573,41 +573,41 @@
       "items": [
         {
           "nombre": "Arnés de protoplasma",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2525.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2525.png"
         },
         {
           "nombre": "Tormento de Liandry",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6653.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6653.png"
         },
         {
           "nombre": "Guardián de control",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2055.png"
         },
         {
           "nombre": "Botas de mercurio",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3111.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3111.png"
         },
         {
           "nombre": "Cetro de cristal de Rylai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3116.png"
         },
         {
           "nombre": "Sello oscuro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1082.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1082.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -635,41 +635,41 @@
       "items": [
         {
           "nombre": "Guardián de control",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2055.png"
         },
         {
           "nombre": "Botas de rapidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3009.png"
         },
         {
           "nombre": "Cintomisil hextech",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3152.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3152.png"
         },
         {
           "nombre": "Arnés de protoplasma",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2525.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2525.png"
         },
         {
           "nombre": "Malla del guardián",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3082.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3082.png"
         },
         {
           "nombre": "Cetro de cristal de Rylai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3116.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3116.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {

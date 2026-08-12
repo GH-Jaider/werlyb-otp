@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-08-11T04:43:06.010Z",
-  "ddragon": "16.15.1",
+  "actualizado": "2026-08-12T04:47:38.127Z",
+  "ddragon": "16.16.1",
   "cuentas": [
     "lllIlIIIIlIll#EUW",
     "illo wely#EUW"
@@ -27,41 +27,41 @@
       "items": [
         {
           "nombre": "Botas del lanzahechizos",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3175.png"
         },
         {
           "nombre": "Perdición del liche",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3100.png"
         },
         {
           "nombre": "Bastón del Vacío",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3135.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3135.png"
         },
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
         },
         {
           "nombre": "Llamasombría",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4645.png"
         },
         {
           "nombre": "Puñal de Statikk",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3087.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3087.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Teleportar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerTeleport.png"
         }
       ],
       "runaPrincipal": {
@@ -89,15 +89,15 @@
       "items": [
         {
           "nombre": "Perdición del liche",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3100.png"
         },
         {
           "nombre": "Botas del lanzahechizos",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3175.png"
         },
         {
           "nombre": "Llamasombría",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4645.png"
         },
         null,
         null,
@@ -105,16 +105,16 @@
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Teleportar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerTeleport.png"
         }
       ],
       "runaPrincipal": {
@@ -142,38 +142,38 @@
       "items": [
         {
           "nombre": "Perdición del liche",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3100.png"
         },
         {
           "nombre": "Llamasombría",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4645.png"
         },
         {
           "nombre": "Botas del lanzahechizos",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3175.png"
         },
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
         },
         {
           "nombre": "Joya de la plaga",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4630.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4630.png"
         },
         null
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Teleportar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerTeleport.png"
         }
       ],
       "runaPrincipal": {
@@ -201,38 +201,38 @@
       "items": [
         {
           "nombre": "Bastón del Vacío",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3135.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3135.png"
         },
         {
           "nombre": "Perdición del liche",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3100.png"
         },
         null,
         {
           "nombre": "Botas del lanzahechizos",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3175.png"
         },
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
         },
         {
           "nombre": "Llamasombría",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4645.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Teleportar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerTeleport.png"
         }
       ],
       "runaPrincipal": {
@@ -260,41 +260,41 @@
       "items": [
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
         },
         {
           "nombre": "Perdición del liche",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3100.png"
         },
         {
           "nombre": "Botas del lanzahechizos",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3175.png"
         },
         {
           "nombre": "Llamasombría",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4645.png"
         },
         {
           "nombre": "Bastón del Vacío",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3135.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3135.png"
         },
         {
           "nombre": "Robaalmas de Mejai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3041.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3041.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Teleportar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerTeleport.png"
         }
       ],
       "runaPrincipal": {
@@ -322,41 +322,41 @@
       "items": [
         {
           "nombre": "Perdición del liche",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3100.png"
         },
         {
           "nombre": "Llamasombría",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4645.png"
         },
         {
           "nombre": "Bastón del Vacío",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3135.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3135.png"
         },
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
         },
         {
           "nombre": "Diente de Nashor",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3115.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3115.png"
         },
         {
           "nombre": "Botas del lanzahechizos",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3175.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Teleportar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerTeleport.png"
         }
       ],
       "runaPrincipal": {
@@ -384,41 +384,41 @@
       "items": [
         {
           "nombre": "Perdición del liche",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3100.png"
         },
         {
           "nombre": "Bastón del Vacío",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3135.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3135.png"
         },
         {
           "nombre": "Velo del hada de la muerte",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3102.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3102.png"
         },
         {
           "nombre": "Llamasombría",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4645.png"
         },
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
         },
         {
           "nombre": "Botas del lanzahechizos",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3175.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Teleportar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerTeleport.png"
         }
       ],
       "runaPrincipal": {
@@ -446,41 +446,41 @@
       "items": [
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
         },
         {
           "nombre": "Botas del lanzahechizos",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3175.png"
         },
         {
           "nombre": "Cintomisil hextech",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3152.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3152.png"
         },
         {
           "nombre": "Perdición del liche",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3100.png"
         },
         {
           "nombre": "Llamasombría",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4645.png"
         },
         {
           "nombre": "Vara innecesariamente grande",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1058.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1058.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Teleportar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerTeleport.png"
         }
       ],
       "runaPrincipal": {
@@ -508,41 +508,41 @@
       "items": [
         {
           "nombre": "Perdición del liche",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3100.png"
         },
         {
           "nombre": "Brazalete de la buscadora",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2420.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2420.png"
         },
         {
           "nombre": "Cintomisil hextech",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3152.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3152.png"
         },
         {
           "nombre": "Llamasombría",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4645.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4645.png"
         },
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
         },
         {
           "nombre": "Botas del lanzahechizos",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3175.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Teleportar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerTeleport.png"
         }
       ],
       "runaPrincipal": {
@@ -570,41 +570,41 @@
       "items": [
         {
           "nombre": "Botas del lanzahechizos",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3175.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3175.png"
         },
         {
           "nombre": "Perdición del liche",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3100.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3100.png"
         },
         {
           "nombre": "Cintomisil hextech",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3152.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3152.png"
         },
         {
           "nombre": "Vara innecesariamente grande",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1058.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1058.png"
         },
         {
           "nombre": "Vara innecesariamente grande",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1058.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1058.png"
         },
         {
           "nombre": "Tomo amplificador",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1052.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1052.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Teleportar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerTeleport.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerTeleport.png"
         }
       ],
       "runaPrincipal": {

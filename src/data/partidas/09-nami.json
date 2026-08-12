@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-08-11T04:40:48.219Z",
-  "ddragon": "16.15.1",
+  "actualizado": "2026-08-12T04:45:20.249Z",
+  "ddragon": "16.16.1",
   "cuentas": [
     "lllIlIIIIlIll#EUW",
     "illo wely#EUW"
@@ -27,41 +27,41 @@
       "items": [
         {
           "nombre": "Ecos de Helia",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6620.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6620.png"
         },
         {
           "nombre": "Redención",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3107.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3107.png"
         },
         {
           "nombre": "Trineo del solsticio",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3876.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3876.png"
         },
         {
           "nombre": "Robaalmas de Mejai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3041.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3041.png"
         },
         {
           "nombre": "Incensario ardiente",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3504.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3504.png"
         },
         {
           "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Curar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHeal.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHeal.png"
         }
       ],
       "runaPrincipal": {
@@ -89,41 +89,41 @@
       "items": [
         {
           "nombre": "Ecos de Helia",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6620.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6620.png"
         },
         {
           "nombre": "Trineo del solsticio",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3876.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3876.png"
         },
         {
           "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
         },
         {
           "nombre": "Robaalmas de Mejai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3041.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3041.png"
         },
         {
           "nombre": "Incensario ardiente",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3504.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3504.png"
         },
         {
           "nombre": "Ídolo prohibido",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3114.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3114.png"
         }
       ],
       "trinket": {
         "nombre": "Visión lejana modificada",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3363.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3363.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Curar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHeal.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHeal.png"
         }
       ],
       "runaPrincipal": {
@@ -151,41 +151,41 @@
       "items": [
         {
           "nombre": "Ecos de Helia",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6620.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6620.png"
         },
         {
           "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
         },
         {
           "nombre": "Trineo del solsticio",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3876.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3876.png"
         },
         {
           "nombre": "Incensario ardiente",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3504.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3504.png"
         },
         {
           "nombre": "Códice diabólico",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3108.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3108.png"
         },
         {
           "nombre": "Ídolo prohibido",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3114.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3114.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Curar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHeal.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHeal.png"
         }
       ],
       "runaPrincipal": {
@@ -213,38 +213,38 @@
       "items": [
         {
           "nombre": "Renovación de piedra lunar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6617.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6617.png"
         },
         {
           "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
         },
         {
           "nombre": "Trineo del solsticio",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3876.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3876.png"
         },
         {
           "nombre": "Bastón de aguas fluidas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6616.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6616.png"
         },
         {
           "nombre": "Tomo amplificador",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1052.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1052.png"
         },
         null
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Curar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHeal.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHeal.png"
         }
       ],
       "runaPrincipal": {
@@ -272,38 +272,38 @@
       "items": [
         {
           "nombre": "Redención",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3107.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3107.png"
         },
         {
           "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
         },
         {
           "nombre": "Trineo del solsticio",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3876.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3876.png"
         },
         {
           "nombre": "Ecos de Helia",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6620.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6620.png"
         },
         {
           "nombre": "Bastón de aguas fluidas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6616.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6616.png"
         },
         null
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Curar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHeal.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHeal.png"
         }
       ],
       "runaPrincipal": {
@@ -331,41 +331,41 @@
       "items": [
         {
           "nombre": "Bastón de aguas fluidas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6616.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6616.png"
         },
         {
           "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
         },
         {
           "nombre": "Trineo del solsticio",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3876.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3876.png"
         },
         {
           "nombre": "Mandato imperial",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4005.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4005.png"
         },
         {
           "nombre": "Sello oscuro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1082.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1082.png"
         },
         {
           "nombre": "Ecos de Helia",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6620.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6620.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -393,41 +393,41 @@
       "items": [
         {
           "nombre": "Redención",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3107.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3107.png"
         },
         {
           "nombre": "Incensario ardiente",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3504.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3504.png"
         },
         {
           "nombre": "Trineo del solsticio",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3876.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3876.png"
         },
         {
           "nombre": "Ecos de Helia",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6620.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6620.png"
         },
         {
           "nombre": "Códice diabólico",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3108.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3108.png"
         },
         {
           "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Extenuación",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerExhaust.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerExhaust.png"
         }
       ],
       "runaPrincipal": {
@@ -455,41 +455,41 @@
       "items": [
         {
           "nombre": "Ecos de Helia",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6620.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6620.png"
         },
         {
           "nombre": "Renovación de piedra lunar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6617.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6617.png"
         },
         {
           "nombre": "Trineo del solsticio",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3876.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3876.png"
         },
         {
           "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
         },
         {
           "nombre": "Bastón de aguas fluidas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6616.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6616.png"
         },
         {
           "nombre": "Códice diabólico",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3108.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3108.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -517,41 +517,41 @@
       "items": [
         {
           "nombre": "Eco de Luden",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6655.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6655.png"
         },
         {
           "nombre": "Brazalete quebrado",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2421.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2421.png"
         },
         {
           "nombre": "Perforaplanos de Zaz'Zak",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3871.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3871.png"
         },
         {
           "nombre": "Incensario ardiente",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3504.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3504.png"
         },
         {
           "nombre": "Botas de hechicero",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3020.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3020.png"
         },
         {
           "nombre": "Orbe del olvido",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3916.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3916.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -579,41 +579,41 @@
       "items": [
         {
           "nombre": "Vara innecesariamente grande",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1058.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1058.png"
         },
         {
           "nombre": "Vara innecesariamente grande",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1058.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1058.png"
         },
         {
           "nombre": "Perforaplanos de Zaz'Zak",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3871.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3871.png"
         },
         {
           "nombre": "Eco de Luden",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6655.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6655.png"
         },
         {
           "nombre": "Robaalmas de Mejai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3041.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3041.png"
         },
         {
           "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {

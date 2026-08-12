@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-08-11T04:32:36.588Z",
-  "ddragon": "16.15.1",
+  "actualizado": "2026-08-12T04:37:08.656Z",
+  "ddragon": "16.16.1",
   "cuentas": [
     "lllIlIIIIlIll#EUW",
     "illo wely#EUW"
@@ -27,41 +27,41 @@
       "items": [
         {
           "nombre": "Lanza de Shojin",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3161.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3161.png"
         },
         {
           "nombre": "Botas de mercurio",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3111.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3111.png"
         },
         {
           "nombre": "Calibrador de Sterak",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3053.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3053.png"
         },
         {
           "nombre": "Cuchilla negra",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3071.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3071.png"
         },
         {
           "nombre": "Hambre insaciable",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2517.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2517.png"
         },
         {
           "nombre": "Lágrima de la diosa",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3070.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3070.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -89,41 +89,41 @@
       "items": [
         {
           "nombre": "Hambre insaciable",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2517.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2517.png"
         },
         {
           "nombre": "Malla de espinas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3075.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3075.png"
         },
         {
           "nombre": "Botas blindadas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3047.png"
         },
         {
           "nombre": "Lágrima de la diosa",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3070.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3070.png"
         },
         {
           "nombre": "Lanza de Shojin",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3161.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3161.png"
         },
         {
           "nombre": "Convergencia de Zeke",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3050.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3050.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -151,41 +151,41 @@
       "items": [
         {
           "nombre": "Convergencia de Zeke",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3050.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3050.png"
         },
         {
           "nombre": "Soberbia",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6697.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6697.png"
         },
         {
           "nombre": "Pico",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1037.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1037.png"
         },
         {
           "nombre": "Botas de rapidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3009.png"
         },
         {
           "nombre": "Tuneladora",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2021.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2021.png"
         },
         {
           "nombre": "Cristal de rubí",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1028.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1028.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Aplastar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
         }
       ],
       "runaPrincipal": {
@@ -213,38 +213,38 @@
       "items": [
         {
           "nombre": "Lanza de Shojin",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3161.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3161.png"
         },
         {
           "nombre": "Filo fantasmal de Youmuu",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3142.png"
         },
         {
           "nombre": "Botas de rapidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3009.png"
         },
         {
           "nombre": "Martillo de guerra de Caulfield",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3133.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3133.png"
         },
         {
           "nombre": "Sello de acero",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2019.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2019.png"
         },
         null
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Aplastar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
         }
       ],
       "runaPrincipal": {
@@ -272,38 +272,38 @@
       "items": [
         {
           "nombre": "Lanza de Shojin",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3161.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3161.png"
         },
         {
           "nombre": "Soberbia",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6697.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6697.png"
         },
         null,
         {
           "nombre": "Tuneladora",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2021.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2021.png"
         },
         {
           "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
         },
         {
           "nombre": "Hambre insaciable",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2517.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2517.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Aplastar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
         }
       ],
       "runaPrincipal": {
@@ -331,41 +331,41 @@
       "items": [
         {
           "nombre": "Tuneladora",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2021.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2021.png"
         },
         {
           "nombre": "Filo fantasmal de Youmuu",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3142.png"
         },
         {
           "nombre": "Guardián de control",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2055.png"
         },
         {
           "nombre": "Pico",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1037.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1037.png"
         },
         {
           "nombre": "Botas de rapidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3009.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3009.png"
         },
         {
           "nombre": "Lágrima de la diosa",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3070.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3070.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -393,35 +393,35 @@
       "items": [
         {
           "nombre": "Soberbia",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6697.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6697.png"
         },
         {
           "nombre": "Filo fantasmal de Youmuu",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3142.png"
         },
         {
           "nombre": "Guardián de control",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2055.png"
         },
         null,
         null,
         {
           "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Aplastar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
         }
       ],
       "runaPrincipal": {
@@ -449,41 +449,41 @@
       "items": [
         {
           "nombre": "Lanza de Shojin",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3161.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3161.png"
         },
         {
           "nombre": "Filo fantasmal de Youmuu",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3142.png"
         },
         {
           "nombre": "Calibrador de Sterak",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3053.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3053.png"
         },
         {
           "nombre": "Hambre insaciable",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2517.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2517.png"
         },
         {
           "nombre": "Botas blindadas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3047.png"
         },
         {
           "nombre": "Baile de la muerte",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6333.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Aplastar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
         }
       ],
       "runaPrincipal": {
@@ -511,41 +511,41 @@
       "items": [
         {
           "nombre": "Botas de mercurio",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3111.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3111.png"
         },
         {
           "nombre": "Filo fantasmal de Youmuu",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3142.png"
         },
         {
           "nombre": "Guardián de control",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2055.png"
         },
         {
           "nombre": "Lanza de Shojin",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3161.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3161.png"
         },
         {
           "nombre": "Sorbemaleficios",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3155.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3155.png"
         },
         {
           "nombre": "Soberbia",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6697.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6697.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Aplastar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
         }
       ],
       "runaPrincipal": {
@@ -573,41 +573,41 @@
       "items": [
         {
           "nombre": "Pico",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1037.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1037.png"
         },
         {
           "nombre": "Filo fantasmal de Youmuu",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3142.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3142.png"
         },
         {
           "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
         },
         {
           "nombre": "Espada larga",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1036.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1036.png"
         },
         {
           "nombre": "Mota brillante",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2022.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2022.png"
         },
         {
           "nombre": "Cristal de rubí",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1028.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1028.png"
         }
       ],
       "trinket": {
         "nombre": "Ojo del Heraldo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3513.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3513.png"
       },
       "hechizos": [
         {
           "nombre": "Fantasmal",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerHaste.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
         },
         {
           "nombre": "Aplastar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
         }
       ],
       "runaPrincipal": {

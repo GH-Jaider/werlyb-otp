@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-08-11T04:38:34.451Z",
-  "ddragon": "16.15.1",
+  "actualizado": "2026-08-12T04:43:06.486Z",
+  "ddragon": "16.16.1",
   "cuentas": [
     "lllIlIIIIlIll#EUW",
     "illo wely#EUW"
@@ -27,38 +27,38 @@
       "items": [
         {
           "nombre": "Guardián de control",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2055.png"
         },
         {
           "nombre": "Amanecer y anochecer",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2510.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2510.png"
         },
         {
           "nombre": "Cintomisil hextech",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3152.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3152.png"
         },
         {
           "nombre": "Tomo amplificador",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1052.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1052.png"
         },
         {
           "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
         },
         null
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -86,38 +86,38 @@
       "items": [
         {
           "nombre": "Yelmo de Doran",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1120.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1120.png"
         },
         {
           "nombre": "Reloj de arena de Zhonya",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3157.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3157.png"
         },
         null,
         {
           "nombre": "Rompecascos",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3181.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3181.png"
         },
         {
           "nombre": "Botas blindadas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3047.png"
         },
         {
           "nombre": "Fuerza de trinidad",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3078.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -145,35 +145,35 @@
       "items": [
         {
           "nombre": "Yelmo de Doran",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1120.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1120.png"
         },
         {
           "nombre": "Cortasendas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6631.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6631.png"
         },
         null,
         {
           "nombre": "Fuerza de trinidad",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3078.png"
         },
         null,
         {
           "nombre": "Botas blindadas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3047.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -201,41 +201,41 @@
       "items": [
         {
           "nombre": "Reloj de arena de Zhonya",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3157.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3157.png"
         },
         {
           "nombre": "Cortasendas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6631.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6631.png"
         },
         {
           "nombre": "Presagio de Randuin",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3143.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3143.png"
         },
         {
           "nombre": "Botas blindadas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3047.png"
         },
         {
           "nombre": "Fuerza de trinidad",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3078.png"
         },
         {
           "nombre": "Guardián de control",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2055.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -263,41 +263,41 @@
       "items": [
         {
           "nombre": "Joya de la plaga",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4630.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4630.png"
         },
         {
           "nombre": "Reloj de arena de Zhonya",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3157.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3157.png"
         },
         {
           "nombre": "Cintomisil hextech",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3152.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3152.png"
         },
         {
           "nombre": "Vara explosiva",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1026.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1026.png"
         },
         {
           "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3158.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
         },
         {
           "nombre": "Amanecer y anochecer",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2510.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2510.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -325,41 +325,41 @@
       "items": [
         {
           "nombre": "Yelmo de Doran",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1120.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1120.png"
         },
         {
           "nombre": "Cortasendas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6631.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6631.png"
         },
         {
           "nombre": "Tuneladora",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2021.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2021.png"
         },
         {
           "nombre": "Fuerza de trinidad",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3078.png"
         },
         {
           "nombre": "Botas blindadas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3047.png"
         },
         {
           "nombre": "Cristal de rubí",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1028.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1028.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -387,35 +387,35 @@
       "items": [
         {
           "nombre": "Fuerza de trinidad",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3078.png"
         },
         {
           "nombre": "Guardián de control",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2055.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2055.png"
         },
         {
           "nombre": "Botas blindadas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3047.png"
         },
         null,
         {
           "nombre": "Yelmo de Doran",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1120.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1120.png"
         },
         null
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -443,41 +443,41 @@
       "items": [
         {
           "nombre": "Fuerza de trinidad",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3078.png"
         },
         {
           "nombre": "Sable-pistola hextech",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3146.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3146.png"
         },
         {
           "nombre": "Armadura de tela",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1029.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1029.png"
         },
         {
           "nombre": "Armadura de tela",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1029.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1029.png"
         },
         {
           "nombre": "Grebas codiciosas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3008.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3008.png"
         },
         {
           "nombre": "Mota brillante",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2022.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2022.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Aplastar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
         }
       ],
       "runaPrincipal": {
@@ -505,41 +505,41 @@
       "items": [
         {
           "nombre": "Firmamento desgarrado",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6610.png"
         },
         {
           "nombre": "Botas blindadas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3047.png"
         },
         {
           "nombre": "Detracción celestial",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3869.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3869.png"
         },
         {
           "nombre": "Fuerza de trinidad",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3078.png"
         },
         {
           "nombre": "Tomo amplificador",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1052.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1052.png"
         },
         {
           "nombre": "Tomo amplificador",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1052.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1052.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -567,41 +567,41 @@
       "items": [
         {
           "nombre": "Firmamento desgarrado",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6610.png"
         },
         {
           "nombre": "Grebas codiciosas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3008.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3008.png"
         },
         {
           "nombre": "Llamada del verdugo",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3123.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3123.png"
         },
         {
           "nombre": "Martillo de guerra de Caulfield",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3133.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3133.png"
         },
         {
           "nombre": "Fuerza de trinidad",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3078.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3078.png"
         },
         {
           "nombre": "Creagrietas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/4633.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4633.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Aplastar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerSmite.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
         }
       ],
       "runaPrincipal": {
@@ -629,41 +629,41 @@
       "items": [
         {
           "nombre": "Espada de Doran",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1055.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1055.png"
         },
         {
           "nombre": "Amanecer y anochecer",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2510.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2510.png"
         },
         {
           "nombre": "Botas de mercurio",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3111.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3111.png"
         },
         {
           "nombre": "Baile de la muerte",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6333.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6333.png"
         },
         {
           "nombre": "Manto de anulación de magia",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/1033.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1033.png"
         },
         {
           "nombre": "Cuchilla negra",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3071.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3071.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -691,41 +691,41 @@
       "items": [
         {
           "nombre": "Firmamento desgarrado",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/6610.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6610.png"
         },
         {
           "nombre": "Botas blindadas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3047.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3047.png"
         },
         {
           "nombre": "Tuneladora",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2021.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2021.png"
         },
         {
           "nombre": "Chaleco de zarzas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3076.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3076.png"
         },
         {
           "nombre": "Amanecer y anochecer",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/2510.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2510.png"
         },
         {
           "nombre": "Malla del guardián",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3082.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3082.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.15.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
