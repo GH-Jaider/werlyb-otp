@@ -77,7 +77,7 @@ const victorias = d.victorias ?? resumen?.victorias ?? null;
 const derrotas = d.derrotas ?? resumen?.derrotas ?? null;
 const kdaArco = d.kda ?? resumen?.kda ?? null;
 
-const balance = victorias != null && derrotas != null ? `${victorias}V – ${derrotas}D` : null;
+const balance = victorias != null && derrotas != null ? `${victorias}V–${derrotas}D` : null;
 const hayStats = partidasTotales != null || balance !== null || kdaArco != null;
 
 const winrate =
@@ -102,8 +102,8 @@ const videos = d.videos.map((v, i) => ({
 ---
 
 <Base
-  titulo={`EP.${num} · ${d.nombreCampeon} — ${SERIE.titulo}`}
-  descripcion={`Episodio ${num} de ${SERIE.titulo}: Werlyb se hace OTP de ${d.nombreCampeon}${d.coach ? ` con ${d.coach} de coach` : ''} — ${d.videos.length} ${d.videos.length === 1 ? 'vídeo' : 'vídeos'} del arco.`}
+  titulo={`EP.${num} · ${d.nombreCampeon} · ${SERIE.titulo}`}
+  descripcion={`Episodio ${num} de ${SERIE.titulo}: Werlyb se hace OTP de ${d.nombreCampeon}${d.coach ? ` con ${d.coach} de coach` : ''} (${d.videos.length} ${d.videos.length === 1 ? 'vídeo' : 'vídeos'} del arco).`}
   ogImage={splash(d.campeon)}
 >
   <nav class="contenedor migas" aria-label="Volver">
@@ -241,7 +241,7 @@ const videos = d.videos.map((v, i) => ({
                 Las partidas · {resumen.partidas}
               </h2>
               <span class="partidas-resumen">
-                {resumen.victorias}V – {resumen.derrotas}D
+                {resumen.victorias}V–{resumen.derrotas}D
                 {winrate != null && ` · ${winrate} % WR`} · {resumen.kda} KDA
               </span>
             </div>
@@ -576,18 +576,31 @@ const videos = d.videos.map((v, i) => ({
     gap: 16px;
   }
 
-  /* 4 vídeos → 2×2 con tarjetas grandes, nunca 3+1 huérfano */
+  /* La parrilla conoce el recuento: siempre llena el ancho, sin huérfanos
+     ni columnas fantasma */
+  .videos-parrilla[data-n='2'] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .videos-parrilla[data-n='3'] {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .videos-parrilla[data-n='4'] {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .videos-parrilla[data-solo='si'] {
-    grid-template-columns: minmax(0, 420px);
+    grid-template-columns: minmax(0, 560px);
+    justify-content: center;
   }
 
-  @media (max-width: 520px) {
+  @media (max-width: 740px) {
     .videos-parrilla,
-    .videos-parrilla[data-n='4'] {
+    .videos-parrilla[data-n='2'],
+    .videos-parrilla[data-n='3'],
+    .videos-parrilla[data-n='4'],
+    .videos-parrilla[data-solo='si'] {
       grid-template-columns: 1fr;
     }
   }
