@@ -7,9 +7,23 @@ export interface IconoDD {
   icono: string;
 }
 
+export interface Jugador {
+  campeon: string;
+  icono: string;
+  nombre: string;
+  equipo: 'azul' | 'rojo';
+  posicion: string;
+  kills: number;
+  deaths: number;
+  assists: number;
+  protagonista: boolean;
+}
+
 export interface Partida {
   n: number;
   matchId: string;
+  jugadores?: Jugador[];
+  ganaAzul?: boolean | null;
   cuenta: string;
   inicio: string;
   duracionSeg: number;

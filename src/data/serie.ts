@@ -14,10 +14,4 @@ export const SERIE = {
     youtube: 'https://www.youtube.com/@Werlyb' as string | null,
     x: 'https://x.com/werlyb' as string | null,
   },
-  /** Campeones que suenan para próximos episodios */
-  candidatos: [
-    { ddragonId: 'Kled', nombre: 'Kled' },
-    { ddragonId: 'Gangplank', nombre: 'Gangplank' },
-    { ddragonId: 'Volibear', nombre: 'Volibear' },
-  ],
 };

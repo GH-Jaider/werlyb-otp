@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import PartidaFila from '../../components/PartidaFila.astro';
 import { SERIE } from '../../data/serie';
-import { splash } from '../../lib/ddragon';
+import { loading, splash } from '../../lib/ddragon';
 import { partidasDe } from '../../lib/partidas';
 import { acentoDe, ROJO_MARCA } from '../../lib/paleta';
 import { youtubeId } from '../../lib/video';
@@ -94,7 +94,11 @@ const actualizado = datos
       .replace(/\./g, '')
   : null;
 
-const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
+const videos = d.videos.map((v, i) => ({
+  ...v,
+  n: i + 1,
+  ytId: youtubeId(v.url),
+}));
 ---
 
 <Base
@@ -132,39 +136,38 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
   <main id="contenido" class="contenedor cuerpo">
     <div class="principal">
       {
-        ytId && (
-          <div class="vod-marco">
-            <iframe
-              src={`https://www.youtube-nocookie.com/embed/${ytId}`}
-              title={`${d.videos[0].titulo} — episodio ${num}, ${d.nombreCampeon}`}
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            />
-          </div>
-        )
-      }
-
-      {
-        d.videos.length > 0 && (
-          <section class="lista-videos" aria-label="Vídeos del arco">
+        videos.length > 0 && (
+          <section class="videos" aria-label="Vídeos del arco">
             <h2 class="etiqueta lista-titulo">
-              El arco · {d.videos.length} {d.videos.length === 1 ? 'vídeo' : 'vídeos'}
+              El arco · {videos.length} {videos.length === 1 ? 'vídeo' : 'vídeos'}
             </h2>
-            <ol>
-              {d.videos.map((v, i) => (
-                <li>
-                  <a class="video-fila" href={v.url} rel="noopener">
-                    <span class="v-num">{String(i + 1).padStart(2, '0')}</span>
-                    <span class="v-titulo">{v.titulo}</span>
-                    {v.fecha && <span class="v-fecha">{fechaCorta(v.fecha)}</span>}
-                    <span class="v-ir" aria-hidden="true">
-                      ↗
+            <div class="videos-parrilla" data-solo={videos.length === 1 ? 'si' : undefined}>
+              {videos.map((v) => (
+                <a class="video-carta" href={v.url} rel="noopener">
+                  <div class="arte v-thumb">
+                    {v.ytId ? (
+                      <img
+                        src={`https://i.ytimg.com/vi/${v.ytId}/hqdefault.jpg`}
+                        alt=""
+                        loading={v.n <= 2 ? 'eager' : 'lazy'}
+                        width="480"
+                        height="360"
+                      />
+                    ) : (
+                      <span class="v-hueco" />
+                    )}
+                    <span class="v-play" aria-hidden="true">
+                      ▶
                     </span>
-                  </a>
-                </li>
+                  </div>
+                  <div class="v-pie">
+                    <span class="v-num">{String(v.n).padStart(2, '0')}</span>
+                    <p class="v-titulo">{v.titulo}</p>
+                    {v.fecha && <span class="v-fecha">{fechaCorta(v.fecha)}</span>}
+                  </div>
+                </a>
               ))}
-            </ol>
+            </div>
           </section>
         )
       }
@@ -315,10 +318,22 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
           href={`/ep/${vecinoAnterior.entrada.id}/`}
           style={`--acento-vecino: ${vecinoAnterior.acento.hex}; --acento-vecino-rgb: ${vecinoAnterior.acento.rgb};`}
         >
-          <span class="etiqueta">
-            <span aria-hidden="true">←</span> EP.{String(vecinoAnterior.entrada.data.orden).padStart(2, '0')}
-          </span>
-          <span class="vecino-nombre titular">{vecinoAnterior.entrada.data.nombreCampeon}</span>
+          <div class="arte v-fondo">
+            <img
+              src={loading(vecinoAnterior.entrada.data.campeon)}
+              alt=""
+              loading="lazy"
+              width="308"
+              height="560"
+            />
+          </div>
+          <div class="v-velo" aria-hidden="true" />
+          <div class="v-texto">
+            <span class="etiqueta v-eti">
+              <span aria-hidden="true">←</span> EP.{String(vecinoAnterior.entrada.data.orden).padStart(2, '0')} · anterior
+            </span>
+            <span class="vecino-nombre titular">{vecinoAnterior.entrada.data.nombreCampeon}</span>
+          </div>
         </a>
       ) : (
         <span />
@@ -331,10 +346,22 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
           href={`/ep/${vecinoSiguiente.entrada.id}/`}
           style={`--acento-vecino: ${vecinoSiguiente.acento.hex}; --acento-vecino-rgb: ${vecinoSiguiente.acento.rgb};`}
         >
-          <span class="etiqueta">
-            EP.{String(vecinoSiguiente.entrada.data.orden).padStart(2, '0')} <span aria-hidden="true">→</span>
-          </span>
-          <span class="vecino-nombre titular">{vecinoSiguiente.entrada.data.nombreCampeon}</span>
+          <div class="arte v-fondo">
+            <img
+              src={loading(vecinoSiguiente.entrada.data.campeon)}
+              alt=""
+              loading="lazy"
+              width="308"
+              height="560"
+            />
+          </div>
+          <div class="v-velo" aria-hidden="true" />
+          <div class="v-texto">
+            <span class="etiqueta v-eti">
+              EP.{String(vecinoSiguiente.entrada.data.orden).padStart(2, '0')} · siguiente <span aria-hidden="true">→</span>
+            </span>
+            <span class="vecino-nombre titular">{vecinoSiguiente.entrada.data.nombreCampeon}</span>
+          </div>
         </a>
       )
     }
@@ -463,51 +490,79 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
     width: 100%;
   }
 
-  .vod-marco {
-    aspect-ratio: 16 / 9;
+  .lista-titulo {
+    margin: 0 0 12px;
+  }
+
+  .videos-parrilla {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 16px;
+  }
+
+  .videos-parrilla[data-solo='si'] {
+    grid-template-columns: minmax(0, 420px);
+  }
+
+  .video-carta {
+    display: block;
+    text-decoration: none;
     border: 1px solid var(--line);
     border-radius: 10px;
     overflow: hidden;
     background: var(--surface);
+    transition: border-color 0.2s ease, transform 0.2s ease;
   }
 
-  .vod-marco iframe {
+  .video-carta:hover {
+    border-color: rgba(var(--acento-rgb), 0.65);
+    transform: translateY(-2px);
+  }
+
+  .v-thumb {
+    aspect-ratio: 16 / 9;
+    position: relative;
+  }
+
+  .v-thumb img {
+    transition: transform 0.35s ease;
+  }
+
+  .video-carta:hover .v-thumb img {
+    transform: scale(1.05);
+  }
+
+  .v-hueco {
+    display: block;
     width: 100%;
     height: 100%;
-    border: 0;
-    display: block;
-  }
-
-  .lista-videos ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    overflow: hidden;
-  }
-
-  .lista-titulo {
-    margin: 0 0 10px;
-  }
-
-  .lista-videos li + li {
-    border-top: 1px solid var(--line-soft);
-  }
-
-  .video-fila {
-    display: grid;
-    grid-template-columns: 44px minmax(0, 1fr) auto 20px;
-    align-items: baseline;
-    gap: 12px;
-    padding: 14px 18px;
-    text-decoration: none;
-    background: var(--surface);
-    transition: background 0.15s ease;
-  }
-
-  .video-fila:hover {
     background: var(--surface-2);
+  }
+
+  .v-play {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-size: 26px;
+    color: var(--text);
+    text-shadow: 0 2px 14px rgba(10, 10, 12, 0.9);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 1;
+  }
+
+  .video-carta:hover .v-play,
+  .video-carta:focus-visible .v-play {
+    opacity: 1;
+  }
+
+  .v-pie {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 4px 10px;
+    padding: 11px 14px 13px;
+    align-items: baseline;
   }
 
   .v-num {
@@ -517,29 +572,21 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
   }
 
   .v-titulo {
-    font-size: 15.5px;
+    margin: 0;
+    font-size: 14.5px;
     font-weight: 600;
+    line-height: 1.35;
     color: var(--text);
     overflow-wrap: anywhere;
   }
 
   .v-fecha {
+    grid-column: 2;
     font-family: var(--mono);
-    font-size: 11.5px;
-    letter-spacing: 0.08em;
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--muted);
-    white-space: nowrap;
-  }
-
-  .v-ir {
-    font-size: 13px;
     color: var(--faint);
-    text-align: right;
-  }
-
-  .video-fila:hover .v-ir {
-    color: var(--gold);
   }
 
   .partidas-cabecera {
@@ -714,38 +761,81 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
     font-style: italic;
   }
 
-  /* ── Prev / next ── */
+  /* ── Prev / next: tarjetas con el arte del campeón vecino ── */
   .vecinos {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 16px;
     margin-top: clamp(48px, 7vw, 80px);
   }
 
   .vecino {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    gap: 6px;
+    align-items: flex-end;
+    min-height: 128px;
     text-decoration: none;
     border: 1px solid var(--line);
     border-radius: 10px;
-    padding: 18px 22px;
-    min-width: 200px;
-    transition: border-color 0.2s ease;
+    overflow: hidden;
+    background: var(--surface);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .v-fondo {
+    position: absolute;
+    inset: 0;
+  }
+
+  .v-fondo img {
+    object-position: center 16%;
+    transition: transform 0.4s ease;
+  }
+
+  .v-velo {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(10, 10, 12, 0.35) 0%,
+      rgba(10, 10, 12, 0.55) 55%,
+      rgba(10, 10, 12, 0.94) 100%
+    );
+    pointer-events: none;
   }
 
   .vecino:hover {
-    border-color: rgba(var(--acento-vecino-rgb), 0.6);
+    border-color: rgba(var(--acento-vecino-rgb), 0.7);
+    transform: translateY(-2px);
   }
 
-  .vecino.derecha {
+  .vecino:hover .v-fondo img {
+    transform: scale(1.05);
+  }
+
+  .v-texto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 14px 18px;
+    width: 100%;
+  }
+
+  .v-eti {
+    color: var(--text);
+    opacity: 0.85;
+    text-shadow: 0 1px 6px rgba(10, 10, 12, 0.9);
+  }
+
+  .vecino.derecha .v-texto {
     text-align: right;
-    margin-left: auto;
   }
 
   .vecino-nombre {
-    font-size: 26px;
+    font-size: clamp(26px, 3vw, 34px);
     color: var(--text);
+    text-shadow: 0 1px 12px rgba(10, 10, 12, 0.8);
   }
 
   @media (max-width: 860px) {
@@ -759,14 +849,10 @@ const ytId = d.videos.length > 0 ? youtubeId(d.videos[0].url) : null;
       display: none;
     }
     .vecinos {
-      flex-wrap: wrap;
+      grid-template-columns: 1fr;
     }
     .vecino {
-      min-width: 0;
-      flex: 1 1 100%;
-    }
-    .vecino.derecha {
-      margin-left: 0;
+      min-height: 104px;
     }
   }
 

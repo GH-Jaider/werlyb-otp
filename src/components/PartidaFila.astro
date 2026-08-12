@@ -1,5 +1,5 @@
 ---
-import type { Partida } from '../lib/partidas';
+import type { Jugador, Partida } from '../lib/partidas';
 
 interface Props {
   partida: Partida;
@@ -20,74 +20,163 @@ const duracion = `${Math.floor(p.duracionSeg / 60)}m ${String(p.duracionSeg % 60
 const kit = [p.hechizos[0], p.runaPrincipal, p.hechizos[1], p.estiloSecundario];
 const huecos = [...p.items];
 while (huecos.length < 6) huecos.push(null);
+
+// Detalle expandible: los diez jugadores de la partida (si el backfill los guardó)
+const jugadores: Jugador[] = p.jugadores ?? [];
+const expandible = jugadores.length > 0;
+
+const ORDEN_POS = ['TOP', 'JUNGLE', 'MIDDLE', 'BOTTOM', 'UTILITY'];
+const POS_CORTA: Record<string, string> = {
+  TOP: 'TOP',
+  JUNGLE: 'JG',
+  MIDDLE: 'MID',
+  BOTTOM: 'ADC',
+  UTILITY: 'SUP',
+};
+const porEquipo = (eq: 'azul' | 'rojo') =>
+  jugadores
+    .filter((j) => j.equipo === eq)
+    .sort((a, b) => ORDEN_POS.indexOf(a.posicion) - ORDEN_POS.indexOf(b.posicion));
+
+const prota = jugadores.find((j) => j.protagonista) ?? null;
+const esRivalDeLinea = (j: Jugador) =>
+  prota !== null &&
+  !j.protagonista &&
+  j.equipo !== prota.equipo &&
+  j.posicion !== '' &&
+  j.posicion === prota.posicion;
+
+const Envoltura = expandible ? 'details' : 'div';
+const Cabeza = expandible ? 'summary' : 'div';
 ---
 
 <li class="partida" data-resultado={p.victoria ? 'v' : 'd'}>
-  <span class="pnum" aria-hidden="true">#{p.n}</span>
-  <span class="barra" aria-hidden="true"></span>
+  <Envoltura class="det">
+    <Cabeza class="fila">
+      <span class="pnum" aria-hidden="true">#{p.n}</span>
+      <span class="barra" aria-hidden="true"></span>
 
-  <div class="res">
-    <p class="veredicto">
-      <b>{p.victoria ? 'Victoria' : 'Derrota'}</b>
-      <span class="cola">· {p.cola}</span>
-      <span class="nivel">nv. {p.nivel}</span>
-    </p>
-    <p class="cuando">{fecha} · {hora} · {duracion}</p>
-  </div>
+      <div class="res">
+        <p class="veredicto">
+          <b>{p.victoria ? 'Victoria' : 'Derrota'}</b>
+          <span class="cola">· {p.cola}</span>
+          <span class="nivel">nv. {p.nivel}</span>
+        </p>
+        <p class="cuando">{fecha} · {hora} · {duracion}</p>
+      </div>
 
-  <div class="kit">
-    <ul class="runas" aria-label="Hechizos y runas">
-      {
-        kit.map((k) => (
-          <li>{k ? <img src={k.icono} alt="" title={k.nombre} loading="lazy" width="22" height="22" /> : <span class="hueco" />}</li>
-        ))
-      }
-    </ul>
-    <ul class="items" aria-label="Objetos">
-      {
-        huecos.map((item) => (
-          <li>
-            {item ? (
-              <img src={item.icono} alt="" title={item.nombre} loading="lazy" width="26" height="26" />
-            ) : (
-              <span class="hueco" />
-            )}
+      <div class="kit">
+        <ul class="runas" aria-label="Hechizos y runas">
+          {
+            kit.map((k) => (
+              <li>{k ? <img src={k.icono} alt="" title={k.nombre} loading="lazy" width="22" height="22" /> : <span class="hueco" />}</li>
+            ))
+          }
+        </ul>
+        <ul class="items" aria-label="Objetos">
+          {
+            huecos.map((item) => (
+              <li>
+                {item ? (
+                  <img src={item.icono} alt="" title={item.nombre} loading="lazy" width="26" height="26" />
+                ) : (
+                  <span class="hueco" />
+                )}
+              </li>
+            ))
+          }
+          <li class="trinket">
+            {
+              p.trinket ? (
+                <img src={p.trinket.icono} alt="" title={p.trinket.nombre} loading="lazy" width="26" height="26" />
+              ) : (
+                <span class="hueco" />
+              )
+            }
           </li>
-        ))
-      }
-      <li class="trinket">
-        {
-          p.trinket ? (
-            <img src={p.trinket.icono} alt="" title={p.trinket.nombre} loading="lazy" width="26" height="26" />
-          ) : (
-            <span class="hueco" />
-          )
-        }
-      </li>
-    </ul>
-  </div>
+        </ul>
+      </div>
 
-  <div class="cifras">
-    <span class="cs"
-      ><b>{p.cs}</b>
-      <span class="cifra-etiqueta">CS</span></span
-    >
-    <span class="kda"
-      >{p.kills} / <b class="muertes">{p.deaths}</b> / {p.assists}
-      <span class="cifra-etiqueta">KDA</span></span
-    >
-  </div>
+      <div class="cifras">
+        <span class="cs"
+          ><b>{p.cs}</b>
+          <span class="cifra-etiqueta">CS</span></span
+        >
+        <span class="kda"
+          >{p.kills} / <b class="muertes">{p.deaths}</b> / {p.assists}
+          <span class="cifra-etiqueta">KDA</span></span
+        >
+      </div>
+
+      {expandible && <span class="flecha" aria-hidden="true">▾</span>}
+    </Cabeza>
+
+    {
+      expandible && (
+        <div class="equipos">
+          {(['azul', 'rojo'] as const).map((eq) => {
+            const gana = p.ganaAzul == null ? null : eq === 'azul' ? p.ganaAzul : !p.ganaAzul;
+            return (
+              <div class={`equipo ${eq}`}>
+                <p class="equipo-cab">
+                  <span class={`punto ${eq}`} aria-hidden="true" />
+                  Equipo {eq}
+                  {gana != null && (
+                    <b class={gana ? 'gana' : 'pierde'}>{gana ? 'victoria' : 'derrota'}</b>
+                  )}
+                </p>
+                <ul>
+                  {porEquipo(eq).map((j) => (
+                    <li
+                      class="jugador"
+                      data-prota={j.protagonista ? 'si' : undefined}
+                      data-rival={esRivalDeLinea(j) ? 'si' : undefined}
+                    >
+                      <img src={j.icono} alt="" title={j.campeon} loading="lazy" width="24" height="24" />
+                      <span class="j-pos">{POS_CORTA[j.posicion] ?? '—'}</span>
+                      <span class="j-nombre">{j.nombre}</span>
+                      {j.protagonista && <span class="j-marca prota-marca">Werlyb</span>}
+                      {esRivalDeLinea(j) && <span class="j-marca rival-marca">rival de línea</span>}
+                      <span class="j-kda">
+                        {j.kills} / <b>{j.deaths}</b> / {j.assists}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      )
+    }
+  </Envoltura>
 </li>
 
 <style>
   .partida {
+    background: var(--surface);
+  }
+
+  .fila {
     display: grid;
-    grid-template-columns: 40px 3px minmax(150px, 1fr) auto auto;
-    grid-template-areas: 'num barra res kit cifras';
+    grid-template-columns: 40px 3px minmax(150px, 1fr) auto auto 16px;
+    grid-template-areas: 'num barra res kit cifras flecha';
     align-items: center;
     gap: 14px;
     padding: 12px 16px 12px 12px;
-    background: var(--surface);
+    list-style: none;
+  }
+
+  summary.fila {
+    cursor: pointer;
+  }
+
+  summary.fila::-webkit-details-marker {
+    display: none;
+  }
+
+  summary.fila:hover {
+    background: var(--surface-2);
   }
 
   .pnum {
@@ -245,12 +334,156 @@ while (huecos.length < 6) huecos.push(null);
     margin-top: 2px;
   }
 
+  .flecha {
+    grid-area: flecha;
+    color: var(--faint);
+    font-size: 12px;
+    transition: transform 0.2s ease;
+  }
+
+  .det[open] .flecha {
+    transform: rotate(180deg);
+  }
+
+  /* ── Detalle: los dos equipos ── */
+  .equipos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 26px;
+    padding: 6px 16px 16px 55px;
+    border-top: 1px solid var(--line-soft);
+    background: rgba(10, 10, 12, 0.45);
+  }
+
+  .equipo ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .equipo-cab {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    margin: 12px 0 8px;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .punto {
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    align-self: center;
+  }
+
+  .punto.azul {
+    background: #4c84c9;
+  }
+
+  .punto.rojo {
+    background: #b0473f;
+  }
+
+  .equipo-cab .gana {
+    color: var(--win);
+    font-weight: 500;
+  }
+
+  .equipo-cab .pierde {
+    color: var(--faint);
+    font-weight: 400;
+  }
+
+  .jugador {
+    display: grid;
+    grid-template-columns: 24px 30px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 9px;
+    padding: 3px 6px;
+    border-radius: 6px;
+  }
+
+  .jugador[data-prota='si'] {
+    background: rgba(200, 170, 110, 0.09);
+    outline: 1px solid rgba(200, 170, 110, 0.35);
+  }
+
+  .jugador[data-rival='si'] {
+    background: rgba(245, 52, 43, 0.06);
+    outline: 1px solid rgba(245, 52, 43, 0.28);
+  }
+
+  .jugador img {
+    border-radius: 4px;
+    display: block;
+  }
+
+  .j-pos {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.1em;
+    color: var(--faint);
+  }
+
+  .j-nombre {
+    font-size: 12.5px;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .jugador[data-prota='si'] .j-nombre {
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  .j-marca {
+    font-family: var(--mono);
+    font-size: 8.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 2px 5px;
+    white-space: nowrap;
+  }
+
+  .prota-marca {
+    color: var(--gold);
+    border: 1px solid rgba(200, 170, 110, 0.4);
+  }
+
+  .rival-marca {
+    color: var(--red);
+    border: 1px solid rgba(245, 52, 43, 0.35);
+  }
+
+  .j-kda {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-variant-numeric: tabular-nums;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  .j-kda b {
+    color: var(--red);
+    font-weight: 500;
+  }
+
   @media (max-width: 760px) {
-    .partida {
-      grid-template-columns: 34px 3px 1fr auto;
+    .fila {
+      grid-template-columns: 34px 3px 1fr auto 14px;
       grid-template-areas:
-        'num barra res cifras'
-        'num barra kit kit';
+        'num barra res cifras flecha'
+        'num barra kit kit kit';
       row-gap: 10px;
       padding-right: 12px;
     }
@@ -282,15 +515,24 @@ while (huecos.length < 6) huecos.push(null);
     .runas {
       grid-template-columns: repeat(4, 22px);
     }
+
+    .equipos {
+      grid-template-columns: 1fr;
+      padding-left: 16px;
+    }
+
+    .j-marca {
+      display: none;
+    }
   }
 
   @media (max-width: 560px) {
-    .partida {
-      grid-template-columns: 28px 3px 1fr;
+    .fila {
+      grid-template-columns: 28px 3px 1fr 14px;
       grid-template-areas:
-        'num barra res'
-        'num barra cifras'
-        'num barra kit';
+        'num barra res flecha'
+        'num barra cifras cifras'
+        'num barra kit kit';
       row-gap: 8px;
       gap: 10px;
     }

@@ -5,6 +5,10 @@ nombreCampeon: Jax
 tituloCampeon: El Maestro de Armas
 coach: Jorge Casanovas
 rolCoach: OTP de Jax
+# Ventana manual: Jax es su main de siempre y lo juega fuera de la serie;
+# sin esto, el margen ancho arrastraría partidas que no son del reto.
+partidasDesde: 2026-06-02
+partidasHasta: 2026-06-08
 videos:
   - titulo: 'OTP Jax con Jorge Casanovas'
     url: https://www.youtube.com/watch?v=pDUGBH1TYps

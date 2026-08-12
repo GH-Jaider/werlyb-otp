@@ -4,12 +4,35 @@ import Base from '../layouts/Base.astro';
 import TarjetaEpisodio from '../components/TarjetaEpisodio.astro';
 import { SERIE } from '../data/serie';
 import { splash, cuadrado } from '../lib/ddragon';
+import { partidasDe } from '../lib/partidas';
 
 const episodios = (await getCollection('episodios')).sort(
   (a, b) => b.data.orden - a.data.orden,
 );
 const ultimo = episodios[0];
 const totalVideos = episodios.reduce((n, e) => n + e.data.videos.length, 0);
+
+// El palmarés: cada arco con partidas, ordenado por winrate (desempata el KDA)
+const clasificacion = episodios
+  .map((e) => ({ e, r: partidasDe(e.id)?.resumen ?? null }))
+  .filter((x): x is typeof x & { r: NonNullable<typeof x.r> } => x.r !== null && x.r.partidas > 0)
+  .map(({ e, r }) => ({
+    id: e.id,
+    campeon: e.data.campeon,
+    nombre: e.data.nombreCampeon,
+    orden: e.data.orden,
+    coach: e.data.coach ?? null,
+    partidas: r.partidas,
+    victorias: r.victorias,
+    derrotas: r.derrotas,
+    kda: r.kda,
+    wr: Math.round((r.victorias / r.partidas) * 100),
+  }))
+  .sort((a, b) => b.wr - a.wr || b.kda - a.kda);
+
+const totPartidas = clasificacion.reduce((n, c) => n + c.partidas, 0);
+const totVictorias = clasificacion.reduce((n, c) => n + c.victorias, 0);
+const wrGlobal = totPartidas > 0 ? Math.round((totVictorias / totPartidas) * 100) : null;
 
 const formato = [
   {
@@ -70,6 +93,13 @@ const formato = [
             {episodios.length} episodios <span aria-hidden="true">↓</span>
           </a>
           {
+            clasificacion.length > 0 && (
+              <a class="chip" href="#palmares">
+                Palmarés <span aria-hidden="true">↓</span>
+              </a>
+            )
+          }
+          {
             SERIE.playlist && (
               <a class="chip" href={SERIE.playlist} rel="noopener">
                 Playlist en YouTube <span aria-hidden="true">↗</span>
@@ -105,38 +135,75 @@ const formato = [
       </div>
     </section>
 
-    <section class="contenedor seccion" aria-labelledby="pide-titulo">
-      <div class="cabecera-seccion">
-        <h2 id="pide-titulo" class="titular seccion-titulo">Pide tu OTP</h2>
-        <span class="etiqueta">los que queremos ver en próximos episodios</span>
-      </div>
-      <ul class="candidatos">
-        {
-          SERIE.candidatos.map((c) => (
-            <li class="candidato">
-              <img src={cuadrado(c.ddragonId)} alt="" width="48" height="48" loading="lazy" />
-              <div class="candidato-nombre">
-                <b>{c.nombre}</b>
-                <span class="etiqueta">en la lista</span>
-              </div>
-            </li>
-          ))
-        }
-      </ul>
-      <p class="pide-texto">
-        ¿Que tu main merece episodio?{' '}
-        {
-          SERIE.redes.twitch ? (
-            <a href={SERIE.redes.twitch} rel="noopener">
-              Suéltalo en el chat de Werlyb
-            </a>
-          ) : (
-            'Suéltalo en el chat de Werlyb'
-          )
-        }
-        — así salió el arco de Riven: «Lo pedísteis, lo tenéis».
-      </p>
-    </section>
+    {
+      clasificacion.length > 0 && (
+        <section id="palmares" class="contenedor seccion" aria-labelledby="palmares-titulo">
+          <div class="cabecera-seccion">
+            <h2 id="palmares-titulo" class="titular seccion-titulo">
+              El palmarés
+            </h2>
+            <span class="etiqueta">
+              {totPartidas} partidas · {totVictorias}V–{totPartidas - totVictorias}D ·{' '}
+              {wrGlobal} % WR global
+            </span>
+          </div>
+          <ol class="ranking">
+            {clasificacion.map((c, i) => (
+              <li>
+                <a class="fila-rank" href={`/ep/${c.id}/`}>
+                  <span class="pos titular" data-oro={i === 0 ? 'si' : undefined}>
+                    {i + 1}
+                  </span>
+                  <img
+                    class="rk-icono"
+                    src={cuadrado(c.campeon)}
+                    alt=""
+                    width="40"
+                    height="40"
+                    loading="lazy"
+                  />
+                  <span class="rk-nombre">
+                    <b>{c.nombre}</b>
+                    <span class="etiqueta rk-meta">
+                      EP.{String(c.orden).padStart(2, '0')}
+                      {c.coach ? ` · con ${c.coach}` : ''}
+                    </span>
+                  </span>
+                  <span
+                    class="rk-barra"
+                    role="img"
+                    aria-label={`${c.victorias} victorias y ${c.derrotas} derrotas`}
+                  >
+                    <span class="seg v" style={`flex-grow: ${c.victorias}`} />
+                    <span class="seg d" style={`flex-grow: ${c.derrotas}`} />
+                  </span>
+                  <span class="rk-cifras">
+                    <span class="rk-balance">
+                      {c.victorias}V–{c.derrotas}D
+                    </span>
+                    <b class="rk-wr">{c.wr} %</b>
+                    <span class="rk-kda">{c.kda.toFixed(1)} KDA</span>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ol>
+          <p class="pide-texto">
+            ¿Que tu main merece episodio?{' '}
+            {
+              SERIE.redes.twitch ? (
+                <a href={SERIE.redes.twitch} rel="noopener">
+                  Suéltalo en el chat de Werlyb
+                </a>
+              ) : (
+                'Suéltalo en el chat de Werlyb'
+              )
+            }{' '}
+            — así salió el arco de Riven: «Lo pedísteis, lo tenéis».
+          </p>
+        </section>
+      )
+    }
   </main>
 </Base>
 
@@ -296,45 +363,119 @@ const formato = [
     gap: 18px;
   }
 
-  /* ── Pide tu OTP ── */
-  .candidatos {
+  /* ── El palmarés ── */
+  .ranking {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-  }
-
-  .candidato {
-    display: flex;
-    align-items: center;
-    gap: 13px;
-    background: var(--surface);
     border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 11px 20px 11px 12px;
+    border-radius: 10px;
+    overflow: hidden;
   }
 
-  .candidato img {
+  .ranking li + li {
+    border-top: 1px solid var(--line-soft);
+  }
+
+  .fila-rank {
+    display: grid;
+    grid-template-columns: 44px 40px minmax(150px, 1fr) minmax(120px, 220px) auto;
+    gap: 16px;
+    align-items: center;
+    padding: 11px 18px 11px 10px;
+    text-decoration: none;
+    background: var(--surface);
+    transition: background 0.15s ease;
+  }
+
+  .fila-rank:hover {
+    background: var(--surface-2);
+  }
+
+  .pos {
+    font-size: 22px;
+    color: var(--faint);
+    text-align: center;
+  }
+
+  .pos[data-oro='si'] {
+    color: var(--gold);
+  }
+
+  .rk-icono {
     border-radius: 6px;
     filter: saturate(0.85);
   }
 
-  .candidato-nombre {
+  .rk-nombre {
     display: flex;
     flex-direction: column;
     gap: 2px;
+    min-width: 0;
   }
 
-  .candidato-nombre b {
+  .rk-nombre b {
     font-size: 16px;
     font-weight: 600;
+    color: var(--text);
   }
 
-  .candidato-nombre .etiqueta {
+  .rk-meta {
     font-size: 10.5px;
     color: var(--faint);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .rk-barra {
+    display: flex;
+    gap: 2px;
+    height: 10px;
+  }
+
+  .seg {
+    flex-basis: 0;
+    border-radius: 3px;
+    min-width: 0;
+  }
+
+  .seg.v {
+    background: var(--win);
+  }
+
+  .seg.d {
+    background: var(--red);
+    opacity: 0.85;
+  }
+
+  .rk-cifras {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    justify-content: flex-end;
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .rk-balance {
+    font-size: 12px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  .rk-wr {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--gold);
+    min-width: 46px;
+    text-align: right;
+  }
+
+  .rk-kda {
+    font-size: 12px;
+    color: var(--muted);
+    white-space: nowrap;
   }
 
   .pide-texto {
@@ -370,10 +511,35 @@ const formato = [
     }
   }
 
+  @media (max-width: 760px) {
+    .fila-rank {
+      grid-template-columns: 32px 34px minmax(0, 1fr) auto;
+    }
+    .rk-barra {
+      display: none;
+    }
+    .pos {
+      font-size: 18px;
+    }
+    .rk-icono {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
   @media (max-width: 560px) {
     .parrilla {
       grid-template-columns: 1fr 1fr;
       gap: 12px;
+    }
+    .rk-kda {
+      display: none;
+    }
+    .rk-cifras {
+      gap: 10px;
+    }
+    .rk-meta {
+      max-width: 160px;
     }
   }
 </style>

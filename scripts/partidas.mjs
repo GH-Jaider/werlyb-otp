@@ -25,8 +25,12 @@ const DIR_EPISODIOS = path.join(RAIZ, 'src/content/episodios');
 const DIR_SALIDA = path.join(RAIZ, 'src/data/partidas');
 const CUENTAS = JSON.parse(await readFile(path.join(RAIZ, 'src/data/cuentas.json'), 'utf8'));
 
-const MARGEN_ANTES_DIAS = 5; // los vídeos se publican días después de jugarse
-const MARGEN_DESPUES_DIAS = 2;
+// Los vídeos se publican días después de jugarse, así que la ventana de búsqueda
+// se abre alrededor de las fechas de los vídeos. Cada arco puede afinarla con
+// `partidasDesde:` / `partidasHasta:` en su frontmatter (imprescindible en arcos
+// de campeones que Werlyb juega fuera de la serie, como Jax).
+const MARGEN_ANTES_DIAS = 7;
+const MARGEN_DESPUES_DIAS = 4;
 
 const COLAS = {
   420: 'SoloQ',
@@ -100,9 +104,11 @@ async function leerEpisodios() {
   for (const archivo of archivos) {
     const crudo = await readFile(path.join(DIR_EPISODIOS, archivo), 'utf8');
     const campeon = crudo.match(/^campeon:\s*(\S+)/m)?.[1];
-    const fechas = [...crudo.matchAll(/fecha:\s*(\d{4}-\d{2}-\d{2})/g)].map((m) => m[1]).sort();
-    if (!campeon || fechas.length === 0) continue;
-    episodios.push({ id: archivo.replace(/\.md$/, ''), campeon, fechas });
+    const fechas = [...crudo.matchAll(/^\s+fecha:\s*(\d{4}-\d{2}-\d{2})/gm)].map((m) => m[1]).sort();
+    const desde = crudo.match(/^partidasDesde:\s*(\d{4}-\d{2}-\d{2})/m)?.[1] ?? null;
+    const hasta = crudo.match(/^partidasHasta:\s*(\d{4}-\d{2}-\d{2})/m)?.[1] ?? null;
+    if (!campeon || (fechas.length === 0 && !(desde && hasta))) continue;
+    episodios.push({ id: archivo.replace(/\.md$/, ''), campeon, fechas, desde, hasta });
   }
   return episodios.sort((a, b) => a.id.localeCompare(b.id));
 }
@@ -135,11 +141,16 @@ const episodios = await leerEpisodios();
 console.log(`${episodios.length} episodios con fechas\n`);
 
 for (const ep of episodios) {
-  const desde = Math.floor((Date.parse(ep.fechas[0]) - MARGEN_ANTES_DIAS * DIA_MS) / 1000);
-  const hasta = Math.floor(
-    (Date.parse(ep.fechas[ep.fechas.length - 1]) + (MARGEN_DESPUES_DIAS + 1) * DIA_MS) / 1000,
-  );
-  console.log(`── ${ep.id} (${ep.campeon}) · ${ep.fechas[0]} → ${ep.fechas[ep.fechas.length - 1]}`);
+  const desde = ep.desde
+    ? Math.floor(Date.parse(ep.desde) / 1000)
+    : Math.floor((Date.parse(ep.fechas[0]) - MARGEN_ANTES_DIAS * DIA_MS) / 1000);
+  const hasta = ep.hasta
+    ? Math.floor((Date.parse(ep.hasta) + DIA_MS) / 1000)
+    : Math.floor(
+        (Date.parse(ep.fechas[ep.fechas.length - 1]) + (MARGEN_DESPUES_DIAS + 1) * DIA_MS) / 1000,
+      );
+  const etiquetaVentana = `${new Date(desde * 1000).toISOString().slice(0, 10)} → ${new Date(hasta * 1000).toISOString().slice(0, 10)}${ep.desde || ep.hasta ? ' (ventana manual)' : ''}`;
+  console.log(`── ${ep.id} (${ep.campeon}) · ventana ${etiquetaVentana}`);
 
   const partidas = [];
   for (const cuenta of cuentas) {
@@ -170,7 +181,23 @@ for (const ep of episodios) {
         const claveRuna = p.perks?.styles?.[0]?.selections?.[0]?.perk;
         const estiloSec = p.perks?.styles?.[1]?.style;
 
+        const jugadores = detalle.info.participants.map((x) => ({
+          campeon: x.championName,
+          icono: `${CDN}/${V}/img/champion/${x.championName}.png`,
+          nombre: x.riotIdGameName
+            ? `${x.riotIdGameName}#${x.riotIdTagline}`
+            : (x.summonerName || '—'),
+          equipo: x.teamId === 100 ? 'azul' : 'rojo',
+          posicion: x.teamPosition || '',
+          kills: x.kills,
+          deaths: x.deaths,
+          assists: x.assists,
+          protagonista: x.puuid === cuenta.puuid,
+        }));
+
         partidas.push({
+          jugadores,
+          ganaAzul: detalle.info.teams?.find((t) => t.teamId === 100)?.win ?? null,
           matchId,
           cuenta: cuenta.riotId,
           inicio: new Date(detalle.info.gameStartTimestamp).toISOString(),
