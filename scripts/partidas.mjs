@@ -42,8 +42,12 @@ const COLAS = {
   400: 'Normal',
   430: 'Normal',
   450: 'ARAM',
+  480: 'Swiftplay',
   490: 'Quickplay',
   700: 'Clash',
+  900: 'URF',
+  1700: 'Arena',
+  1710: 'Arena',
 };
 
 // ── Rate limiter: la key de desarrollo permite 100 peticiones / 2 min ──

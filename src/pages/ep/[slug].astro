@@ -125,16 +125,73 @@ const videos = d.videos.map((v, i) => ({
     <div class="contenedor titulo-ep">
       <p class="etiqueta linea-ep">
         <span class="num">Episodio {num}</span>
-        {rango && <span class="sep">·</span>}
-        {rango && <span>{rango}</span>}
+        {rango && <span class="fechas-ep"><span class="sep">·</span> {rango}</span>}
       </p>
       <h1 class="titular nombre">{d.nombreCampeon}</h1>
       {d.tituloCampeon && <p class="apodo">{d.tituloCampeon}</p>}
+      <p class="coach-linea">
+        {
+          d.coach ? (
+            <>
+              con{' '}
+              {d.canalCoach ? (
+                <a href={d.canalCoach} rel="noopener">
+                  {d.coach} <span aria-hidden="true">↗</span>
+                </a>
+              ) : (
+                <b>{d.coach}</b>
+              )}{' '}
+              de coach{d.rolCoach && <span class="coach-rol"> · {d.rolCoach}</span>}
+            </>
+          ) : (
+            <span class="sin-coach">coach por confirmar</span>
+          )
+        }
+      </p>
     </div>
   </header>
 
   <main id="contenido" class="contenedor cuerpo">
     <div class="principal">
+      {
+        hayStats && (
+          <section class="marcador" aria-label="Stats del arco">
+            {
+              partidasTotales != null && (
+                <div class="stat">
+                  <b>{partidasTotales}</b>
+                  <span class="stat-eti">partidas</span>
+                </div>
+              )
+            }
+            {
+              balance && (
+                <div class="stat">
+                  <b>{balance}</b>
+                  <span class="stat-eti">balance</span>
+                </div>
+              )
+            }
+            {
+              winrate != null && (
+                <div class="stat">
+                  <b>{winrate} %</b>
+                  <span class="stat-eti">winrate</span>
+                </div>
+              )
+            }
+            {
+              kdaArco != null && (
+                <div class="stat">
+                  <b>{kdaArco.toFixed(1)}</b>
+                  <span class="stat-eti">KDA</span>
+                </div>
+              )
+            }
+          </section>
+        )
+      }
+
       {
         videos.length > 0 && (
           <section class="videos" aria-label="Vídeos del arco">
@@ -219,99 +276,38 @@ const videos = d.videos.map((v, i) => ({
           </div>
         )
       }
-    </div>
 
-    <aside class="ficha" aria-label="Ficha del arco">
-      <h2 class="etiqueta ficha-titulo">Ficha del arco</h2>
-      <dl>
-        <div class="fila">
-          <dt class="etiqueta">Coach</dt>
-          <dd>
+      {
+        ((d.build && d.build.length > 0) || (d.runas && d.runas.length > 0)) && (
+          <section class="build-coach" aria-label="Build del coach">
             {
-              d.coach ? (
-                <>
-                  {d.canalCoach ? (
-                    <a href={d.canalCoach} rel="noopener">
-                      {d.coach} <span aria-hidden="true">↗</span>
-                    </a>
-                  ) : (
-                    d.coach
-                  )}
-                  {d.rolCoach && <span class="detalle">{d.rolCoach}</span>}
-                </>
-              ) : (
-                <span class="sin-dato">Por confirmar</span>
+              d.build && d.build.length > 0 && (
+                <div>
+                  <h2 class="etiqueta">Build del coach</h2>
+                  <ol class="lista">
+                    {d.build.map((item) => (
+                      <li>{item}</li>
+                    ))}
+                  </ol>
+                </div>
               )
             }
-          </dd>
-        </div>
-        {
-          d.videos.length > 0 && (
-            <div class="fila">
-              <dt class="etiqueta">Vídeos del arco</dt>
-              <dd class="dato">{d.videos.length}</dd>
-            </div>
-          )
-        }
-        {
-          partidasTotales != null && (
-            <div class="fila">
-              <dt class="etiqueta">Partidas</dt>
-              <dd class="dato">{partidasTotales}</dd>
-            </div>
-          )
-        }
-        {
-          balance && (
-            <div class="fila">
-              <dt class="etiqueta">Balance</dt>
-              <dd class="dato">{balance}</dd>
-            </div>
-          )
-        }
-        {
-          kdaArco != null && (
-            <div class="fila">
-              <dt class="etiqueta">KDA</dt>
-              <dd class="dato">{kdaArco.toFixed(1)}</dd>
-            </div>
-          )
-        }
-        {
-          d.build && d.build.length > 0 && (
-            <div class="fila">
-              <dt class="etiqueta">Build del coach</dt>
-              <dd>
-                <ol class="lista">
-                  {d.build.map((item) => (
-                    <li>{item}</li>
-                  ))}
-                </ol>
-              </dd>
-            </div>
-          )
-        }
-        {
-          d.runas && d.runas.length > 0 && (
-            <div class="fila">
-              <dt class="etiqueta">Runas</dt>
-              <dd>
-                <ul class="lista">
-                  {d.runas.map((item) => (
-                    <li>{item}</li>
-                  ))}
-                </ul>
-              </dd>
-            </div>
-          )
-        }
-      </dl>
-      {
-        !hayStats && (
-          <p class="ficha-pendiente">Las stats del arco se añadirán cuando estén contadas.</p>
+            {
+              d.runas && d.runas.length > 0 && (
+                <div>
+                  <h2 class="etiqueta">Runas</h2>
+                  <ul class="lista">
+                    {d.runas.map((item) => (
+                      <li>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              )
+            }
+          </section>
         )
       }
-    </aside>
+    </div>
   </main>
 
   <nav class="contenedor vecinos" aria-label="Más episodios">
@@ -475,12 +471,88 @@ const videos = d.videos.map((v, i) => ({
     color: var(--muted);
   }
 
+  .coach-linea {
+    margin: 14px 0 0;
+    font-size: 16px;
+    color: var(--text);
+    text-shadow: 0 1px 8px rgba(10, 10, 12, 0.8);
+  }
+
+  .coach-linea b {
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  .coach-linea a {
+    color: var(--gold);
+    font-weight: 600;
+    text-decoration-color: rgba(200, 170, 110, 0.4);
+    text-underline-offset: 3px;
+  }
+
+  .coach-linea a:hover {
+    color: var(--text);
+  }
+
+  .coach-rol {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .sin-coach {
+    color: var(--muted);
+    font-style: italic;
+  }
+
   /* ── Cuerpo ── */
   .cuerpo {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 300px;
-    gap: clamp(28px, 4vw, 56px);
     padding-top: clamp(36px, 5vw, 56px);
+  }
+
+  /* ── El marcador: las stats del arco en grande ── */
+  .marcador {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 0;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--surface);
+    overflow: hidden;
+  }
+
+  .stat {
+    flex: 1 1 0;
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 18px 24px 16px;
+  }
+
+  .stat + .stat {
+    border-left: 1px solid var(--line-soft);
+  }
+
+  .stat b {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(28px, 3.2vw, 40px);
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .stat-eti {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--faint);
   }
 
   .principal {
@@ -692,75 +764,19 @@ const videos = d.videos.map((v, i) => ({
     color: var(--faint);
   }
 
-  /* ── Ficha ── */
-  .ficha {
+  /* ── Build del coach (solo si el arco la documenta) ── */
+  .build-coach {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(24px, 4vw, 56px);
     border: 1px solid var(--line);
     border-radius: 10px;
     background: var(--surface);
-    padding: 22px 24px;
-    align-self: start;
-  }
-
-  .ficha-titulo {
-    margin: 0 0 6px;
-    color: var(--acento);
-  }
-
-  dl {
-    margin: 0;
-  }
-
-  .fila {
-    padding: 14px 0;
-    border-bottom: 1px solid var(--line-soft);
-  }
-
-  .fila:last-child {
-    border-bottom: 0;
-  }
-
-  dt {
-    font-size: 10.5px;
-    color: var(--faint);
-    margin-bottom: 4px;
-  }
-
-  dd {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 600;
-  }
-
-  dd a {
-    color: var(--gold);
-    text-decoration-color: rgba(200, 170, 110, 0.4);
-    text-underline-offset: 3px;
-  }
-
-  dd a:hover {
-    color: var(--text);
-  }
-
-  dd .detalle {
-    display: block;
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--muted);
-    font-weight: 400;
-    margin-top: 3px;
-  }
-
-  dd.dato {
-    font-family: var(--mono);
-    font-variant-numeric: tabular-nums;
-    color: var(--gold);
-    font-weight: 500;
+    padding: 20px 24px;
   }
 
   .lista {
-    margin: 4px 0 0;
+    margin: 8px 0 0;
     padding-left: 18px;
     font-weight: 400;
     font-size: 14.5px;
@@ -769,18 +785,6 @@ const videos = d.videos.map((v, i) => ({
 
   .lista li {
     margin: 3px 0;
-  }
-
-  .ficha-pendiente {
-    margin: 14px 0 0;
-    font-size: 13px;
-    color: var(--faint);
-  }
-
-  .sin-dato {
-    color: var(--faint);
-    font-weight: 400;
-    font-style: italic;
   }
 
   /* ── Prev / next: tarjetas con el arte del campeón vecino ── */
@@ -862,8 +866,14 @@ const videos = d.videos.map((v, i) => ({
   }
 
   @media (max-width: 860px) {
-    .cuerpo {
-      grid-template-columns: 1fr;
+    .stat {
+      min-width: calc(50% - 1px);
+    }
+    .stat:nth-child(odd) {
+      border-left: 0;
+    }
+    .stat:nth-child(n + 3) {
+      border-top: 1px solid var(--line-soft);
     }
     .cabecera-ep {
       margin-top: -62px;
@@ -879,9 +889,4 @@ const videos = d.videos.map((v, i) => ({
     }
   }
 
-  @media (max-width: 560px) {
-    .linea-ep .sep {
-      display: none;
-    }
-  }
 </style>
