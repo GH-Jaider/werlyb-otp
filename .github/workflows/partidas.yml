@@ -34,5 +34,7 @@ jobs:
             echo "Sin partidas nuevas."
           else
             git commit -m "Partidas actualizadas ($(date -u +%F))"
+            # por si main avanzó mientras corría el backfill
+            git pull --rebase origin main
             git push
           fi
