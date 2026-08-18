@@ -25,12 +25,15 @@ const DIR_EPISODIOS = path.join(RAIZ, 'src/content/episodios');
 const DIR_SALIDA = path.join(RAIZ, 'src/data/partidas');
 const CUENTAS = JSON.parse(await readFile(path.join(RAIZ, 'src/data/cuentas.json'), 'utf8'));
 
-// Los vídeos se publican días después de jugarse, así que la ventana de búsqueda
-// se abre alrededor de las fechas de los vídeos. Cada arco puede afinarla con
-// `partidasDesde:` / `partidasHasta:` en su frontmatter (imprescindible en arcos
-// de campeones que Werlyb juega fuera de la serie, como Jax).
+// Las ventanas de búsqueda tapizan la línea temporal de la serie: cada arco va
+// desde su inicio hasta el inicio del arco siguiente (el último llega hasta hoy),
+// y el filtro por campeón asigna cada partida a su arco. Así se capturan partidas
+// jugadas mucho antes de subir los vídeos y regresos tras un parón (caso Nami).
+// El inicio por defecto se estima desde el primer vídeo con margen hacia atrás;
+// `partidasDesde:` lo fija con precisión y `partidasHasta:` recorta el final
+// cuando un arco necesita cerrarse antes (caso Jax, que también se juega fuera
+// de la serie).
 const MARGEN_ANTES_DIAS = 7;
-const MARGEN_DESPUES_DIAS = 4;
 
 // Match-V5 arrastra peculiaridades de nombre respecto a Data Dragon
 const CAMPEON_RARO = { FiddleSticks: 'Fiddlesticks' };
@@ -50,7 +53,7 @@ const COLAS = {
   1710: 'Arena',
 };
 
-// ── Rate limiter: la key de desarrollo permite 100 peticiones / 2 min ──
+// ── Rate limiter: la key personal permite 100 peticiones / 2 min ──
 let ultimaPeticion = 0;
 const INTERVALO_MS = 1350; // ~89 peticiones / 2 min, con colchón
 
@@ -112,15 +115,18 @@ async function leerEpisodios() {
   for (const archivo of archivos) {
     const crudo = await readFile(path.join(DIR_EPISODIOS, archivo), 'utf8');
     const campeon = crudo.match(/^campeon:\s*(\S+)/m)?.[1];
+    const orden = Number(crudo.match(/^orden:\s*(\d+)/m)?.[1] ?? NaN);
     const fechas = [...crudo.matchAll(/^[ \t]+fecha:\s*(\d{4}-\d{2}-\d{2})/gm)]
       .map((m) => m[1])
       .sort();
     const desde = crudo.match(/^partidasDesde:\s*(\d{4}-\d{2}-\d{2})/m)?.[1] ?? null;
     const hasta = crudo.match(/^partidasHasta:\s*(\d{4}-\d{2}-\d{2})/m)?.[1] ?? null;
-    if (!campeon || (fechas.length === 0 && !(desde && hasta))) continue;
-    episodios.push({ id: archivo.replace(/\.md$/, ''), campeon, fechas, desde, hasta });
+    if (!campeon || (fechas.length === 0 && !desde)) continue;
+    episodios.push({ id: archivo.replace(/\.md$/, ''), campeon, orden, fechas, desde, hasta });
   }
-  return episodios.sort((a, b) => a.id.localeCompare(b.id));
+  // Clave única y transitiva: sin `orden:` va al final, con id como desempate.
+  const claveOrden = (ep) => (Number.isNaN(ep.orden) ? Infinity : ep.orden);
+  return episodios.sort((a, b) => claveOrden(a) - claveOrden(b) || a.id.localeCompare(b.id));
 }
 
 // ── Cuentas → puuid ──
@@ -150,16 +156,26 @@ const DIA_MS = 24 * 60 * 60 * 1000;
 const episodios = await leerEpisodios();
 console.log(`${episodios.length} episodios con fechas\n`);
 
-for (const ep of episodios) {
-  const desde = ep.desde
+// Inicio del arco: `partidasDesde` si existe; si no, primer vídeo con margen.
+const inicioArco = (ep) =>
+  ep.desde
     ? Math.floor(Date.parse(ep.desde) / 1000)
     : Math.floor((Date.parse(ep.fechas[0]) - MARGEN_ANTES_DIAS * DIA_MS) / 1000);
+
+for (const [i, ep] of episodios.entries()) {
+  const desde = inicioArco(ep);
+  const siguiente = episodios[i + 1];
   const hasta = ep.hasta
     ? Math.floor((Date.parse(ep.hasta) + DIA_MS) / 1000)
-    : Math.floor(
-        (Date.parse(ep.fechas[ep.fechas.length - 1]) + (MARGEN_DESPUES_DIAS + 1) * DIA_MS) / 1000,
-      );
-  const etiquetaVentana = `${new Date(desde * 1000).toISOString().slice(0, 10)} → ${new Date(hasta * 1000 - DIA_MS).toISOString().slice(0, 10)}${ep.desde || ep.hasta ? ' (ventana manual)' : ''}`;
+    : siguiente
+      ? inicioArco(siguiente)
+      : Math.floor(Date.now() / 1000);
+  if (hasta <= desde) {
+    console.warn(`── ${ep.id} (${ep.campeon}) · ventana vacía, revisar partidasDesde/partidasHasta`);
+    continue;
+  }
+  const manual = [ep.desde && 'desde', ep.hasta && 'hasta'].filter(Boolean).join(' y ');
+  const etiquetaVentana = `${new Date(desde * 1000).toISOString().slice(0, 10)} → ${new Date((hasta - 1) * 1000).toISOString().slice(0, 10)}${manual ? ` (${manual} manual)` : ''}`;
   console.log(`── ${ep.id} (${ep.campeon}) · ventana ${etiquetaVentana}`);
 
   const partidas = [];
