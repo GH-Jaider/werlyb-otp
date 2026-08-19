@@ -1,15 +1,3457 @@
 {
-  "actualizado": "2026-08-19T18:50:34.320Z",
+  "actualizado": "2026-08-19T19:30:44.693Z",
   "ddragon": "16.16.1",
   "cuentas": [
     "lllIlIIIIlIll#EUW",
     "illo wely#EUW"
   ],
   "resumen": {
-    "partidas": 0,
-    "victorias": 0,
-    "derrotas": 0,
-    "kda": 0
+    "partidas": 18,
+    "victorias": 13,
+    "derrotas": 5,
+    "kda": 2.8
   },
-  "partidas": []
+  "partidas": [
+    {
+      "jugadores": [
+        {
+          "campeon": "Sion",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Sion.png",
+          "nombre": "Refresh27#EUW",
+          "equipo": "azul",
+          "posicion": "TOP",
+          "kills": 5,
+          "deaths": 7,
+          "assists": 6,
+          "protagonista": false
+        },
+        {
+          "campeon": "Shyvana",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Shyvana.png",
+          "nombre": "ExpressKill1043#FEET",
+          "equipo": "azul",
+          "posicion": "JUNGLE",
+          "kills": 16,
+          "deaths": 12,
+          "assists": 6,
+          "protagonista": false
+        },
+        {
+          "campeon": "Malzahar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Malzahar.png",
+          "nombre": "Siggles#Mid",
+          "equipo": "azul",
+          "posicion": "MIDDLE",
+          "kills": 5,
+          "deaths": 12,
+          "assists": 13,
+          "protagonista": false
+        },
+        {
+          "campeon": "Draven",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Draven.png",
+          "nombre": "Parek official#EUW",
+          "equipo": "azul",
+          "posicion": "BOTTOM",
+          "kills": 8,
+          "deaths": 9,
+          "assists": 9,
+          "protagonista": false
+        },
+        {
+          "campeon": "Fiddlesticks",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Fiddlesticks.png",
+          "nombre": "Charolon#LATAM",
+          "equipo": "azul",
+          "posicion": "UTILITY",
+          "kills": 4,
+          "deaths": 9,
+          "assists": 14,
+          "protagonista": false
+        },
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "rojo",
+          "posicion": "TOP",
+          "kills": 16,
+          "deaths": 7,
+          "assists": 9,
+          "protagonista": true
+        },
+        {
+          "campeon": "Karthus",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Karthus.png",
+          "nombre": "Soleil Déchu#SUN",
+          "equipo": "rojo",
+          "posicion": "JUNGLE",
+          "kills": 9,
+          "deaths": 9,
+          "assists": 19,
+          "protagonista": false
+        },
+        {
+          "campeon": "Zed",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zed.png",
+          "nombre": "hot boy bummer#EUW",
+          "equipo": "rojo",
+          "posicion": "MIDDLE",
+          "kills": 15,
+          "deaths": 9,
+          "assists": 2,
+          "protagonista": false
+        },
+        {
+          "campeon": "Jhin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Jhin.png",
+          "nombre": "tru3no#XDD",
+          "equipo": "rojo",
+          "posicion": "BOTTOM",
+          "kills": 6,
+          "deaths": 8,
+          "assists": 15,
+          "protagonista": false
+        },
+        {
+          "campeon": "Karma",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Karma.png",
+          "nombre": "xShadezz#2607",
+          "equipo": "rojo",
+          "posicion": "UTILITY",
+          "kills": 3,
+          "deaths": 5,
+          "assists": 20,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": false,
+      "matchId": "EUW1_7791648849",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-21T19:17:51.650Z",
+      "duracionSeg": 1830,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 16,
+      "deaths": 7,
+      "assists": 9,
+      "cs": 218,
+      "items": [
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3161.png"
+        },
+        {
+          "nombre": "Botas de mercurio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3111.png"
+        },
+        {
+          "nombre": "Calibrador de Sterak",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3053.png"
+        },
+        {
+          "nombre": "Cuchilla negra",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3071.png"
+        },
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2517.png"
+        },
+        {
+          "nombre": "Lágrima de la diosa",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3070.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 1
+    },
+    {
+      "jugadores": [
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "azul",
+          "posicion": "TOP",
+          "kills": 7,
+          "deaths": 10,
+          "assists": 11,
+          "protagonista": true
+        },
+        {
+          "campeon": "JarvanIV",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/JarvanIV.png",
+          "nombre": "Itekai#EUW",
+          "equipo": "azul",
+          "posicion": "JUNGLE",
+          "kills": 5,
+          "deaths": 6,
+          "assists": 18,
+          "protagonista": false
+        },
+        {
+          "campeon": "Veigar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Veigar.png",
+          "nombre": "spam Q#roodz",
+          "equipo": "azul",
+          "posicion": "MIDDLE",
+          "kills": 4,
+          "deaths": 2,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "Jhin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Jhin.png",
+          "nombre": "Kyro#2000",
+          "equipo": "azul",
+          "posicion": "BOTTOM",
+          "kills": 10,
+          "deaths": 7,
+          "assists": 4,
+          "protagonista": false
+        },
+        {
+          "campeon": "Braum",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Braum.png",
+          "nombre": "newjeansfan#love",
+          "equipo": "azul",
+          "posicion": "UTILITY",
+          "kills": 1,
+          "deaths": 6,
+          "assists": 14,
+          "protagonista": false
+        },
+        {
+          "campeon": "Irelia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Irelia.png",
+          "nombre": "fractured soul#Lydie",
+          "equipo": "rojo",
+          "posicion": "TOP",
+          "kills": 9,
+          "deaths": 8,
+          "assists": 5,
+          "protagonista": false
+        },
+        {
+          "campeon": "Shen",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Shen.png",
+          "nombre": "Shenpai#00000",
+          "equipo": "rojo",
+          "posicion": "JUNGLE",
+          "kills": 3,
+          "deaths": 4,
+          "assists": 12,
+          "protagonista": false
+        },
+        {
+          "campeon": "Orianna",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Orianna.png",
+          "nombre": "LANE DOMINANCE#PIKU",
+          "equipo": "rojo",
+          "posicion": "MIDDLE",
+          "kills": 10,
+          "deaths": 5,
+          "assists": 6,
+          "protagonista": false
+        },
+        {
+          "campeon": "Yunara",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yunara.png",
+          "nombre": "TimmyTheFarmer#EUW",
+          "equipo": "rojo",
+          "posicion": "BOTTOM",
+          "kills": 7,
+          "deaths": 5,
+          "assists": 4,
+          "protagonista": false
+        },
+        {
+          "campeon": "Elise",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Elise.png",
+          "nombre": "3333#aaa",
+          "equipo": "rojo",
+          "posicion": "UTILITY",
+          "kills": 2,
+          "deaths": 5,
+          "assists": 14,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": false,
+      "matchId": "EUW1_7791719521",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-21T19:53:06.719Z",
+      "duracionSeg": 1938,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 18,
+      "kills": 7,
+      "deaths": 10,
+      "assists": 11,
+      "cs": 233,
+      "items": [
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2517.png"
+        },
+        {
+          "nombre": "Malla de espinas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3075.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Lágrima de la diosa",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3070.png"
+        },
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3161.png"
+        },
+        {
+          "nombre": "Convergencia de Zeke",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3050.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 2
+    },
+    {
+      "jugadores": [
+        {
+          "campeon": "Sion",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Sion.png",
+          "nombre": "Mori#Inari",
+          "equipo": "azul",
+          "posicion": "TOP",
+          "kills": 2,
+          "deaths": 4,
+          "assists": 4,
+          "protagonista": false
+        },
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "azul",
+          "posicion": "JUNGLE",
+          "kills": 3,
+          "deaths": 2,
+          "assists": 6,
+          "protagonista": true
+        },
+        {
+          "campeon": "Diana",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Diana.png",
+          "nombre": "lf big biceps#333",
+          "equipo": "azul",
+          "posicion": "MIDDLE",
+          "kills": 10,
+          "deaths": 0,
+          "assists": 6,
+          "protagonista": false
+        },
+        {
+          "campeon": "Draven",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Draven.png",
+          "nombre": "I PRESS FORWARD#IPS",
+          "equipo": "azul",
+          "posicion": "BOTTOM",
+          "kills": 9,
+          "deaths": 8,
+          "assists": 4,
+          "protagonista": false
+        },
+        {
+          "campeon": "Pyke",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Pyke.png",
+          "nombre": "ＣＲＵＥＬ    ＣＨＯＩＣＥＳ#sho",
+          "equipo": "azul",
+          "posicion": "UTILITY",
+          "kills": 8,
+          "deaths": 3,
+          "assists": 4,
+          "protagonista": false
+        },
+        {
+          "campeon": "Cassiopeia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Cassiopeia.png",
+          "nombre": "data scientist#667",
+          "equipo": "rojo",
+          "posicion": "TOP",
+          "kills": 5,
+          "deaths": 6,
+          "assists": 1,
+          "protagonista": false
+        },
+        {
+          "campeon": "DrMundo",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/DrMundo.png",
+          "nombre": "HU Rank 0 JG#HUN",
+          "equipo": "rojo",
+          "posicion": "JUNGLE",
+          "kills": 1,
+          "deaths": 6,
+          "assists": 2,
+          "protagonista": false
+        },
+        {
+          "campeon": "Zed",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zed.png",
+          "nombre": "DD MASINA#CMAX",
+          "equipo": "rojo",
+          "posicion": "MIDDLE",
+          "kills": 5,
+          "deaths": 7,
+          "assists": 2,
+          "protagonista": false
+        },
+        {
+          "campeon": "Jhin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Jhin.png",
+          "nombre": "Seo Yea ji#ALLFT",
+          "equipo": "rojo",
+          "posicion": "BOTTOM",
+          "kills": 6,
+          "deaths": 7,
+          "assists": 4,
+          "protagonista": false
+        },
+        {
+          "campeon": "Sona",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Sona.png",
+          "nombre": "GamerDuFutur#EUW",
+          "equipo": "rojo",
+          "posicion": "UTILITY",
+          "kills": 0,
+          "deaths": 6,
+          "assists": 7,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": true,
+      "matchId": "EUW1_7791787343",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-21T20:31:55.775Z",
+      "duracionSeg": 1161,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 14,
+      "kills": 3,
+      "deaths": 2,
+      "assists": 6,
+      "cs": 172,
+      "items": [
+        {
+          "nombre": "Convergencia de Zeke",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3050.png"
+        },
+        {
+          "nombre": "Soberbia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6697.png"
+        },
+        {
+          "nombre": "Pico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1037.png"
+        },
+        {
+          "nombre": "Botas de rapidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3009.png"
+        },
+        {
+          "nombre": "Tuneladora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2021.png"
+        },
+        {
+          "nombre": "Cristal de rubí",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1028.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 3
+    },
+    {
+      "jugadores": [
+        {
+          "campeon": "Sett",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Sett.png",
+          "nombre": "YTGaReN HaN live#RTE",
+          "equipo": "azul",
+          "posicion": "TOP",
+          "kills": 2,
+          "deaths": 9,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "Nocturne",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nocturne.png",
+          "nombre": "Hero#MABE",
+          "equipo": "azul",
+          "posicion": "JUNGLE",
+          "kills": 8,
+          "deaths": 6,
+          "assists": 11,
+          "protagonista": false
+        },
+        {
+          "campeon": "Ryze",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ryze.png",
+          "nombre": "ZFK620#LGNDR",
+          "equipo": "azul",
+          "posicion": "MIDDLE",
+          "kills": 3,
+          "deaths": 12,
+          "assists": 1,
+          "protagonista": false
+        },
+        {
+          "campeon": "Jhin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Jhin.png",
+          "nombre": "Venari#4444",
+          "equipo": "azul",
+          "posicion": "BOTTOM",
+          "kills": 7,
+          "deaths": 5,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "Nami",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nami.png",
+          "nombre": "harry#nami",
+          "equipo": "azul",
+          "posicion": "UTILITY",
+          "kills": 3,
+          "deaths": 6,
+          "assists": 11,
+          "protagonista": false
+        },
+        {
+          "campeon": "AurelionSol",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/AurelionSol.png",
+          "nombre": "Honour#KIng",
+          "equipo": "rojo",
+          "posicion": "TOP",
+          "kills": 13,
+          "deaths": 4,
+          "assists": 10,
+          "protagonista": false
+        },
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "rojo",
+          "posicion": "JUNGLE",
+          "kills": 5,
+          "deaths": 7,
+          "assists": 13,
+          "protagonista": true
+        },
+        {
+          "campeon": "Irelia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Irelia.png",
+          "nombre": "teoly80#EUW",
+          "equipo": "rojo",
+          "posicion": "MIDDLE",
+          "kills": 18,
+          "deaths": 3,
+          "assists": 6,
+          "protagonista": false
+        },
+        {
+          "campeon": "Senna",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Senna.png",
+          "nombre": "Swade#Asta",
+          "equipo": "rojo",
+          "posicion": "BOTTOM",
+          "kills": 2,
+          "deaths": 5,
+          "assists": 15,
+          "protagonista": false
+        },
+        {
+          "campeon": "Rakan",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Rakan.png",
+          "nombre": "Sprumble#000",
+          "equipo": "rojo",
+          "posicion": "UTILITY",
+          "kills": 0,
+          "deaths": 5,
+          "assists": 21,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": false,
+      "matchId": "EUW1_7791841999",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-21T20:55:21.693Z",
+      "duracionSeg": 1457,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 15,
+      "kills": 5,
+      "deaths": 7,
+      "assists": 13,
+      "cs": 172,
+      "items": [
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3161.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Botas de rapidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3009.png"
+        },
+        {
+          "nombre": "Martillo de guerra de Caulfield",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3133.png"
+        },
+        {
+          "nombre": "Sello de acero",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2019.png"
+        },
+        null
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Tensión del saqueador de tormentas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 4
+    },
+    {
+      "jugadores": [
+        {
+          "campeon": "Shen",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Shen.png",
+          "nombre": "AGENXD#333",
+          "equipo": "azul",
+          "posicion": "TOP",
+          "kills": 4,
+          "deaths": 5,
+          "assists": 8,
+          "protagonista": false
+        },
+        {
+          "campeon": "Pantheon",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Pantheon.png",
+          "nombre": "owlonsky#A41G",
+          "equipo": "azul",
+          "posicion": "JUNGLE",
+          "kills": 6,
+          "deaths": 7,
+          "assists": 6,
+          "protagonista": false
+        },
+        {
+          "campeon": "Yasuo",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yasuo.png",
+          "nombre": "ΔNGΞL ENGINΞ#333",
+          "equipo": "azul",
+          "posicion": "MIDDLE",
+          "kills": 0,
+          "deaths": 9,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "Karthus",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Karthus.png",
+          "nombre": "JOKKI XD#2512",
+          "equipo": "azul",
+          "posicion": "BOTTOM",
+          "kills": 10,
+          "deaths": 12,
+          "assists": 4,
+          "protagonista": false
+        },
+        {
+          "campeon": "Nami",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nami.png",
+          "nombre": "harry#nami",
+          "equipo": "azul",
+          "posicion": "UTILITY",
+          "kills": 1,
+          "deaths": 5,
+          "assists": 10,
+          "protagonista": false
+        },
+        {
+          "campeon": "Aatrox",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Aatrox.png",
+          "nombre": "agrsv#EUW",
+          "equipo": "rojo",
+          "posicion": "TOP",
+          "kills": 3,
+          "deaths": 7,
+          "assists": 4,
+          "protagonista": false
+        },
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "rojo",
+          "posicion": "JUNGLE",
+          "kills": 9,
+          "deaths": 6,
+          "assists": 15,
+          "protagonista": true
+        },
+        {
+          "campeon": "Akali",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Akali.png",
+          "nombre": "WATERMELOUUUNNNN#EUW",
+          "equipo": "rojo",
+          "posicion": "MIDDLE",
+          "kills": 10,
+          "deaths": 2,
+          "assists": 3,
+          "protagonista": false
+        },
+        {
+          "campeon": "Yunara",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yunara.png",
+          "nombre": "double fantasy#0110",
+          "equipo": "rojo",
+          "posicion": "BOTTOM",
+          "kills": 13,
+          "deaths": 5,
+          "assists": 13,
+          "protagonista": false
+        },
+        {
+          "campeon": "Lulu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Lulu.png",
+          "nombre": "TestingLimits321#3210",
+          "equipo": "rojo",
+          "posicion": "UTILITY",
+          "kills": 3,
+          "deaths": 1,
+          "assists": 27,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": false,
+      "matchId": "EUW1_7791901370",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-21T21:25:56.860Z",
+      "duracionSeg": 1548,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 17,
+      "kills": 9,
+      "deaths": 6,
+      "assists": 15,
+      "cs": 236,
+      "items": [
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3161.png"
+        },
+        {
+          "nombre": "Soberbia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6697.png"
+        },
+        null,
+        {
+          "nombre": "Tuneladora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2021.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2517.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Tensión del saqueador de tormentas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 5
+    },
+    {
+      "jugadores": [
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "azul",
+          "posicion": "TOP",
+          "kills": 1,
+          "deaths": 9,
+          "assists": 2,
+          "protagonista": true
+        },
+        {
+          "campeon": "Ambessa",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ambessa.png",
+          "nombre": "Skripto#7168",
+          "equipo": "azul",
+          "posicion": "JUNGLE",
+          "kills": 6,
+          "deaths": 7,
+          "assists": 4,
+          "protagonista": false
+        },
+        {
+          "campeon": "Brand",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Brand.png",
+          "nombre": "DrDegeocello#001",
+          "equipo": "azul",
+          "posicion": "MIDDLE",
+          "kills": 5,
+          "deaths": 4,
+          "assists": 5,
+          "protagonista": false
+        },
+        {
+          "campeon": "Swain",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Swain.png",
+          "nombre": "Stabil Pungsekk#Aktiv",
+          "equipo": "azul",
+          "posicion": "BOTTOM",
+          "kills": 4,
+          "deaths": 7,
+          "assists": 3,
+          "protagonista": false
+        },
+        {
+          "campeon": "Leona",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Leona.png",
+          "nombre": "B3xxZ#reckd",
+          "equipo": "azul",
+          "posicion": "UTILITY",
+          "kills": 0,
+          "deaths": 7,
+          "assists": 4,
+          "protagonista": false
+        },
+        {
+          "campeon": "Cassiopeia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Cassiopeia.png",
+          "nombre": "BODYCOUNTT#ALOT",
+          "equipo": "rojo",
+          "posicion": "TOP",
+          "kills": 8,
+          "deaths": 1,
+          "assists": 9,
+          "protagonista": false
+        },
+        {
+          "campeon": "XinZhao",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/XinZhao.png",
+          "nombre": "Ziix Garguentua#JUNG",
+          "equipo": "rojo",
+          "posicion": "JUNGLE",
+          "kills": 7,
+          "deaths": 4,
+          "assists": 6,
+          "protagonista": false
+        },
+        {
+          "campeon": "Quinn",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Quinn.png",
+          "nombre": "Weakside#2999",
+          "equipo": "rojo",
+          "posicion": "MIDDLE",
+          "kills": 3,
+          "deaths": 2,
+          "assists": 3,
+          "protagonista": false
+        },
+        {
+          "campeon": "Yunara",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yunara.png",
+          "nombre": "HU Rank 0 JG#HUN",
+          "equipo": "rojo",
+          "posicion": "BOTTOM",
+          "kills": 14,
+          "deaths": 5,
+          "assists": 4,
+          "protagonista": false
+        },
+        {
+          "campeon": "Soraka",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Soraka.png",
+          "nombre": "some anion#EUW",
+          "equipo": "rojo",
+          "posicion": "UTILITY",
+          "kills": 2,
+          "deaths": 4,
+          "assists": 19,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": false,
+      "matchId": "EUW1_7791969114",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-21T21:57:22.641Z",
+      "duracionSeg": 1457,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 13,
+      "kills": 1,
+      "deaths": 9,
+      "assists": 2,
+      "cs": 146,
+      "items": [
+        {
+          "nombre": "Tuneladora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2021.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Guardián de control",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2055.png"
+        },
+        {
+          "nombre": "Pico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1037.png"
+        },
+        {
+          "nombre": "Botas de rapidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3009.png"
+        },
+        {
+          "nombre": "Lágrima de la diosa",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3070.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Guardián invisible",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Prender",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Tensión del saqueador de tormentas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 6
+    },
+    {
+      "jugadores": [
+        {
+          "campeon": "Chogath",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Chogath.png",
+          "nombre": "DingerDynasty#EUW",
+          "equipo": "azul",
+          "posicion": "TOP",
+          "kills": 4,
+          "deaths": 5,
+          "assists": 1,
+          "protagonista": false
+        },
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "azul",
+          "posicion": "JUNGLE",
+          "kills": 3,
+          "deaths": 0,
+          "assists": 4,
+          "protagonista": true
+        },
+        {
+          "campeon": "Vladimir",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Vladimir.png",
+          "nombre": "ady hobo cba#kid",
+          "equipo": "azul",
+          "posicion": "MIDDLE",
+          "kills": 7,
+          "deaths": 3,
+          "assists": 1,
+          "protagonista": false
+        },
+        {
+          "campeon": "Zeri",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zeri.png",
+          "nombre": "PeaceRuler#Devil",
+          "equipo": "azul",
+          "posicion": "BOTTOM",
+          "kills": 6,
+          "deaths": 1,
+          "assists": 6,
+          "protagonista": false
+        },
+        {
+          "campeon": "Elise",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Elise.png",
+          "nombre": "Kazuki#seal",
+          "equipo": "azul",
+          "posicion": "UTILITY",
+          "kills": 8,
+          "deaths": 2,
+          "assists": 4,
+          "protagonista": false
+        },
+        {
+          "campeon": "Gwen",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Gwen.png",
+          "nombre": "양귀비#LCK",
+          "equipo": "rojo",
+          "posicion": "TOP",
+          "kills": 5,
+          "deaths": 6,
+          "assists": 1,
+          "protagonista": false
+        },
+        {
+          "campeon": "Graves",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Graves.png",
+          "nombre": "Erase#zzz",
+          "equipo": "rojo",
+          "posicion": "JUNGLE",
+          "kills": 4,
+          "deaths": 2,
+          "assists": 1,
+          "protagonista": false
+        },
+        {
+          "campeon": "Katarina",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Katarina.png",
+          "nombre": "clown kaiser#sae",
+          "equipo": "rojo",
+          "posicion": "MIDDLE",
+          "kills": 0,
+          "deaths": 7,
+          "assists": 3,
+          "protagonista": false
+        },
+        {
+          "campeon": "Lucian",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Lucian.png",
+          "nombre": "I PRESS FORWARD#IPS",
+          "equipo": "rojo",
+          "posicion": "BOTTOM",
+          "kills": 1,
+          "deaths": 7,
+          "assists": 2,
+          "protagonista": false
+        },
+        {
+          "campeon": "Nami",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nami.png",
+          "nombre": "JOAN OF ARC#TASO",
+          "equipo": "rojo",
+          "posicion": "UTILITY",
+          "kills": 1,
+          "deaths": 6,
+          "assists": 3,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": true,
+      "matchId": "EUW1_7792055149",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-21T22:39:10.478Z",
+      "duracionSeg": 925,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 12,
+      "kills": 3,
+      "deaths": 0,
+      "assists": 4,
+      "cs": 149,
+      "items": [
+        {
+          "nombre": "Soberbia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6697.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Guardián de control",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2055.png"
+        },
+        null,
+        null,
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Tensión del saqueador de tormentas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 7
+    },
+    {
+      "jugadores": [
+        {
+          "campeon": "Vayne",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Vayne.png",
+          "nombre": "WATERMELOUUUNNNN#EUW",
+          "equipo": "azul",
+          "posicion": "TOP",
+          "kills": 7,
+          "deaths": 5,
+          "assists": 8,
+          "protagonista": false
+        },
+        {
+          "campeon": "Sylas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Sylas.png",
+          "nombre": "anything goes#what",
+          "equipo": "azul",
+          "posicion": "JUNGLE",
+          "kills": 6,
+          "deaths": 8,
+          "assists": 10,
+          "protagonista": false
+        },
+        {
+          "campeon": "Yone",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yone.png",
+          "nombre": "YoungDadi#EUW",
+          "equipo": "azul",
+          "posicion": "MIDDLE",
+          "kills": 7,
+          "deaths": 11,
+          "assists": 12,
+          "protagonista": false
+        },
+        {
+          "campeon": "Yunara",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yunara.png",
+          "nombre": "JayJay#xyz",
+          "equipo": "azul",
+          "posicion": "BOTTOM",
+          "kills": 3,
+          "deaths": 7,
+          "assists": 10,
+          "protagonista": false
+        },
+        {
+          "campeon": "Camille",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Camille.png",
+          "nombre": "itsaldo#EUW",
+          "equipo": "azul",
+          "posicion": "UTILITY",
+          "kills": 8,
+          "deaths": 7,
+          "assists": 12,
+          "protagonista": false
+        },
+        {
+          "campeon": "KSante",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/KSante.png",
+          "nombre": "heartbreaker#May",
+          "equipo": "rojo",
+          "posicion": "TOP",
+          "kills": 2,
+          "deaths": 3,
+          "assists": 11,
+          "protagonista": false
+        },
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "rojo",
+          "posicion": "JUNGLE",
+          "kills": 16,
+          "deaths": 5,
+          "assists": 7,
+          "protagonista": true
+        },
+        {
+          "campeon": "Malphite",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Malphite.png",
+          "nombre": "sTOP barKING#st995",
+          "equipo": "rojo",
+          "posicion": "MIDDLE",
+          "kills": 10,
+          "deaths": 10,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "Corki",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Corki.png",
+          "nombre": "Mors Nos Omnes#EUW",
+          "equipo": "rojo",
+          "posicion": "BOTTOM",
+          "kills": 8,
+          "deaths": 10,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "Nami",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nami.png",
+          "nombre": "HORSE GIRL STEP#ONME",
+          "equipo": "rojo",
+          "posicion": "UTILITY",
+          "kills": 2,
+          "deaths": 3,
+          "assists": 25,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": false,
+      "matchId": "EUW1_7792092189",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-21T22:58:55.065Z",
+      "duracionSeg": 2095,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 16,
+      "deaths": 5,
+      "assists": 7,
+      "cs": 350,
+      "items": [
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3161.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Calibrador de Sterak",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3053.png"
+        },
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2517.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6333.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Tensión del saqueador de tormentas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 8
+    },
+    {
+      "jugadores": [
+        {
+          "campeon": "Ambessa",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ambessa.png",
+          "nombre": "LF LEONA MAIN GF#ALONE",
+          "equipo": "azul",
+          "posicion": "TOP",
+          "kills": 5,
+          "deaths": 5,
+          "assists": 2,
+          "protagonista": false
+        },
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "azul",
+          "posicion": "JUNGLE",
+          "kills": 7,
+          "deaths": 4,
+          "assists": 3,
+          "protagonista": true
+        },
+        {
+          "campeon": "Aurora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Aurora.png",
+          "nombre": "Skor#CNCR",
+          "equipo": "azul",
+          "posicion": "MIDDLE",
+          "kills": 5,
+          "deaths": 4,
+          "assists": 2,
+          "protagonista": false
+        },
+        {
+          "campeon": "Sivir",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Sivir.png",
+          "nombre": "Yasha#2021",
+          "equipo": "azul",
+          "posicion": "BOTTOM",
+          "kills": 0,
+          "deaths": 4,
+          "assists": 6,
+          "protagonista": false
+        },
+        {
+          "campeon": "Karma",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Karma.png",
+          "nombre": "GeneralDelta#EUW",
+          "equipo": "azul",
+          "posicion": "UTILITY",
+          "kills": 0,
+          "deaths": 7,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "Gnar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Gnar.png",
+          "nombre": "PRO8L3M#enjoy",
+          "equipo": "rojo",
+          "posicion": "TOP",
+          "kills": 9,
+          "deaths": 6,
+          "assists": 5,
+          "protagonista": false
+        },
+        {
+          "campeon": "Nunu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nunu.png",
+          "nombre": "GrokTrialVersion#Trial",
+          "equipo": "rojo",
+          "posicion": "JUNGLE",
+          "kills": 2,
+          "deaths": 4,
+          "assists": 15,
+          "protagonista": false
+        },
+        {
+          "campeon": "Orianna",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Orianna.png",
+          "nombre": "d4ze#d4ze",
+          "equipo": "rojo",
+          "posicion": "MIDDLE",
+          "kills": 6,
+          "deaths": 2,
+          "assists": 8,
+          "protagonista": false
+        },
+        {
+          "campeon": "Cassiopeia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Cassiopeia.png",
+          "nombre": "Barcode ad#EUW",
+          "equipo": "rojo",
+          "posicion": "BOTTOM",
+          "kills": 7,
+          "deaths": 2,
+          "assists": 9,
+          "protagonista": false
+        },
+        {
+          "campeon": "Zilean",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zilean.png",
+          "nombre": "random fister#mini",
+          "equipo": "rojo",
+          "posicion": "UTILITY",
+          "kills": 0,
+          "deaths": 3,
+          "assists": 16,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": false,
+      "matchId": "EUW1_7795063884",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-23T16:40:34.007Z",
+      "duracionSeg": 1498,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 16,
+      "kills": 7,
+      "deaths": 4,
+      "assists": 3,
+      "cs": 238,
+      "items": [
+        {
+          "nombre": "Botas de mercurio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3111.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Guardián de control",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2055.png"
+        },
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3161.png"
+        },
+        {
+          "nombre": "Sorbemaleficios",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3155.png"
+        },
+        {
+          "nombre": "Soberbia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6697.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Tensión del saqueador de tormentas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 9
+    },
+    {
+      "jugadores": [
+        {
+          "campeon": "Rumble",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Rumble.png",
+          "nombre": "Igrid#mama",
+          "equipo": "azul",
+          "posicion": "TOP",
+          "kills": 7,
+          "deaths": 1,
+          "assists": 1,
+          "protagonista": false
+        },
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "azul",
+          "posicion": "JUNGLE",
+          "kills": 4,
+          "deaths": 3,
+          "assists": 5,
+          "protagonista": true
+        },
+        {
+          "campeon": "Aurora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Aurora.png",
+          "nombre": "W CAPITALISM#67x13",
+          "equipo": "azul",
+          "posicion": "MIDDLE",
+          "kills": 3,
+          "deaths": 3,
+          "assists": 0,
+          "protagonista": false
+        },
+        {
+          "campeon": "Sivir",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Sivir.png",
+          "nombre": "Aleykxar#STONK",
+          "equipo": "azul",
+          "posicion": "BOTTOM",
+          "kills": 4,
+          "deaths": 1,
+          "assists": 3,
+          "protagonista": false
+        },
+        {
+          "campeon": "Nami",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nami.png",
+          "nombre": "Sarlex#EUW",
+          "equipo": "azul",
+          "posicion": "UTILITY",
+          "kills": 0,
+          "deaths": 2,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "Sett",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Sett.png",
+          "nombre": "CroakyMold#5117",
+          "equipo": "rojo",
+          "posicion": "TOP",
+          "kills": 1,
+          "deaths": 6,
+          "assists": 1,
+          "protagonista": false
+        },
+        {
+          "campeon": "Graves",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Graves.png",
+          "nombre": "gottigottigotti#beata",
+          "equipo": "rojo",
+          "posicion": "JUNGLE",
+          "kills": 4,
+          "deaths": 4,
+          "assists": 1,
+          "protagonista": false
+        },
+        {
+          "campeon": "Velkoz",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Velkoz.png",
+          "nombre": "Nuxia#VKoz",
+          "equipo": "rojo",
+          "posicion": "MIDDLE",
+          "kills": 2,
+          "deaths": 2,
+          "assists": 3,
+          "protagonista": false
+        },
+        {
+          "campeon": "Smolder",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Smolder.png",
+          "nombre": "zelcik#ADC",
+          "equipo": "rojo",
+          "posicion": "BOTTOM",
+          "kills": 1,
+          "deaths": 5,
+          "assists": 0,
+          "protagonista": false
+        },
+        {
+          "campeon": "Karma",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Karma.png",
+          "nombre": "Julo#0714",
+          "equipo": "rojo",
+          "posicion": "UTILITY",
+          "kills": 2,
+          "deaths": 1,
+          "assists": 4,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": true,
+      "matchId": "EUW1_7795676921",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-03-23T21:55:08.010Z",
+      "duracionSeg": 1004,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 11,
+      "kills": 4,
+      "deaths": 3,
+      "assists": 5,
+      "cs": 120,
+      "items": [
+        {
+          "nombre": "Pico",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1037.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Espada larga",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1036.png"
+        },
+        {
+          "nombre": "Mota brillante",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2022.png"
+        },
+        {
+          "nombre": "Cristal de rubí",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1028.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Ojo del Heraldo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3513.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Tensión del saqueador de tormentas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 10
+    },
+    {
+      "jugadores": [
+        {
+          "campeon": "Aatrox",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Aatrox.png",
+          "nombre": "BigMactrox#EUW",
+          "equipo": "azul",
+          "posicion": "TOP",
+          "kills": 8,
+          "deaths": 7,
+          "assists": 5,
+          "protagonista": false
+        },
+        {
+          "campeon": "Fiddlesticks",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Fiddlesticks.png",
+          "nombre": "Гопник джунглер#7777",
+          "equipo": "azul",
+          "posicion": "JUNGLE",
+          "kills": 4,
+          "deaths": 6,
+          "assists": 8,
+          "protagonista": false
+        },
+        {
+          "campeon": "Ekko",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ekko.png",
+          "nombre": "N3Thram#2831",
+          "equipo": "azul",
+          "posicion": "MIDDLE",
+          "kills": 5,
+          "deaths": 5,
+          "assists": 1,
+          "protagonista": false
+        },
+        {
+          "campeon": "Samira",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Samira.png",
+          "nombre": "Bacalhau#4444",
+          "equipo": "azul",
+          "posicion": "BOTTOM",
+          "kills": 6,
+          "deaths": 8,
+          "assists": 5,
+          "protagonista": false
+        },
+        {
+          "campeon": "Pyke",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Pyke.png",
+          "nombre": "gore#cntr",
+          "equipo": "azul",
+          "posicion": "UTILITY",
+          "kills": 5,
+          "deaths": 12,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "Gwen",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Gwen.png",
+          "nombre": "Factorio Pro#PQMDH",
+          "equipo": "rojo",
+          "posicion": "TOP",
+          "kills": 7,
+          "deaths": 7,
+          "assists": 1,
+          "protagonista": false
+        },
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "rojo",
+          "posicion": "JUNGLE",
+          "kills": 12,
+          "deaths": 5,
+          "assists": 10,
+          "protagonista": true
+        },
+        {
+          "campeon": "Akshan",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Akshan.png",
+          "nombre": "唯我独尊#DREA",
+          "equipo": "rojo",
+          "posicion": "MIDDLE",
+          "kills": 12,
+          "deaths": 2,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "Corki",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Corki.png",
+          "nombre": "CPLAY Yanneck#Adc",
+          "equipo": "rojo",
+          "posicion": "BOTTOM",
+          "kills": 4,
+          "deaths": 6,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "Morgana",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Morgana.png",
+          "nombre": "Not Epsithug#EUW",
+          "equipo": "rojo",
+          "posicion": "UTILITY",
+          "kills": 3,
+          "deaths": 8,
+          "assists": 18,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": false,
+      "matchId": "EUW1_7840618181",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-05-03T00:29:42.087Z",
+      "duracionSeg": 1496,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 16,
+      "kills": 12,
+      "deaths": 5,
+      "assists": 10,
+      "cs": 214,
+      "items": [
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3161.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3142.png"
+        },
+        null,
+        {
+          "nombre": "Espada larga",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1036.png"
+        },
+        {
+          "nombre": "Botas de mercurio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3111.png"
+        },
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6333.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Tensión del saqueador de tormentas",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Inspiración",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png"
+      },
+      "n": 11
+    },
+    {
+      "jugadores": [
+        {
+          "campeon": "Fizz",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Fizz.png",
+          "nombre": "Jan Akker#JAN",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 6,
+          "deaths": 10,
+          "assists": 2,
+          "protagonista": false
+        },
+        {
+          "campeon": "Nautilus",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nautilus.png",
+          "nombre": "ripkip#EUW",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 3,
+          "deaths": 6,
+          "assists": 6,
+          "protagonista": false
+        },
+        {
+          "campeon": "Volibear",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Volibear.png",
+          "nombre": "no enemies Δ#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 9,
+          "deaths": 7,
+          "assists": 5,
+          "protagonista": false
+        },
+        {
+          "campeon": "Gangplank",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Gangplank.png",
+          "nombre": "Agow#FRA",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 5,
+          "deaths": 5,
+          "assists": 9,
+          "protagonista": false
+        },
+        {
+          "campeon": "Teemo",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Teemo.png",
+          "nombre": "Syoko#West",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 2,
+          "deaths": 8,
+          "assists": 5,
+          "protagonista": false
+        },
+        {
+          "campeon": "Vayne",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Vayne.png",
+          "nombre": "Demirtepe#West",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 5,
+          "deaths": 8,
+          "assists": 2,
+          "protagonista": false
+        },
+        {
+          "campeon": "Yone",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yone.png",
+          "nombre": "Byron Love#1v9",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 7,
+          "deaths": 6,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 19,
+          "deaths": 4,
+          "assists": 6,
+          "protagonista": true
+        },
+        {
+          "campeon": "Vayne",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Vayne.png",
+          "nombre": "Joe Briar#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 5,
+          "deaths": 7,
+          "assists": 5,
+          "protagonista": false
+        },
+        {
+          "campeon": "Morgana",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Morgana.png",
+          "nombre": "Wipoulou#000",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 3,
+          "deaths": 7,
+          "assists": 8,
+          "protagonista": false
+        },
+        {
+          "campeon": "LeeSin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/LeeSin.png",
+          "nombre": "skay25#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 10,
+          "deaths": 6,
+          "assists": 5,
+          "protagonista": false
+        },
+        {
+          "campeon": "Kayle",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kayle.png",
+          "nombre": "King Banane#0102",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 8,
+          "deaths": 8,
+          "assists": 1,
+          "protagonista": false
+        },
+        {
+          "campeon": "Yone",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yone.png",
+          "nombre": "FatKidChasingElo#EUW",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 3,
+          "deaths": 9,
+          "assists": 3,
+          "protagonista": false
+        },
+        {
+          "campeon": "Zyra",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zyra.png",
+          "nombre": "Flyfisher#Öring",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 3,
+          "deaths": 7,
+          "assists": 3,
+          "protagonista": false
+        },
+        {
+          "campeon": "Kennen",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kennen.png",
+          "nombre": "What is my name#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 4,
+          "deaths": 6,
+          "assists": 14,
+          "protagonista": false
+        },
+        {
+          "campeon": "Aatrox",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Aatrox.png",
+          "nombre": "bobthegardner#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 17,
+          "deaths": 5,
+          "assists": 3,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": true,
+      "matchId": "EUW1_7850490513",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-05-11T20:48:39.357Z",
+      "duracionSeg": 1463,
+      "cola": "Arena",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 19,
+      "deaths": 4,
+      "assists": 6,
+      "cs": 0,
+      "items": [
+        {
+          "nombre": "Inmolación del Vacío",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/223069.png"
+        },
+        {
+          "nombre": "Corona del rey demonio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/443056.png"
+        },
+        {
+          "nombre": "Jutte de kinkou",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/447116.png"
+        },
+        {
+          "nombre": "Mecanoespada punki",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/226609.png"
+        },
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/223161.png"
+        },
+        {
+          "nombre": "Desgarrador divino",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/446632.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Barredor arcano",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3348.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerCherryFlash.png"
+        },
+        {
+          "nombre": "Huida",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerCherryHold.png"
+        }
+      ],
+      "runaPrincipal": null,
+      "estiloSecundario": null,
+      "n": 12
+    },
+    {
+      "jugadores": [
+        {
+          "campeon": "Renata",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Renata.png",
+          "nombre": "PARKZEUS#999",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 0,
+          "deaths": 7,
+          "assists": 4,
+          "protagonista": false
+        },
+        {
+          "campeon": "Viego",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Viego.png",
+          "nombre": "Acne Potion#EGG",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 1,
+          "deaths": 7,
+          "assists": 2,
+          "protagonista": false
+        },
+        {
+          "campeon": "Warwick",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Warwick.png",
+          "nombre": "Frank Gui#EUW",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 6,
+          "deaths": 6,
+          "assists": 6,
+          "protagonista": false
+        },
+        {
+          "campeon": "Akali",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Akali.png",
+          "nombre": "GabyOGaGui#Gui",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 5,
+          "deaths": 7,
+          "assists": 3,
+          "protagonista": false
+        },
+        {
+          "campeon": "Senna",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Senna.png",
+          "nombre": "CANONSCIER#TUEUR",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 3,
+          "deaths": 6,
+          "assists": 1,
+          "protagonista": false
+        },
+        {
+          "campeon": "Neeko",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Neeko.png",
+          "nombre": "pick up soap#0o0",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 10,
+          "deaths": 8,
+          "assists": 10,
+          "protagonista": false
+        },
+        {
+          "campeon": "Lillia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Lillia.png",
+          "nombre": "Cartifan69#blade",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 5,
+          "deaths": 6,
+          "assists": 17,
+          "protagonista": false
+        },
+        {
+          "campeon": "Zaahen",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zaahen.png",
+          "nombre": "Kedi Sins Creed#KSC",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 14,
+          "deaths": 3,
+          "assists": 12,
+          "protagonista": false
+        },
+        {
+          "campeon": "Elise",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Elise.png",
+          "nombre": "JohnAss#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 1,
+          "deaths": 10,
+          "assists": 4,
+          "protagonista": false
+        },
+        {
+          "campeon": "Azir",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Azir.png",
+          "nombre": "lorenor12#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 0,
+          "deaths": 7,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "Aurora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Aurora.png",
+          "nombre": "Aqua Pupper#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 11,
+          "deaths": 6,
+          "assists": 1,
+          "protagonista": false
+        },
+        {
+          "campeon": "Rumble",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Rumble.png",
+          "nombre": "NoSkillsJustLux#040",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 9,
+          "deaths": 6,
+          "assists": 8,
+          "protagonista": false
+        },
+        {
+          "campeon": "Sona",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Sona.png",
+          "nombre": "Byron Love#1v9",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 6,
+          "deaths": 5,
+          "assists": 21,
+          "protagonista": false
+        },
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 10,
+          "deaths": 6,
+          "assists": 14,
+          "protagonista": true
+        },
+        {
+          "campeon": "Veigar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Veigar.png",
+          "nombre": "Madres Enjoyer#MILK",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 12,
+          "deaths": 7,
+          "assists": 10,
+          "protagonista": false
+        },
+        {
+          "campeon": "Jinx",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Jinx.png",
+          "nombre": "Nyckelspelare#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 11,
+          "deaths": 7,
+          "assists": 14,
+          "protagonista": false
+        },
+        {
+          "campeon": "Thresh",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Thresh.png",
+          "nombre": "Jacob Wallenberg#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 8,
+          "deaths": 5,
+          "assists": 23,
+          "protagonista": false
+        },
+        {
+          "campeon": "Soraka",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Soraka.png",
+          "nombre": "Mahanoha#EUW",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 2,
+          "deaths": 5,
+          "assists": 11,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": true,
+      "matchId": "EUW1_7855075589",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-05-15T21:33:54.292Z",
+      "duracionSeg": 1370,
+      "cola": "Otra cola",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 10,
+      "deaths": 6,
+      "assists": 14,
+      "cs": 0,
+      "items": [
+        {
+          "nombre": "Grebas codiciosas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/223008.png"
+        },
+        {
+          "nombre": "Hidra voraz",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/223074.png"
+        },
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/223161.png"
+        },
+        {
+          "nombre": "Muramana",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/223042.png"
+        },
+        {
+          "nombre": "Desgarrador divino",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/446632.png"
+        },
+        {
+          "nombre": "Fauces de Malmortius",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/223156.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Barredor arcano",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3348.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerCherryFlash.png"
+        },
+        {
+          "nombre": "Huida",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerCherryHold.png"
+        }
+      ],
+      "runaPrincipal": null,
+      "estiloSecundario": null,
+      "n": 13
+    },
+    {
+      "jugadores": [
+        {
+          "campeon": "Galio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Galio.png",
+          "nombre": "Dumbs#2405",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 3,
+          "deaths": 8,
+          "assists": 12,
+          "protagonista": false
+        },
+        {
+          "campeon": "Taric",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Taric.png",
+          "nombre": "Zoldik7690#EUW",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 0,
+          "deaths": 6,
+          "assists": 10,
+          "protagonista": false
+        },
+        {
+          "campeon": "Galio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Galio.png",
+          "nombre": "Byron Love#1v9",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 3,
+          "deaths": 4,
+          "assists": 22,
+          "protagonista": false
+        },
+        {
+          "campeon": "Elise",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Elise.png",
+          "nombre": "S1S5YPHUS#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 9,
+          "deaths": 5,
+          "assists": 13,
+          "protagonista": false
+        },
+        {
+          "campeon": "MasterYi",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/MasterYi.png",
+          "nombre": "Deidxra#666",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 5,
+          "deaths": 9,
+          "assists": 5,
+          "protagonista": false
+        },
+        {
+          "campeon": "Elise",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Elise.png",
+          "nombre": "Stendinho 10#lrd",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 6,
+          "deaths": 7,
+          "assists": 2,
+          "protagonista": false
+        },
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 12,
+          "deaths": 5,
+          "assists": 12,
+          "protagonista": true
+        },
+        {
+          "campeon": "Galio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Galio.png",
+          "nombre": "WASD LOVER#ZQSD",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 10,
+          "deaths": 7,
+          "assists": 11,
+          "protagonista": false
+        },
+        {
+          "campeon": "Kindred",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kindred.png",
+          "nombre": "snKarma#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 16,
+          "deaths": 4,
+          "assists": 12,
+          "protagonista": false
+        },
+        {
+          "campeon": "Orianna",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Orianna.png",
+          "nombre": "Madres Enjoyer#MILK",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 11,
+          "deaths": 5,
+          "assists": 13,
+          "protagonista": false
+        },
+        {
+          "campeon": "Vladimir",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Vladimir.png",
+          "nombre": "Laurent Voulzy#Hiro",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 10,
+          "deaths": 10,
+          "assists": 10,
+          "protagonista": false
+        },
+        {
+          "campeon": "Taric",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Taric.png",
+          "nombre": "Don Noway#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 3,
+          "deaths": 5,
+          "assists": 22,
+          "protagonista": false
+        },
+        {
+          "campeon": "Senna",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Senna.png",
+          "nombre": "SLY Wakz#SLY",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 4,
+          "deaths": 11,
+          "assists": 17,
+          "protagonista": false
+        },
+        {
+          "campeon": "Nidalee",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nidalee.png",
+          "nombre": "Splinter#TAFE",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 5,
+          "deaths": 7,
+          "assists": 9,
+          "protagonista": false
+        },
+        {
+          "campeon": "Maokai",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Maokai.png",
+          "nombre": "Bob#968",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 6,
+          "deaths": 6,
+          "assists": 5,
+          "protagonista": false
+        },
+        {
+          "campeon": "Darius",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Darius.png",
+          "nombre": "STREYITO#EUW",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 3,
+          "deaths": 7,
+          "assists": 9,
+          "protagonista": false
+        },
+        {
+          "campeon": "Zoe",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zoe.png",
+          "nombre": "Cupic#Hwei",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 4,
+          "deaths": 8,
+          "assists": 10,
+          "protagonista": false
+        },
+        {
+          "campeon": "Lux",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Lux.png",
+          "nombre": "Yozu#Lux",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 10,
+          "deaths": 6,
+          "assists": 7,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": true,
+      "matchId": "EUW1_7856729339",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-05-17T12:20:38.590Z",
+      "duracionSeg": 1528,
+      "cola": "Otra cola",
+      "victoria": true,
+      "nivel": 28,
+      "kills": 12,
+      "deaths": 5,
+      "assists": 12,
+      "cs": 0,
+      "items": [
+        {
+          "nombre": "Yelmo de hemomancia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/447103.png"
+        },
+        {
+          "nombre": "Chupasangre",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/226630.png"
+        },
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/223161.png"
+        },
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/222517.png"
+        },
+        {
+          "nombre": "Espátula dorada",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/224403.png"
+        },
+        {
+          "nombre": "Jutte de kinkou",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/447116.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Barredor arcano",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3348.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerCherryFlash.png"
+        },
+        {
+          "nombre": "Huida",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerCherryHold.png"
+        }
+      ],
+      "runaPrincipal": null,
+      "estiloSecundario": null,
+      "n": 14
+    },
+    {
+      "jugadores": [
+        {
+          "campeon": "Swain",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Swain.png",
+          "nombre": "Dumbs#2405",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 2,
+          "deaths": 7,
+          "assists": 4,
+          "protagonista": false
+        },
+        {
+          "campeon": "Galio",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Galio.png",
+          "nombre": "MagiFelix5#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 5,
+          "deaths": 5,
+          "assists": 11,
+          "protagonista": false
+        },
+        {
+          "campeon": "Ornn",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ornn.png",
+          "nombre": "Byron Love#1v9",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 2,
+          "deaths": 6,
+          "assists": 15,
+          "protagonista": false
+        },
+        {
+          "campeon": "Hwei",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hwei.png",
+          "nombre": "Azzapp#31415",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 6,
+          "deaths": 5,
+          "assists": 9,
+          "protagonista": false
+        },
+        {
+          "campeon": "Alistar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Alistar.png",
+          "nombre": "Monk Leo#077",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 0,
+          "deaths": 4,
+          "assists": 22,
+          "protagonista": false
+        },
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 12,
+          "deaths": 8,
+          "assists": 6,
+          "protagonista": true
+        },
+        {
+          "campeon": "Cassiopeia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Cassiopeia.png",
+          "nombre": "Madres Enjoyer#MILK",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 6,
+          "deaths": 7,
+          "assists": 10,
+          "protagonista": false
+        },
+        {
+          "campeon": "Riven",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Riven.png",
+          "nombre": "kermut#000",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 4,
+          "deaths": 8,
+          "assists": 13,
+          "protagonista": false
+        },
+        {
+          "campeon": "Nami",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nami.png",
+          "nombre": "Cupic#Hwei",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 0,
+          "deaths": 8,
+          "assists": 5,
+          "protagonista": false
+        },
+        {
+          "campeon": "KogMaw",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/KogMaw.png",
+          "nombre": "MadMango89#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 4,
+          "deaths": 6,
+          "assists": 10,
+          "protagonista": false
+        },
+        {
+          "campeon": "Lucian",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Lucian.png",
+          "nombre": "heroinbob1v9#ligma",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 20,
+          "deaths": 7,
+          "assists": 4,
+          "protagonista": false
+        },
+        {
+          "campeon": "Zyra",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zyra.png",
+          "nombre": "Yozu#Lux",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 5,
+          "deaths": 7,
+          "assists": 2,
+          "protagonista": false
+        },
+        {
+          "campeon": "Leona",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Leona.png",
+          "nombre": "Thebausffs#COOL",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 2,
+          "deaths": 4,
+          "assists": 17,
+          "protagonista": false
+        },
+        {
+          "campeon": "Jayce",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Jayce.png",
+          "nombre": "Kyqo#EUW",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 14,
+          "deaths": 4,
+          "assists": 5,
+          "protagonista": false
+        },
+        {
+          "campeon": "Skarner",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Skarner.png",
+          "nombre": "Αrbuz#EUW",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 8,
+          "deaths": 5,
+          "assists": 9,
+          "protagonista": false
+        },
+        {
+          "campeon": "Nami",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nami.png",
+          "nombre": "twtv Peng04#NMIXX",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 2,
+          "deaths": 5,
+          "assists": 14,
+          "protagonista": false
+        },
+        {
+          "campeon": "Caitlyn",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Caitlyn.png",
+          "nombre": "Drututt#MAKS",
+          "equipo": "rojo",
+          "posicion": "",
+          "kills": 8,
+          "deaths": 6,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "KogMaw",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/KogMaw.png",
+          "nombre": "marix#333",
+          "equipo": "azul",
+          "posicion": "",
+          "kills": 6,
+          "deaths": 4,
+          "assists": 17,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": true,
+      "matchId": "EUW1_7857084560",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-05-17T16:44:18.705Z",
+      "duracionSeg": 1335,
+      "cola": "Otra cola",
+      "victoria": true,
+      "nivel": 18,
+      "kills": 12,
+      "deaths": 8,
+      "assists": 6,
+      "cs": 0,
+      "items": [
+        {
+          "nombre": "Grebas codiciosas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/223008.png"
+        },
+        {
+          "nombre": "Hidra voraz",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/223074.png"
+        },
+        {
+          "nombre": "Desgarrador divino",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/446632.png"
+        },
+        {
+          "nombre": "Yelmo de hemomancia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/447103.png"
+        },
+        {
+          "nombre": "Filo infinito",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/223031.png"
+        },
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/226333.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Barredor arcano",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3348.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Destello",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerCherryFlash.png"
+        },
+        {
+          "nombre": "Huida",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerCherryHold.png"
+        }
+      ],
+      "runaPrincipal": null,
+      "estiloSecundario": null,
+      "n": 15
+    },
+    {
+      "jugadores": [
+        {
+          "campeon": "Yone",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yone.png",
+          "nombre": "mr d3s#ATROX",
+          "equipo": "azul",
+          "posicion": "TOP",
+          "kills": 5,
+          "deaths": 8,
+          "assists": 13,
+          "protagonista": false
+        },
+        {
+          "campeon": "Kindred",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kindred.png",
+          "nombre": "PRÉSUMÉ COUPABLE#EUW",
+          "equipo": "azul",
+          "posicion": "JUNGLE",
+          "kills": 16,
+          "deaths": 10,
+          "assists": 15,
+          "protagonista": false
+        },
+        {
+          "campeon": "Leblanc",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Leblanc.png",
+          "nombre": "VroumOnRandom#clio",
+          "equipo": "azul",
+          "posicion": "MIDDLE",
+          "kills": 12,
+          "deaths": 7,
+          "assists": 14,
+          "protagonista": false
+        },
+        {
+          "campeon": "Yunara",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yunara.png",
+          "nombre": "Phos#4004",
+          "equipo": "azul",
+          "posicion": "BOTTOM",
+          "kills": 12,
+          "deaths": 6,
+          "assists": 21,
+          "protagonista": false
+        },
+        {
+          "campeon": "Pyke",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Pyke.png",
+          "nombre": "PYKE NIKE#PKNK",
+          "equipo": "azul",
+          "posicion": "UTILITY",
+          "kills": 17,
+          "deaths": 5,
+          "assists": 19,
+          "protagonista": false
+        },
+        {
+          "campeon": "Teemo",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Teemo.png",
+          "nombre": "SFR#Teemo",
+          "equipo": "rojo",
+          "posicion": "TOP",
+          "kills": 8,
+          "deaths": 9,
+          "assists": 5,
+          "protagonista": false
+        },
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "rojo",
+          "posicion": "JUNGLE",
+          "kills": 6,
+          "deaths": 15,
+          "assists": 9,
+          "protagonista": true
+        },
+        {
+          "campeon": "Viktor",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Viktor.png",
+          "nombre": "Sylvi Iisthaug#EUW",
+          "equipo": "rojo",
+          "posicion": "MIDDLE",
+          "kills": 9,
+          "deaths": 13,
+          "assists": 9,
+          "protagonista": false
+        },
+        {
+          "campeon": "Draven",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Draven.png",
+          "nombre": "honim si#uwu",
+          "equipo": "rojo",
+          "posicion": "BOTTOM",
+          "kills": 12,
+          "deaths": 13,
+          "assists": 6,
+          "protagonista": false
+        },
+        {
+          "campeon": "Leona",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Leona.png",
+          "nombre": "Sky#2HU",
+          "equipo": "rojo",
+          "posicion": "UTILITY",
+          "kills": 1,
+          "deaths": 12,
+          "assists": 13,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": true,
+      "matchId": "EUW1_7866019767",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-05-25T21:08:25.952Z",
+      "duracionSeg": 1887,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 16,
+      "kills": 6,
+      "deaths": 15,
+      "assists": 9,
+      "cs": 202,
+      "items": [
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3161.png"
+        },
+        {
+          "nombre": "Filo fantasmal de Youmuu",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3142.png"
+        },
+        {
+          "nombre": "Malla del guardián",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3082.png"
+        },
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2517.png"
+        },
+        {
+          "nombre": "Botas blindadas",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3047.png"
+        },
+        {
+          "nombre": "Cinturón de gigante",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1011.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Valor",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png"
+      },
+      "n": 16
+    },
+    {
+      "jugadores": [
+        {
+          "campeon": "Darius",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Darius.png",
+          "nombre": "Pusteblume#Nahri",
+          "equipo": "azul",
+          "posicion": "TOP",
+          "kills": 5,
+          "deaths": 2,
+          "assists": 2,
+          "protagonista": false
+        },
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "illo wely#EUW",
+          "equipo": "azul",
+          "posicion": "JUNGLE",
+          "kills": 9,
+          "deaths": 5,
+          "assists": 4,
+          "protagonista": true
+        },
+        {
+          "campeon": "Diana",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Diana.png",
+          "nombre": "D Down Ayst#EUW",
+          "equipo": "azul",
+          "posicion": "MIDDLE",
+          "kills": 7,
+          "deaths": 10,
+          "assists": 6,
+          "protagonista": false
+        },
+        {
+          "campeon": "MissFortune",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/MissFortune.png",
+          "nombre": "LDR Babajus#8971",
+          "equipo": "azul",
+          "posicion": "BOTTOM",
+          "kills": 5,
+          "deaths": 6,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "Braum",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Braum.png",
+          "nombre": "IKA Feanoro#IKA",
+          "equipo": "azul",
+          "posicion": "UTILITY",
+          "kills": 2,
+          "deaths": 8,
+          "assists": 13,
+          "protagonista": false
+        },
+        {
+          "campeon": "DrMundo",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/DrMundo.png",
+          "nombre": "Zechi#SZD",
+          "equipo": "rojo",
+          "posicion": "TOP",
+          "kills": 3,
+          "deaths": 4,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "Lillia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Lillia.png",
+          "nombre": "Lyn#X18Z",
+          "equipo": "rojo",
+          "posicion": "JUNGLE",
+          "kills": 9,
+          "deaths": 5,
+          "assists": 10,
+          "protagonista": false
+        },
+        {
+          "campeon": "Irelia",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Irelia.png",
+          "nombre": "nselfishAzeli#EUW",
+          "equipo": "rojo",
+          "posicion": "MIDDLE",
+          "kills": 11,
+          "deaths": 6,
+          "assists": 6,
+          "protagonista": false
+        },
+        {
+          "campeon": "Senna",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Senna.png",
+          "nombre": "Jellay#EUW",
+          "equipo": "rojo",
+          "posicion": "BOTTOM",
+          "kills": 7,
+          "deaths": 8,
+          "assists": 16,
+          "protagonista": false
+        },
+        {
+          "campeon": "Nautilus",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nautilus.png",
+          "nombre": "MlipOwO#UWU",
+          "equipo": "rojo",
+          "posicion": "UTILITY",
+          "kills": 1,
+          "deaths": 5,
+          "assists": 16,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": false,
+      "matchId": "EUW1_7885916658",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-06-13T13:05:51.064Z",
+      "duracionSeg": 1610,
+      "cola": "SoloQ",
+      "victoria": false,
+      "nivel": 15,
+      "kills": 9,
+      "deaths": 5,
+      "assists": 4,
+      "cs": 201,
+      "items": [
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2517.png"
+        },
+        {
+          "nombre": "Arco axiomático",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6696.png"
+        },
+        {
+          "nombre": "Tuneladora",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2021.png"
+        },
+        {
+          "nombre": "Botas de rapidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3009.png"
+        },
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6333.png"
+        },
+        {
+          "nombre": "Guardián de control",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2055.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 17
+    },
+    {
+      "jugadores": [
+        {
+          "campeon": "Urgot",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Urgot.png",
+          "nombre": "western bacon#EUW",
+          "equipo": "azul",
+          "posicion": "TOP",
+          "kills": 7,
+          "deaths": 6,
+          "assists": 12,
+          "protagonista": false
+        },
+        {
+          "campeon": "Hecarim",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Hecarim.png",
+          "nombre": "illo wely#EUW",
+          "equipo": "azul",
+          "posicion": "JUNGLE",
+          "kills": 9,
+          "deaths": 9,
+          "assists": 14,
+          "protagonista": true
+        },
+        {
+          "campeon": "Azir",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Azir.png",
+          "nombre": "Witness Azir#EUW",
+          "equipo": "azul",
+          "posicion": "MIDDLE",
+          "kills": 13,
+          "deaths": 8,
+          "assists": 9,
+          "protagonista": false
+        },
+        {
+          "campeon": "Jinx",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Jinx.png",
+          "nombre": "IShootUhook#EUW",
+          "equipo": "azul",
+          "posicion": "BOTTOM",
+          "kills": 18,
+          "deaths": 4,
+          "assists": 8,
+          "protagonista": false
+        },
+        {
+          "campeon": "Nami",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nami.png",
+          "nombre": "MaZaHaKeR#WLD",
+          "equipo": "azul",
+          "posicion": "UTILITY",
+          "kills": 1,
+          "deaths": 8,
+          "assists": 27,
+          "protagonista": false
+        },
+        {
+          "campeon": "Sion",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Sion.png",
+          "nombre": "ttv psycho irl#ttv",
+          "equipo": "rojo",
+          "posicion": "TOP",
+          "kills": 1,
+          "deaths": 4,
+          "assists": 5,
+          "protagonista": false
+        },
+        {
+          "campeon": "Diana",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Diana.png",
+          "nombre": "Despien#EUW",
+          "equipo": "rojo",
+          "posicion": "JUNGLE",
+          "kills": 8,
+          "deaths": 12,
+          "assists": 16,
+          "protagonista": false
+        },
+        {
+          "campeon": "Tristana",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Tristana.png",
+          "nombre": "ObstkorbMafia007#0094",
+          "equipo": "rojo",
+          "posicion": "MIDDLE",
+          "kills": 9,
+          "deaths": 15,
+          "assists": 6,
+          "protagonista": false
+        },
+        {
+          "campeon": "Vladimir",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Vladimir.png",
+          "nombre": "botlane brat#000",
+          "equipo": "rojo",
+          "posicion": "BOTTOM",
+          "kills": 10,
+          "deaths": 6,
+          "assists": 8,
+          "protagonista": false
+        },
+        {
+          "campeon": "Pantheon",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Pantheon.png",
+          "nombre": "Rhiannøn#EUW",
+          "equipo": "rojo",
+          "posicion": "UTILITY",
+          "kills": 6,
+          "deaths": 11,
+          "assists": 12,
+          "protagonista": false
+        }
+      ],
+      "ganaAzul": true,
+      "matchId": "EUW1_7926836915",
+      "cuenta": "illo wely#EUW",
+      "inicio": "2026-07-22T21:42:05.906Z",
+      "duracionSeg": 1728,
+      "cola": "SoloQ",
+      "victoria": true,
+      "nivel": 17,
+      "kills": 9,
+      "deaths": 9,
+      "assists": 14,
+      "cs": 247,
+      "items": [
+        {
+          "nombre": "Hambre insaciable",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2517.png"
+        },
+        {
+          "nombre": "Baile de la muerte",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6333.png"
+        },
+        {
+          "nombre": "Hábito del espectro",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3211.png"
+        },
+        {
+          "nombre": "Botas jonias de la lucidez",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
+        },
+        {
+          "nombre": "Lanza de Shojin",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3161.png"
+        },
+        {
+          "nombre": "Espada ciclovoltaica",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6699.png"
+        }
+      ],
+      "trinket": {
+        "nombre": "Lente del oráculo",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
+      },
+      "hechizos": [
+        {
+          "nombre": "Fantasmal",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerHaste.png"
+        },
+        {
+          "nombre": "Aplastar",
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
+        }
+      ],
+      "runaPrincipal": {
+        "nombre": "Conquistador",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
+      },
+      "estiloSecundario": {
+        "nombre": "Brujería",
+        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
+      },
+      "n": 18
+    }
+  ]
 }
