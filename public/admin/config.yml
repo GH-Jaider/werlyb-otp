@@ -1,0 +1,175 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: GH-Jaider/werlyb-otp
+  branch: main
+  # Sin `base_url`, el inicio de sesión se hace con "Sign In with Token"
+  # (personal access token de GitHub): la persona editora pega un PAT con
+  # permisos de lectura/escritura de contenido sobre este repositorio.
+  # Cuando se despliegue el Cloudflare Worker "sveltia-cms-auth" (OAuth),
+  # agregar aquí `base_url: <URL del worker>` para habilitar el inicio de
+  # sesión con un clic (authorization code flow) en lugar del token manual.
+
+media_folder: 'public/uploads'
+public_folder: '/uploads'
+
+collections:
+  - name: episodios
+    label: Episodios
+    label_singular: Episodio
+    folder: src/content/episodios
+    extension: md
+    format: yaml-frontmatter
+    identifier_field: nombreCampeon
+    summary: '{{orden}} · {{nombreCampeon}}'
+    # Los archivos existentes siguen el patrón "NN-campeonminuscula" (p. ej.
+    # "14-leesin"). Sveltia CMS no ofrece una transformación de relleno con
+    # ceros para plantillas de slug, así que los episodios nuevos con orden
+    # de una sola cifra generarán slugs sin cero inicial (p. ej. "9-jax" en
+    # vez de "09-jax"). Los episodios 1 a 9 ya publicados fueron nombrados
+    # a mano con el cero inicial; si se quiere mantener esa convención para
+    # un episodio nuevo, hay que renombrar el archivo después de crearlo.
+    slug: '{{orden}}-{{campeon}}'
+    fields:
+      - name: orden
+        label: Orden
+        widget: number
+        value_type: int
+        required: true
+
+      - name: campeon
+        label: 'Campeón (ID Data Dragon)'
+        widget: string
+        required: true
+        hint: >-
+          Debe ser el ID exacto de Data Dragon del campeón, por ejemplo
+          `LeeSin` o `MonkeyKing` para Wukong.
+
+      - name: nombreCampeon
+        label: 'Nombre del campeón'
+        widget: string
+        required: true
+
+      - name: tituloCampeon
+        label: 'Título del campeón'
+        widget: string
+        required: false
+        hint: 'Por ejemplo, "El Monje Ciego".'
+
+      - name: coach
+        label: Coach
+        widget: string
+        required: false
+
+      - name: rolCoach
+        label: 'Rol del coach'
+        widget: string
+        required: false
+        hint: 'Completar solo si el rol está contrastado.'
+
+      - name: canalCoach
+        label: 'Canal del coach'
+        widget: string
+        required: false
+        hint: 'URL del canal del coach.'
+
+      - name: videos
+        label: Vídeos
+        widget: list
+        required: false
+        default: []
+        summary: '{{fecha}} · {{titulo}}'
+        fields:
+          - name: titulo
+            label: Título
+            widget: string
+            required: true
+
+          - name: url
+            label: URL
+            widget: string
+            required: true
+            hint: 'URL del vídeo en YouTube.'
+
+          - name: fecha
+            label: Fecha
+            widget: datetime
+            type: date
+            required: false
+
+      - name: partidasDesde
+        label: 'Partidas desde'
+        widget: datetime
+        type: date
+        required: false
+        hint: >-
+          Límite manual para el backfill de partidas de Riot: las partidas
+          de este campeón anteriores a esta fecha quedan excluidas. Dejar
+          vacío para incluir toda la serie de partidas del campeón.
+
+      - name: partidasHasta
+        label: 'Partidas hasta'
+        widget: datetime
+        type: date
+        required: false
+        hint: >-
+          Límite manual para el backfill de partidas de Riot: las partidas
+          de este campeón posteriores a esta fecha quedan excluidas. Dejar
+          vacío para incluir toda la serie de partidas del campeón.
+
+      - name: partidas
+        label: Partidas
+        widget: number
+        value_type: int
+        required: false
+        hint: >-
+          Se genera normalmente de forma automática: el sitio lee las
+          estadísticas en vivo desde src/data/partidas. Este campo es solo
+          un valor de respaldo manual.
+
+      - name: victorias
+        label: Victorias
+        widget: number
+        value_type: int
+        required: false
+        hint: >-
+          Se genera normalmente de forma automática: el sitio lee las
+          estadísticas en vivo desde src/data/partidas. Este campo es solo
+          un valor de respaldo manual.
+
+      - name: derrotas
+        label: Derrotas
+        widget: number
+        value_type: int
+        required: false
+        hint: >-
+          Se genera normalmente de forma automática: el sitio lee las
+          estadísticas en vivo desde src/data/partidas. Este campo es solo
+          un valor de respaldo manual.
+
+      - name: kda
+        label: KDA
+        widget: number
+        value_type: float
+        required: false
+        hint: >-
+          Se genera normalmente de forma automática: el sitio lee las
+          estadísticas en vivo desde src/data/partidas. Este campo es solo
+          un valor de respaldo manual.
+
+      - name: build
+        label: Build
+        widget: list
+        required: false
+
+      - name: runas
+        label: Runas
+        widget: list
+        required: false
+
+      - name: acento
+        label: Acento
+        widget: color
+        required: false
+        hint: 'Anula el color extraído automáticamente de la splash art del campeón.'

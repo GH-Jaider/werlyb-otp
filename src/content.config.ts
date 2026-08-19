@@ -26,6 +26,10 @@ const episodios = defineCollection({
         }),
       )
       .default([]),
+    // Límites manuales del arco para el backfill de Riot: fuera de este rango
+    // las partidas del campeón se excluyen. Vacíos = todo el rango de la serie.
+    partidasDesde: z.coerce.date().optional(),
+    partidasHasta: z.coerce.date().optional(),
     partidas: z.number().int().nonnegative().optional(),
     victorias: z.number().int().nonnegative().optional(),
     derrotas: z.number().int().nonnegative().optional(),

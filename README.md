@@ -101,10 +101,29 @@ npx vercel --prod
 
 O conecta el repositorio de GitHub desde el panel de Vercel y cada push publica solo.
 
+## Administración (CMS)
+
+En `/admin` hay un panel de [Sveltia CMS](https://github.com/sveltia/sveltia-cms) para editar
+los episodios desde el navegador, sin tocar Markdown a mano. Los archivos de configuración son
+`public/admin/index.html` y `public/admin/config.yml`.
+
+El acceso es mediante «Sign In with Token»: cada editor genera un token de acceso personal
+(fine-grained) de GitHub con permisos de lectura/escritura sobre este repositorio y lo pega en
+el diálogo de inicio de sesión. Hace falta acceso de escritura al repositorio; no hay registro
+de usuarios aparte del propio GitHub.
+
+Mejora futura: desplegar el [sveltia-cms-auth](https://github.com/sveltia/sveltia-cms-auth) en
+Cloudflare Workers, configurar `GITHUB_CLIENT_ID`/`GITHUB_CLIENT_SECRET` y añadir `base_url` en
+`config.yml` para habilitar el inicio de sesión con OAuth de un solo clic.
+
 ## Hoja de ruta
 
-- **V2 — panel de edición**: Sveltia CMS en `/admin` para editar los episodios desde el
-  navegador con un formulario (pensado para regalarle la web a Werlyb: transferir el
-  repositorio y listo).
-- **V3 — stats automáticas**: un proceso nocturno contra la API de Riot que rellene solo
-  partidas, balance y KDA del día.
+- **Login OAuth del CMS**: desplegar [sveltia-cms-auth](https://github.com/sveltia/sveltia-cms-auth)
+  en Cloudflare Workers y añadir `base_url` en `public/admin/config.yml` para que los
+  editores entren con un clic en vez de pegar un token.
+- **Caché incremental de partidas**: guardar los matchIds ya procesados para que el
+  proceso nocturno solo descargue lo nuevo en vez de recorrer toda la serie.
+
+V2 (panel de edición con Sveltia CMS en `/admin`) y V3 (stats automáticas nocturnas con el
+workflow «Actualizar partidas») ya están entregadas, junto con la ingesta automática de
+vídeos («Actualizar vídeos»).
