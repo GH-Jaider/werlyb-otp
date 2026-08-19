@@ -1,0 +1,81 @@
+# Revisa la playlist de YouTube de la serie varias veces al día y añade los
+# vídeos nuevos al episodio activo. Si el título de algún vídeo nuevo menciona
+# un campeón distinto al del episodio activo, no commitea directo: abre una PR
+# por si de verdad empezó un arco nuevo.
+name: Actualizar vídeos
+
+on:
+  schedule:
+    - cron: '23 */6 * * *' # cada 6 horas
+  workflow_dispatch: {}
+
+jobs:
+  videos:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Bajar vídeos nuevos de YouTube
+        id: videos
+        run: node scripts/videos.mjs
+
+      - name: Commit si hay vídeos nuevos y no hay cambio de arco
+        if: steps.videos.outputs.nuevos != '0' && steps.videos.outputs.mismatch == 'false'
+        run: |
+          git config user.name "werlyb-otp-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/content/episodios
+          if git diff --cached --quiet; then
+            echo "Sin cambios que commitear."
+          else
+            git commit -m "Vídeos actualizados ($(date -u +%F))"
+            # por si main avanzó mientras corría el script
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: Crear PR si hay posible cambio de arco
+        if: steps.videos.outputs.mismatch == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DETALLE: ${{ steps.videos.outputs.detalle }}
+        run: |
+          git config user.name "werlyb-otp-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add src/content/episodios
+          if git diff --cached --quiet; then
+            echo "Nada que commitear (inesperado con mismatch=true)."
+            exit 0
+          fi
+
+          RAMA="videos/${{ github.run_id }}"
+          git checkout -b "$RAMA"
+          git commit -m "Vídeos actualizados ($(date -u +%F))"
+          git push -u origin "$RAMA"
+
+          {
+            echo "Uno de los vídeos nuevos menciona en el título un campeón distinto al del episodio activo."
+            echo "Puede ser una falsa alarma (el vídeo es del arco actual pero menciona a otro campeón de pasada) o el aviso de que ha empezado un arco nuevo que todavía no tiene episodio creado."
+            echo
+            echo "Vídeos detectados:"
+            echo
+            echo "$DETALLE"
+            echo
+            echo "Qué hacer:"
+            echo "- Si es una falsa alarma, fusiona esta PR: el vídeo queda añadido al episodio activo."
+            echo "- Si de verdad empezó un arco nuevo, cierra esta PR sin fusionar y crea el episodio nuevo a mano."
+          } > /tmp/cuerpo-pr.md
+
+          gh pr create \
+            --title "Vídeos nuevos con posible cambio de arco" \
+            --body-file /tmp/cuerpo-pr.md \
+            --base main \
+            --head "$RAMA"
