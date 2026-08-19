@@ -3,11 +3,11 @@
  *
  * Uso:  RIOT_API_KEY=RGAPI-... node scripts/partidas.mjs
  *
- * Por cada episodio (src/content/episodios/*.md) toma la ventana de fechas de
- * sus vídeos (con margen), baja las partidas de las cuentas de
- * src/data/cuentas.json, filtra por el campeón del arco y guarda un JSON en
- * src/data/partidas/<episodio>.json con las URLs de iconos ya resueltas
- * (Data Dragon), para que la web siga siendo 100 % estática.
+ * Baja de una sola vez todas las partidas de las cuentas de
+ * src/data/cuentas.json desde el inicio de la serie hasta hoy, asigna cada
+ * una a su episodio (src/content/episodios/*.md) por el campeón jugado y
+ * guarda un JSON en src/data/partidas/<episodio>.json con las URLs de iconos
+ * ya resueltas (Data Dragon), para que la web siga siendo 100 % estática.
  *
  * La key NUNCA se guarda en el repo: solo viaja por variable de entorno.
  */
@@ -25,14 +25,14 @@ const DIR_EPISODIOS = path.join(RAIZ, 'src/content/episodios');
 const DIR_SALIDA = path.join(RAIZ, 'src/data/partidas');
 const CUENTAS = JSON.parse(await readFile(path.join(RAIZ, 'src/data/cuentas.json'), 'utf8'));
 
-// Las ventanas de búsqueda tapizan la línea temporal de la serie: cada arco va
-// desde su inicio hasta el inicio del arco siguiente (el último llega hasta hoy),
-// y el filtro por campeón asigna cada partida a su arco. Así se capturan partidas
-// jugadas mucho antes de subir los vídeos y regresos tras un parón (caso Nami).
-// El inicio por defecto se estima desde el primer vídeo con margen hacia atrás;
-// `partidasDesde:` lo fija con precisión y `partidasHasta:` recorta el final
-// cuando un arco necesita cerrarse antes (caso Jax, que también se juega fuera
-// de la serie).
+// No hay ventanas por episodio: los arcos se solapan e intercalan (Riven siguió
+// mientras arrancaba Nami; Nami volvió tras un parón), así que se descarga TODO
+// el rango de la serie una sola vez y el campeón jugado decide a qué episodio
+// pertenece cada partida (cada episodio usa un campeón distinto). El inicio de
+// la serie se estima desde el primer vídeo del arco más temprano con margen
+// hacia atrás, o con `partidasDesde:` si existe. `partidasDesde:`/`partidasHasta:`
+// además recortan un episodio concreto cuando su campeón también se juega fuera
+// de la serie (caso Jax).
 const MARGEN_ANTES_DIAS = 7;
 
 // Match-V5 arrastra peculiaridades de nombre respecto a Data Dragon
@@ -149,11 +149,15 @@ if (cuentas.length === 0) {
 }
 
 // ── Backfill ──
-const cacheDetalles = new Map(); // matchId -> detalle (ventanas solapadas)
+const cacheDetalles = new Map(); // matchId -> detalle (partidas con ambas cuentas)
 await mkdir(DIR_SALIDA, { recursive: true });
 
 const DIA_MS = 24 * 60 * 60 * 1000;
 const episodios = await leerEpisodios();
+if (episodios.length === 0) {
+  console.error('Ningún episodio con fechas; se aborta.');
+  process.exit(1);
+}
 console.log(`${episodios.length} episodios con fechas\n`);
 
 // Inicio del arco: `partidasDesde` si existe; si no, primer vídeo con margen.
@@ -162,90 +166,105 @@ const inicioArco = (ep) =>
     ? Math.floor(Date.parse(ep.desde) / 1000)
     : Math.floor((Date.parse(ep.fechas[0]) - MARGEN_ANTES_DIAS * DIA_MS) / 1000);
 
-for (const [i, ep] of episodios.entries()) {
-  const desde = inicioArco(ep);
-  const siguiente = episodios[i + 1];
-  const hasta = ep.hasta
-    ? Math.floor((Date.parse(ep.hasta) + DIA_MS) / 1000)
-    : siguiente
-      ? inicioArco(siguiente)
-      : Math.floor(Date.now() / 1000);
-  if (hasta <= desde) {
-    console.warn(`── ${ep.id} (${ep.campeon}) · ventana vacía, revisar partidasDesde/partidasHasta`);
+const inicioSerie = Math.min(...episodios.map(inicioArco));
+const ahora = Math.floor(Date.now() / 1000);
+console.log(`Rango de la serie: ${new Date(inicioSerie * 1000).toISOString().slice(0, 10)} → hoy\n`);
+
+// ── Descarga única de todo el rango, agrupando por campeón ──
+const porCampeon = new Map(); // campeon -> partidas[]
+let totalPartidas = 0;
+for (const cuenta of cuentas) {
+  let inicio = 0;
+  while (true) {
+    const ids = await riot(
+      `https://${cuenta.region}.api.riotgames.com/lol/match/v5/matches/by-puuid/${cuenta.puuid}/ids?startTime=${inicioSerie}&endTime=${ahora}&start=${inicio}&count=100`,
+    );
+    if (!ids || ids.length === 0) break;
+
+    for (const matchId of ids) {
+      let detalle = cacheDetalles.get(matchId);
+      if (detalle === undefined) {
+        detalle = await riot(
+          `https://${cuenta.region}.api.riotgames.com/lol/match/v5/matches/${matchId}`,
+        );
+        cacheDetalles.set(matchId, detalle);
+      }
+      if (!detalle) continue;
+
+      const p = detalle.info.participants.find((x) => x.puuid === cuenta.puuid);
+      if (!p) continue;
+      if (detalle.info.gameDuration < 300) continue; // remakes fuera
+
+      const items = [p.item0, p.item1, p.item2, p.item3, p.item4, p.item5]
+        .map((id) => (id > 0 ? (itemPorId[id] ?? null) : null));
+      const trinket = p.item6 > 0 ? (itemPorId[p.item6] ?? null) : null;
+      const claveRuna = p.perks?.styles?.[0]?.selections?.[0]?.perk;
+      const estiloSec = p.perks?.styles?.[1]?.style;
+
+      const jugadores = detalle.info.participants.map((x) => ({
+        campeon: normalizaCampeon(x.championName),
+        icono: `${CDN}/${V}/img/champion/${normalizaCampeon(x.championName)}.png`,
+        nombre: x.riotIdGameName
+          ? `${x.riotIdGameName}#${x.riotIdTagline}`
+          : (x.summonerName || '—'),
+        equipo: x.teamId === 100 ? 'azul' : 'rojo',
+        posicion: x.teamPosition || '',
+        kills: x.kills,
+        deaths: x.deaths,
+        assists: x.assists,
+        protagonista: x.puuid === cuenta.puuid,
+      }));
+
+      const campeon = normalizaCampeon(p.championName);
+      if (!porCampeon.has(campeon)) porCampeon.set(campeon, []);
+      totalPartidas += 1;
+      porCampeon.get(campeon).push({
+        jugadores,
+        ganaAzul: detalle.info.teams?.find((t) => t.teamId === 100)?.win ?? null,
+        matchId,
+        cuenta: cuenta.riotId,
+        inicio: new Date(detalle.info.gameStartTimestamp).toISOString(),
+        duracionSeg: detalle.info.gameDuration,
+        cola: COLAS[detalle.info.queueId] ?? 'Otra cola',
+        victoria: p.win,
+        nivel: p.champLevel,
+        kills: p.kills,
+        deaths: p.deaths,
+        assists: p.assists,
+        cs: p.totalMinionsKilled + p.neutralMinionsKilled,
+        items,
+        trinket,
+        hechizos: [p.summoner1Id, p.summoner2Id].map((k) => hechizoPorClave[k] ?? null),
+        runaPrincipal: claveRuna ? (runaPorId[claveRuna] ?? null) : null,
+        estiloSecundario: estiloSec ? (runaPorId[estiloSec] ?? null) : null,
+      });
+    }
+    if (ids.length < 100) break;
+    inicio += 100;
+  }
+}
+
+// Si no se obtuvo NINGUNA partida en todo el rango (API caída o degradada,
+// aunque los ids respondan), algo falló: no pisamos los JSON.
+if (totalPartidas === 0) {
+  console.error('La API no devolvió ninguna partida en todo el rango; se aborta sin escribir.');
+  process.exit(1);
+}
+
+// ── Asignación por episodio y escritura ──
+for (const ep of episodios) {
+  const desde = ep.desde ? Math.floor(Date.parse(ep.desde) / 1000) : null;
+  const hasta = ep.hasta ? Math.floor((Date.parse(ep.hasta) + DIA_MS) / 1000) : null;
+  if (desde !== null && hasta !== null && hasta <= desde) {
+    console.warn(`── ${ep.id} (${ep.campeon}) · límites vacíos, revisar partidasDesde/partidasHasta`);
     continue;
   }
   const manual = [ep.desde && 'desde', ep.hasta && 'hasta'].filter(Boolean).join(' y ');
-  const etiquetaVentana = `${new Date(desde * 1000).toISOString().slice(0, 10)} → ${new Date((hasta - 1) * 1000).toISOString().slice(0, 10)}${manual ? ` (${manual} manual)` : ''}`;
-  console.log(`── ${ep.id} (${ep.campeon}) · ventana ${etiquetaVentana}`);
 
-  const partidas = [];
-  for (const cuenta of cuentas) {
-    let inicio = 0;
-    while (true) {
-      const ids = await riot(
-        `https://${cuenta.region}.api.riotgames.com/lol/match/v5/matches/by-puuid/${cuenta.puuid}/ids?startTime=${desde}&endTime=${hasta}&start=${inicio}&count=100`,
-      );
-      if (!ids || ids.length === 0) break;
-
-      for (const matchId of ids) {
-        let detalle = cacheDetalles.get(matchId);
-        if (detalle === undefined) {
-          detalle = await riot(
-            `https://${cuenta.region}.api.riotgames.com/lol/match/v5/matches/${matchId}`,
-          );
-          cacheDetalles.set(matchId, detalle);
-        }
-        if (!detalle) continue;
-
-        const p = detalle.info.participants.find((x) => x.puuid === cuenta.puuid);
-        if (!p || normalizaCampeon(p.championName) !== ep.campeon) continue;
-        if (detalle.info.gameDuration < 300) continue; // remakes fuera
-
-        const items = [p.item0, p.item1, p.item2, p.item3, p.item4, p.item5]
-          .map((id) => (id > 0 ? (itemPorId[id] ?? null) : null));
-        const trinket = p.item6 > 0 ? (itemPorId[p.item6] ?? null) : null;
-        const claveRuna = p.perks?.styles?.[0]?.selections?.[0]?.perk;
-        const estiloSec = p.perks?.styles?.[1]?.style;
-
-        const jugadores = detalle.info.participants.map((x) => ({
-          campeon: normalizaCampeon(x.championName),
-          icono: `${CDN}/${V}/img/champion/${normalizaCampeon(x.championName)}.png`,
-          nombre: x.riotIdGameName
-            ? `${x.riotIdGameName}#${x.riotIdTagline}`
-            : (x.summonerName || '—'),
-          equipo: x.teamId === 100 ? 'azul' : 'rojo',
-          posicion: x.teamPosition || '',
-          kills: x.kills,
-          deaths: x.deaths,
-          assists: x.assists,
-          protagonista: x.puuid === cuenta.puuid,
-        }));
-
-        partidas.push({
-          jugadores,
-          ganaAzul: detalle.info.teams?.find((t) => t.teamId === 100)?.win ?? null,
-          matchId,
-          cuenta: cuenta.riotId,
-          inicio: new Date(detalle.info.gameStartTimestamp).toISOString(),
-          duracionSeg: detalle.info.gameDuration,
-          cola: COLAS[detalle.info.queueId] ?? 'Otra cola',
-          victoria: p.win,
-          nivel: p.champLevel,
-          kills: p.kills,
-          deaths: p.deaths,
-          assists: p.assists,
-          cs: p.totalMinionsKilled + p.neutralMinionsKilled,
-          items,
-          trinket,
-          hechizos: [p.summoner1Id, p.summoner2Id].map((k) => hechizoPorClave[k] ?? null),
-          runaPrincipal: claveRuna ? (runaPorId[claveRuna] ?? null) : null,
-          estiloSecundario: estiloSec ? (runaPorId[estiloSec] ?? null) : null,
-        });
-      }
-      if (ids.length < 100) break;
-      inicio += 100;
-    }
-  }
+  const partidas = (porCampeon.get(ep.campeon) ?? []).filter((p) => {
+    const t = Math.floor(Date.parse(p.inicio) / 1000);
+    return (desde === null || t >= desde) && (hasta === null || t < hasta);
+  });
 
   partidas.sort((a, b) => a.inicio.localeCompare(b.inicio));
   partidas.forEach((p, i) => (p.n = i + 1));
@@ -269,7 +288,9 @@ for (const [i, ep] of episodios.entries()) {
   };
 
   await writeFile(path.join(DIR_SALIDA, `${ep.id}.json`), JSON.stringify(salida, null, 2));
-  console.log(`   ${partidas.length} partidas (${victorias}V–${partidas.length - victorias}D)\n`);
+  console.log(
+    `── ${ep.id} (${ep.campeon})${manual ? ` · límites ${manual} manual` : ''}: ${partidas.length} partidas (${victorias}V–${partidas.length - victorias}D)`,
+  );
 }
 
-console.log('Backfill completo.');
+console.log('\nBackfill completo.');
