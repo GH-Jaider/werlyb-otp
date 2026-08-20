@@ -34,6 +34,27 @@ const totPartidas = clasificacion.reduce((n, c) => n + c.partidas, 0);
 const totVictorias = clasificacion.reduce((n, c) => n + c.victorias, 0);
 const wrGlobal = totPartidas > 0 ? Math.round((totVictorias / totPartidas) * 100) : null;
 
+// Vista «Cronología»: los mismos arcos en orden de emisión, winrate como
+// gráfico de puntos (el icono del campeón es el marcador). SVG calculado en
+// build; sin librerías ni JavaScript en el cliente.
+const crono = [...clasificacion].sort((a, b) => a.orden - b.orden);
+const hayCrono = crono.length >= 2;
+const CW = 1120;
+const CH = 300;
+const ML = 46;
+const MR = 16;
+const MT = 36;
+const MB = 46;
+const py = (wr: number) => MT + (1 - wr / 100) * (CH - MT - MB);
+const puntos = crono.map((c, i) => ({
+  ...c,
+  x: ML + ((i + 0.5) * (CW - ML - MR)) / crono.length,
+  y: py(c.wr),
+}));
+const camino = puntos
+  .map((p, i) => `${i === 0 ? 'M' : 'L'}${p.x.toFixed(1)},${p.y.toFixed(1)}`)
+  .join(' ');
+
 const formato = [
   {
     etiqueta: 'El campeón',
@@ -138,6 +159,8 @@ const formato = [
     {
       clasificacion.length > 0 && (
         <section id="palmares" class="contenedor seccion" aria-labelledby="palmares-titulo">
+          {hayCrono && <input type="radio" name="vista-palmares" id="v-ranking" class="vista-radio" checked />}
+          {hayCrono && <input type="radio" name="vista-palmares" id="v-crono" class="vista-radio" />}
           <div class="cabecera-seccion">
             <h2 id="palmares-titulo" class="titular seccion-titulo">
               El palmarés
@@ -147,6 +170,14 @@ const formato = [
               {wrGlobal} % WR global
             </span>
           </div>
+          {
+            hayCrono && (
+              <div class="vistas" role="group" aria-label="Vista del palmarés">
+                <label for="v-ranking">Ranking</label>
+                <label for="v-crono">Cronología</label>
+              </div>
+            )
+          }
           <ol class="ranking">
             {clasificacion.map((c, i) => (
               <li>
@@ -188,6 +219,78 @@ const formato = [
               </li>
             ))}
           </ol>
+          {
+            hayCrono && (
+              <div class="cronologia">
+                <div class="crono-scroll">
+                  <svg
+                    class="crono-svg"
+                    viewBox={`0 0 ${CW} ${CH}`}
+                    role="group"
+                    aria-label="Winrate de cada arco en orden de emisión"
+                  >
+                    <defs>
+                      {puntos.map((p) => (
+                        <clipPath id={`clip-${p.id}`}>
+                          <rect x={p.x - 13} y={p.y - 13} width="26" height="26" rx="6" />
+                        </clipPath>
+                      ))}
+                    </defs>
+                    {[25, 50, 75].map((v) => (
+                      <line
+                        class={v === 50 ? 'guia guia-50' : 'guia'}
+                        x1={ML}
+                        x2={CW - MR}
+                        y1={py(v)}
+                        y2={py(v)}
+                      />
+                    ))}
+                    {[25, 50, 75].map((v) => (
+                      <text class="eje-y" x={ML - 9} y={py(v) + 3.5}>
+                        {v} %
+                      </text>
+                    ))}
+                    <path class="camino" d={camino} />
+                    {puntos.map((p) => (
+                      <a
+                        href={`/ep/${p.id}/`}
+                        class="punto"
+                        aria-label={`EP.${String(p.orden).padStart(2, '0')} ${p.nombre}: ${p.victorias}V-${p.derrotas}D, ${p.wr} % de winrate`}
+                      >
+                        <title>{`EP.${String(p.orden).padStart(2, '0')} ${p.nombre} · ${p.victorias}V-${p.derrotas}D · ${p.wr} % WR · ${p.kda.toFixed(1)} KDA`}</title>
+                        <text class="p-wr" x={p.x} y={p.y - 22}>
+                          {p.wr} %
+                        </text>
+                        <image
+                          href={cuadrado(p.campeon)}
+                          x={p.x - 13}
+                          y={p.y - 13}
+                          width="26"
+                          height="26"
+                          clip-path={`url(#clip-${p.id})`}
+                        />
+                        <rect class="p-marco" x={p.x - 13.5} y={p.y - 13.5} width="27" height="27" rx="6.5" />
+                        <rect
+                          class={`p-sub ${p.wr >= 50 ? 'v' : 'd'}`}
+                          x={p.x - 9}
+                          y={p.y + 17}
+                          width="18"
+                          height="3"
+                          rx="1.5"
+                        />
+                        <text class="eje-x" x={p.x} y={CH - 14}>
+                          EP.{String(p.orden).padStart(2, '0')}
+                        </text>
+                      </a>
+                    ))}
+                  </svg>
+                </div>
+                <p class="crono-nota etiqueta">
+                  winrate por arco, en orden de emisión · la raya discontinua es el 50 %
+                </p>
+              </div>
+            )
+          }
           <p class="pide-texto">
             ¿Que tu main merece episodio?{' '}
             {
@@ -362,7 +465,149 @@ const formato = [
     gap: 18px;
   }
 
-  /* ── El palmarés ── */
+  /* ── El palmarés: vistas alternas (ranking / cronología) sin JS ── */
+  .vista-radio {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .vistas {
+    display: flex;
+    gap: 4px;
+    width: max-content;
+    margin: 0 0 22px;
+    padding: 4px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+  }
+
+  .vistas label {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 7px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: color 0.15s ease, background 0.15s ease;
+  }
+
+  .vistas label:hover {
+    color: var(--text);
+  }
+
+  #v-ranking:checked ~ .vistas label[for='v-ranking'],
+  #v-crono:checked ~ .vistas label[for='v-crono'] {
+    background: var(--red);
+    color: #0a0a0c;
+  }
+
+  #v-ranking:focus-visible ~ .vistas label[for='v-ranking'],
+  #v-crono:focus-visible ~ .vistas label[for='v-crono'] {
+    outline: 2px solid var(--red);
+    outline-offset: 2px;
+  }
+
+  .cronologia {
+    display: none;
+  }
+
+  #v-crono:checked ~ .cronologia {
+    display: block;
+  }
+
+  #v-crono:checked ~ .ranking {
+    display: none;
+  }
+
+  /* ── Cronología (SVG) ── */
+  .crono-scroll {
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--surface);
+  }
+
+  .crono-svg {
+    display: block;
+    width: 100%;
+    min-width: 760px;
+    height: auto;
+  }
+
+  .guia {
+    stroke: var(--line-soft);
+    stroke-width: 1;
+  }
+
+  .guia-50 {
+    stroke: var(--muted);
+    stroke-dasharray: 4 5;
+    opacity: 0.55;
+  }
+
+  .eje-y {
+    font-family: var(--mono);
+    font-size: 10px;
+    fill: var(--faint);
+    text-anchor: end;
+  }
+
+  .eje-x {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.06em;
+    fill: var(--faint);
+    text-anchor: middle;
+  }
+
+  .camino {
+    fill: none;
+    stroke: var(--gold);
+    stroke-width: 1.5;
+    opacity: 0.35;
+  }
+
+  .p-wr {
+    font-family: var(--mono);
+    font-size: 11px;
+    fill: var(--gold);
+    text-anchor: middle;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .p-marco {
+    fill: none;
+    stroke: var(--line);
+    transition: stroke 0.15s ease;
+  }
+
+  .punto:hover .p-marco,
+  .punto:focus-visible .p-marco {
+    stroke: var(--muted);
+  }
+
+  .punto {
+    outline: none;
+  }
+
+  .p-sub.v {
+    fill: var(--win);
+  }
+
+  .p-sub.d {
+    fill: var(--red);
+  }
+
+  .crono-nota {
+    margin: 10px 2px 0;
+    font-size: 10.5px;
+    color: var(--faint);
+  }
+
   .ranking {
     list-style: none;
     margin: 0;
