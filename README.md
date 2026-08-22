@@ -107,20 +107,28 @@ En `/admin` hay un panel de [Sveltia CMS](https://github.com/sveltia/sveltia-cms
 los episodios desde el navegador, sin tocar Markdown a mano. Los archivos de configuración son
 `public/admin/index.html` y `public/admin/config.yml`.
 
-El acceso es mediante «Sign In with Token»: cada editor genera un token de acceso personal
-(fine-grained) de GitHub con permisos de lectura/escritura sobre este repositorio y lo pega en
-el diálogo de inicio de sesión. Hace falta acceso de escritura al repositorio; no hay registro
-de usuarios aparte del propio GitHub.
+El acceso es **«Sign In with GitHub»**: cada editor entra con su propia cuenta de GitHub, en un
+clic. No hay que generar ni compartir tokens; basta con tener acceso de escritura al
+repositorio (como colaborador o como propietario).
 
-Mejora futura: desplegar el [sveltia-cms-auth](https://github.com/sveltia/sveltia-cms-auth) en
-Cloudflare Workers, configurar `GITHUB_CLIENT_ID`/`GITHUB_CLIENT_SECRET` y añadir `base_url` en
-`config.yml` para habilitar el inicio de sesión con OAuth de un solo clic.
+El intercambio OAuth lo sirve la propia web, sin proveedores extra: `api/auth.js` y
+`api/callback.js` son funciones de Vercel que portan el
+[autenticador oficial](https://github.com/sveltia/sveltia-cms-auth) (pensado para Cloudflare
+Workers). Necesitan dos variables de entorno en Vercel, que salen de una
+[OAuth App de GitHub](https://github.com/settings/developers) cuyo callback sea
+`https://siendo-otp.vercel.app/api/callback`:
+
+- `GITHUB_CLIENT_ID`
+- `GITHUB_CLIENT_SECRET` (solo vive en Vercel; nunca llega al navegador)
+
+Opcionalmente, `ALLOWED_DOMAINS` restringe qué dominios pueden usar el autenticador (por
+defecto, el de producción, los previos de Vercel y `localhost`).
+
+El inicio de sesión con token personal sigue disponible como alternativa. Para dejar
+únicamente el de GitHub, añadir `auth_methods: [oauth]` al bloque `backend` de `config.yml`.
 
 ## Hoja de ruta
 
-- **Login OAuth del CMS**: desplegar [sveltia-cms-auth](https://github.com/sveltia/sveltia-cms-auth)
-  en Cloudflare Workers y añadir `base_url` en `public/admin/config.yml` para que los
-  editores entren con un clic en vez de pegar un token.
 - **Caché incremental de partidas**: guardar los matchIds ya procesados para que el
   proceso nocturno solo descargue lo nuevo en vez de recorrer toda la serie.
 
