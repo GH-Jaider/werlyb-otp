@@ -1,0 +1,727 @@
+---
+import '@fontsource/anton';
+import '@fontsource/archivo/400.css';
+import '@fontsource/archivo/500.css';
+import '@fontsource/archivo/700.css';
+import '@fontsource/ibm-plex-mono/400.css';
+import '@fontsource/ibm-plex-mono/500.css';
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Panel · Siendo OTP por un día</title>
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  </head>
+  <body>
+    <!-- ── Entrar ── -->
+    <section id="vista-entrar" class="entrar" hidden>
+      <form class="tarjeta-entrar" id="form-entrar">
+        <img src="/icon-192.png" alt="" width="72" height="72" />
+        <h1 class="titular">Panel</h1>
+        <p class="sub">Siendo <span>OTP</span> por un día</p>
+        <label class="campo">
+          <span class="etiqueta">Contraseña</span>
+          <input type="password" id="clave" autocomplete="current-password" required />
+        </label>
+        <button class="boton" type="submit">Entrar</button>
+        <p class="aviso" id="aviso-entrar" role="alert"></p>
+      </form>
+    </section>
+
+    <!-- ── Trabajo ── -->
+    <div id="vista-panel" hidden>
+      <header class="barra">
+        <div class="contenedor barra-cont">
+          <a class="marca titular" href="/" target="_blank">
+            <img src="/icon-192.png" alt="" width="30" height="30" />
+            Siendo <span>OTP</span> · Panel
+          </a>
+          <div class="barra-acciones">
+            <a class="enlace-sec" href="/" target="_blank">Ver la web ↗</a>
+            <button class="enlace-sec" id="btn-salir" type="button">Salir</button>
+          </div>
+        </div>
+      </header>
+
+      <main class="contenedor cuerpo">
+        <!-- Lista -->
+        <section id="vista-lista">
+          <div class="cabecera">
+            <h2 class="titular titulo">Episodios</h2>
+            <button class="boton" id="btn-nuevo" type="button">+ Nuevo episodio</button>
+          </div>
+          <p class="nota">
+            Los vídeos y las partidas entran solos: los vídeos desde la playlist cada pocas
+            horas y las partidas cada noche. Aquí se ajusta el coach y lo que haga falta.
+          </p>
+          <div class="lista" id="lista"></div>
+        </section>
+
+        <!-- Editor -->
+        <section id="vista-editor" hidden>
+          <div class="cabecera">
+            <button class="enlace-sec" id="btn-volver" type="button">← Volver</button>
+            <span class="etiqueta" id="editor-slug"></span>
+          </div>
+
+          <div class="editor">
+            <div class="fila-2">
+              <label class="campo">
+                <span class="etiqueta">Nº de episodio</span>
+                <input type="number" id="f-orden" min="1" step="1" required />
+              </label>
+              <label class="campo">
+                <span class="etiqueta">Campeón</span>
+                <input
+                  type="text"
+                  id="f-buscador"
+                  list="lista-campeones"
+                  placeholder="Escribe y elige…"
+                  autocomplete="off"
+                />
+                <datalist id="lista-campeones"></datalist>
+              </label>
+            </div>
+
+            <div class="elegido" id="elegido" hidden>
+              <img id="elegido-img" src="" alt="" width="44" height="44" />
+              <div>
+                <b id="elegido-nombre"></b>
+                <span class="etiqueta" id="elegido-titulo"></span>
+              </div>
+            </div>
+
+            <div class="fila-2">
+              <label class="campo">
+                <span class="etiqueta">Coach</span>
+                <input type="text" id="f-coach" placeholder="Nombre del coach" />
+              </label>
+              <label class="campo">
+                <span class="etiqueta">Canal del coach</span>
+                <input type="url" id="f-canal" placeholder="https://twitch.tv/…" />
+              </label>
+            </div>
+
+            <label class="campo">
+              <span class="etiqueta">Rol del coach</span>
+              <input type="text" id="f-rol" placeholder="OTP de Gwen" />
+              <span class="pista">Solo si está confirmado; si no, se deja vacío.</span>
+            </label>
+
+            <div class="campo">
+              <span class="etiqueta">Vídeos del arco</span>
+              <div id="videos"></div>
+              <button class="boton-sec" id="btn-add-video" type="button">+ Añadir vídeo</button>
+              <span class="pista">
+                Normalmente se rellenan solos desde la playlist; edítalos solo si algo entró mal.
+              </span>
+            </div>
+
+            <label class="campo">
+              <span class="etiqueta">Notas del arco</span>
+              <textarea id="f-notas" rows="4" placeholder="Qué enseñó el coach, momentos…"></textarea>
+            </label>
+
+            <div class="acciones">
+              <button class="boton" id="btn-publicar" type="button">Publicar</button>
+              <span class="aviso" id="aviso-editor" role="status"></span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const $ = (id) => document.getElementById(id);
+      const api = async (ruta, opciones = {}) => {
+        const res = await fetch(`/api/panel/${ruta}`, {
+          ...opciones,
+          headers: { 'Content-Type': 'application/json', 'X-Panel': '1', ...opciones.headers },
+        });
+        let datos = {};
+        try {
+          datos = await res.json();
+        } catch {
+          /* respuesta sin cuerpo */
+        }
+        return { ok: res.ok, estado: res.status, datos };
+      };
+
+      let episodios = [];
+      let actual = null;
+      let campeones = [];
+
+      // ── Campeones desde Data Dragon (para no tener que saber los IDs) ──
+      const cargaCampeones = async () => {
+        try {
+          const versiones = await (
+            await fetch('https://ddragon.leagueoflegends.com/api/versions.json')
+          ).json();
+          const v = versiones[0];
+          const datos = await (
+            await fetch(`https://ddragon.leagueoflegends.com/cdn/${v}/data/es_ES/champion.json`)
+          ).json();
+          campeones = Object.values(datos.data).map((c) => ({
+            id: c.id,
+            nombre: c.name,
+            titulo: c.title,
+            icono: `https://ddragon.leagueoflegends.com/cdn/${v}/img/champion/${c.id}.png`,
+          }));
+          campeones.sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'));
+          $('lista-campeones').innerHTML = campeones
+            .map((c) => `<option value="${c.nombre}"></option>`)
+            .join('');
+        } catch {
+          /* sin buscador: se puede escribir el ID a mano */
+        }
+      };
+
+      const iconoDe = (id) =>
+        campeones.find((c) => c.id === id)?.icono ??
+        `https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/${id}.png`;
+
+      // ── Vistas ──
+      const muestra = (cual) => {
+        $('vista-entrar').hidden = cual !== 'entrar';
+        $('vista-panel').hidden = cual === 'entrar';
+        if (cual !== 'entrar') {
+          $('vista-lista').hidden = cual !== 'lista';
+          $('vista-editor').hidden = cual !== 'editor';
+        }
+      };
+
+      const pintaLista = () => {
+        $('lista').innerHTML = episodios
+          .map((e) => {
+            const d = e.datos ?? {};
+            const n = String(d.orden ?? '?').padStart(2, '0');
+            const videos = (d.videos ?? []).length;
+            return `
+              <button class="ep" data-slug="${e.slug}" type="button">
+                <img src="${iconoDe(d.campeon)}" alt="" width="42" height="42" loading="lazy" />
+                <span class="ep-texto">
+                  <b>${d.nombreCampeon ?? e.slug}</b>
+                  <span class="etiqueta">EP.${n} · ${
+                    d.coach ? `con ${d.coach}` : 'coach por confirmar'
+                  } · ${videos} ${videos === 1 ? 'vídeo' : 'vídeos'}</span>
+                </span>
+                <span class="ep-ir" aria-hidden="true">›</span>
+              </button>`;
+          })
+          .join('');
+
+        for (const b of document.querySelectorAll('.ep')) {
+          b.addEventListener('click', () => abreEditor(b.dataset.slug));
+        }
+      };
+
+      // ── Vídeos (filas repetibles) ──
+      const filaVideo = (v = {}) => {
+        const fila = document.createElement('div');
+        fila.className = 'video';
+        fila.innerHTML = `
+          <input type="text" class="v-titulo" placeholder="Título" value="${(v.titulo ?? '').replace(/"/g, '&quot;')}" />
+          <input type="url" class="v-url" placeholder="https://youtube.com/watch?v=…" value="${v.url ?? ''}" />
+          <input type="date" class="v-fecha" value="${(v.fecha ?? '').slice(0, 10)}" />
+          <button class="quitar" type="button" aria-label="Quitar vídeo">×</button>`;
+        fila.querySelector('.quitar').addEventListener('click', () => fila.remove());
+        return fila;
+      };
+
+      const pintaElegido = (id) => {
+        const c = campeones.find((x) => x.id === id);
+        $('elegido').hidden = !id;
+        if (!id) return;
+        $('elegido-img').src = iconoDe(id);
+        $('elegido-nombre').textContent = c?.nombre ?? id;
+        $('elegido-titulo').textContent = c?.titulo ?? id;
+      };
+
+      const abreEditor = (slug) => {
+        actual = episodios.find((e) => e.slug === slug) ?? null;
+        const d = actual?.datos ?? {};
+        $('editor-slug').textContent = slug ? `${slug}.md` : 'episodio nuevo';
+        $('f-orden').value = d.orden ?? (episodios[0]?.datos?.orden ?? 0) + 1;
+        $('f-buscador').value = d.nombreCampeon ?? '';
+        $('f-coach').value = d.coach ?? '';
+        $('f-canal').value = d.canalCoach ?? '';
+        $('f-rol').value = d.rolCoach ?? '';
+        $('f-notas').value = actual?.cuerpo ?? '';
+        $('videos').innerHTML = '';
+        for (const v of d.videos ?? []) $('videos').append(filaVideo(v));
+        pintaElegido(d.campeon ?? null);
+        $('aviso-editor').textContent = '';
+        muestra('editor');
+      };
+
+      // ── Publicar ──
+      const publica = async () => {
+        const nombre = $('f-buscador').value.trim();
+        const c =
+          campeones.find((x) => x.nombre.toLowerCase() === nombre.toLowerCase()) ??
+          campeones.find((x) => x.id.toLowerCase() === nombre.toLowerCase());
+
+        if (!c && !actual?.datos?.campeon) {
+          $('aviso-editor').textContent = 'Elige un campeón de la lista.';
+          return;
+        }
+
+        const campeon = c?.id ?? actual.datos.campeon;
+        const orden = Number($('f-orden').value);
+
+        if (!Number.isInteger(orden) || orden < 1) {
+          $('aviso-editor').textContent = 'El número de episodio no es válido.';
+          return;
+        }
+
+        const videos = [...document.querySelectorAll('#videos .video')]
+          .map((f) => ({
+            titulo: f.querySelector('.v-titulo').value.trim(),
+            url: f.querySelector('.v-url').value.trim(),
+            fecha: f.querySelector('.v-fecha').value || undefined,
+          }))
+          .filter((v) => v.titulo && v.url);
+
+        const slug =
+          actual?.slug ?? `${String(orden).padStart(2, '0')}-${campeon.toLowerCase()}`;
+
+        $('btn-publicar').disabled = true;
+        $('aviso-editor').textContent = 'Publicando…';
+
+        const { ok, datos } = await api('episodios', {
+          method: 'PUT',
+          body: JSON.stringify({
+            slug,
+            sha: actual?.sha,
+            esNuevo: !actual,
+            notas: $('f-notas').value,
+            datos: {
+              orden,
+              campeon,
+              nombreCampeon: c?.nombre ?? actual?.datos?.nombreCampeon ?? campeon,
+              tituloCampeon: c?.titulo ?? actual?.datos?.tituloCampeon ?? '',
+              coach: $('f-coach').value,
+              canalCoach: $('f-canal').value,
+              rolCoach: $('f-rol').value,
+              videos,
+            },
+          }),
+        });
+
+        $('btn-publicar').disabled = false;
+
+        if (!ok) {
+          $('aviso-editor').textContent = datos.error ?? 'No se pudo publicar.';
+          return;
+        }
+
+        $('aviso-editor').textContent = '✓ Publicado. La web se actualiza en un minuto.';
+        await carga();
+      };
+
+      // ── Arranque ──
+      const carga = async () => {
+        const { ok, estado, datos } = await api('episodios');
+        if (estado === 401) {
+          muestra('entrar');
+          return false;
+        }
+        if (!ok) {
+          $('lista').innerHTML = `<p class="nota">${datos.error ?? 'Error al cargar.'}</p>`;
+          muestra('lista');
+          return true;
+        }
+        episodios = datos.episodios ?? [];
+        pintaLista();
+        return true;
+      };
+
+      $('form-entrar').addEventListener('submit', async (ev) => {
+        ev.preventDefault();
+        $('aviso-entrar').textContent = '';
+        const { ok, datos } = await api('entrar', {
+          method: 'POST',
+          body: JSON.stringify({ clave: $('clave').value }),
+        });
+        if (!ok) {
+          $('aviso-entrar').textContent = datos.error ?? 'No se pudo entrar.';
+          return;
+        }
+        $('clave').value = '';
+        await carga();
+        muestra('lista');
+      });
+
+      $('btn-salir').addEventListener('click', async () => {
+        await api('salir', { method: 'POST' });
+        muestra('entrar');
+      });
+
+      $('btn-volver').addEventListener('click', () => muestra('lista'));
+      $('btn-nuevo').addEventListener('click', () => abreEditor(null));
+      $('btn-add-video').addEventListener('click', () => $('videos').append(filaVideo()));
+      $('btn-publicar').addEventListener('click', publica);
+      $('f-buscador').addEventListener('change', () => {
+        const n = $('f-buscador').value.trim().toLowerCase();
+        const c = campeones.find((x) => x.nombre.toLowerCase() === n);
+        pintaElegido(c?.id ?? null);
+      });
+
+      cargaCampeones();
+      carga().then((dentro) => muestra(dentro ? 'lista' : 'entrar'));
+    </script>
+
+    <style>
+      /* ── Entrar ── */
+      .entrar {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      .tarjeta-entrar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: min(100%, 340px);
+        padding: 32px 28px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--surface);
+      }
+
+      .tarjeta-entrar img {
+        border-radius: 12px;
+      }
+
+      .tarjeta-entrar h1 {
+        font-size: 34px;
+        color: var(--red);
+        margin: 4px 0 0;
+      }
+
+      .sub {
+        margin: 0 0 8px;
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .sub span {
+        color: var(--red);
+      }
+
+      /* ── Estructura ── */
+      .barra {
+        border-bottom: 1px solid var(--line);
+        background: var(--surface);
+      }
+
+      .barra-cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding-block: 12px;
+      }
+
+      .marca {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 17px;
+        color: var(--text);
+        text-decoration: none;
+      }
+
+      .marca img {
+        border-radius: 7px;
+      }
+
+      .marca span {
+        color: var(--red);
+      }
+
+      .barra-acciones {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .enlace-sec {
+        font-family: var(--mono);
+        font-size: 11.5px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+        background: none;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .enlace-sec:hover {
+        color: var(--text);
+      }
+
+      .cuerpo {
+        padding-block: 32px 64px;
+      }
+
+      .cabecera {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+      }
+
+      .titulo {
+        font-size: clamp(30px, 5vw, 44px);
+        color: var(--text);
+      }
+
+      .nota {
+        margin: 0 0 22px;
+        font-size: 14px;
+        color: var(--muted);
+        max-width: 62ch;
+      }
+
+      /* ── Lista ── */
+      .lista {
+        display: grid;
+        gap: 8px;
+      }
+
+      .ep {
+        display: grid;
+        grid-template-columns: 42px minmax(0, 1fr) 16px;
+        align-items: center;
+        gap: 14px;
+        width: 100%;
+        text-align: left;
+        padding: 10px 14px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: var(--surface);
+        color: var(--text);
+        cursor: pointer;
+        font: inherit;
+        transition: border-color 0.15s ease, background 0.15s ease;
+      }
+
+      .ep:hover {
+        background: var(--surface-2);
+        border-color: var(--muted);
+      }
+
+      .ep img {
+        border-radius: 7px;
+      }
+
+      .ep-texto {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        min-width: 0;
+      }
+
+      .ep-texto b {
+        font-size: 16px;
+      }
+
+      .ep-texto .etiqueta {
+        font-size: 10.5px;
+        color: var(--faint);
+      }
+
+      .ep-ir {
+        color: var(--faint);
+        font-size: 18px;
+      }
+
+      /* ── Editor ── */
+      .editor {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--surface);
+        padding: 24px;
+        margin-top: 12px;
+      }
+
+      .fila-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+
+      .campo {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .campo .etiqueta {
+        font-size: 10.5px;
+        color: var(--muted);
+      }
+
+      input,
+      textarea {
+        font: inherit;
+        font-size: 15px;
+        color: var(--text);
+        background: var(--bg);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 10px 12px;
+        width: 100%;
+      }
+
+      input:focus-visible,
+      textarea:focus-visible {
+        border-color: var(--red);
+        outline: none;
+      }
+
+      textarea {
+        resize: vertical;
+        line-height: 1.5;
+      }
+
+      .pista {
+        font-size: 12px;
+        color: var(--faint);
+      }
+
+      .elegido {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 14px;
+        border: 1px solid var(--line-soft);
+        border-radius: 10px;
+        background: var(--bg);
+      }
+
+      .elegido img {
+        border-radius: 8px;
+      }
+
+      .elegido b {
+        display: block;
+        font-size: 15px;
+      }
+
+      .elegido .etiqueta {
+        font-size: 10.5px;
+        color: var(--faint);
+      }
+
+      .video {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.4fr) 150px 34px;
+        gap: 8px;
+        margin-bottom: 8px;
+      }
+
+      .quitar {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--bg);
+        color: var(--muted);
+        font-size: 17px;
+        cursor: pointer;
+      }
+
+      .quitar:hover {
+        border-color: var(--red);
+        color: var(--red);
+      }
+
+      /* ── Botones y avisos ── */
+      .boton {
+        font-family: var(--mono);
+        font-size: 12.5px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #0a0a0c;
+        background: var(--red);
+        border: 0;
+        border-radius: 8px;
+        padding: 12px 22px;
+        cursor: pointer;
+      }
+
+      .boton:hover {
+        background: var(--red-hot);
+      }
+
+      .boton:disabled {
+        opacity: 0.6;
+        cursor: default;
+      }
+
+      .boton-sec {
+        font-family: var(--mono);
+        font-size: 11.5px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--text);
+        background: var(--bg);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 9px 16px;
+        cursor: pointer;
+        width: max-content;
+      }
+
+      .boton-sec:hover {
+        border-color: var(--muted);
+      }
+
+      .acciones {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .aviso {
+        margin: 0;
+        font-size: 13.5px;
+        color: var(--gold);
+        min-height: 1em;
+      }
+
+      @media (max-width: 700px) {
+        .fila-2,
+        .video {
+          grid-template-columns: 1fr;
+        }
+
+        .video {
+          padding-bottom: 8px;
+          border-bottom: 1px solid var(--line-soft);
+        }
+      }
+    </style>
+  </body>
+</html>
