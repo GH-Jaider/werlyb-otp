@@ -104,7 +104,12 @@ export const componeArchivo = (datos, cuerpo) => {
     .replace(
       new RegExp(`^(\\s*)(${CLAVES_FECHA.join('|')}): '(\\d{4}-\\d{2}-\\d{2})'$`, 'gm'),
       '$1$2: $3',
-    );
+    )
+    // los títulos de vídeo siempre entre comillas, igual que los escribe
+    // scripts/videos.mjs, para que panel y bot no se pisen el formato
+    .replace(/^(\s*)(- )?titulo: (?!['"|>])(.+)$/gm, (_, sangria, guion, valor) => {
+      return `${sangria}${guion ?? ''}titulo: '${valor.replace(/'/g, "''")}'`;
+    });
 
   const notas = (cuerpo ?? '').trim();
 
