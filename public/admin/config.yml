@@ -1,15 +1,27 @@
 # yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
 
+# Identidad del panel: título, logo (el paujil) y enlaces a la web publicada
+app_title: 'Siendo OTP · Panel'
+logo_url: /icon-512.png
+site_url: https://siendo-otp.vercel.app
+display_url: https://siendo-otp.vercel.app
+
 backend:
   name: github
   repo: GH-Jaider/werlyb-otp
   branch: main
-  # Sin `base_url`, el inicio de sesión se hace con "Sign In with Token"
-  # (personal access token de GitHub): la persona editora pega un PAT con
-  # permisos de lectura/escritura de contenido sobre este repositorio.
-  # Cuando se despliegue el Cloudflare Worker "sveltia-cms-auth" (OAuth),
-  # agregar aquí `base_url: <URL del worker>` para habilitar el inicio de
-  # sesión con un clic (authorization code flow) en lugar del token manual.
+  # Login con la cuenta de GitHub de cada editor, en un clic: el intercambio
+  # OAuth lo hace la propia web en /api/auth y /api/callback (funciones de
+  # Vercel; el secreto vive en sus variables de entorno, nunca en el cliente).
+  # Nadie tiene que generar ni compartir tokens.
+  base_url: https://siendo-otp.vercel.app
+  auth_endpoint: api/auth
+  commit_messages:
+    create: 'Nuevo episodio: {{slug}}'
+    update: 'Episodio actualizado: {{slug}}'
+    delete: 'Episodio eliminado: {{slug}}'
+    uploadMedia: 'Subido: {{path}}'
+    deleteMedia: 'Borrado: {{path}}'
 
 media_folder: 'public/uploads'
 public_folder: '/uploads'
@@ -18,11 +30,29 @@ collections:
   - name: episodios
     label: Episodios
     label_singular: Episodio
+    icon: sports_esports
+    description: >-
+      Cada episodio es un arco de la serie: un campeón, su coach y sus vídeos.
+      Las partidas y las stats las rellena sola la tarea nocturna que consulta
+      la API de Riot; aquí solo se editan los vídeos y el coach.
     folder: src/content/episodios
     extension: md
     format: yaml-frontmatter
     identifier_field: nombreCampeon
     summary: '{{orden}} · {{nombreCampeon}}'
+    preview_path: 'ep/{{slug}}'
+    sortable_fields:
+      fields:
+        - orden
+        - nombreCampeon
+        - coach
+      default:
+        field: orden
+        direction: descending
+    view_groups:
+      - name: coach
+        label: 'Por coach'
+        field: coach
     # Los archivos existentes siguen el patrón "NN-campeonminuscula" (p. ej.
     # "14-leesin"). Sveltia CMS no ofrece una transformación de relleno con
     # ceros para plantillas de slug, así que los episodios nuevos con orden
