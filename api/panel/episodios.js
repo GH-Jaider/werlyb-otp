@@ -44,27 +44,68 @@ const CAMPOS_EDITABLES = [
   'videos',
 ];
 
-const separaFrontmatter = (texto) => {
+export const separaFrontmatter = (texto) => {
   const m = texto.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
   if (!m) return { datos: {}, cuerpo: texto.trim() };
   return { datos: yaml.load(m[1]) ?? {}, cuerpo: (m[2] ?? '').trim() };
 };
 
-const componeArchivo = (datos, cuerpo) => {
+/** Claves que son fechas: se escriben como 2026-08-22, sin hora ni comillas. */
+const CLAVES_FECHA = ['fecha', 'partidasDesde', 'partidasHasta'];
+
+/** YAML convierte las fechas a Date; aquí vuelven a ser AAAA-MM-DD. */
+const aFechaCorta = (valor) => {
+  if (valor instanceof Date) return valor.toISOString().slice(0, 10);
+  if (typeof valor === 'string') return valor.slice(0, 10);
+  return valor;
+};
+
+const normalizaFechas = (valor) => {
+  if (Array.isArray(valor)) return valor.map(normalizaFechas);
+  if (valor && typeof valor === 'object' && !(valor instanceof Date)) {
+    return Object.fromEntries(
+      Object.entries(valor).map(([k, v]) => [
+        k,
+        CLAVES_FECHA.includes(k) ? aFechaCorta(v) : normalizaFechas(v),
+      ]),
+    );
+  }
+  return valor;
+};
+
+/**
+ * Rehace el archivo del episodio. Ojo: los comentarios YAML del frontmatter
+ * (`# …`) se pierden al reescribir, porque el parser no los conserva. El
+ * porqué de cada campo está documentado en src/content.config.ts.
+ */
+export const componeArchivo = (datos, cuerpo) => {
+  const limpio = normalizaFechas(
+    Object.fromEntries(
+      Object.entries(datos).map(([k, v]) => [k, CLAVES_FECHA.includes(k) ? aFechaCorta(v) : v]),
+    ),
+  );
+
   const ordenado = {};
   for (const clave of ORDEN_CLAVES) {
-    if (datos[clave] !== undefined && datos[clave] !== null && datos[clave] !== '') {
-      ordenado[clave] = datos[clave];
+    if (limpio[clave] !== undefined && limpio[clave] !== null && limpio[clave] !== '') {
+      ordenado[clave] = limpio[clave];
     }
   }
   // Cualquier campo desconocido se conserva al final
-  for (const [clave, valor] of Object.entries(datos)) {
+  for (const [clave, valor] of Object.entries(limpio)) {
     if (!(clave in ordenado) && valor !== undefined && valor !== null && valor !== '') {
       ordenado[clave] = valor;
     }
   }
 
-  const frontmatter = yaml.dump(ordenado, { lineWidth: -1, quotingType: "'", noRefs: true });
+  const frontmatter = yaml
+    .dump(ordenado, { lineWidth: -1, quotingType: "'", noRefs: true })
+    // las fechas quedan sin comillas, como en los archivos escritos a mano
+    .replace(
+      new RegExp(`^(\\s*)(${CLAVES_FECHA.join('|')}): '(\\d{4}-\\d{2}-\\d{2})'$`, 'gm'),
+      '$1$2: $3',
+    );
+
   const notas = (cuerpo ?? '').trim();
 
   return `---\n${frontmatter}---\n${notas ? `\n${notas}\n` : ''}`;

@@ -101,7 +101,28 @@ npx vercel --prod
 
 O conecta el repositorio de GitHub desde el panel de Vercel y cada push publica solo.
 
-## Administración (CMS)
+## Panel para editar sin GitHub (`/panel`)
+
+Pensado para quien no tiene (ni quiere) cuenta de GitHub: se entra en
+`https://siendo-otp.vercel.app/panel` con una contraseña y se edita el coach, los vídeos y las
+notas de cada episodio; al publicar, el servidor commitea y la web se redespliega sola. El
+campeón se elige de un buscador que lee Data Dragon, así que no hay que saber IDs como
+`MonkeyKing`.
+
+Necesita tres variables de entorno en Vercel:
+
+- `PANEL_CLAVE_HASH` — hash scrypt de la contraseña. Se genera con:
+  `node -e "import('./api/panel/_sesion.js').then(m => console.log(m.hashDeClave('LA-CLAVE')))"`
+- `PANEL_SESION_SECRETO` — cadena aleatoria para firmar la cookie de sesión.
+- `PANEL_TOKEN_GITHUB` — token fine-grained con permiso *Contents: Read and write* **solo**
+  sobre este repositorio. Nunca sale del servidor.
+
+El panel solo escribe los campos que edita (`orden`, `campeon`, `nombreCampeon`,
+`tituloCampeon`, `coach`, `rolCoach`, `canalCoach`, `videos`) y las notas: cualquier otro campo
+del frontmatter, como los que rellena la tarea nocturna, se conserva intacto. Al reescribir el
+archivo se pierden los comentarios YAML del frontmatter.
+
+## Administración alternativa (Sveltia CMS)
 
 En `/admin` hay un panel de [Sveltia CMS](https://github.com/sveltia/sveltia-cms) para editar
 los episodios desde el navegador, sin tocar Markdown a mano. Los archivos de configuración son
