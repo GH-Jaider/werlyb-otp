@@ -377,7 +377,15 @@ import '../styles/global.css';
       carga().then((dentro) => muestra(dentro ? 'lista' : 'entrar'));
     </script>
 
-    <style>
+    <!-- `is:global`: parte de la interfaz (las filas de vídeo, la lista de
+         episodios) se crea desde JS y no lleva el atributo de ámbito que
+         Astro añade a las etiquetas de la plantilla. -->
+    <style is:global>
+      /* `display` en las secciones ganaría a [hidden] si no se fuerza */
+      [hidden] {
+        display: none !important;
+      }
+
       /* ── Entrar ── */
       .entrar {
         min-height: 100vh;
