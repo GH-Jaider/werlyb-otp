@@ -20,3 +20,5 @@ videos:
     url: https://www.youtube.com/watch?v=tyMSDhOelig
     fecha: 2026-07-14
 ---
+
+Le fue tan bien que considera volverse peluquero
