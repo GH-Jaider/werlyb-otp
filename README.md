@@ -118,9 +118,16 @@ Necesita tres variables de entorno en Vercel:
   sobre este repositorio. Nunca sale del servidor.
 
 El panel solo escribe los campos que edita (`orden`, `campeon`, `nombreCampeon`,
-`tituloCampeon`, `coach`, `rolCoach`, `canalCoach`, `videos`) y las notas: cualquier otro campo
-del frontmatter, como los que rellena la tarea nocturna, se conserva intacto. Al reescribir el
-archivo se pierden los comentarios YAML del frontmatter.
+`tituloCampeon`, `coach`, `rolCoach`, `canalCoach`, `videos`, `partidasDesde`,
+`partidasHasta`) y las notas: cualquier otro campo del frontmatter, como las estadísticas que
+rellena la tarea nocturna, se conserva intacto. Al reescribir el archivo se pierden los
+comentarios YAML del frontmatter.
+
+Los campos que se rellenan solos van marcados en la interfaz («entran solos», «las cuenta el
+robot») y el resto como «opcional», para que quede claro qué hay que tocar y qué no. El bloque
+de partidas muestra en solo lectura lo que encontró la tarea nocturna y permite fijar el rango
+de fechas (`partidasDesde` / `partidasHasta`) para los campeones que también se juegan fuera
+del reto.
 
 ## Administración alternativa (Sveltia CMS)
 
