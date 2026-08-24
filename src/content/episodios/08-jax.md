@@ -5,10 +5,6 @@ nombreCampeon: Jax
 tituloCampeon: El Maestro de Armas
 coach: Jorge Casanovas
 rolCoach: OTP de Jax
-# Ventana manual: Jax es su main de siempre y lo juega fuera de la serie;
-# sin esto, el margen ancho arrastraría partidas que no son del reto.
-partidasDesde: 2026-06-02
-partidasHasta: 2026-06-08
 videos:
   - titulo: 'OTP Jax con Jorge Casanovas'
     url: https://www.youtube.com/watch?v=pDUGBH1TYps
@@ -19,7 +15,9 @@ videos:
   - titulo: 'Soy un fraude'
     url: https://www.youtube.com/watch?v=m78XnfG2bw4
     fecha: 2026-06-07
+partidasDesde: 2026-06-02
+partidasHasta: 2026-06-08
 ---
 
-El coach de este arco, «Jorge Casanovas», es el propio Werlyb: nadie conoce mejor
-a su Jax de toda la vida.
+El coach de este arco es Jorge Casanovas, o sea él mismo: el mejor Jax de su casa
+Terminó la noche 5-5 y no lo pudo dejar así y al día siguiente jugó dos más, ganó una, perdió otra, y se quedó exactamente donde estaba xD. Doce partidas para volver al 50 %. Y de la multa por mear en la calle no se libró.
