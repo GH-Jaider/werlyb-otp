@@ -21,6 +21,10 @@ videos:
     fecha: 2026-07-22
 partidasDesde: 2026-07-13
 partidasHasta: 2026-07-16
+partidasExcluidas:
+  - EUW1_7917722246
+  - EUW1_7920772866
+  - EUW1_7920808010
 acento: '#d0342c'
 ---
 
