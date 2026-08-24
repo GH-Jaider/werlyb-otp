@@ -19,4 +19,6 @@ videos:
   - titulo: 'Desbloqueé el potencial del OTP'
     url: https://www.youtube.com/watch?v=ix4mUtji5Zw
     fecha: 2026-07-04
+partidasDesde: 2026-06-22
+partidasHasta: 2026-07-01
 ---
