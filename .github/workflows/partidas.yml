@@ -15,6 +15,13 @@ on:
       - 'src/content/episodios/**'
   workflow_dispatch: {}
 
+# El backfill tarda ~15 min (límites de la API de Riot). Si se editan varios
+# episodios seguidos, no tiene sentido encadenar una pasada por cada uno: se
+# queda solo la última, que ya recalcula la serie entera.
+concurrency:
+  group: partidas
+  cancel-in-progress: true
+
 jobs:
   partidas:
     runs-on: ubuntu-latest
