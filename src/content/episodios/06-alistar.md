@@ -3,6 +3,8 @@ orden: 6
 campeon: Alistar
 nombreCampeon: Alistar
 tituloCampeon: El Minotauro
+coach: eldelabarrapan
+canalCoach: https://www.youtube.com/@eldelabarrapan
 videos:
   - titulo: 'Os lo debía'
     url: https://www.youtube.com/watch?v=X5iyzPJKVC4
@@ -16,3 +18,5 @@ videos:
 partidasDesde: 2026-04-22
 partidasHasta: 2026-04-22
 ---
+
+Tio Barry goat
