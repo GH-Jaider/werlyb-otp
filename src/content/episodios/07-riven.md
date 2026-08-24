@@ -19,6 +19,8 @@ videos:
   - titulo: 'Kerios me enseñó bien'
     url: https://www.youtube.com/watch?v=rKuJSaSzVxs
     fecha: 2026-07-06
+partidasDesde: 2026-05-19
+partidasHasta: 2026-05-24
 ---
 
 El arco que pidió el chat.
