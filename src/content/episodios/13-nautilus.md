@@ -16,4 +16,6 @@ videos:
   - titulo: 'Encontré la manera de ser útil'
     url: https://www.youtube.com/watch?v=wd7W71xA5Ps
     fecha: 2026-07-18
+partidasDesde: 2026-07-14
+partidasHasta: 2026-07-19
 ---
