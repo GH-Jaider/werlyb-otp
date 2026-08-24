@@ -4,7 +4,7 @@ campeon: Singed
 nombreCampeon: Singed
 tituloCampeon: El Químico Loco
 coach: 29cfs
-canalCoach: twitch.tv/29cfs
+canalCoach: https://twitch.tv/29cfs
 videos:
   - titulo: 'Esto va a estar divertido'
     url: https://www.youtube.com/watch?v=Bdr8Xg4aRnk
