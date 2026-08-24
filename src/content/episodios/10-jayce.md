@@ -22,3 +22,5 @@ videos:
 partidasDesde: 2026-06-22
 partidasHasta: 2026-07-01
 ---
+
+Holdem todavía le debe los 4600 euros
