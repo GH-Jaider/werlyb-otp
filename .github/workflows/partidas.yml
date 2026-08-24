@@ -17,12 +17,12 @@ on:
       - 'scripts/partidas.mjs'
   workflow_dispatch: {}
 
-# El backfill tarda ~15 min (límites de la API de Riot). Si se editan varios
-# episodios seguidos, no tiene sentido encadenar una pasada por cada uno: se
-# queda solo la última, que ya recalcula la serie entera.
+# Una pasada a la vez: si llega otra mientras corre, espera en cola en vez de
+# matar a la que está trabajando (cancelarla tiraría a la basura todo lo que
+# lleve descargado, que en la primera pasada son 15 minutos).
 concurrency:
   group: partidas
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   partidas:
