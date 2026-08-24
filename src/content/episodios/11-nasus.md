@@ -3,6 +3,8 @@ orden: 11
 campeon: Nasus
 nombreCampeon: Nasus
 tituloCampeon: El Guardián de las Arenas
+coach: Jorge Cazalobas
+rolCoach: El baja pandas
 videos:
   - titulo: 'OTP Nasus'
     url: https://www.youtube.com/watch?v=W5faZ7b0usA
