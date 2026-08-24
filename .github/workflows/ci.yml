@@ -28,3 +28,7 @@ jobs:
 
       - name: Build
         run: pnpm build
+
+      # Comprueba la caché incremental del backfill con la API simulada
+      - name: Prueba del backfill de partidas
+        run: pnpm prueba:partidas

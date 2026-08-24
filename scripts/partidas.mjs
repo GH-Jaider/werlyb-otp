@@ -23,6 +23,15 @@ if (!API_KEY) {
 const RAIZ = path.resolve(import.meta.dirname, '..');
 const DIR_EPISODIOS = path.join(RAIZ, 'src/content/episodios');
 const DIR_SALIDA = path.join(RAIZ, 'src/data/partidas');
+const ARCHIVO_CACHE = path.join(RAIZ, 'src/data/partidas-cache.json');
+
+// Sube este número al cambiar la forma de lo que se guarda por partida: la
+// caché se invalida sola y se vuelve a bajar todo una vez, sin datos a medias.
+const FORMATO_CACHE = 1;
+
+// `node scripts/partidas.mjs --completo` ignora la caché y rebaja la serie
+// entera (para depurar o tras un cambio raro en la API).
+const COMPLETO = process.argv.includes('--completo');
 const CUENTAS = JSON.parse(await readFile(path.join(RAIZ, 'src/data/cuentas.json'), 'utf8'));
 
 // La descarga se hace de una sola pasada por todo el rango de la serie (los
@@ -150,8 +159,35 @@ if (cuentas.length === 0) {
   process.exit(1);
 }
 
-// ── Backfill ──
-const cacheDetalles = new Map(); // matchId -> detalle (partidas con ambas cuentas)
+// ── Caché de partidas ya vistas ──
+//
+// Guarda los HECHOS de Riot (ids de objetos, claves de hechizos…), no los
+// nombres ni las URLs de iconos: esos se derivan de Data Dragon en cada
+// pasada, así que al cambiar de parche los iconos se actualizan solos sin
+// volver a preguntar a Riot.
+//
+//   partidas    → partida de un campeón de la serie, en la Grieta y sin remake
+//   descartadas → matchId: campeón jugado, o '' si nunca vale la pena mirarla
+//                 (otro modo o remake). Si un campeón descartado estrena
+//                 episodio más adelante, sus partidas se rescatan solas.
+const cache = { formato: FORMATO_CACHE, partidas: {}, descartadas: {} };
+
+if (!COMPLETO) {
+  try {
+    const guardada = JSON.parse(await readFile(ARCHIVO_CACHE, 'utf8'));
+    if (guardada.formato === FORMATO_CACHE) {
+      cache.partidas = guardada.partidas ?? {};
+      cache.descartadas = guardada.descartadas ?? {};
+    } else {
+      console.log(
+        `Caché con formato ${guardada.formato} (ahora ${FORMATO_CACHE}): se rebaja la serie entera.`,
+      );
+    }
+  } catch {
+    console.log('Sin caché previa: primera pasada completa.');
+  }
+}
+
 await mkdir(DIR_SALIDA, { recursive: true });
 
 const DIA_MS = 24 * 60 * 60 * 1000;
@@ -172,10 +208,13 @@ const inicioSerie = Math.min(...episodios.map(inicioArco));
 const ahora = Math.floor(Date.now() / 1000);
 console.log(`Rango de la serie: ${new Date(inicioSerie * 1000).toISOString().slice(0, 10)} → hoy\n`);
 
-// ── Descarga única de todo el rango, agrupando por campeón ──
-const porCampeon = new Map(); // campeon -> partidas[]
-let totalPartidas = 0;
-let descartadasPorModo = 0;
+// ── Descarga: solo lo que la caché no conoce ──
+const campeonesDeLaSerie = new Set(episodios.map((e) => e.campeon));
+let nuevas = 0;
+let descartadasNuevas = 0;
+let rescatadas = 0;
+let reutilizadas = 0;
+
 for (const cuenta of cuentas) {
   let inicio = 0;
   while (true) {
@@ -185,59 +224,55 @@ for (const cuenta of cuentas) {
     if (!ids || ids.length === 0) break;
 
     for (const matchId of ids) {
-      let detalle = cacheDetalles.get(matchId);
-      if (detalle === undefined) {
-        detalle = await riot(
-          `https://${cuenta.region}.api.riotgames.com/lol/match/v5/matches/${matchId}`,
-        );
-        cacheDetalles.set(matchId, detalle);
+      if (cache.partidas[matchId]) {
+        reutilizadas += 1;
+        continue;
       }
+
+      // Ya vista y descartada: solo se vuelve a mirar si su campeón estrena
+      // episodio (la cadena vacía marca «otro modo o remake», nunca sirve).
+      const descartada = cache.descartadas[matchId];
+      if (descartada !== undefined) {
+        if (!descartada || !campeonesDeLaSerie.has(descartada)) continue;
+        rescatadas += 1;
+        delete cache.descartadas[matchId];
+      }
+
+      const detalle = await riot(
+        `https://${cuenta.region}.api.riotgames.com/lol/match/v5/matches/${matchId}`,
+      );
       if (!detalle) continue;
 
       const p = detalle.info.participants.find((x) => x.puuid === cuenta.puuid);
       if (!p) continue;
-      if (detalle.info.gameDuration < 300) continue; // remakes fuera
 
-      // Solo la Grieta clásica: Arena, ARAM, URF y demás modos no son el reto y
-      // descuadran el arco (0 CS, KDA disparado, «victoria» que no es una
-      // partida ganada). mapId 11 = Grieta; gameMode CLASSIC deja fuera los
-      // modos especiales que también se juegan ahí.
-      if (detalle.info.mapId !== 11 || detalle.info.gameMode !== 'CLASSIC') {
-        descartadasPorModo += 1;
+      // Remakes y todo lo que no sea la Grieta clásica (Arena, ARAM, URF…): no
+      // son el reto y descuadran el arco (0 CS, KDA disparado, «victoria» que
+      // no es una partida ganada). No vale la pena volver a mirarlas nunca.
+      if (
+        detalle.info.gameDuration < 300 ||
+        detalle.info.mapId !== 11 ||
+        detalle.info.gameMode !== 'CLASSIC'
+      ) {
+        cache.descartadas[matchId] = '';
+        descartadasNuevas += 1;
         continue;
       }
 
-      const items = [p.item0, p.item1, p.item2, p.item3, p.item4, p.item5]
-        .map((id) => (id > 0 ? (itemPorId[id] ?? null) : null));
-      const trinket = p.item6 > 0 ? (itemPorId[p.item6] ?? null) : null;
-      const claveRuna = p.perks?.styles?.[0]?.selections?.[0]?.perk;
-      const estiloSec = p.perks?.styles?.[1]?.style;
-
-      const jugadores = detalle.info.participants.map((x) => ({
-        campeon: normalizaCampeon(x.championName),
-        icono: `${CDN}/${V}/img/champion/${normalizaCampeon(x.championName)}.png`,
-        nombre: x.riotIdGameName
-          ? `${x.riotIdGameName}#${x.riotIdTagline}`
-          : (x.summonerName || '—'),
-        equipo: x.teamId === 100 ? 'azul' : 'rojo',
-        posicion: x.teamPosition || '',
-        kills: x.kills,
-        deaths: x.deaths,
-        assists: x.assists,
-        protagonista: x.puuid === cuenta.puuid,
-      }));
-
       const campeon = normalizaCampeon(p.championName);
-      if (!porCampeon.has(campeon)) porCampeon.set(campeon, []);
-      totalPartidas += 1;
-      porCampeon.get(campeon).push({
-        jugadores,
-        ganaAzul: detalle.info.teams?.find((t) => t.teamId === 100)?.win ?? null,
-        matchId,
+
+      // De otro campeón: se anota con su nombre por si algún día tiene episodio
+      if (!campeonesDeLaSerie.has(campeon)) {
+        cache.descartadas[matchId] = campeon;
+        descartadasNuevas += 1;
+        continue;
+      }
+
+      cache.partidas[matchId] = {
+        campeon,
         cuenta: cuenta.riotId,
         inicio: new Date(detalle.info.gameStartTimestamp).toISOString(),
         duracionSeg: detalle.info.gameDuration,
-        cola: COLAS[detalle.info.queueId] ?? 'Otra cola',
         queueId: detalle.info.queueId,
         victoria: p.win,
         nivel: p.champLevel,
@@ -245,27 +280,79 @@ for (const cuenta of cuentas) {
         deaths: p.deaths,
         assists: p.assists,
         cs: p.totalMinionsKilled + p.neutralMinionsKilled,
-        items,
-        trinket,
-        hechizos: [p.summoner1Id, p.summoner2Id].map((k) => hechizoPorClave[k] ?? null),
-        runaPrincipal: claveRuna ? (runaPorId[claveRuna] ?? null) : null,
-        estiloSecundario: estiloSec ? (runaPorId[estiloSec] ?? null) : null,
-      });
+        items: [p.item0, p.item1, p.item2, p.item3, p.item4, p.item5],
+        trinket: p.item6,
+        hechizos: [p.summoner1Id, p.summoner2Id],
+        runaPrincipal: p.perks?.styles?.[0]?.selections?.[0]?.perk ?? null,
+        estiloSecundario: p.perks?.styles?.[1]?.style ?? null,
+        ganaAzul: detalle.info.teams?.find((t) => t.teamId === 100)?.win ?? null,
+        jugadores: detalle.info.participants.map((x) => ({
+          campeon: normalizaCampeon(x.championName),
+          nombre: x.riotIdGameName
+            ? `${x.riotIdGameName}#${x.riotIdTagline}`
+            : (x.summonerName || '—'),
+          equipo: x.teamId === 100 ? 'azul' : 'rojo',
+          posicion: x.teamPosition || '',
+          kills: x.kills,
+          deaths: x.deaths,
+          assists: x.assists,
+          protagonista: x.puuid === cuenta.puuid,
+        })),
+      };
+      nuevas += 1;
     }
     if (ids.length < 100) break;
     inicio += 100;
   }
 }
 
-// Si no se obtuvo NINGUNA partida en todo el rango (API caída o degradada,
-// aunque los ids respondan), algo falló: no pisamos los JSON.
-if (totalPartidas === 0) {
-  console.error('La API no devolvió ninguna partida en todo el rango; se aborta sin escribir.');
+console.log(
+  `Partidas: ${reutilizadas} ya en caché · ${nuevas} nuevas` +
+    `${rescatadas ? ` · ${rescatadas} rescatadas` : ''}` +
+    `${descartadasNuevas ? ` · ${descartadasNuevas} descartadas` : ''}\n`,
+);
+
+// Si no queda NINGUNA partida (API caída o degradada, aunque los ids
+// respondan), algo falló: no pisamos los JSON con datos vacíos.
+if (Object.keys(cache.partidas).length === 0) {
+  console.error('No hay ninguna partida que repartir; se aborta sin escribir.');
   process.exit(1);
 }
 
-if (descartadasPorModo > 0) {
-  console.log(`(${descartadasPorModo} partidas fuera de la Grieta clásica, descartadas)\n`);
+await writeFile(ARCHIVO_CACHE, `${JSON.stringify(cache, null, 2)}\n`);
+
+// ── Presentación: los ids de Riot se convierten en nombres e iconos ──
+const icono = (mapa, id) => (id > 0 ? (mapa[id] ?? null) : null);
+
+const paraLaWeb = (m, matchId) => ({
+  matchId,
+  cuenta: m.cuenta,
+  inicio: m.inicio,
+  duracionSeg: m.duracionSeg,
+  cola: COLAS[m.queueId] ?? 'Otra cola',
+  queueId: m.queueId,
+  victoria: m.victoria,
+  nivel: m.nivel,
+  kills: m.kills,
+  deaths: m.deaths,
+  assists: m.assists,
+  cs: m.cs,
+  items: m.items.map((id) => icono(itemPorId, id)),
+  trinket: icono(itemPorId, m.trinket),
+  hechizos: m.hechizos.map((k) => hechizoPorClave[k] ?? null),
+  runaPrincipal: m.runaPrincipal ? (runaPorId[m.runaPrincipal] ?? null) : null,
+  estiloSecundario: m.estiloSecundario ? (runaPorId[m.estiloSecundario] ?? null) : null,
+  ganaAzul: m.ganaAzul,
+  jugadores: m.jugadores.map((j) => ({
+    ...j,
+    icono: `${CDN}/${V}/img/champion/${j.campeon}.png`,
+  })),
+});
+
+const porCampeon = new Map(); // campeon -> partidas listas para la web
+for (const [matchId, m] of Object.entries(cache.partidas)) {
+  if (!porCampeon.has(m.campeon)) porCampeon.set(m.campeon, []);
+  porCampeon.get(m.campeon).push(paraLaWeb(m, matchId));
 }
 
 // ── Asignación por episodio y escritura ──

@@ -9,6 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "partidas": "node scripts/partidas.mjs",
+    "prueba:partidas": "node scripts/pruebas/partidas.test.mjs",
     "paleta": "node scripts/paleta.mjs"
   },
   "dependencies": {

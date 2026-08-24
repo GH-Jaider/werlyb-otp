@@ -68,6 +68,17 @@ RIOT_API_KEY=RGAPI-... npm run partidas
 ```
 
 - Las cuentas de Werlyb se listan en `src/data/cuentas.json` (Riot ID + región de routing).
+- **Solo se descarga lo nuevo.** `src/data/partidas-cache.json` guarda las partidas ya vistas
+  (los datos crudos de Riot) y los identificadores de las descartadas, así que cada pasada solo
+  pide a la API las partidas que no conocía: de ~15 minutos a unos segundos. Las descartadas
+  por campeón se anotan con su nombre y se rescatan solas si ese campeón estrena episodio; las
+  que no son de la Grieta clásica (Arena, ARAM, remakes) no se vuelven a mirar nunca.
+  `node scripts/partidas.mjs --completo` ignora la caché y rebaja la serie entera; subir
+  `FORMATO_CACHE` en el script tiene el mismo efecto y es lo que toca al cambiar los datos que
+  se guardan de cada partida.
+- Los nombres e iconos (objetos, runas, hechizos) no se guardan en la caché: se derivan de Data
+  Dragon en cada pasada, así que al cambiar de parche se actualizan solos.
+- La prueba `pnpm prueba:partidas` ejercita todo esto con la API simulada, sin clave ni red.
 - El script toma la ventana de fechas de los vídeos de cada arco (con margen), filtra por el
   campeón y descarta remakes. Los iconos de ítems/runas/hechizos quedan resueltos a URLs de
   Data Dragon dentro del JSON.
