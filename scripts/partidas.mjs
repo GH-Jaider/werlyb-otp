@@ -175,6 +175,7 @@ console.log(`Rango de la serie: ${new Date(inicioSerie * 1000).toISOString().sli
 // ── Descarga única de todo el rango, agrupando por campeón ──
 const porCampeon = new Map(); // campeon -> partidas[]
 let totalPartidas = 0;
+let descartadasPorModo = 0;
 for (const cuenta of cuentas) {
   let inicio = 0;
   while (true) {
@@ -196,6 +197,15 @@ for (const cuenta of cuentas) {
       const p = detalle.info.participants.find((x) => x.puuid === cuenta.puuid);
       if (!p) continue;
       if (detalle.info.gameDuration < 300) continue; // remakes fuera
+
+      // Solo la Grieta clásica: Arena, ARAM, URF y demás modos no son el reto y
+      // descuadran el arco (0 CS, KDA disparado, «victoria» que no es una
+      // partida ganada). mapId 11 = Grieta; gameMode CLASSIC deja fuera los
+      // modos especiales que también se juegan ahí.
+      if (detalle.info.mapId !== 11 || detalle.info.gameMode !== 'CLASSIC') {
+        descartadasPorModo += 1;
+        continue;
+      }
 
       const items = [p.item0, p.item1, p.item2, p.item3, p.item4, p.item5]
         .map((id) => (id > 0 ? (itemPorId[id] ?? null) : null));
@@ -228,6 +238,7 @@ for (const cuenta of cuentas) {
         inicio: new Date(detalle.info.gameStartTimestamp).toISOString(),
         duracionSeg: detalle.info.gameDuration,
         cola: COLAS[detalle.info.queueId] ?? 'Otra cola',
+        queueId: detalle.info.queueId,
         victoria: p.win,
         nivel: p.champLevel,
         kills: p.kills,
@@ -251,6 +262,10 @@ for (const cuenta of cuentas) {
 if (totalPartidas === 0) {
   console.error('La API no devolvió ninguna partida en todo el rango; se aborta sin escribir.');
   process.exit(1);
+}
+
+if (descartadasPorModo > 0) {
+  console.log(`(${descartadasPorModo} partidas fuera de la Grieta clásica, descartadas)\n`);
 }
 
 // ── Asignación por episodio y escritura ──

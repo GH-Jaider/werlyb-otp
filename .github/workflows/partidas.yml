@@ -13,6 +13,8 @@ on:
     branches: [main]
     paths:
       - 'src/content/episodios/**'
+      - 'src/data/cuentas.json'
+      - 'scripts/partidas.mjs'
   workflow_dispatch: {}
 
 # El backfill tarda ~15 min (límites de la API de Riot). Si se editan varios
