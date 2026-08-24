@@ -13,4 +13,6 @@ videos:
   - titulo: 'Teníais razón'
     url: https://www.youtube.com/watch?v=4egqIlgY6P0
     fecha: 2026-04-25
+partidasDesde: 2026-04-22
+partidasHasta: 2026-04-22
 ---
