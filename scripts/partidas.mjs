@@ -25,15 +25,17 @@ const DIR_EPISODIOS = path.join(RAIZ, 'src/content/episodios');
 const DIR_SALIDA = path.join(RAIZ, 'src/data/partidas');
 const CUENTAS = JSON.parse(await readFile(path.join(RAIZ, 'src/data/cuentas.json'), 'utf8'));
 
-// No hay ventanas por episodio: los arcos se solapan e intercalan (Riven siguió
-// mientras arrancaba Nami; Nami volvió tras un parón), así que se descarga TODO
-// el rango de la serie una sola vez y el campeón jugado decide a qué episodio
-// pertenece cada partida (cada episodio usa un campeón distinto). El inicio de
-// la serie se estima desde el primer vídeo del arco más temprano con margen
-// hacia atrás, o con `partidasDesde:` si existe. `partidasDesde:`/`partidasHasta:`
-// además recortan un episodio concreto cuando su campeón también se juega fuera
-// de la serie (caso Jax).
+// La descarga se hace de una sola pasada por todo el rango de la serie (los
+// arcos se solapan e intercalan: Riven siguió mientras arrancaba Nami, y Nami
+// volvió tras un parón), y luego cada partida se asigna a su episodio por el
+// campeón jugado. Pero el campeón NO basta: Werlyb también juega esos campeones
+// fuera del reto (Gwen, Jayce, Hecarim…), así que además se exige que la
+// partida caiga en la ventana del arco — desde una semana antes del primer
+// vídeo hasta cuatro días después del último, porque las sesiones se juegan
+// antes de publicarse y a veces se alargan. `partidasDesde:`/`partidasHasta:`
+// en el frontmatter sustituyen esa ventana cuando hace falta afinar a mano.
 const MARGEN_ANTES_DIAS = 7;
+const MARGEN_DESPUES_DIAS = 4;
 
 // Match-V5 arrastra peculiaridades de nombre respecto a Data Dragon
 const CAMPEON_RARO = { FiddleSticks: 'Fiddlesticks' };
@@ -253,13 +255,30 @@ if (totalPartidas === 0) {
 
 // ── Asignación por episodio y escritura ──
 for (const ep of episodios) {
-  const desde = ep.desde ? Math.floor(Date.parse(ep.desde) / 1000) : null;
-  const hasta = ep.hasta ? Math.floor((Date.parse(ep.hasta) + DIA_MS) / 1000) : null;
+  // Sin límites manuales, la ventana sale de las fechas de los vídeos del arco
+  const desde = ep.desde
+    ? Math.floor(Date.parse(ep.desde) / 1000)
+    : ep.fechas.length
+      ? Math.floor((Date.parse(ep.fechas[0]) - MARGEN_ANTES_DIAS * DIA_MS) / 1000)
+      : null;
+  const hasta = ep.hasta
+    ? Math.floor((Date.parse(ep.hasta) + DIA_MS) / 1000)
+    : ep.fechas.length
+      ? Math.floor(
+          (Date.parse(ep.fechas[ep.fechas.length - 1]) + (MARGEN_DESPUES_DIAS + 1) * DIA_MS) / 1000,
+        )
+      : null;
   if (desde !== null && hasta !== null && hasta <= desde) {
     console.warn(`── ${ep.id} (${ep.campeon}) · límites vacíos, revisar partidasDesde/partidasHasta`);
     continue;
   }
   const manual = [ep.desde && 'desde', ep.hasta && 'hasta'].filter(Boolean).join(' y ');
+  const ventana =
+    desde === null && hasta === null
+      ? 'todo el rango'
+      : `${desde ? new Date(desde * 1000).toISOString().slice(0, 10) : '…'} → ${
+          hasta ? new Date(hasta * 1000 - DIA_MS).toISOString().slice(0, 10) : '…'
+        }`;
 
   const partidas = (porCampeon.get(ep.campeon) ?? []).filter((p) => {
     const t = Math.floor(Date.parse(p.inicio) / 1000);
@@ -289,7 +308,7 @@ for (const ep of episodios) {
 
   await writeFile(path.join(DIR_SALIDA, `${ep.id}.json`), JSON.stringify(salida, null, 2));
   console.log(
-    `── ${ep.id} (${ep.campeon})${manual ? ` · límites ${manual} manual` : ''}: ${partidas.length} partidas (${victorias}V–${partidas.length - victorias}D)`,
+    `── ${ep.id} (${ep.campeon}) · ${ventana}${manual ? ` (${manual} manual)` : ''}: ${partidas.length} partidas (${victorias}V–${partidas.length - victorias}D)`,
   );
 }
 

@@ -6,6 +6,13 @@ name: Actualizar partidas
 on:
   schedule:
     - cron: '0 4 * * *' # 04:00 UTC, cada día
+  # Al editar un episodio (panel, bot de vídeos o a mano) se recalcula en
+  # minutos, sin esperar a la noche: si se cambió el rango de fechas o los
+  # vídeos, las partidas del arco cambian con ellos.
+  push:
+    branches: [main]
+    paths:
+      - 'src/content/episodios/**'
   workflow_dispatch: {}
 
 jobs:

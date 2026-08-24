@@ -10,8 +10,6 @@ videos:
   - titulo: 'Copié a un OTP Koreano y funcionó'
     url: https://www.youtube.com/watch?v=YleUtB6U8OU
     fecha: 2026-03-23
-partidasDesde: 2026-04-21
-partidasHasta: 2026-04-23
 ---
 
 El arco que abrió la serie.

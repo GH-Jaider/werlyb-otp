@@ -155,6 +155,15 @@ import '../styles/global.css';
                   <input type="date" id="f-hasta" />
                 </label>
               </div>
+              <p class="pista" id="pista-fechas"></p>
+              <div class="acciones-fechas">
+                <button class="boton-sec" id="btn-fechas-arco" type="button">
+                  Usar las fechas del arco
+                </button>
+                <button class="boton-sec" id="btn-fechas-limpiar" type="button">
+                  Quitar las fechas
+                </button>
+              </div>
             </section>
 
             <section class="bloque">
@@ -305,6 +314,31 @@ import '../styles/global.css';
           <div class="stat"><b>${r.kda}</b><span>KDA</span></div>`;
       };
 
+      /** Ventana que el robot usaría por su cuenta: la de los vídeos del arco. */
+      const ventanaDelArco = () => {
+        const fechas = [...document.querySelectorAll('#videos .v-fecha')]
+          .map((i) => i.value)
+          .filter(Boolean)
+          .sort();
+        if (!fechas.length) return null;
+        const mueve = (f, dias) => {
+          const d = new Date(`${f}T00:00:00Z`);
+          d.setUTCDate(d.getUTCDate() + dias);
+          return d.toISOString().slice(0, 10);
+        };
+        return { desde: mueve(fechas[0], -7), hasta: mueve(fechas[fechas.length - 1], 4) };
+      };
+
+      const pintaPistaFechas = () => {
+        const v = ventanaDelArco();
+        const manual = $('f-desde').value || $('f-hasta').value;
+        $('pista-fechas').textContent = !v
+          ? 'Sin vídeos con fecha no se puede sugerir un rango.'
+          : manual
+            ? `Ahora mismo se cuentan solo las partidas de esas fechas. Si las quitas, el robot usará las del arco: ${v.desde} → ${v.hasta}.`
+            : `Vacío: el robot usa las fechas del arco (${v.desde} → ${v.hasta}), que es lo normal.`;
+      };
+
       const abreEditor = (slug) => {
         actual = episodios.find((e) => e.slug === slug) ?? null;
         const d = actual?.datos ?? {};
@@ -320,6 +354,7 @@ import '../styles/global.css';
         $('videos').innerHTML = '';
         for (const v of d.videos ?? []) $('videos').append(filaVideo(v));
         pintaElegido(d.campeon ?? null);
+        pintaPistaFechas();
         $('aviso-editor').textContent = '';
         muestra('editor');
         cargaResumen(slug);
@@ -429,6 +464,24 @@ import '../styles/global.css';
         await api('salir', { method: 'POST' });
         muestra('entrar');
       });
+
+      $('btn-fechas-arco').addEventListener('click', () => {
+        const v = ventanaDelArco();
+        if (!v) return;
+        $('f-desde').value = v.desde;
+        $('f-hasta').value = v.hasta;
+        pintaPistaFechas();
+      });
+
+      $('btn-fechas-limpiar').addEventListener('click', () => {
+        $('f-desde').value = '';
+        $('f-hasta').value = '';
+        pintaPistaFechas();
+      });
+
+      for (const id of ['f-desde', 'f-hasta']) {
+        $(id).addEventListener('change', pintaPistaFechas);
+      }
 
       $('btn-volver').addEventListener('click', () => muestra('lista'));
       $('btn-nuevo').addEventListener('click', () => abreEditor(null));
@@ -883,6 +936,12 @@ import '../styles/global.css';
         display: flex;
         align-items: center;
         gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .acciones-fechas {
+        display: flex;
+        gap: 8px;
         flex-wrap: wrap;
       }
 
