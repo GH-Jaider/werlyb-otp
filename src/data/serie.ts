@@ -11,6 +11,7 @@ export const SERIE = {
     'https://www.youtube.com/playlist?list=PLr8p9eQ_HwEEuZF5Rdi-WBlL84QFBSzze' as string | null,
   redes: {
     twitch: 'https://www.twitch.tv/werlyb' as string | null,
+    kick: 'https://kick.com/werlyb' as string | null,
     youtube: 'https://www.youtube.com/@Werlyb' as string | null,
     x: 'https://x.com/werlyb' as string | null,
   },
