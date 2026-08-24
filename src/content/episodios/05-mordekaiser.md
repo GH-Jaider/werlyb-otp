@@ -19,3 +19,5 @@ videos:
 partidasDesde: 2026-04-09
 partidasHasta: 2026-04-10
 ---
+
+No supo gestionar escudos
