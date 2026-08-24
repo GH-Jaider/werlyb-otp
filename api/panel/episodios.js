@@ -130,7 +130,8 @@ const limpiaVideos = (videos) =>
     .filter((v) => v.titulo && /^https?:\/\//.test(v.url));
 
 export default async function handler(req, res) {
-  if (!exigeSesion(req, res)) return;
+  const quien = exigeSesion(req, res);
+  if (!quien) return;
 
   if (!process.env.PANEL_TOKEN_GITHUB) {
     return res.status(500).json({ error: 'Falta el token de GitHub del panel.' });
@@ -266,10 +267,15 @@ export default async function handler(req, res) {
     const guardado = await github(`/repos/${REPO}/contents/${ruta}`, {
       method: 'PUT',
       body: JSON.stringify({
-        message: `${shaActual ? 'Episodio actualizado' : 'Nuevo episodio'}: ${slug} (desde el panel)`,
+        message: `${shaActual ? 'Episodio actualizado' : 'Nuevo episodio'}: ${slug} (panel · ${quien})`,
         content: Buffer.from(contenido, 'utf8').toString('base64'),
         branch: RAMA,
         ...(shaActual ? { sha: shaActual } : {}),
+        // Quién ha editado queda firmado en el historial
+        author: {
+          name: `${quien} (panel)`,
+          email: `panel+${quien}@siendo-otp.vercel.app`,
+        },
         committer: {
           name: 'Panel Siendo OTP',
           email: '41898282+github-actions[bot]@users.noreply.github.com',

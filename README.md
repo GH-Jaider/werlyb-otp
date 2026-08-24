@@ -124,6 +124,13 @@ Necesita tres variables de entorno en Vercel:
 
 - `PANEL_CLAVE_HASH` — hash scrypt de la contraseña. Se genera con:
   `node -e "import('./api/panel/_sesion.js').then(m => console.log(m.hashDeClave('LA-CLAVE')))"`
+- `PANEL_CLAVE_NOMBRE` — a nombre de quién van los cambios hechos con esa contraseña
+  (por defecto `equipo`).
+- `PANEL_CLAVES` — contraseñas adicionales, una por editor:
+  `{"werlyb": "scrypt$…"}`. Cada editor entra con la suya y sus cambios quedan firmados con
+  su nombre en el historial (`Episodio actualizado: 12-gwen (panel · werlyb)`), así que se ve
+  quién tocó qué sin que nadie comparta contraseña. El nombre viaja dentro de la cookie
+  firmada: no se puede cambiar desde el navegador.
 - `PANEL_SESION_SECRETO` — cadena aleatoria para firmar la cookie de sesión.
 - `PANEL_TOKEN_GITHUB` — token fine-grained con permiso *Contents: Read and write* **solo**
   sobre este repositorio. Nunca sale del servidor.

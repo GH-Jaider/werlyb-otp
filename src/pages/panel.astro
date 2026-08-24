@@ -54,6 +54,7 @@ const acentos = Object.fromEntries(
           Siendo <span>OTP</span> · Panel
         </a>
         <div class="barra-acciones">
+          <span class="etiqueta quien" id="quien" hidden></span>
           <a class="enlace-sec" href="/" target="_blank">Ver la web ↗</a>
           <button class="enlace-sec" id="btn-salir" type="button">Salir</button>
         </div>
@@ -320,6 +321,11 @@ const acentos = Object.fromEntries(
       const iconoDe = (id) =>
         campeones.find((c) => c.id === id)?.icono ??
         `https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/${id}.png`;
+
+      const pintaQuien = (nombre) => {
+        $('quien').hidden = !nombre;
+        $('quien').textContent = nombre ? `como ${nombre}` : '';
+      };
 
       // ── Vistas ──
       const muestra = (cual) => {
@@ -691,6 +697,7 @@ const acentos = Object.fromEntries(
           return;
         }
         $('clave').value = '';
+        pintaQuien(datos.quien);
         await carga();
         muestra('panel');
       });
@@ -853,6 +860,11 @@ const acentos = Object.fromEntries(
         display: flex;
         align-items: center;
         gap: 18px;
+      }
+
+      .quien {
+        font-size: 10.5px;
+        color: var(--gold);
       }
 
       .enlace-sec {
