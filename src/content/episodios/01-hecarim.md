@@ -3,6 +3,7 @@ orden: 1
 campeon: Hecarim
 nombreCampeon: Hecarim
 tituloCampeon: La Sombra de la Guerra
+coach: Werlyb
 videos:
   - titulo: 'NUEVA SERIE: Siendo OTP por un día'
     url: https://www.youtube.com/watch?v=3lvAdRNp6RU
