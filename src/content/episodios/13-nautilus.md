@@ -17,3 +17,5 @@ videos:
     url: https://www.youtube.com/watch?v=wd7W71xA5Ps
     fecha: 2026-07-18
 ---
+
+Por lo general me tanqueo 🗣️
