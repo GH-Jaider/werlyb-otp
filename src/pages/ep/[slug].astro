@@ -135,7 +135,7 @@ const videos = d.videos.map((v, i) => ({
             <>
               con{' '}
               {d.canalCoach ? (
-                <a href={d.canalCoach} rel="noopener">
+                <a href={d.canalCoach} target="_blank" rel="noopener">
                   {d.coach} <span aria-hidden="true">↗</span>
                 </a>
               ) : (
@@ -204,7 +204,7 @@ const videos = d.videos.map((v, i) => ({
               data-n={String(videos.length)}
             >
               {videos.map((v) => (
-                <a class="video-carta" href={v.url} rel="noopener">
+                <a class="video-carta" href={v.url} target="_blank" rel="noopener">
                   <div class="arte v-thumb">
                     {v.ytId ? (
                       <img
@@ -763,6 +763,18 @@ const videos = d.videos.map((v, i) => ({
 
   .prosa :global(a) {
     color: var(--gold);
+    text-decoration-color: rgba(200, 170, 110, 0.4);
+    text-underline-offset: 3px;
+  }
+
+  .prosa :global(a:hover) {
+    color: var(--text);
+  }
+
+  /* misma señal que en el resto de la web: si sale fuera, lleva flecha */
+  .prosa :global(a[target='_blank'])::after {
+    content: ' ↗';
+    font-size: 0.85em;
   }
 
   .prosa :global(strong) {

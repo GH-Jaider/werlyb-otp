@@ -122,7 +122,7 @@ const formato = [
           }
           {
             SERIE.playlist && (
-              <a class="chip" href={SERIE.playlist} rel="noopener">
+              <a class="chip" href={SERIE.playlist} target="_blank" rel="noopener">
                 Playlist en YouTube <span aria-hidden="true">↗</span>
               </a>
             )
@@ -296,7 +296,7 @@ const formato = [
             ¿Quieres que tu main sea el siguiente en sufrir?{' '}
             {
               SERIE.redes.twitch ? (
-                <a href={SERIE.redes.twitch} rel="noopener">
+                <a href={SERIE.redes.twitch} target="_blank" rel="noopener">
                   Suéltalo en el chat
                 </a>
               ) : (
