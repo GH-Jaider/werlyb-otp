@@ -16,4 +16,6 @@ videos:
   - titulo: 'Después de esto no vuelvo a jugar Mordekaiser'
     url: https://www.youtube.com/watch?v=fPn_gIHQ00k
     fecha: 2026-04-13
+partidasDesde: 2026-04-09
+partidasHasta: 2026-04-10
 ---
