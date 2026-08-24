@@ -3,6 +3,8 @@ orden: 3
 campeon: Singed
 nombreCampeon: Singed
 tituloCampeon: El Químico Loco
+coach: 29cfs
+canalCoach: twitch.tv/29cfs
 videos:
   - titulo: 'Esto va a estar divertido'
     url: https://www.youtube.com/watch?v=Bdr8Xg4aRnk
@@ -16,4 +18,6 @@ videos:
   - titulo: 'No me esperaba acabar así la serie'
     url: https://www.youtube.com/watch?v=EVoPaEnYdGk
     fecha: 2026-04-06
+partidasDesde: 2026-03-28
+partidasHasta: 2026-04-04
 ---
