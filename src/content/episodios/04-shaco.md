@@ -19,3 +19,5 @@ videos:
 partidasDesde: 2026-04-07
 partidasHasta: 2026-04-08
 ---
+
+Mentalidad de shacolin https://youtube.com/shorts/2tgbLV5FAs0?si=hqLg6TsagA34gjlm
