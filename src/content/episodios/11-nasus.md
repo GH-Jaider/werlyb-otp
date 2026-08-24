@@ -16,3 +16,5 @@ videos:
     url: https://www.youtube.com/watch?v=nSYGcPdA_Jg
     fecha: 2026-07-10
 ---
+
+Como que ir sin coach le sale mejor
