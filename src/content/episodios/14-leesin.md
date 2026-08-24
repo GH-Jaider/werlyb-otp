@@ -3,7 +3,6 @@ orden: 14
 campeon: LeeSin
 nombreCampeon: Lee Sin
 tituloCampeon: El Monje Ciego
-acento: '#d0342c'
 coach: Josedeodo
 rolCoach: OTP de Lee Sin
 canalCoach: https://www.twitch.tv/josedeodo
@@ -20,4 +19,7 @@ videos:
   - titulo: 'Aquí te enseño yo, Josedeodo'
     url: https://www.youtube.com/watch?v=25SZ3Fa6C3A
     fecha: 2026-07-22
+partidasDesde: 2026-07-13
+partidasHasta: 2026-07-16
+acento: '#d0342c'
 ---
