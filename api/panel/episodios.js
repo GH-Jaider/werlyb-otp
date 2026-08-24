@@ -23,6 +23,7 @@ const ORDEN_CLAVES = [
   'videos',
   'partidasDesde',
   'partidasHasta',
+  'partidasExcluidas',
   'partidas',
   'victorias',
   'derrotas',
@@ -44,6 +45,7 @@ const CAMPOS_EDITABLES = [
   'videos',
   'partidasDesde',
   'partidasHasta',
+  'partidasExcluidas',
 ];
 
 export const separaFrontmatter = (texto) => {
@@ -147,13 +149,32 @@ export default async function handler(req, res) {
       { headers: { Accept: 'application/vnd.github.raw+json' } },
     );
 
-    if (!datos.ok) return res.status(200).json({ resumen: null });
+    if (!datos.ok) return res.status(200).json({ resumen: null, partidas: [], excluidas: [] });
 
     try {
-      const { resumen, actualizado, cuentas } = await datos.json();
-      return res.status(200).json({ resumen, actualizado, cuentas });
+      const { resumen, actualizado, partidas = [], excluidas = [] } = await datos.json();
+
+      // Al panel le basta la ficha corta de cada partida
+      const corta = (p) => ({
+        matchId: p.matchId,
+        inicio: p.inicio,
+        cola: p.cola,
+        victoria: p.victoria,
+        kills: p.kills,
+        deaths: p.deaths,
+        assists: p.assists,
+        cs: p.cs,
+        duracionSeg: p.duracionSeg,
+      });
+
+      return res.status(200).json({
+        resumen,
+        actualizado,
+        partidas: partidas.map(corta),
+        excluidas: excluidas.map(corta),
+      });
     } catch {
-      return res.status(200).json({ resumen: null });
+      return res.status(200).json({ resumen: null, partidas: [], excluidas: [] });
     }
   }
 
@@ -224,6 +245,13 @@ export default async function handler(req, res) {
 
       if (campo === 'videos') {
         fusionado.videos = limpiaVideos(valor);
+      } else if (campo === 'partidasExcluidas') {
+        // Solo ids con pinta de partida de Riot: EUW1_1234567890
+        const ids = (Array.isArray(valor) ? valor : [])
+          .map((x) => String(x).trim())
+          .filter((x) => /^[A-Z]{2,5}\d?_\d+$/.test(x));
+        if (ids.length === 0) delete fusionado.partidasExcluidas;
+        else fusionado.partidasExcluidas = [...new Set(ids)].sort();
       } else if (campo === 'orden') {
         fusionado.orden = Number(valor);
       } else {

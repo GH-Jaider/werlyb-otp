@@ -132,8 +132,23 @@ async function leerEpisodios() {
       .sort();
     const desde = crudo.match(/^partidasDesde:\s*(\d{4}-\d{2}-\d{2})/m)?.[1] ?? null;
     const hasta = crudo.match(/^partidasHasta:\s*(\d{4}-\d{2}-\d{2})/m)?.[1] ?? null;
+
+    // Partidas quitadas a mano, en lista YAML o entre corchetes
+    const bloque = crudo.match(/^partidasExcluidas:[ \t]*(\[.*\]|(?:\r?\n[ \t]+-[ \t]*.+)*)/m)?.[1] ?? '';
+    const excluidas = new Set(
+      [...bloque.matchAll(/([A-Z]{2,5}\d?_\d+)/g)].map((m) => m[1]),
+    );
+
     if (!campeon || (fechas.length === 0 && !desde)) continue;
-    episodios.push({ id: archivo.replace(/\.md$/, ''), campeon, orden, fechas, desde, hasta });
+    episodios.push({
+      id: archivo.replace(/\.md$/, ''),
+      campeon,
+      orden,
+      fechas,
+      desde,
+      hasta,
+      excluidas,
+    });
   }
   // Clave única y transitiva: sin `orden:` va al final, con id como desempate.
   const claveOrden = (ep) => (Number.isNaN(ep.orden) ? Infinity : ep.orden);
@@ -382,10 +397,27 @@ for (const ep of episodios) {
           hasta ? new Date(hasta * 1000 - DIA_MS).toISOString().slice(0, 10) : '…'
         }`;
 
-  const partidas = (porCampeon.get(ep.campeon) ?? []).filter((p) => {
+  const enVentana = (porCampeon.get(ep.campeon) ?? []).filter((p) => {
     const t = Math.floor(Date.parse(p.inicio) / 1000);
     return (desde === null || t >= desde) && (hasta === null || t < hasta);
   });
+
+  // Las quitadas a mano se guardan aparte, en corto, para poder devolverlas
+  // desde el panel; la web solo lee `partidas`.
+  const partidas = enVentana.filter((p) => !ep.excluidas.has(p.matchId));
+  const excluidas = enVentana
+    .filter((p) => ep.excluidas.has(p.matchId))
+    .map((p) => ({
+      matchId: p.matchId,
+      inicio: p.inicio,
+      cola: p.cola,
+      victoria: p.victoria,
+      kills: p.kills,
+      deaths: p.deaths,
+      assists: p.assists,
+      cs: p.cs,
+    }))
+    .sort((a, b) => a.inicio.localeCompare(b.inicio));
 
   partidas.sort((a, b) => a.inicio.localeCompare(b.inicio));
   partidas.forEach((p, i) => (p.n = i + 1));
@@ -406,11 +438,13 @@ for (const ep of episodios) {
       kda: deaths > 0 ? Number(((kills + assists) / deaths).toFixed(1)) : kills + assists,
     },
     partidas,
+    ...(excluidas.length > 0 ? { excluidas } : {}),
   };
 
   await writeFile(path.join(DIR_SALIDA, `${ep.id}.json`), JSON.stringify(salida, null, 2));
   console.log(
-    `── ${ep.id} (${ep.campeon}) · ${ventana}${manual ? ` (${manual} manual)` : ''}: ${partidas.length} partidas (${victorias}V–${partidas.length - victorias}D)`,
+    `── ${ep.id} (${ep.campeon}) · ${ventana}${manual ? ` (${manual} manual)` : ''}: ${partidas.length} partidas (${victorias}V–${partidas.length - victorias}D)` +
+      `${excluidas.length ? ` · ${excluidas.length} quitadas a mano` : ''}`,
   );
 }
 

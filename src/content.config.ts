@@ -30,6 +30,9 @@ const episodios = defineCollection({
     // las partidas del campeón se excluyen. Vacíos = todo el rango de la serie.
     partidasDesde: z.coerce.date().optional(),
     partidasHasta: z.coerce.date().optional(),
+    // Partidas quitadas a mano: caen dentro del arco pero no son del reto.
+    // Se guardan por su id de Riot (EUW1_1234567890).
+    partidasExcluidas: z.array(z.string()).optional(),
     partidas: z.number().int().nonnegative().optional(),
     victorias: z.number().int().nonnegative().optional(),
     derrotas: z.number().int().nonnegative().optional(),

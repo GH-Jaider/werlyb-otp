@@ -83,13 +83,13 @@ const partida = (id, campeon, dias, extra = {}) => ({
 });
 
 const PARTIDAS = {
-  M1: partida('M1', 'Gwen', 11), // Gwen dentro de ventana → cuenta
-  M2: partida('M2', 'Gwen', 30), // Gwen fuera de ventana → en caché, sin asignar
-  M3: partida('M3', 'Jax', 20), // Jax dentro del rango manual → cuenta
-  M4: partida('M4', 'Jax', 25), // Jax fuera del rango manual → sin asignar
-  M5: partida('M5', 'Ahri', 11), // otro campeón → descartada con su nombre
-  M6: partida('M6', 'Gwen', 12, { mapId: 30, gameMode: 'CHERRY' }), // Arena → descartada
-  M7: partida('M7', 'Gwen', 12, { gameDuration: 120 }), // remake → descartada
+  EUW1_1: partida('EUW1_1', 'Gwen', 11), // Gwen dentro de ventana → cuenta
+  EUW1_2: partida('EUW1_2', 'Gwen', 30), // Gwen fuera de ventana → en caché, sin asignar
+  EUW1_3: partida('EUW1_3', 'Jax', 20), // Jax dentro del rango manual → cuenta
+  EUW1_4: partida('EUW1_4', 'Jax', 25), // Jax fuera del rango manual → sin asignar
+  EUW1_5: partida('EUW1_5', 'Ahri', 11), // otro campeón → descartada con su nombre
+  EUW1_6: partida('EUW1_6', 'Gwen', 12, { mapId: 30, gameMode: 'CHERRY' }), // Arena → descartada
+  EUW1_7: partida('EUW1_7', 'Gwen', 12, { gameDuration: 120 }), // remake → descartada
 };
 
 // ── Contadores para saber cuántas llamadas se hacen ──
@@ -122,7 +122,7 @@ globalThis.fetch = async (url) => {
     return json(u.includes('start=0') ? Object.keys(PARTIDAS) : []);
   }
 
-  const m = u.match(/\/matches\/(M\d+)/);
+  const m = u.match(/\/matches\/(EUW1_\d+)/);
   if (m) {
     globalThis.LLAMADAS.detalles += 1;
     return json(PARTIDAS[m[1]]);
@@ -174,19 +174,40 @@ const cache3 = JSON.parse(await readFile(path.join(TMP, 'src/data/partidas-cache
 // ── Cuarta pasada: nada cambia, no debe volver a pedir la rescatada ──
 const l4 = await ejecuta();
 
+// ── Quinta pasada: se quita una partida a mano ──
+console.log('\n══ QUINTA PASADA (una partida quitada a mano) ══');
+await writeFile(
+  path.join(TMP, 'src/content/episodios/01-gwen.md'),
+  `---\norden: 1\ncampeon: Gwen\nnombreCampeon: Gwen\nvideos:\n  - titulo: 'v1'\n    url: https://x/1\n    fecha: 2026-07-11\npartidasExcluidas:\n  - EUW1_1\n---\n`,
+);
+const l5 = await ejecuta();
+const gwen5 = await leer('01-gwen.json');
+
+// ── Sexta pasada: se devuelve ──
+await writeFile(
+  path.join(TMP, 'src/content/episodios/01-gwen.md'),
+  `---\norden: 1\ncampeon: Gwen\nnombreCampeon: Gwen\nvideos:\n  - titulo: 'v1'\n    url: https://x/1\n    fecha: 2026-07-11\n---\n`,
+);
+await ejecuta();
+const gwen6 = await leer('01-gwen.json');
+
 // ── Comprobaciones ──
 const pruebas = [
+  ['quitar una partida la saca de la cuenta', gwen5.resumen.partidas === 0],
+  ['la quitada se guarda aparte para poder devolverla', (gwen5.excluidas ?? []).length === 1],
+  ['quitarla no gasta llamadas a Riot', l5.detalles === 0],
+  ['al devolverla vuelve a contar', gwen6.resumen.partidas === 1 && gwen6.excluidas === undefined],
   ['al estrenar Ahri se rescata solo su partida', l3.detalles === 1],
   ['Ahri queda con su partida asignada', ahri.resumen.partidas === 1],
-  ['la rescatada sale de la lista de descartadas', cache3.descartadas.M5 === undefined],
+  ['la rescatada sale de la lista de descartadas', cache3.descartadas.EUW1_5 === undefined],
   ['tras rescatarla, no se vuelve a pedir', l4.detalles === 0],
   ['1ª pasada pide los 7 detalles', l1.detalles === 7],
   ['2ª pasada no pide ninguno', l2.detalles === 0],
   ['Gwen: solo la partida dentro de ventana', gwen1.resumen.partidas === 1],
   ['Jax: solo la del rango manual', jax1.resumen.partidas === 1],
   ['caché guarda las 4 partidas de campeones de la serie', Object.keys(cache1.partidas).length === 4],
-  ['Arena y remake quedan descartados para siempre', cache1.descartadas.M6 === '' && cache1.descartadas.M7 === ''],
-  ['otro campeón se anota con su nombre', cache1.descartadas.M5 === 'Ahri'],
+  ['Arena y remake quedan descartados para siempre', cache1.descartadas.EUW1_6 === '' && cache1.descartadas.EUW1_7 === ''],
+  ['otro campeón se anota con su nombre', cache1.descartadas.EUW1_5 === 'Ahri'],
   ['los resultados no cambian entre pasadas', JSON.stringify(gwen1.partidas) === JSON.stringify(gwen2.partidas) && JSON.stringify(jax1.partidas) === JSON.stringify(jax2.partidas)],
   ['los iconos se derivan de Data Dragon', gwen1.partidas[0].items[0]?.nombre === 'Filo'],
   ['los 10 jugadores llevan icono', gwen1.partidas[0].jugadores.every((j) => j.icono.includes('/img/champion/'))],

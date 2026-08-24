@@ -153,6 +153,21 @@ const acentos = Object.fromEntries(
                 </div>
               </div>
 
+              <!-- Las partidas, para quitar las que no son del reto -->
+              <details class="plegable" id="pleg-partidas">
+                <summary>
+                  <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"
+                    ><path d="M9 6l6 6-6 6"></path></svg
+                  >
+                  <span class="etiqueta">Las partidas, una a una</span>
+                  <span class="pista">quita las que no sean del reto</span>
+                </summary>
+                <div class="pleg-cuerpo">
+                  <div id="partidas-lista"></div>
+                  <p class="pista" id="partidas-nota"></p>
+                </div>
+              </details>
+
               <!-- Los vídeos, plegados: se tocan solo si algo entró mal -->
               <details class="plegable" id="pleg-videos">
                 <summary>
@@ -424,22 +439,90 @@ const acentos = Object.fromEntries(
             : `Vacío: el robot usa las fechas del arco (${v.desde} → ${v.hasta}), que es lo normal.`;
       };
 
-      /** Lo que ha contado el robot (solo lectura). */
+      // ── Partidas del arco: contarlas es cosa del robot, quitarlas es cosa tuya ──
+      let partidasArco = []; // [{...ficha, quitada: bool}]
+
+      const fechaLarga = (iso) =>
+        new Date(iso)
+          .toLocaleString('es-ES', {
+            day: 'numeric',
+            month: 'short',
+            hour: '2-digit',
+            minute: '2-digit',
+            timeZone: 'Europe/Madrid',
+          })
+          .replace(/\./g, '');
+
+      const pintaPartidas = () => {
+        const cuentan = partidasArco.filter((p) => !p.quitada);
+
+        if (partidasArco.length === 0) {
+          $('partidas-lista').innerHTML =
+            '<p class="pista">Todavía no hay partidas contadas para este arco.</p>';
+          $('partidas-nota').textContent = '';
+        } else {
+          $('partidas-lista').innerHTML = partidasArco
+            .map((p, i) => {
+              const dur = `${Math.floor(p.duracionSeg / 60)}m`;
+              return `
+                <div class="par" data-i="${i}" data-quitada="${p.quitada ? 'si' : 'no'}" data-gana="${p.victoria ? 'si' : 'no'}">
+                  <span class="par-res">${p.victoria ? 'Victoria' : 'Derrota'}</span>
+                  <span class="par-cuando">${fechaLarga(p.inicio)} · ${dur} · ${p.cola}</span>
+                  <span class="par-kda">${p.kills}/${p.deaths}/${p.assists} · ${p.cs} CS</span>
+                  <button class="par-btn" type="button">${p.quitada ? 'Devolver' : 'Quitar'}</button>
+                </div>`;
+            })
+            .join('');
+
+          for (const b of document.querySelectorAll('.par-btn')) {
+            b.addEventListener('click', () => {
+              const i = Number(b.closest('.par').dataset.i);
+              partidasArco[i].quitada = !partidasArco[i].quitada;
+              pintaPartidas();
+              marcaSucio(true);
+            });
+          }
+
+          const quitadas = partidasArco.length - cuentan.length;
+          $('partidas-nota').textContent = quitadas
+            ? `${quitadas} quitada${quitadas === 1 ? '' : 's'}: dejan de contar en la web al publicar.`
+            : 'Si alguna no es del reto, quítala y deja de contar en las estadísticas.';
+        }
+
+        // El chip de arriba refleja lo que quedaría al publicar
+        if (cuentan.length === 0) {
+          $('chip-partidas-texto').textContent = 'todavía sin partidas';
+          return;
+        }
+        const v = cuentan.filter((p) => p.victoria).length;
+        const k = cuentan.reduce((s, p) => s + p.kills, 0);
+        const d = cuentan.reduce((s, p) => s + p.deaths, 0);
+        const a = cuentan.reduce((s, p) => s + p.assists, 0);
+        const kda = d > 0 ? ((k + a) / d).toFixed(1) : String(k + a);
+        const wr = Math.round((v / cuentan.length) * 100);
+        $('chip-partidas-texto').textContent =
+          `${cuentan.length} partidas · ${v}V–${cuentan.length - v}D · ${wr} % · ${kda} KDA`;
+      };
+
       const cargaResumen = async (slug) => {
+        partidasArco = [];
         if (!slug) {
           $('chip-partidas-texto').textContent = 'todavía sin partidas';
+          pintaPartidas();
           return;
         }
         $('chip-partidas-texto').textContent = 'contando…';
         const { ok, datos } = await api(`episodios?resumen=${encodeURIComponent(slug)}`);
-        const r = ok ? datos.resumen : null;
-        if (!r || !r.partidas) {
+        if (!ok) {
           $('chip-partidas-texto').textContent = 'todavía sin partidas';
+          pintaPartidas();
           return;
         }
-        const wr = Math.round((r.victorias / r.partidas) * 100);
-        $('chip-partidas-texto').textContent =
-          `${r.partidas} partidas · ${r.victorias}V–${r.derrotas}D · ${wr} % · ${r.kda} KDA`;
+        partidasArco = [
+          ...(datos.partidas ?? []).map((p) => ({ ...p, quitada: false })),
+          ...(datos.excluidas ?? []).map((p) => ({ ...p, quitada: true })),
+        ].sort((x, y) => x.inicio.localeCompare(y.inicio));
+        pintaPartidas();
       };
 
       const abreEditor = (slug) => {
@@ -480,6 +563,7 @@ const acentos = Object.fromEntries(
         // Un episodio nuevo abre los ajustes: hay que elegir número y campeón
         $('pleg-ajustes').open = !actual;
         $('pleg-videos').open = false;
+        $('pleg-partidas').open = false;
 
         pintaElegido(d.campeon ?? null);
         pintaPistaFechas();
@@ -553,6 +637,7 @@ const acentos = Object.fromEntries(
               videos,
               partidasDesde: $('f-desde').value,
               partidasHasta: $('f-hasta').value,
+              partidasExcluidas: partidasArco.filter((p) => p.quitada).map((p) => p.matchId),
             },
           }),
         });
@@ -731,6 +816,8 @@ const acentos = Object.fromEntries(
         flex-direction: column;
         height: 100vh;
         height: 100svh;
+        /* el scroll vive dentro de cada panel, nunca en la página entera */
+        overflow: hidden;
       }
 
       .barra {
@@ -790,6 +877,7 @@ const acentos = Object.fromEntries(
         grid-template-columns: 306px minmax(0, 1fr);
         flex: 1;
         min-height: 0;
+        overflow: hidden;
       }
 
       /* ── Rail: la lista siempre a la vista ── */
@@ -958,6 +1046,9 @@ const acentos = Object.fromEntries(
       /* ── Detalle ── */
       .detalle {
         min-width: 0;
+        /* sin esto, al desplegar un plegable la rejilla crece y arrastra
+           a toda la página en vez de hacer scroll aquí dentro */
+        min-height: 0;
         display: flex;
         flex-direction: column;
       }
@@ -1218,6 +1309,88 @@ const acentos = Object.fromEntries(
         display: grid;
         grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.4fr) 150px 34px;
         gap: 8px;
+      }
+
+      /* ── Partidas del arco ── */
+      .par {
+        display: grid;
+        grid-template-columns: 88px minmax(0, 1fr) auto auto;
+        align-items: center;
+        gap: 14px;
+        padding: 9px 12px;
+        border: 1px solid var(--line-soft);
+        border-radius: 8px;
+        background: var(--bg);
+      }
+
+      .par + .par {
+        margin-top: 6px;
+      }
+
+      .par-res {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .par[data-gana='si'] {
+        border-left: 3px solid var(--win);
+      }
+
+      .par[data-gana='no'] {
+        border-left: 3px solid var(--red);
+      }
+
+      .par[data-gana='si'] .par-res {
+        color: var(--win);
+      }
+
+      .par[data-gana='no'] .par-res {
+        color: var(--red);
+      }
+
+      .par-cuando,
+      .par-kda {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.04em;
+        color: var(--muted);
+        font-variant-numeric: tabular-nums;
+      }
+
+      .par-btn {
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+        background: none;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 6px 10px;
+        cursor: pointer;
+      }
+
+      .par-btn:hover {
+        border-color: var(--red);
+        color: var(--red);
+      }
+
+      .par[data-quitada='si'] {
+        opacity: 0.5;
+        border-style: dashed;
+      }
+
+      .par[data-quitada='si'] .par-res,
+      .par[data-quitada='si'] .par-cuando,
+      .par[data-quitada='si'] .par-kda {
+        text-decoration: line-through;
+      }
+
+      .par[data-quitada='si'] .par-btn:hover {
+        border-color: var(--win);
+        color: var(--win);
       }
 
       .quitar {
