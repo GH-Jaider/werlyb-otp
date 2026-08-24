@@ -42,6 +42,8 @@ const CAMPOS_EDITABLES = [
   'rolCoach',
   'canalCoach',
   'videos',
+  'partidasDesde',
+  'partidasHasta',
 ];
 
 export const separaFrontmatter = (texto) => {
@@ -130,6 +132,29 @@ export default async function handler(req, res) {
 
   if (!process.env.PANEL_TOKEN_GITHUB) {
     return res.status(500).json({ error: 'Falta el token de GitHub del panel.' });
+  }
+
+  // ── Resumen de partidas de un episodio (solo lectura: lo escribe el bot) ──
+  if (req.method === 'GET' && req.query?.resumen) {
+    const slug = String(req.query.resumen);
+
+    if (!/^[a-z0-9][a-z0-9-]{1,60}$/.test(slug)) {
+      return res.status(400).json({ error: 'Episodio no válido.' });
+    }
+
+    const datos = await github(
+      `/repos/${REPO}/contents/src/data/partidas/${slug}.json?ref=${RAMA}`,
+      { headers: { Accept: 'application/vnd.github.raw+json' } },
+    );
+
+    if (!datos.ok) return res.status(200).json({ resumen: null });
+
+    try {
+      const { resumen, actualizado, cuentas } = await datos.json();
+      return res.status(200).json({ resumen, actualizado, cuentas });
+    } catch {
+      return res.status(200).json({ resumen: null });
+    }
   }
 
   // ── Lista de episodios ──

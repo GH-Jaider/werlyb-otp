@@ -71,62 +71,98 @@ import '../styles/global.css';
           </div>
 
           <div class="editor">
-            <div class="fila-2">
-              <label class="campo">
-                <span class="etiqueta">Nº de episodio</span>
-                <input type="number" id="f-orden" min="1" step="1" required />
-              </label>
-              <label class="campo">
-                <span class="etiqueta">Campeón</span>
-                <input
-                  type="text"
-                  id="f-buscador"
-                  list="lista-campeones"
-                  placeholder="Escribe y elige…"
-                  autocomplete="off"
-                />
-                <datalist id="lista-campeones"></datalist>
-              </label>
-            </div>
-
-            <div class="elegido" id="elegido" hidden>
-              <img id="elegido-img" src="" alt="" width="44" height="44" />
-              <div>
-                <b id="elegido-nombre"></b>
-                <span class="etiqueta" id="elegido-titulo"></span>
+            <section class="bloque">
+              <h3 class="bloque-titulo">El arco</h3>
+              <div class="fila-2">
+                <label class="campo">
+                  <span class="etiqueta">Nº de episodio</span>
+                  <input type="number" id="f-orden" min="1" step="1" required />
+                </label>
+                <label class="campo">
+                  <span class="etiqueta">Campeón</span>
+                  <input
+                    type="text"
+                    id="f-buscador"
+                    list="lista-campeones"
+                    placeholder="Escribe y elige…"
+                    autocomplete="off"
+                  />
+                  <datalist id="lista-campeones"></datalist>
+                </label>
               </div>
-            </div>
+              <div class="elegido" id="elegido" hidden>
+                <img id="elegido-img" src="" alt="" width="44" height="44" />
+                <div>
+                  <b id="elegido-nombre"></b>
+                  <span class="etiqueta" id="elegido-titulo"></span>
+                </div>
+              </div>
+            </section>
 
-            <div class="fila-2">
+            <section class="bloque">
+              <h3 class="bloque-titulo">
+                El coach <span class="chip op">opcional</span>
+              </h3>
+              <div class="fila-2">
+                <label class="campo">
+                  <span class="etiqueta">Coach</span>
+                  <input type="text" id="f-coach" placeholder="Nombre del coach" />
+                </label>
+                <label class="campo">
+                  <span class="etiqueta">Canal del coach</span>
+                  <input type="url" id="f-canal" placeholder="https://twitch.tv/…" />
+                </label>
+              </div>
               <label class="campo">
-                <span class="etiqueta">Coach</span>
-                <input type="text" id="f-coach" placeholder="Nombre del coach" />
+                <span class="etiqueta">Rol del coach</span>
+                <input type="text" id="f-rol" placeholder="OTP de Gwen" />
+                <span class="pista">Solo si está confirmado; si no, déjalo vacío.</span>
               </label>
-              <label class="campo">
-                <span class="etiqueta">Canal del coach</span>
-                <input type="url" id="f-canal" placeholder="https://twitch.tv/…" />
-              </label>
-            </div>
+            </section>
 
-            <label class="campo">
-              <span class="etiqueta">Rol del coach</span>
-              <input type="text" id="f-rol" placeholder="OTP de Gwen" />
-              <span class="pista">Solo si está confirmado; si no, se deja vacío.</span>
-            </label>
-
-            <div class="campo">
-              <span class="etiqueta">Vídeos del arco</span>
+            <section class="bloque">
+              <h3 class="bloque-titulo">
+                Vídeos del arco <span class="chip auto">entran solos</span>
+              </h3>
+              <p class="pista bloque-pista">
+                Se añaden solos desde la playlist de YouTube cada pocas horas. Toca aquí solo si
+                se coló uno que no era del arco o falta alguno.
+              </p>
               <div id="videos"></div>
               <button class="boton-sec" id="btn-add-video" type="button">+ Añadir vídeo</button>
-              <span class="pista">
-                Normalmente se rellenan solos desde la playlist; edítalos solo si algo entró mal.
-              </span>
-            </div>
+            </section>
 
-            <label class="campo">
-              <span class="etiqueta">Notas del arco</span>
+            <section class="bloque">
+              <h3 class="bloque-titulo">
+                Partidas <span class="chip auto">las cuenta el robot</span>
+              </h3>
+              <div class="stats" id="stats">
+                <span class="pista">Cargando…</span>
+              </div>
+              <p class="pista bloque-pista">
+                Cada noche se buscan en la API de Riot las partidas de este campeón y se
+                actualizan solas. Rellena las fechas de abajo <b>solo</b> si el campeón también
+                se juega fuera del reto (como pasa con Jax): así se cuentan únicamente las
+                partidas de esos días.
+              </p>
+              <div class="fila-2">
+                <label class="campo">
+                  <span class="etiqueta">Contar desde <span class="chip op">opcional</span></span>
+                  <input type="date" id="f-desde" />
+                </label>
+                <label class="campo">
+                  <span class="etiqueta">Contar hasta <span class="chip op">opcional</span></span>
+                  <input type="date" id="f-hasta" />
+                </label>
+              </div>
+            </section>
+
+            <section class="bloque">
+              <h3 class="bloque-titulo">
+                Notas del arco <span class="chip op">opcional</span>
+              </h3>
               <textarea id="f-notas" rows="4" placeholder="Qué enseñó el coach, momentos…"></textarea>
-            </label>
+            </section>
 
             <div class="acciones">
               <button class="boton" id="btn-publicar" type="button">Publicar</button>
@@ -243,6 +279,32 @@ import '../styles/global.css';
         $('elegido-titulo').textContent = c?.titulo ?? id;
       };
 
+      /** Muestra lo que el robot ha contado (solo lectura). */
+      const cargaResumen = async (slug) => {
+        if (!slug) {
+          $('stats').innerHTML =
+            '<span class="pista">Cuando el episodio exista y haya partidas, aparecerán aquí.</span>';
+          return;
+        }
+
+        $('stats').innerHTML = '<span class="pista">Cargando…</span>';
+        const { ok, datos } = await api(`episodios?resumen=${encodeURIComponent(slug)}`);
+        const r = ok ? datos.resumen : null;
+
+        if (!r || !r.partidas) {
+          $('stats').innerHTML =
+            '<span class="pista">Todavía no hay partidas contadas para este arco.</span>';
+          return;
+        }
+
+        const wr = Math.round((r.victorias / r.partidas) * 100);
+        $('stats').innerHTML = `
+          <div class="stat"><b>${r.partidas}</b><span>partidas</span></div>
+          <div class="stat"><b>${r.victorias}V–${r.derrotas}D</b><span>balance</span></div>
+          <div class="stat"><b>${wr} %</b><span>winrate</span></div>
+          <div class="stat"><b>${r.kda}</b><span>KDA</span></div>`;
+      };
+
       const abreEditor = (slug) => {
         actual = episodios.find((e) => e.slug === slug) ?? null;
         const d = actual?.datos ?? {};
@@ -252,12 +314,15 @@ import '../styles/global.css';
         $('f-coach').value = d.coach ?? '';
         $('f-canal').value = d.canalCoach ?? '';
         $('f-rol').value = d.rolCoach ?? '';
+        $('f-desde').value = (d.partidasDesde ?? '').slice(0, 10);
+        $('f-hasta').value = (d.partidasHasta ?? '').slice(0, 10);
         $('f-notas').value = actual?.cuerpo ?? '';
         $('videos').innerHTML = '';
         for (const v of d.videos ?? []) $('videos').append(filaVideo(v));
         pintaElegido(d.campeon ?? null);
         $('aviso-editor').textContent = '';
         muestra('editor');
+        cargaResumen(slug);
       };
 
       // ── Publicar ──
@@ -310,6 +375,8 @@ import '../styles/global.css';
               canalCoach: $('f-canal').value,
               rolCoach: $('f-rol').value,
               videos,
+              partidasDesde: $('f-desde').value,
+              partidasHasta: $('f-hasta').value,
             },
           }),
         });
@@ -565,12 +632,119 @@ import '../styles/global.css';
       .editor {
         display: flex;
         flex-direction: column;
-        gap: 18px;
+        gap: 26px;
         border: 1px solid var(--line);
         border-radius: 12px;
         background: var(--surface);
         padding: 24px;
         margin-top: 12px;
+      }
+
+      .bloque {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .bloque + .bloque {
+        border-top: 1px solid var(--line-soft);
+        padding-top: 24px;
+      }
+
+      .bloque-titulo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        font-family: var(--mono);
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--text);
+      }
+
+      .bloque-pista {
+        margin: -4px 0 0;
+        max-width: 68ch;
+        line-height: 1.5;
+      }
+
+      .bloque-pista b {
+        color: var(--text);
+      }
+
+      /* Etiquetas: qué es opcional y qué se rellena solo */
+      .chip {
+        font-family: var(--mono);
+        font-size: 9.5px;
+        font-weight: 400;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        border-radius: 4px;
+        padding: 3px 7px;
+        white-space: nowrap;
+      }
+
+      .chip.op {
+        color: var(--faint);
+        border: 1px solid var(--line);
+      }
+
+      .chip.auto {
+        color: var(--gold);
+        border: 1px solid rgba(200, 170, 110, 0.35);
+      }
+
+      .campo .etiqueta {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      /* Lo que ha contado el robot: solo lectura */
+      .stats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+        border: 1px solid var(--line-soft);
+        border-radius: 10px;
+        background: var(--bg);
+        overflow: hidden;
+      }
+
+      .stats .pista {
+        padding: 14px 16px;
+      }
+
+      .stats .stat {
+        flex: 1 1 0;
+        min-width: 110px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        padding: 12px 16px;
+      }
+
+      .stats .stat + .stat {
+        border-left: 1px solid var(--line-soft);
+      }
+
+      .stats .stat b {
+        font-family: var(--display);
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1;
+        color: var(--gold);
+        font-variant-numeric: tabular-nums;
+      }
+
+      .stats .stat span {
+        font-family: var(--mono);
+        font-size: 9.5px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--faint);
       }
 
       .fila-2 {
