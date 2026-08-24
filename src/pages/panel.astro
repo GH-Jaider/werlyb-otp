@@ -6,6 +6,17 @@ import '@fontsource/archivo/700.css';
 import '@fontsource/ibm-plex-mono/400.css';
 import '@fontsource/ibm-plex-mono/500.css';
 import '../styles/global.css';
+import paletaJson from '../data/paleta.json';
+import { acentoDe, ROJO_MARCA } from '../lib/paleta';
+
+// Los acentos por campeón viajan al navegador ya normalizados, para pintar
+// cada episodio con su color como hace la web.
+const acentos = Object.fromEntries(
+  Object.keys((paletaJson as { acentos: Record<string, string> }).acentos).map((id) => [
+    id,
+    (acentoDe(id) ?? ROJO_MARCA).hex,
+  ]),
+);
 ---
 
 <!doctype html>
@@ -17,6 +28,7 @@ import '../styles/global.css';
     <title>Panel · Siendo OTP por un día</title>
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <script type="application/json" id="acentos" set:html={JSON.stringify(acentos)} />
   </head>
   <body>
     <!-- ── Entrar ── -->
@@ -35,155 +47,204 @@ import '../styles/global.css';
     </section>
 
     <!-- ── Trabajo ── -->
-    <div id="vista-panel" hidden>
+    <div id="vista-panel" class="app" hidden>
       <header class="barra">
-        <div class="contenedor barra-cont">
-          <a class="marca titular" href="/" target="_blank">
-            <img src="/icon-192.png" alt="" width="30" height="30" />
-            Siendo <span>OTP</span> · Panel
-          </a>
-          <div class="barra-acciones">
-            <a class="enlace-sec" href="/" target="_blank">Ver la web ↗</a>
-            <button class="enlace-sec" id="btn-salir" type="button">Salir</button>
-          </div>
+        <a class="marca titular" href="/" target="_blank">
+          <img src="/icon-192.png" alt="" width="28" height="28" />
+          Siendo <span>OTP</span> · Panel
+        </a>
+        <div class="barra-acciones">
+          <a class="enlace-sec" href="/" target="_blank">Ver la web ↗</a>
+          <button class="enlace-sec" id="btn-salir" type="button">Salir</button>
         </div>
       </header>
 
-      <main class="contenedor cuerpo">
-        <!-- Lista -->
-        <section id="vista-lista">
-          <div class="cabecera">
-            <h2 class="titular titulo">Episodios</h2>
-            <button class="boton" id="btn-nuevo" type="button">+ Nuevo episodio</button>
+      <div class="dos-paneles" data-panel="lista">
+        <!-- Izquierda: la lista, siempre a la vista -->
+        <aside class="rail" aria-label="Episodios">
+          <div class="rail-cabecera">
+            <div class="rail-titulo">
+              <h2 class="titular">Episodios</h2>
+              <button class="boton-sec" id="btn-nuevo" type="button">+ Nuevo</button>
+            </div>
+            <span class="etiqueta" id="progreso-texto">— / —</span>
+            <div class="progreso"><div class="progreso-barra" id="progreso-barra"></div></div>
+            <div class="filtros" role="group" aria-label="Filtrar episodios">
+              <button class="filtro" data-filtro="todos" type="button" aria-pressed="true">
+                Todos <b id="cuenta-todos">0</b>
+              </button>
+              <button class="filtro" data-filtro="coach" type="button" aria-pressed="false">
+                Sin coach <b id="cuenta-coach">0</b>
+              </button>
+              <button class="filtro" data-filtro="notas" type="button" aria-pressed="false">
+                Sin notas <b id="cuenta-notas">0</b>
+              </button>
+            </div>
           </div>
-          <p class="nota">
-            Los vídeos y las partidas entran solos: los vídeos desde la playlist cada pocas
-            horas y las partidas cada noche. Aquí se ajusta el coach y lo que haga falta.
-          </p>
-          <div class="lista" id="lista"></div>
-        </section>
+          <div class="rail-lista" id="lista"></div>
+        </aside>
 
-        <!-- Editor -->
-        <section id="vista-editor" hidden>
-          <div class="cabecera">
-            <button class="enlace-sec" id="btn-volver" type="button">← Volver</button>
-            <span class="etiqueta" id="editor-slug"></span>
+        <!-- Derecha: el episodio -->
+        <section class="detalle" id="detalle" aria-label="Episodio">
+          <div class="vacio" id="vacio">
+            <p>Elige un episodio de la lista para repasarlo.</p>
           </div>
 
-          <div class="editor">
-            <section class="bloque">
-              <h3 class="bloque-titulo">El arco</h3>
-              <div class="fila-2">
+          <div class="editor" id="editor" hidden>
+            <div class="ed-scroll">
+              <!-- Cabecera del episodio -->
+              <div class="ed-cabecera">
+                <button class="volver-movil enlace-sec" id="btn-volver" type="button">
+                  <span aria-hidden="true">←</span> Episodios
+                </button>
+                <img class="ed-icono" id="ed-icono" src="" alt="" width="44" height="44" />
+                <div class="ed-identidad">
+                  <div class="ed-linea">
+                    <span class="titular ed-nombre" id="ed-nombre">—</span>
+                    <span class="etiqueta ed-num" id="ed-num"></span>
+                    <span class="chip-falta" id="ed-falta" hidden></span>
+                  </div>
+                  <span class="etiqueta ed-meta" id="ed-meta"></span>
+                </div>
+                <a class="enlace-sec ed-ver" id="ed-ver" href="/" target="_blank">Ver episodio ↗</a>
+              </div>
+
+              <!-- Lo que se escribe a mano -->
+              <div class="campos">
+                <div class="fila-2">
+                  <label class="campo">
+                    <span class="etiqueta">Coach</span>
+                    <input type="text" id="f-coach" placeholder="Quién le enseñó a jugarlo" />
+                  </label>
+                  <label class="campo">
+                    <span class="etiqueta">Canal del coach</span>
+                    <input type="url" id="f-canal" placeholder="https://twitch.tv/…" />
+                  </label>
+                </div>
                 <label class="campo">
-                  <span class="etiqueta">Nº de episodio</span>
-                  <input type="number" id="f-orden" min="1" step="1" required />
+                  <span class="etiqueta">Rol del coach <span class="chip op">opcional</span></span>
+                  <input type="text" id="f-rol" placeholder="OTP de Gwen" />
                 </label>
                 <label class="campo">
-                  <span class="etiqueta">Campeón</span>
-                  <input
-                    type="text"
-                    id="f-buscador"
-                    list="lista-campeones"
-                    placeholder="Escribe y elige…"
-                    autocomplete="off"
-                  />
-                  <datalist id="lista-campeones"></datalist>
+                  <span class="etiqueta">Notas del arco</span>
+                  <textarea
+                    id="f-notas"
+                    rows="5"
+                    placeholder="Qué enseñó el coach, los momentos, lo que se aprendió…"></textarea>
                 </label>
               </div>
-              <div class="elegido" id="elegido" hidden>
-                <img id="elegido-img" src="" alt="" width="44" height="44" />
-                <div>
-                  <b id="elegido-nombre"></b>
-                  <span class="etiqueta" id="elegido-titulo"></span>
+
+              <!-- Lo que se rellena solo -->
+              <div class="autos">
+                <button class="auto" id="chip-videos" type="button">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"
+                    ><rect x="2" y="4" width="20" height="16" rx="3"></rect><path d="M10 9l5 3-5 3z"
+                    ></path></svg
+                  >
+                  <span id="chip-videos-texto">— vídeos</span>
+                  <span class="chip auto-tag">entran solos</span>
+                </button>
+                <div class="auto" id="chip-partidas">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"
+                    ><path d="M4 19V9M10 19V5M16 19v-6M22 19H2"></path></svg
+                  >
+                  <span id="chip-partidas-texto">sin partidas</span>
+                  <span class="chip auto-tag">las cuenta el robot</span>
                 </div>
               </div>
-            </section>
 
-            <section class="bloque">
-              <h3 class="bloque-titulo">
-                El coach <span class="chip op">opcional</span>
-              </h3>
-              <div class="fila-2">
-                <label class="campo">
-                  <span class="etiqueta">Coach</span>
-                  <input type="text" id="f-coach" placeholder="Nombre del coach" />
-                </label>
-                <label class="campo">
-                  <span class="etiqueta">Canal del coach</span>
-                  <input type="url" id="f-canal" placeholder="https://twitch.tv/…" />
-                </label>
-              </div>
-              <label class="campo">
-                <span class="etiqueta">Rol del coach</span>
-                <input type="text" id="f-rol" placeholder="OTP de Gwen" />
-                <span class="pista">Solo si está confirmado; si no, déjalo vacío.</span>
-              </label>
-            </section>
+              <!-- Los vídeos, plegados: se tocan solo si algo entró mal -->
+              <details class="plegable" id="pleg-videos">
+                <summary>
+                  <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"
+                    ><path d="M9 6l6 6-6 6"></path></svg
+                  >
+                  <span class="etiqueta">Los vídeos, uno a uno</span>
+                  <span class="pista">solo si se coló uno o falta alguno</span>
+                </summary>
+                <div class="pleg-cuerpo">
+                  <div id="videos"></div>
+                  <button class="boton-sec" id="btn-add-video" type="button">+ Añadir vídeo</button>
+                </div>
+              </details>
 
-            <section class="bloque">
-              <h3 class="bloque-titulo">
-                Vídeos del arco <span class="chip auto">entran solos</span>
-              </h3>
-              <p class="pista bloque-pista">
-                Se añaden solos desde la playlist de YouTube cada pocas horas. Toca aquí solo si
-                se coló uno que no era del arco o falta alguno.
-              </p>
-              <div id="videos"></div>
-              <button class="boton-sec" id="btn-add-video" type="button">+ Añadir vídeo</button>
-            </section>
+              <!-- Lo que casi nunca se toca -->
+              <details class="plegable" id="pleg-ajustes">
+                <summary>
+                  <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"
+                    ><path d="M9 6l6 6-6 6"></path></svg
+                  >
+                  <span class="etiqueta">Ajustes del arco</span>
+                  <span class="pista">número, campeón y fechas de las partidas</span>
+                </summary>
+                <div class="pleg-cuerpo">
+                  <div class="fila-2">
+                    <label class="campo">
+                      <span class="etiqueta">Nº de episodio</span>
+                      <input type="number" id="f-orden" min="1" step="1" required />
+                    </label>
+                    <label class="campo">
+                      <span class="etiqueta">Campeón</span>
+                      <input
+                        type="text"
+                        id="f-buscador"
+                        list="lista-campeones"
+                        placeholder="Escribe y elige…"
+                        autocomplete="off"
+                      />
+                      <datalist id="lista-campeones"></datalist>
+                    </label>
+                  </div>
+                  <div class="elegido" id="elegido" hidden>
+                    <img id="elegido-img" src="" alt="" width="40" height="40" />
+                    <div>
+                      <b id="elegido-nombre"></b>
+                      <span class="etiqueta" id="elegido-titulo"></span>
+                    </div>
+                  </div>
+                  <div class="fila-2">
+                    <label class="campo">
+                      <span class="etiqueta">Contar desde <span class="chip op">opcional</span></span>
+                      <input type="date" id="f-desde" />
+                    </label>
+                    <label class="campo">
+                      <span class="etiqueta">Contar hasta <span class="chip op">opcional</span></span>
+                      <input type="date" id="f-hasta" />
+                    </label>
+                  </div>
+                  <p class="pista" id="pista-fechas"></p>
+                  <div class="acciones-fechas">
+                    <button class="boton-sec" id="btn-fechas-arco" type="button">
+                      Usar las fechas del arco
+                    </button>
+                    <button class="boton-sec" id="btn-fechas-limpiar" type="button">
+                      Quitar las fechas
+                    </button>
+                  </div>
+                </div>
+              </details>
+            </div>
 
-            <section class="bloque">
-              <h3 class="bloque-titulo">
-                Partidas <span class="chip auto">las cuenta el robot</span>
-              </h3>
-              <div class="stats" id="stats">
-                <span class="pista">Cargando…</span>
-              </div>
-              <p class="pista bloque-pista">
-                Cada noche se buscan en la API de Riot las partidas de este campeón y se
-                actualizan solas. Rellena las fechas de abajo <b>solo</b> si el campeón también
-                se juega fuera del reto (como pasa con Jax): así se cuentan únicamente las
-                partidas de esos días.
-              </p>
-              <div class="fila-2">
-                <label class="campo">
-                  <span class="etiqueta">Contar desde <span class="chip op">opcional</span></span>
-                  <input type="date" id="f-desde" />
-                </label>
-                <label class="campo">
-                  <span class="etiqueta">Contar hasta <span class="chip op">opcional</span></span>
-                  <input type="date" id="f-hasta" />
-                </label>
-              </div>
-              <p class="pista" id="pista-fechas"></p>
-              <div class="acciones-fechas">
-                <button class="boton-sec" id="btn-fechas-arco" type="button">
-                  Usar las fechas del arco
+            <!-- Barra de acción fija -->
+            <div class="ed-acciones">
+              <span class="aviso" id="aviso-editor" role="status">Sin cambios sin publicar</span>
+              <div class="ed-botones">
+                <button class="boton-sec" id="btn-publicar" type="button">Publicar</button>
+                <button class="boton" id="btn-publicar-siguiente" type="button">
+                  Publicar y siguiente →
                 </button>
-                <button class="boton-sec" id="btn-fechas-limpiar" type="button">
-                  Quitar las fechas
-                </button>
               </div>
-            </section>
-
-            <section class="bloque">
-              <h3 class="bloque-titulo">
-                Notas del arco <span class="chip op">opcional</span>
-              </h3>
-              <textarea id="f-notas" rows="4" placeholder="Qué enseñó el coach, momentos…"></textarea>
-            </section>
-
-            <div class="acciones">
-              <button class="boton" id="btn-publicar" type="button">Publicar</button>
-              <span class="aviso" id="aviso-editor" role="status"></span>
             </div>
           </div>
         </section>
-      </main>
+      </div>
     </div>
 
     <script>
       const $ = (id) => document.getElementById(id);
+      const ACENTOS = JSON.parse($('acentos').textContent || '{}');
+      const ROJO = '#f5342b';
+
       const api = async (ruta, opciones = {}) => {
         const res = await fetch(`/api/panel/${ruta}`, {
           ...opciones,
@@ -201,6 +262,19 @@ import '../styles/global.css';
       let episodios = [];
       let actual = null;
       let campeones = [];
+      let filtro = 'todos';
+      let sucio = false;
+
+      // ── Qué le falta a un episodio ──
+      const faltas = (e) => {
+        const d = e.datos ?? {};
+        const lista = [];
+        if (!d.coach) lista.push('coach');
+        if (!(e.cuerpo ?? '').trim()) lista.push('notas');
+        return lista;
+      };
+
+      const acentoDe = (campeon) => ACENTOS[campeon] ?? ROJO;
 
       // ── Campeones desde Data Dragon (para no tener que saber los IDs) ──
       const cargaCampeones = async () => {
@@ -222,6 +296,7 @@ import '../styles/global.css';
           $('lista-campeones').innerHTML = campeones
             .map((c) => `<option value="${c.nombre}"></option>`)
             .join('');
+          if (episodios.length) pintaLista();
         } catch {
           /* sin buscador: se puede escribir el ID a mano */
         }
@@ -229,34 +304,66 @@ import '../styles/global.css';
 
       const iconoDe = (id) =>
         campeones.find((c) => c.id === id)?.icono ??
-        `https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/${id}.png`;
+        `https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/${id}.png`;
 
       // ── Vistas ──
       const muestra = (cual) => {
         $('vista-entrar').hidden = cual !== 'entrar';
         $('vista-panel').hidden = cual === 'entrar';
-        if (cual !== 'entrar') {
-          $('vista-lista').hidden = cual !== 'lista';
-          $('vista-editor').hidden = cual !== 'editor';
-        }
       };
 
+      // En móvil los dos paneles se turnan; en escritorio conviven
+      const panelMovil = (cual) => {
+        document.querySelector('.dos-paneles')?.setAttribute('data-panel', cual);
+      };
+
+      const marcaSucio = (valor) => {
+        sucio = valor;
+        $('aviso-editor').textContent = valor
+          ? 'Cambios sin publicar'
+          : 'Sin cambios sin publicar';
+        $('aviso-editor').dataset.sucio = valor ? 'si' : 'no';
+      };
+
+      // ── La lista ──
       const pintaLista = () => {
-        $('lista').innerHTML = episodios
+        const listos = episodios.filter((e) => faltas(e).length === 0).length;
+        const sinCoach = episodios.filter((e) => faltas(e).includes('coach')).length;
+        const sinNotas = episodios.filter((e) => faltas(e).includes('notas')).length;
+
+        $('progreso-texto').textContent = `${listos} / ${episodios.length} listos`;
+        $('progreso-barra').style.width = episodios.length
+          ? `${(listos / episodios.length) * 100}%`
+          : '0%';
+        $('cuenta-todos').textContent = String(episodios.length);
+        $('cuenta-coach').textContent = String(sinCoach);
+        $('cuenta-notas').textContent = String(sinNotas);
+
+        const visibles = episodios.filter((e) =>
+          filtro === 'todos' ? true : faltas(e).includes(filtro),
+        );
+
+        $('lista').innerHTML = visibles
           .map((e) => {
             const d = e.datos ?? {};
-            const n = String(d.orden ?? '?').padStart(2, '0');
-            const videos = (d.videos ?? []).length;
+            const f = faltas(e);
+            const num = String(d.orden ?? '?').padStart(2, '0');
+            const abajo = d.coach ? d.coach : 'sin coach';
+            const marca = f.length === 0
+              ? '<svg class="tic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg>'
+              : `<span class="punto" data-tipo="${f.includes('coach') ? 'coach' : 'notas'}" title="${
+                  f.includes('coach') ? 'falta el coach' : 'faltan las notas'
+                }"></span>`;
             return `
-              <button class="ep" data-slug="${e.slug}" type="button">
-                <img src="${iconoDe(d.campeon)}" alt="" width="42" height="42" loading="lazy" />
+              <button class="ep" data-slug="${e.slug}" type="button"
+                style="--acento: ${acentoDe(d.campeon)}"
+                ${actual?.slug === e.slug ? 'data-activo="si"' : ''}>
+                <img src="${iconoDe(d.campeon)}" alt="" width="34" height="34" loading="lazy" />
                 <span class="ep-texto">
                   <b>${d.nombreCampeon ?? e.slug}</b>
-                  <span class="etiqueta">EP.${n} · ${
-                    d.coach ? `con ${d.coach}` : 'coach por confirmar'
-                  } · ${videos} ${videos === 1 ? 'vídeo' : 'vídeos'}</span>
+                  <span class="etiqueta">EP.${num} · ${abajo}</span>
                 </span>
-                <span class="ep-ir" aria-hidden="true">›</span>
+                ${marca}
               </button>`;
           })
           .join('');
@@ -275,7 +382,11 @@ import '../styles/global.css';
           <input type="url" class="v-url" placeholder="https://youtube.com/watch?v=…" value="${v.url ?? ''}" />
           <input type="date" class="v-fecha" value="${(v.fecha ?? '').slice(0, 10)}" />
           <button class="quitar" type="button" aria-label="Quitar vídeo">×</button>`;
-        fila.querySelector('.quitar').addEventListener('click', () => fila.remove());
+        fila.querySelector('.quitar').addEventListener('click', () => {
+          fila.remove();
+          marcaSucio(true);
+          pintaPistaFechas();
+        });
         return fila;
       };
 
@@ -286,32 +397,6 @@ import '../styles/global.css';
         $('elegido-img').src = iconoDe(id);
         $('elegido-nombre').textContent = c?.nombre ?? id;
         $('elegido-titulo').textContent = c?.titulo ?? id;
-      };
-
-      /** Muestra lo que el robot ha contado (solo lectura). */
-      const cargaResumen = async (slug) => {
-        if (!slug) {
-          $('stats').innerHTML =
-            '<span class="pista">Cuando el episodio exista y haya partidas, aparecerán aquí.</span>';
-          return;
-        }
-
-        $('stats').innerHTML = '<span class="pista">Cargando…</span>';
-        const { ok, datos } = await api(`episodios?resumen=${encodeURIComponent(slug)}`);
-        const r = ok ? datos.resumen : null;
-
-        if (!r || !r.partidas) {
-          $('stats').innerHTML =
-            '<span class="pista">Todavía no hay partidas contadas para este arco.</span>';
-          return;
-        }
-
-        const wr = Math.round((r.victorias / r.partidas) * 100);
-        $('stats').innerHTML = `
-          <div class="stat"><b>${r.partidas}</b><span>partidas</span></div>
-          <div class="stat"><b>${r.victorias}V–${r.derrotas}D</b><span>balance</span></div>
-          <div class="stat"><b>${wr} %</b><span>winrate</span></div>
-          <div class="stat"><b>${r.kda}</b><span>KDA</span></div>`;
       };
 
       /** Ventana que el robot usaría por su cuenta: la de los vídeos del arco. */
@@ -335,14 +420,52 @@ import '../styles/global.css';
         $('pista-fechas').textContent = !v
           ? 'Sin vídeos con fecha no se puede sugerir un rango.'
           : manual
-            ? `Ahora mismo se cuentan solo las partidas de esas fechas. Si las quitas, el robot usará las del arco: ${v.desde} → ${v.hasta}.`
+            ? `Ahora se cuentan solo las partidas de esas fechas. Si las quitas, el robot usará las del arco: ${v.desde} → ${v.hasta}.`
             : `Vacío: el robot usa las fechas del arco (${v.desde} → ${v.hasta}), que es lo normal.`;
+      };
+
+      /** Lo que ha contado el robot (solo lectura). */
+      const cargaResumen = async (slug) => {
+        if (!slug) {
+          $('chip-partidas-texto').textContent = 'todavía sin partidas';
+          return;
+        }
+        $('chip-partidas-texto').textContent = 'contando…';
+        const { ok, datos } = await api(`episodios?resumen=${encodeURIComponent(slug)}`);
+        const r = ok ? datos.resumen : null;
+        if (!r || !r.partidas) {
+          $('chip-partidas-texto').textContent = 'todavía sin partidas';
+          return;
+        }
+        const wr = Math.round((r.victorias / r.partidas) * 100);
+        $('chip-partidas-texto').textContent =
+          `${r.partidas} partidas · ${r.victorias}V–${r.derrotas}D · ${wr} % · ${r.kda} KDA`;
       };
 
       const abreEditor = (slug) => {
         actual = episodios.find((e) => e.slug === slug) ?? null;
         const d = actual?.datos ?? {};
-        $('editor-slug').textContent = slug ? `${slug}.md` : 'episodio nuevo';
+        const acento = acentoDe(d.campeon);
+
+        $('vacio').hidden = true;
+        $('editor').hidden = false;
+        $('editor').style.setProperty('--acento', acento);
+
+        $('ed-nombre').textContent = d.nombreCampeon ?? 'Episodio nuevo';
+        $('ed-num').textContent = d.orden ? `EP.${String(d.orden).padStart(2, '0')}` : 'nuevo';
+        $('ed-icono').src = d.campeon ? iconoDe(d.campeon) : '/icon-192.png';
+        $('ed-ver').href = actual ? `/ep/${actual.slug}/` : '/';
+        $('ed-ver').hidden = !actual;
+
+        const nv = (d.videos ?? []).length;
+        $('chip-videos-texto').textContent = `${nv} ${nv === 1 ? 'vídeo' : 'vídeos'}`;
+        $('ed-meta').textContent = actual ? `${actual.slug}.md` : 'se creará al publicar';
+
+        const f = actual ? faltas(actual) : [];
+        $('ed-falta').hidden = f.length === 0;
+        $('ed-falta').textContent =
+          f.length === 0 ? '' : f.includes('coach') ? 'Falta el coach' : 'Faltan las notas';
+
         $('f-orden').value = d.orden ?? (episodios[0]?.datos?.orden ?? 0) + 1;
         $('f-buscador').value = d.nombreCampeon ?? '';
         $('f-coach').value = d.coach ?? '';
@@ -353,21 +476,37 @@ import '../styles/global.css';
         $('f-notas').value = actual?.cuerpo ?? '';
         $('videos').innerHTML = '';
         for (const v of d.videos ?? []) $('videos').append(filaVideo(v));
+
+        // Un episodio nuevo abre los ajustes: hay que elegir número y campeón
+        $('pleg-ajustes').open = !actual;
+        $('pleg-videos').open = false;
+
         pintaElegido(d.campeon ?? null);
         pintaPistaFechas();
-        $('aviso-editor').textContent = '';
-        muestra('editor');
-        cargaResumen(slug);
+        marcaSucio(false);
+        cargaResumen(actual?.slug ?? null);
+        pintaLista();
+        panelMovil('detalle');
+        $('editor').querySelector('.ed-scroll').scrollTop = 0;
+      };
+
+      /** Siguiente episodio con algo pendiente (o el siguiente de la lista). */
+      const siguientePendiente = () => {
+        if (!actual) return null;
+        const i = episodios.findIndex((e) => e.slug === actual.slug);
+        const rotados = [...episodios.slice(i + 1), ...episodios.slice(0, i)];
+        return (rotados.find((e) => faltas(e).length > 0) ?? rotados[0])?.slug ?? null;
       };
 
       // ── Publicar ──
-      const publica = async () => {
+      const publica = async ({ siguiente = false } = {}) => {
         const nombre = $('f-buscador').value.trim();
         const c =
           campeones.find((x) => x.nombre.toLowerCase() === nombre.toLowerCase()) ??
           campeones.find((x) => x.id.toLowerCase() === nombre.toLowerCase());
 
         if (!c && !actual?.datos?.campeon) {
+          $('pleg-ajustes').open = true;
           $('aviso-editor').textContent = 'Elige un campeón de la lista.';
           return;
         }
@@ -376,6 +515,7 @@ import '../styles/global.css';
         const orden = Number($('f-orden').value);
 
         if (!Number.isInteger(orden) || orden < 1) {
+          $('pleg-ajustes').open = true;
           $('aviso-editor').textContent = 'El número de episodio no es válido.';
           return;
         }
@@ -388,10 +528,11 @@ import '../styles/global.css';
           }))
           .filter((v) => v.titulo && v.url);
 
-        const slug =
-          actual?.slug ?? `${String(orden).padStart(2, '0')}-${campeon.toLowerCase()}`;
+        const slug = actual?.slug ?? `${String(orden).padStart(2, '0')}-${campeon.toLowerCase()}`;
+        const objetivo = siguiente ? siguientePendiente() : null;
 
         $('btn-publicar').disabled = true;
+        $('btn-publicar-siguiente').disabled = true;
         $('aviso-editor').textContent = 'Publicando…';
 
         const { ok, datos } = await api('episodios', {
@@ -417,14 +558,24 @@ import '../styles/global.css';
         });
 
         $('btn-publicar').disabled = false;
+        $('btn-publicar-siguiente').disabled = false;
 
         if (!ok) {
           $('aviso-editor').textContent = datos.error ?? 'No se pudo publicar.';
           return;
         }
 
-        $('aviso-editor').textContent = '✓ Publicado. La web se actualiza en un minuto.';
         await carga();
+
+        if (siguiente && objetivo) {
+          abreEditor(objetivo);
+          $('aviso-editor').textContent = '✓ Publicado';
+          return;
+        }
+
+        // Se vuelve a abrir con los datos recién guardados
+        abreEditor(slug);
+        $('aviso-editor').textContent = '✓ Publicado. La web se actualiza en un minuto.';
       };
 
       // ── Arranque ──
@@ -435,8 +586,7 @@ import '../styles/global.css';
           return false;
         }
         if (!ok) {
-          $('lista').innerHTML = `<p class="nota">${datos.error ?? 'Error al cargar.'}</p>`;
-          muestra('lista');
+          $('lista').innerHTML = `<p class="pista">${datos.error ?? 'Error al cargar.'}</p>`;
           return true;
         }
         episodios = datos.episodios ?? [];
@@ -457,12 +607,39 @@ import '../styles/global.css';
         }
         $('clave').value = '';
         await carga();
-        muestra('lista');
+        muestra('panel');
       });
 
       $('btn-salir').addEventListener('click', async () => {
         await api('salir', { method: 'POST' });
+        actual = null;
         muestra('entrar');
+      });
+
+      for (const b of document.querySelectorAll('.filtro')) {
+        b.addEventListener('click', () => {
+          filtro = b.dataset.filtro;
+          for (const otro of document.querySelectorAll('.filtro')) {
+            otro.setAttribute('aria-pressed', otro === b ? 'true' : 'false');
+          }
+          pintaLista();
+        });
+      }
+
+      $('btn-volver').addEventListener('click', () => panelMovil('lista'));
+      $('btn-nuevo').addEventListener('click', () => abreEditor(null));
+      $('btn-add-video').addEventListener('click', () => {
+        $('pleg-videos').open = true;
+        $('videos').append(filaVideo());
+        marcaSucio(true);
+      });
+      $('btn-publicar').addEventListener('click', () => publica());
+      $('btn-publicar-siguiente').addEventListener('click', () => publica({ siguiente: true }));
+
+      $('f-buscador').addEventListener('change', () => {
+        const n = $('f-buscador').value.trim().toLowerCase();
+        const c = campeones.find((x) => x.nombre.toLowerCase() === n);
+        pintaElegido(c?.id ?? null);
       });
 
       $('btn-fechas-arco').addEventListener('click', () => {
@@ -471,35 +648,34 @@ import '../styles/global.css';
         $('f-desde').value = v.desde;
         $('f-hasta').value = v.hasta;
         pintaPistaFechas();
+        marcaSucio(true);
       });
 
       $('btn-fechas-limpiar').addEventListener('click', () => {
         $('f-desde').value = '';
         $('f-hasta').value = '';
         pintaPistaFechas();
+        marcaSucio(true);
       });
 
-      for (const id of ['f-desde', 'f-hasta']) {
-        $(id).addEventListener('change', pintaPistaFechas);
-      }
+      // Cualquier tecleo marca que hay cambios sin publicar
+      $('editor').addEventListener('input', (ev) => {
+        if (ev.target.closest('.ed-acciones')) return;
+        marcaSucio(true);
+        if (ev.target.classList.contains('v-fecha')) pintaPistaFechas();
+      });
 
-      $('btn-volver').addEventListener('click', () => muestra('lista'));
-      $('btn-nuevo').addEventListener('click', () => abreEditor(null));
-      $('btn-add-video').addEventListener('click', () => $('videos').append(filaVideo()));
-      $('btn-publicar').addEventListener('click', publica);
-      $('f-buscador').addEventListener('change', () => {
-        const n = $('f-buscador').value.trim().toLowerCase();
-        const c = campeones.find((x) => x.nombre.toLowerCase() === n);
-        pintaElegido(c?.id ?? null);
+      // Aviso al cerrar con cambios a medias
+      window.addEventListener('beforeunload', (ev) => {
+        if (!sucio) return;
+        ev.preventDefault();
+        ev.returnValue = '';
       });
 
       cargaCampeones();
-      carga().then((dentro) => muestra(dentro ? 'lista' : 'entrar'));
+      carga().then((dentro) => muestra(dentro ? 'panel' : 'entrar'));
     </script>
 
-    <!-- `is:global`: parte de la interfaz (las filas de vídeo, la lista de
-         episodios) se crea desde JS y no lleva el atributo de ámbito que
-         Astro añade a las etiquetas de la plantilla. -->
     <style is:global>
       /* `display` en las secciones ganaría a [hidden] si no se fuerza */
       [hidden] {
@@ -549,27 +725,33 @@ import '../styles/global.css';
         color: var(--red);
       }
 
-      /* ── Estructura ── */
-      .barra {
-        border-bottom: 1px solid var(--line);
-        background: var(--surface);
+      /* ── Estructura de dos paneles ── */
+      .app {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        height: 100svh;
       }
 
-      .barra-cont {
+      .barra {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 16px;
-        padding-block: 12px;
+        padding: 12px 20px;
+        border-bottom: 1px solid var(--line);
+        background: var(--surface);
+        flex-shrink: 0;
       }
 
       .marca {
         display: flex;
         align-items: center;
         gap: 10px;
-        font-size: 17px;
+        font-size: 16px;
         color: var(--text);
         text-decoration: none;
+        letter-spacing: 0.03em;
       }
 
       .marca img {
@@ -583,7 +765,7 @@ import '../styles/global.css';
       .barra-acciones {
         display: flex;
         align-items: center;
-        gap: 16px;
+        gap: 18px;
       }
 
       .enlace-sec {
@@ -603,131 +785,327 @@ import '../styles/global.css';
         color: var(--text);
       }
 
-      .cuerpo {
-        padding-block: 32px 64px;
+      .dos-paneles {
+        display: grid;
+        grid-template-columns: 306px minmax(0, 1fr);
+        flex: 1;
+        min-height: 0;
       }
 
-      .cabecera {
+      /* ── Rail: la lista siempre a la vista ── */
+      .rail {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        border-right: 1px solid var(--line);
+        background: #0d0d10;
+      }
+
+      .rail-cabecera {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 18px 18px 14px;
+        border-bottom: 1px solid var(--line-soft);
+      }
+
+      .rail-titulo {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 16px;
-        flex-wrap: wrap;
-        margin-bottom: 10px;
+        gap: 12px;
       }
 
-      .titulo {
-        font-size: clamp(30px, 5vw, 44px);
+      .rail-titulo h2 {
+        margin: 0;
+        font-size: 22px;
         color: var(--text);
       }
 
-      .nota {
-        margin: 0 0 22px;
-        font-size: 14px;
-        color: var(--muted);
-        max-width: 62ch;
+      .progreso {
+        height: 4px;
+        border-radius: 2px;
+        background: var(--line-soft);
+        overflow: hidden;
       }
 
-      /* ── Lista ── */
-      .lista {
-        display: grid;
-        gap: 8px;
+      .progreso-barra {
+        height: 100%;
+        width: 0;
+        background: var(--win);
+        transition: width 0.3s ease;
+      }
+
+      .filtros {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+      }
+
+      .filtro {
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+        background: none;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+
+      .filtro b {
+        font-weight: 500;
+        margin-left: 3px;
+      }
+
+      .filtro:hover {
+        color: var(--text);
+      }
+
+      .filtro[aria-pressed='true'] {
+        background: var(--red);
+        border-color: var(--red);
+        color: #0a0a0c;
+        font-weight: 500;
+      }
+
+      .rail-lista {
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
       }
 
       .ep {
-        display: grid;
-        grid-template-columns: 42px minmax(0, 1fr) 16px;
+        display: flex;
         align-items: center;
-        gap: 14px;
+        gap: 11px;
         width: 100%;
         text-align: left;
-        padding: 10px 14px;
-        border: 1px solid var(--line);
-        border-radius: 10px;
-        background: var(--surface);
+        padding: 9px 18px 9px 14px;
+        border: 0;
+        border-left: 4px solid transparent;
+        background: none;
         color: var(--text);
-        cursor: pointer;
         font: inherit;
-        transition: border-color 0.15s ease, background 0.15s ease;
+        cursor: pointer;
       }
 
       .ep:hover {
+        background: var(--surface);
+      }
+
+      .ep[data-activo='si'] {
         background: var(--surface-2);
-        border-color: var(--muted);
+        border-left-color: var(--acento);
       }
 
       .ep img {
-        border-radius: 7px;
+        border-radius: 6px;
+        flex-shrink: 0;
       }
 
       .ep-texto {
         display: flex;
         flex-direction: column;
-        gap: 3px;
+        gap: 2px;
+        flex-grow: 1;
         min-width: 0;
       }
 
       .ep-texto b {
-        font-size: 16px;
+        font-size: 14.5px;
+        font-weight: 600;
       }
 
       .ep-texto .etiqueta {
+        font-size: 9.5px;
+        color: var(--faint);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .punto {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+
+      .punto[data-tipo='coach'] {
+        background: var(--red);
+      }
+
+      .punto[data-tipo='notas'] {
+        background: var(--gold);
+      }
+
+      .tic {
+        width: 13px;
+        height: 13px;
+        flex-shrink: 0;
+        fill: none;
+        stroke: var(--win);
+        stroke-width: 2.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      /* ── Detalle ── */
+      .detalle {
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .vacio {
+        flex: 1;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      .vacio p {
+        margin: 0;
+        color: var(--faint);
+        font-size: 15px;
+      }
+
+      .editor {
+        flex: 1;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .ed-scroll {
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+        padding: 22px 26px 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .ed-cabecera {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .ed-icono {
+        border-radius: 8px;
+        flex-shrink: 0;
+      }
+
+      .ed-identidad {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        flex-grow: 1;
+        min-width: 0;
+      }
+
+      .ed-linea {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .ed-nombre {
+        font-size: 27px;
+        color: var(--text);
+      }
+
+      .ed-num {
+        font-size: 11px;
+        letter-spacing: 0.12em;
+        color: var(--acento);
+      }
+
+      .ed-meta {
         font-size: 10.5px;
         color: var(--faint);
       }
 
-      .ep-ir {
-        color: var(--faint);
-        font-size: 18px;
+      .chip-falta {
+        font-family: var(--mono);
+        font-size: 9.5px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--red);
+        border: 1px solid rgba(245, 52, 43, 0.4);
+        border-radius: 4px;
+        padding: 3px 7px;
       }
 
-      /* ── Editor ── */
-      .editor {
-        display: flex;
-        flex-direction: column;
-        gap: 26px;
-        border: 1px solid var(--line);
-        border-radius: 12px;
-        background: var(--surface);
-        padding: 24px;
-        margin-top: 12px;
+      .volver-movil {
+        display: none;
       }
 
-      .bloque {
+      /* ── Campos ── */
+      .campos {
         display: flex;
         flex-direction: column;
         gap: 14px;
       }
 
-      .bloque + .bloque {
-        border-top: 1px solid var(--line-soft);
-        padding-top: 24px;
+      .fila-2 {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
       }
 
-      .bloque-titulo {
+      .campo {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .campo .etiqueta {
         display: flex;
         align-items: center;
-        gap: 10px;
-        margin: 0;
-        font-family: var(--mono);
-        font-size: 12px;
-        font-weight: 500;
+        gap: 8px;
+        font-size: 10px;
         letter-spacing: 0.16em;
-        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      input,
+      textarea {
+        font: inherit;
+        font-size: 15px;
         color: var(--text);
+        background: var(--bg);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 11px 13px;
+        width: 100%;
       }
 
-      .bloque-pista {
-        margin: -4px 0 0;
-        max-width: 68ch;
-        line-height: 1.5;
+      input:focus-visible,
+      textarea:focus-visible {
+        border-color: var(--acento, var(--red));
+        outline: none;
       }
 
-      .bloque-pista b {
-        color: var(--text);
+      textarea {
+        resize: vertical;
+        line-height: 1.55;
       }
 
-      /* Etiquetas: qué es opcional y qué se rellena solo */
+      .pista {
+        font-size: 12px;
+        color: var(--faint);
+        margin: 0;
+      }
+
       .chip {
         font-family: var(--mono);
         font-size: 9.5px;
@@ -744,105 +1122,116 @@ import '../styles/global.css';
         border: 1px solid var(--line);
       }
 
-      .chip.auto {
-        color: var(--gold);
-        border: 1px solid rgba(200, 170, 110, 0.35);
+      /* ── Lo automático ── */
+      .autos {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
       }
 
-      .campo .etiqueta {
+      .auto {
         display: flex;
         align-items: center;
+        gap: 10px;
+        padding: 10px 14px;
+        border: 1px solid var(--line-soft);
+        border-radius: 8px;
+        background: var(--surface);
+        color: var(--text);
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-align: left;
+      }
+
+      button.auto {
+        cursor: pointer;
+      }
+
+      button.auto:hover {
+        border-color: var(--line);
+      }
+
+      .auto svg {
+        width: 15px;
+        height: 15px;
+        flex-shrink: 0;
+        fill: none;
+        stroke: var(--faint);
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .auto-tag {
+        color: var(--gold);
+        border: 1px solid rgba(200, 170, 110, 0.3);
+      }
+
+      /* ── Plegables ── */
+      .plegable {
+        border: 1px dashed var(--line);
+        border-radius: 8px;
+      }
+
+      .plegable summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 14px;
+        cursor: pointer;
+        list-style: none;
+      }
+
+      .plegable summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .plegable summary:hover .etiqueta {
+        color: var(--text);
+      }
+
+      .chevron {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+        fill: none;
+        stroke: var(--faint);
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        transition: transform 0.2s ease;
+      }
+
+      .plegable[open] .chevron {
+        transform: rotate(90deg);
+      }
+
+      .pleg-cuerpo {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        padding: 4px 14px 16px;
+      }
+
+      .video {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.4fr) 150px 34px;
         gap: 8px;
       }
 
-      /* Lo que ha contado el robot: solo lectura */
-      .stats {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0;
-        border: 1px solid var(--line-soft);
-        border-radius: 10px;
-        background: var(--bg);
-        overflow: hidden;
-      }
-
-      .stats .pista {
-        padding: 14px 16px;
-      }
-
-      .stats .stat {
-        flex: 1 1 0;
-        min-width: 110px;
-        display: flex;
-        flex-direction: column;
-        gap: 3px;
-        padding: 12px 16px;
-      }
-
-      .stats .stat + .stat {
-        border-left: 1px solid var(--line-soft);
-      }
-
-      .stats .stat b {
-        font-family: var(--display);
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 1;
-        color: var(--gold);
-        font-variant-numeric: tabular-nums;
-      }
-
-      .stats .stat span {
-        font-family: var(--mono);
-        font-size: 9.5px;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        color: var(--faint);
-      }
-
-      .fila-2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 18px;
-      }
-
-      .campo {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-      }
-
-      .campo .etiqueta {
-        font-size: 10.5px;
-        color: var(--muted);
-      }
-
-      input,
-      textarea {
-        font: inherit;
-        font-size: 15px;
-        color: var(--text);
-        background: var(--bg);
+      .quitar {
         border: 1px solid var(--line);
         border-radius: 8px;
-        padding: 10px 12px;
-        width: 100%;
+        background: var(--bg);
+        color: var(--muted);
+        font-size: 17px;
+        cursor: pointer;
       }
 
-      input:focus-visible,
-      textarea:focus-visible {
+      .quitar:hover {
         border-color: var(--red);
-        outline: none;
-      }
-
-      textarea {
-        resize: vertical;
-        line-height: 1.5;
-      }
-
-      .pista {
-        font-size: 12px;
-        color: var(--faint);
+        color: var(--red);
       }
 
       .elegido {
@@ -869,31 +1258,16 @@ import '../styles/global.css';
         color: var(--faint);
       }
 
-      .video {
-        display: grid;
-        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.4fr) 150px 34px;
+      .acciones-fechas {
+        display: flex;
         gap: 8px;
-        margin-bottom: 8px;
+        flex-wrap: wrap;
       }
 
-      .quitar {
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: var(--bg);
-        color: var(--muted);
-        font-size: 17px;
-        cursor: pointer;
-      }
-
-      .quitar:hover {
-        border-color: var(--red);
-        color: var(--red);
-      }
-
-      /* ── Botones y avisos ── */
+      /* ── Botones y barra de acción ── */
       .boton {
         font-family: var(--mono);
-        font-size: 12.5px;
+        font-size: 11.5px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
         font-weight: 500;
@@ -901,7 +1275,7 @@ import '../styles/global.css';
         background: var(--red);
         border: 0;
         border-radius: 8px;
-        padding: 12px 22px;
+        padding: 12px 20px;
         cursor: pointer;
       }
 
@@ -909,21 +1283,22 @@ import '../styles/global.css';
         background: var(--red-hot);
       }
 
-      .boton:disabled {
+      .boton:disabled,
+      .boton-sec:disabled {
         opacity: 0.6;
         cursor: default;
       }
 
       .boton-sec {
         font-family: var(--mono);
-        font-size: 11.5px;
+        font-size: 11px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
         color: var(--text);
         background: var(--bg);
         border: 1px solid var(--line);
         border-radius: 8px;
-        padding: 9px 16px;
+        padding: 10px 16px;
         cursor: pointer;
         width: max-content;
       }
@@ -932,35 +1307,95 @@ import '../styles/global.css';
         border-color: var(--muted);
       }
 
-      .acciones {
+      .ed-acciones {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 16px;
         flex-wrap: wrap;
+        padding: 14px 26px;
+        border-top: 1px solid var(--line);
+        background: var(--surface);
+        flex-shrink: 0;
       }
 
-      .acciones-fechas {
+      .ed-botones {
         display: flex;
-        gap: 8px;
-        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
       }
 
       .aviso {
         margin: 0;
-        font-size: 13.5px;
-        color: var(--gold);
-        min-height: 1em;
+        font-family: var(--mono);
+        font-size: 10.5px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--faint);
       }
 
-      @media (max-width: 700px) {
+      .aviso[data-sucio='si'] {
+        color: var(--gold);
+      }
+
+      /* ── Móvil: los dos paneles se turnan ── */
+      @media (max-width: 860px) {
+        .dos-paneles {
+          grid-template-columns: 1fr;
+        }
+
+        .rail,
+        .detalle {
+          grid-column: 1;
+          grid-row: 1;
+        }
+
+        .dos-paneles[data-panel='lista'] .detalle {
+          display: none;
+        }
+
+        .dos-paneles[data-panel='detalle'] .rail {
+          display: none;
+        }
+
+        .rail {
+          border-right: 0;
+        }
+
+        .volver-movil {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+        }
+
+        .ed-cabecera {
+          flex-wrap: wrap;
+        }
+
+        .volver-movil {
+          flex-basis: 100%;
+        }
+
         .fila-2,
         .video {
           grid-template-columns: 1fr;
         }
 
-        .video {
-          padding-bottom: 8px;
-          border-bottom: 1px solid var(--line-soft);
+        .ed-scroll {
+          padding: 18px 16px 22px;
+        }
+
+        .ed-acciones {
+          padding: 12px 16px;
+        }
+
+        .ed-botones {
+          flex-grow: 1;
+        }
+
+        .ed-botones .boton {
+          flex-grow: 1;
+          padding: 14px 18px;
         }
       }
     </style>
