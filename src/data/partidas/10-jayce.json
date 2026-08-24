@@ -1,193 +1,17 @@
 {
-  "actualizado": "2026-08-24T21:45:31.045Z",
+  "actualizado": "2026-08-24T21:46:16.253Z",
   "ddragon": "16.16.1",
   "cuentas": [
     "lllIlIIIIlIll#EUW",
     "illo wely#EUW"
   ],
   "resumen": {
-    "partidas": 11,
-    "victorias": 5,
+    "partidas": 10,
+    "victorias": 4,
     "derrotas": 6,
-    "kda": 1.8
+    "kda": 1.7
   },
   "partidas": [
-    {
-      "matchId": "EUW1_7893433819",
-      "cuenta": "illo wely#EUW",
-      "inicio": "2026-06-20T13:33:31.614Z",
-      "duracionSeg": 1647,
-      "cola": "SoloQ",
-      "queueId": 420,
-      "victoria": true,
-      "nivel": 17,
-      "kills": 11,
-      "deaths": 5,
-      "assists": 9,
-      "cs": 242,
-      "items": [
-        {
-          "nombre": "Eclipse",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6692.png"
-        },
-        {
-          "nombre": "Filo fantasmal de Youmuu",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3142.png"
-        },
-        {
-          "nombre": "Espada larga",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1036.png"
-        },
-        {
-          "nombre": "Muramana",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3042.png"
-        },
-        {
-          "nombre": "Botas de rapidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3009.png"
-        },
-        {
-          "nombre": "Llamada del verdugo",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3123.png"
-        }
-      ],
-      "trinket": {
-        "nombre": "Visión lejana modificada",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3363.png"
-      },
-      "hechizos": [
-        {
-          "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
-        },
-        {
-          "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
-        }
-      ],
-      "runaPrincipal": {
-        "nombre": "Conquistador",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png"
-      },
-      "estiloSecundario": {
-        "nombre": "Brujería",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png"
-      },
-      "ganaAzul": true,
-      "jugadores": [
-        {
-          "campeon": "Jayce",
-          "nombre": "illo wely#EUW",
-          "equipo": "azul",
-          "posicion": "TOP",
-          "kills": 11,
-          "deaths": 5,
-          "assists": 9,
-          "protagonista": true,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Jayce.png"
-        },
-        {
-          "campeon": "Rengar",
-          "nombre": "NoHandsSilphi#PHUB",
-          "equipo": "azul",
-          "posicion": "JUNGLE",
-          "kills": 8,
-          "deaths": 9,
-          "assists": 11,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Rengar.png"
-        },
-        {
-          "campeon": "Xerath",
-          "nombre": "1111110000000#EUW",
-          "equipo": "azul",
-          "posicion": "MIDDLE",
-          "kills": 12,
-          "deaths": 6,
-          "assists": 13,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Xerath.png"
-        },
-        {
-          "campeon": "Vayne",
-          "nombre": "Gracie Abrams#EUW6",
-          "equipo": "azul",
-          "posicion": "BOTTOM",
-          "kills": 7,
-          "deaths": 7,
-          "assists": 10,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Vayne.png"
-        },
-        {
-          "campeon": "Seraphine",
-          "nombre": "Praxmax#12620",
-          "equipo": "azul",
-          "posicion": "UTILITY",
-          "kills": 4,
-          "deaths": 4,
-          "assists": 19,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Seraphine.png"
-        },
-        {
-          "campeon": "DrMundo",
-          "nombre": "FeedTheFabian#EUW",
-          "equipo": "rojo",
-          "posicion": "TOP",
-          "kills": 4,
-          "deaths": 7,
-          "assists": 3,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/DrMundo.png"
-        },
-        {
-          "campeon": "Viego",
-          "nombre": "sborra nel culo#333",
-          "equipo": "rojo",
-          "posicion": "JUNGLE",
-          "kills": 10,
-          "deaths": 9,
-          "assists": 9,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Viego.png"
-        },
-        {
-          "campeon": "Taliyah",
-          "nombre": "MeMo#IT01",
-          "equipo": "rojo",
-          "posicion": "MIDDLE",
-          "kills": 10,
-          "deaths": 10,
-          "assists": 6,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Taliyah.png"
-        },
-        {
-          "campeon": "Xayah",
-          "nombre": "EvilCat102#EUW",
-          "equipo": "rojo",
-          "posicion": "BOTTOM",
-          "kills": 2,
-          "deaths": 6,
-          "assists": 4,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Xayah.png"
-        },
-        {
-          "campeon": "Alistar",
-          "nombre": "Megy Mendegél#SUP",
-          "equipo": "rojo",
-          "posicion": "UTILITY",
-          "kills": 4,
-          "deaths": 10,
-          "assists": 17,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Alistar.png"
-        }
-      ],
-      "n": 1
-    },
     {
       "matchId": "EUW1_7895624390",
       "cuenta": "illo wely#EUW",
@@ -359,7 +183,7 @@
           "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Thresh.png"
         }
       ],
-      "n": 2
+      "n": 1
     },
     {
       "matchId": "EUW1_7895665258",
@@ -535,7 +359,7 @@
           "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Maokai.png"
         }
       ],
-      "n": 3
+      "n": 2
     },
     {
       "matchId": "EUW1_7895724644",
@@ -711,7 +535,7 @@
           "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Sona.png"
         }
       ],
-      "n": 4
+      "n": 3
     },
     {
       "matchId": "EUW1_7895762792",
@@ -887,7 +711,7 @@
           "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Bard.png"
         }
       ],
-      "n": 5
+      "n": 4
     },
     {
       "matchId": "EUW1_7905519360",
@@ -1063,7 +887,7 @@
           "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kayle.png"
         }
       ],
-      "n": 6
+      "n": 5
     },
     {
       "matchId": "EUW1_7905551514",
@@ -1239,7 +1063,7 @@
           "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nautilus.png"
         }
       ],
-      "n": 7
+      "n": 6
     },
     {
       "matchId": "EUW1_7905588963",
@@ -1415,7 +1239,7 @@
           "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nautilus.png"
         }
       ],
-      "n": 8
+      "n": 7
     },
     {
       "matchId": "EUW1_7905639545",
@@ -1591,7 +1415,7 @@
           "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Shaco.png"
         }
       ],
-      "n": 9
+      "n": 8
     },
     {
       "matchId": "EUW1_7905699519",
@@ -1767,7 +1591,7 @@
           "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Alistar.png"
         }
       ],
-      "n": 10
+      "n": 9
     },
     {
       "matchId": "EUW1_7905748859",
@@ -1943,7 +1767,7 @@
           "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zilean.png"
         }
       ],
-      "n": 11
+      "n": 10
     }
   ]
 }
