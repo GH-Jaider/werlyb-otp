@@ -16,4 +16,6 @@ videos:
   - titulo: 'Finalmente me la shaqué'
     url: https://www.youtube.com/watch?v=B_5SMLGL99Y
     fecha: 2026-04-10
+partidasDesde: 2026-04-07
+partidasHasta: 2026-04-08
 ---
