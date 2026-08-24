@@ -128,9 +128,14 @@ Necesita tres variables de entorno en Vercel:
 - `PANEL_TOKEN_GITHUB` — token fine-grained con permiso *Contents: Read and write* **solo**
   sobre este repositorio. Nunca sale del servidor.
 
+Además del rango de fechas, el panel lista las partidas del arco una a una y permite **quitar
+las que no son del reto** (Werlyb a veces sigue jugando ese campeón esos mismos días): se
+guardan por su id de Riot en `partidasExcluidas`, dejan de contar en las estadísticas y siguen
+apareciendo en el panel por si hay que devolverlas.
+
 El panel solo escribe los campos que edita (`orden`, `campeon`, `nombreCampeon`,
 `tituloCampeon`, `coach`, `rolCoach`, `canalCoach`, `videos`, `partidasDesde`,
-`partidasHasta`) y las notas: cualquier otro campo del frontmatter, como las estadísticas que
+`partidasHasta`, `partidasExcluidas`) y las notas: cualquier otro campo del frontmatter, como las estadísticas que
 rellena la tarea nocturna, se conserva intacto. Al reescribir el archivo se pierden los
 comentarios YAML del frontmatter.
 
