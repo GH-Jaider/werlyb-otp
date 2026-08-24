@@ -1,15 +1,15 @@
 {
-  "actualizado": "2026-08-24T20:47:55.306Z",
+  "actualizado": "2026-08-24T20:50:33.146Z",
   "ddragon": "16.16.1",
   "cuentas": [
     "lllIlIIIIlIll#EUW",
     "illo wely#EUW"
   ],
   "resumen": {
-    "partidas": 11,
-    "victorias": 7,
+    "partidas": 10,
+    "victorias": 6,
     "derrotas": 4,
-    "kda": 2.7
+    "kda": 2.6
   },
   "partidas": [
     {
@@ -1753,179 +1753,6 @@
         }
       ],
       "n": 10
-    },
-    {
-      "matchId": "EUW1_7820597690",
-      "cuenta": "lllIlIIIIlIll#EUW",
-      "inicio": "2026-04-14T19:23:07.000Z",
-      "duracionSeg": 2091,
-      "cola": "SoloQ",
-      "queueId": 420,
-      "victoria": true,
-      "nivel": 18,
-      "kills": 9,
-      "deaths": 6,
-      "assists": 11,
-      "cs": 259,
-      "items": [
-        {
-          "nombre": "Tormento de Liandry",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6653.png"
-        },
-        {
-          "nombre": "Reloj de arena de Zhonya",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3157.png"
-        },
-        {
-          "nombre": "Botas jonias de la lucidez",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3158.png"
-        },
-        {
-          "nombre": "Florescencia sepulcral",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3137.png"
-        },
-        {
-          "nombre": "Antorcha de fuego negro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2503.png"
-        },
-        null
-      ],
-      "trinket": {
-        "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
-      },
-      "hechizos": [
-        {
-          "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
-        },
-        {
-          "nombre": "Aplastar",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerSmite.png"
-        }
-      ],
-      "runaPrincipal": {
-        "nombre": "Cosecha oscura",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/DarkHarvest/DarkHarvest.png"
-      },
-      "estiloSecundario": {
-        "nombre": "Precisión",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7201_Precision.png"
-      },
-      "ganaAzul": false,
-      "jugadores": [
-        {
-          "campeon": "Kayle",
-          "nombre": "BipolarXD#13579",
-          "equipo": "azul",
-          "posicion": "TOP",
-          "kills": 4,
-          "deaths": 14,
-          "assists": 6,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kayle.png"
-        },
-        {
-          "campeon": "LeeSin",
-          "nombre": "Frost#12358",
-          "equipo": "azul",
-          "posicion": "JUNGLE",
-          "kills": 13,
-          "deaths": 6,
-          "assists": 7,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/LeeSin.png"
-        },
-        {
-          "campeon": "Quinn",
-          "nombre": "BOBBYDONALD16#FARMR",
-          "equipo": "azul",
-          "posicion": "MIDDLE",
-          "kills": 10,
-          "deaths": 8,
-          "assists": 10,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Quinn.png"
-        },
-        {
-          "campeon": "Yunara",
-          "nombre": "chasing ghosts#1314",
-          "equipo": "azul",
-          "posicion": "BOTTOM",
-          "kills": 2,
-          "deaths": 10,
-          "assists": 3,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yunara.png"
-        },
-        {
-          "campeon": "Lulu",
-          "nombre": "ND Asghiò#1ND",
-          "equipo": "azul",
-          "posicion": "UTILITY",
-          "kills": 2,
-          "deaths": 5,
-          "assists": 19,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Lulu.png"
-        },
-        {
-          "campeon": "Qiyana",
-          "nombre": "Lurmaah En Éveil#5300",
-          "equipo": "rojo",
-          "posicion": "TOP",
-          "kills": 16,
-          "deaths": 6,
-          "assists": 5,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Qiyana.png"
-        },
-        {
-          "campeon": "Shaco",
-          "nombre": "lllIlIIIIlIll#EUW",
-          "equipo": "rojo",
-          "posicion": "JUNGLE",
-          "kills": 9,
-          "deaths": 6,
-          "assists": 11,
-          "protagonista": true,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Shaco.png"
-        },
-        {
-          "campeon": "Viktor",
-          "nombre": "Neczo#20765",
-          "equipo": "rojo",
-          "posicion": "MIDDLE",
-          "kills": 7,
-          "deaths": 13,
-          "assists": 5,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Viktor.png"
-        },
-        {
-          "campeon": "Jinx",
-          "nombre": "DB Diga4#44147",
-          "equipo": "rojo",
-          "posicion": "BOTTOM",
-          "kills": 10,
-          "deaths": 3,
-          "assists": 5,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Jinx.png"
-        },
-        {
-          "campeon": "Soraka",
-          "nombre": "Neuro#OCB",
-          "equipo": "rojo",
-          "posicion": "UTILITY",
-          "kills": 1,
-          "deaths": 3,
-          "assists": 20,
-          "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Soraka.png"
-        }
-      ],
-      "n": 11
     }
   ]
 }
