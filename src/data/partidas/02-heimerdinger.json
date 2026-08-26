@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-08-25T04:16:32.366Z",
-  "ddragon": "16.16.1",
+  "actualizado": "2026-08-26T04:16:39.284Z",
+  "ddragon": "16.17.1",
   "cuentas": [
     "lllIlIIIIlIll#EUW",
     "illo wely#EUW"
@@ -28,41 +28,41 @@
       "items": [
         {
           "nombre": "Robaalmas de Mejai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3041.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3041.png"
         },
         {
           "nombre": "Tormento de Liandry",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6653.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/6653.png"
         },
         {
           "nombre": "Perforaplanos de Zaz'Zak",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3871.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3871.png"
         },
         {
           "nombre": "Botas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1001.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/1001.png"
         },
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3089.png"
         },
         {
           "nombre": "Tomo amplificador",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1052.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/1052.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -84,7 +84,7 @@
           "deaths": 6,
           "assists": 4,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kennen.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Kennen.png"
         },
         {
           "campeon": "Zaahen",
@@ -95,7 +95,7 @@
           "deaths": 10,
           "assists": 3,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zaahen.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Zaahen.png"
         },
         {
           "campeon": "Yone",
@@ -106,7 +106,7 @@
           "deaths": 8,
           "assists": 6,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yone.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Yone.png"
         },
         {
           "campeon": "Varus",
@@ -117,7 +117,7 @@
           "deaths": 10,
           "assists": 5,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Varus.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Varus.png"
         },
         {
           "campeon": "Karma",
@@ -128,7 +128,7 @@
           "deaths": 7,
           "assists": 9,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Karma.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Karma.png"
         },
         {
           "campeon": "Renekton",
@@ -139,7 +139,7 @@
           "deaths": 3,
           "assists": 6,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Renekton.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Renekton.png"
         },
         {
           "campeon": "LeeSin",
@@ -150,7 +150,7 @@
           "deaths": 4,
           "assists": 14,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/LeeSin.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/LeeSin.png"
         },
         {
           "campeon": "Vayne",
@@ -161,7 +161,7 @@
           "deaths": 2,
           "assists": 4,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Vayne.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Vayne.png"
         },
         {
           "campeon": "Jhin",
@@ -172,7 +172,7 @@
           "deaths": 7,
           "assists": 11,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Jhin.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Jhin.png"
         },
         {
           "campeon": "Heimerdinger",
@@ -183,7 +183,7 @@
           "deaths": 4,
           "assists": 11,
           "protagonista": true,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Heimerdinger.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Heimerdinger.png"
         }
       ],
       "n": 1
@@ -204,38 +204,38 @@
       "items": [
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3089.png"
         },
         {
           "nombre": "Antorcha de fuego negro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2503.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/2503.png"
         },
         {
           "nombre": "Joya de la plaga",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4630.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/4630.png"
         },
         {
           "nombre": "Vara explosiva",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1026.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/1026.png"
         },
         {
           "nombre": "Sello oscuro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1082.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/1082.png"
         },
         null
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -257,7 +257,7 @@
           "deaths": 6,
           "assists": 3,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Gangplank.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Gangplank.png"
         },
         {
           "campeon": "Ekko",
@@ -268,7 +268,7 @@
           "deaths": 2,
           "assists": 6,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ekko.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Ekko.png"
         },
         {
           "campeon": "Zaahen",
@@ -279,7 +279,7 @@
           "deaths": 6,
           "assists": 1,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zaahen.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Zaahen.png"
         },
         {
           "campeon": "Jhin",
@@ -290,7 +290,7 @@
           "deaths": 7,
           "assists": 3,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Jhin.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Jhin.png"
         },
         {
           "campeon": "Nautilus",
@@ -301,7 +301,7 @@
           "deaths": 7,
           "assists": 6,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nautilus.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Nautilus.png"
         },
         {
           "campeon": "Heimerdinger",
@@ -312,7 +312,7 @@
           "deaths": 7,
           "assists": 5,
           "protagonista": true,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Heimerdinger.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Heimerdinger.png"
         },
         {
           "campeon": "Graves",
@@ -323,7 +323,7 @@
           "deaths": 2,
           "assists": 8,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Graves.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Graves.png"
         },
         {
           "campeon": "Taliyah",
@@ -334,7 +334,7 @@
           "deaths": 2,
           "assists": 5,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Taliyah.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Taliyah.png"
         },
         {
           "campeon": "Yunara",
@@ -345,7 +345,7 @@
           "deaths": 3,
           "assists": 9,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yunara.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Yunara.png"
         },
         {
           "campeon": "Seraphine",
@@ -356,7 +356,7 @@
           "deaths": 0,
           "assists": 18,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Seraphine.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Seraphine.png"
         }
       ],
       "n": 2
@@ -377,41 +377,41 @@
       "items": [
         {
           "nombre": "Bastón del Vacío",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3135.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3135.png"
         },
         {
           "nombre": "Reloj de arena de Zhonya",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3157.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3157.png"
         },
         {
           "nombre": "Vara innecesariamente grande",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1058.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/1058.png"
         },
         {
           "nombre": "Botas de hechicero",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3020.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3020.png"
         },
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3089.png"
         },
         {
           "nombre": "Antorcha de fuego negro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2503.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/2503.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -433,7 +433,7 @@
           "deaths": 13,
           "assists": 6,
           "protagonista": true,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Heimerdinger.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Heimerdinger.png"
         },
         {
           "campeon": "Ivern",
@@ -444,7 +444,7 @@
           "deaths": 5,
           "assists": 14,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ivern.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Ivern.png"
         },
         {
           "campeon": "Zed",
@@ -455,7 +455,7 @@
           "deaths": 10,
           "assists": 6,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zed.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Zed.png"
         },
         {
           "campeon": "Yunara",
@@ -466,7 +466,7 @@
           "deaths": 8,
           "assists": 3,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yunara.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Yunara.png"
         },
         {
           "campeon": "Neeko",
@@ -477,7 +477,7 @@
           "deaths": 4,
           "assists": 8,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Neeko.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Neeko.png"
         },
         {
           "campeon": "Zaahen",
@@ -488,7 +488,7 @@
           "deaths": 3,
           "assists": 7,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zaahen.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Zaahen.png"
         },
         {
           "campeon": "Viego",
@@ -499,7 +499,7 @@
           "deaths": 8,
           "assists": 5,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Viego.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Viego.png"
         },
         {
           "campeon": "Leblanc",
@@ -510,7 +510,7 @@
           "deaths": 5,
           "assists": 8,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Leblanc.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Leblanc.png"
         },
         {
           "campeon": "Zyra",
@@ -521,7 +521,7 @@
           "deaths": 6,
           "assists": 4,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zyra.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Zyra.png"
         },
         {
           "campeon": "Bard",
@@ -532,7 +532,7 @@
           "deaths": 5,
           "assists": 15,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Bard.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Bard.png"
         }
       ],
       "n": 3
@@ -553,38 +553,38 @@
       "items": [
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3089.png"
         },
         {
           "nombre": "Reloj de arena de Zhonya",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3157.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3157.png"
         },
         null,
         {
           "nombre": "Botas de hechicero",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3020.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3020.png"
         },
         {
           "nombre": "Bastón del Vacío",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3135.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3135.png"
         },
         {
           "nombre": "Antorcha de fuego negro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2503.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/2503.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -606,7 +606,7 @@
           "deaths": 6,
           "assists": 10,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Shen.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Shen.png"
         },
         {
           "campeon": "Ivern",
@@ -617,7 +617,7 @@
           "deaths": 0,
           "assists": 18,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ivern.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Ivern.png"
         },
         {
           "campeon": "Syndra",
@@ -628,7 +628,7 @@
           "deaths": 3,
           "assists": 5,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Syndra.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Syndra.png"
         },
         {
           "campeon": "Sivir",
@@ -639,7 +639,7 @@
           "deaths": 6,
           "assists": 8,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Sivir.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Sivir.png"
         },
         {
           "campeon": "Karma",
@@ -650,7 +650,7 @@
           "deaths": 1,
           "assists": 23,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Karma.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Karma.png"
         },
         {
           "campeon": "Heimerdinger",
@@ -661,7 +661,7 @@
           "deaths": 8,
           "assists": 1,
           "protagonista": true,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Heimerdinger.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Heimerdinger.png"
         },
         {
           "campeon": "Camille",
@@ -672,7 +672,7 @@
           "deaths": 7,
           "assists": 2,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Camille.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Camille.png"
         },
         {
           "campeon": "Kayle",
@@ -683,7 +683,7 @@
           "deaths": 7,
           "assists": 2,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Kayle.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Kayle.png"
         },
         {
           "campeon": "Smolder",
@@ -694,7 +694,7 @@
           "deaths": 7,
           "assists": 3,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Smolder.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Smolder.png"
         },
         {
           "campeon": "Seraphine",
@@ -705,7 +705,7 @@
           "deaths": 11,
           "assists": 4,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Seraphine.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Seraphine.png"
         }
       ],
       "n": 4
@@ -726,41 +726,41 @@
       "items": [
         {
           "nombre": "Anillo de Doran",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1056.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/1056.png"
         },
         {
           "nombre": "Poción reutilizable",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2031.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/2031.png"
         },
         {
           "nombre": "Antorcha de fuego negro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2503.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/2503.png"
         },
         {
           "nombre": "Sello oscuro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1082.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/1082.png"
         },
         {
           "nombre": "Vara innecesariamente grande",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1058.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/1058.png"
         },
         {
           "nombre": "Botas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1001.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/1001.png"
         }
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -782,7 +782,7 @@
           "deaths": 6,
           "assists": 3,
           "protagonista": true,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Heimerdinger.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Heimerdinger.png"
         },
         {
           "campeon": "Teemo",
@@ -793,7 +793,7 @@
           "deaths": 5,
           "assists": 1,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Teemo.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Teemo.png"
         },
         {
           "campeon": "Tristana",
@@ -804,7 +804,7 @@
           "deaths": 5,
           "assists": 0,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Tristana.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Tristana.png"
         },
         {
           "campeon": "Aphelios",
@@ -815,7 +815,7 @@
           "deaths": 4,
           "assists": 0,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Aphelios.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Aphelios.png"
         },
         {
           "campeon": "Seraphine",
@@ -826,7 +826,7 @@
           "deaths": 4,
           "assists": 3,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Seraphine.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Seraphine.png"
         },
         {
           "campeon": "Ryze",
@@ -837,7 +837,7 @@
           "deaths": 2,
           "assists": 2,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ryze.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Ryze.png"
         },
         {
           "campeon": "Nunu",
@@ -848,7 +848,7 @@
           "deaths": 2,
           "assists": 9,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nunu.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Nunu.png"
         },
         {
           "campeon": "Yasuo",
@@ -859,7 +859,7 @@
           "deaths": 3,
           "assists": 5,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yasuo.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Yasuo.png"
         },
         {
           "campeon": "Jhin",
@@ -870,7 +870,7 @@
           "deaths": 2,
           "assists": 7,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Jhin.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Jhin.png"
         },
         {
           "campeon": "Soraka",
@@ -881,7 +881,7 @@
           "deaths": 1,
           "assists": 14,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Soraka.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Soraka.png"
         }
       ],
       "n": 5
@@ -902,38 +902,38 @@
       "items": [
         {
           "nombre": "Antorcha de fuego negro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2503.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/2503.png"
         },
         {
           "nombre": "Tormento de Liandry",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6653.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/6653.png"
         },
         {
           "nombre": "Vara innecesariamente grande",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1058.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/1058.png"
         },
         {
           "nombre": "Botas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1001.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/1001.png"
         },
         {
           "nombre": "Vara innecesariamente grande",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1058.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/1058.png"
         },
         null
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -955,7 +955,7 @@
           "deaths": 2,
           "assists": 7,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Renekton.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Renekton.png"
         },
         {
           "campeon": "DrMundo",
@@ -966,7 +966,7 @@
           "deaths": 2,
           "assists": 14,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/DrMundo.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/DrMundo.png"
         },
         {
           "campeon": "Ahri",
@@ -977,7 +977,7 @@
           "deaths": 2,
           "assists": 5,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ahri.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Ahri.png"
         },
         {
           "campeon": "Samira",
@@ -988,7 +988,7 @@
           "deaths": 7,
           "assists": 4,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Samira.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Samira.png"
         },
         {
           "campeon": "Leona",
@@ -999,7 +999,7 @@
           "deaths": 8,
           "assists": 18,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Leona.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Leona.png"
         },
         {
           "campeon": "Heimerdinger",
@@ -1010,7 +1010,7 @@
           "deaths": 7,
           "assists": 6,
           "protagonista": true,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Heimerdinger.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Heimerdinger.png"
         },
         {
           "campeon": "LeeSin",
@@ -1021,7 +1021,7 @@
           "deaths": 8,
           "assists": 10,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/LeeSin.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/LeeSin.png"
         },
         {
           "campeon": "Mel",
@@ -1032,7 +1032,7 @@
           "deaths": 5,
           "assists": 4,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Mel.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Mel.png"
         },
         {
           "campeon": "Caitlyn",
@@ -1043,7 +1043,7 @@
           "deaths": 7,
           "assists": 12,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Caitlyn.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Caitlyn.png"
         },
         {
           "campeon": "Trundle",
@@ -1054,7 +1054,7 @@
           "deaths": 8,
           "assists": 11,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Trundle.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Trundle.png"
         }
       ],
       "n": 6
@@ -1075,41 +1075,41 @@
       "items": [
         {
           "nombre": "Tormento de Liandry",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6653.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/6653.png"
         },
         {
           "nombre": "Reloj de arena de Zhonya",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3157.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3157.png"
         },
         {
           "nombre": "Perforaplanos de Zaz'Zak",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3871.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3871.png"
         },
         {
           "nombre": "Botas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1001.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/1001.png"
         },
         {
           "nombre": "Cetro de cristal de Rylai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3116.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3116.png"
         },
         {
           "nombre": "Vara innecesariamente grande",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1058.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/1058.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -1131,7 +1131,7 @@
           "deaths": 11,
           "assists": 3,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Darius.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Darius.png"
         },
         {
           "campeon": "Urgot",
@@ -1142,7 +1142,7 @@
           "deaths": 2,
           "assists": 6,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Urgot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Urgot.png"
         },
         {
           "campeon": "Ahri",
@@ -1153,7 +1153,7 @@
           "deaths": 7,
           "assists": 7,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ahri.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Ahri.png"
         },
         {
           "campeon": "Tristana",
@@ -1164,7 +1164,7 @@
           "deaths": 15,
           "assists": 15,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Tristana.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Tristana.png"
         },
         {
           "campeon": "Pyke",
@@ -1175,7 +1175,7 @@
           "deaths": 9,
           "assists": 14,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Pyke.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Pyke.png"
         },
         {
           "campeon": "Aurora",
@@ -1186,7 +1186,7 @@
           "deaths": 7,
           "assists": 9,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Aurora.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Aurora.png"
         },
         {
           "campeon": "Ambessa",
@@ -1197,7 +1197,7 @@
           "deaths": 6,
           "assists": 7,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ambessa.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Ambessa.png"
         },
         {
           "campeon": "Mel",
@@ -1208,7 +1208,7 @@
           "deaths": 6,
           "assists": 5,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Mel.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Mel.png"
         },
         {
           "campeon": "MissFortune",
@@ -1219,7 +1219,7 @@
           "deaths": 13,
           "assists": 13,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/MissFortune.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/MissFortune.png"
         },
         {
           "campeon": "Heimerdinger",
@@ -1230,7 +1230,7 @@
           "deaths": 14,
           "assists": 17,
           "protagonista": true,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Heimerdinger.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Heimerdinger.png"
         }
       ],
       "n": 7
@@ -1251,38 +1251,38 @@
       "items": [
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3089.png"
         },
         {
           "nombre": "Reloj de arena de Zhonya",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3157.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3157.png"
         },
         {
           "nombre": "Guardián de control",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2055.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/2055.png"
         },
         {
           "nombre": "Sello oscuro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1082.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/1082.png"
         },
         {
           "nombre": "Antorcha de fuego negro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2503.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/2503.png"
         },
         null
       ],
       "trinket": {
         "nombre": "Guardián invisible",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3340.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3340.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -1304,7 +1304,7 @@
           "deaths": 2,
           "assists": 2,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ambessa.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Ambessa.png"
         },
         {
           "campeon": "Belveth",
@@ -1315,7 +1315,7 @@
           "deaths": 2,
           "assists": 6,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Belveth.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Belveth.png"
         },
         {
           "campeon": "Ahri",
@@ -1326,7 +1326,7 @@
           "deaths": 1,
           "assists": 10,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ahri.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Ahri.png"
         },
         {
           "campeon": "Heimerdinger",
@@ -1337,7 +1337,7 @@
           "deaths": 5,
           "assists": 5,
           "protagonista": true,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Heimerdinger.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Heimerdinger.png"
         },
         {
           "campeon": "Rakan",
@@ -1348,7 +1348,7 @@
           "deaths": 2,
           "assists": 22,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Rakan.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Rakan.png"
         },
         {
           "campeon": "Urgot",
@@ -1359,7 +1359,7 @@
           "deaths": 7,
           "assists": 1,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Urgot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Urgot.png"
         },
         {
           "campeon": "Nunu",
@@ -1370,7 +1370,7 @@
           "deaths": 8,
           "assists": 7,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Nunu.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Nunu.png"
         },
         {
           "campeon": "Yasuo",
@@ -1381,7 +1381,7 @@
           "deaths": 7,
           "assists": 2,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Yasuo.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Yasuo.png"
         },
         {
           "campeon": "Smolder",
@@ -1392,7 +1392,7 @@
           "deaths": 10,
           "assists": 1,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Smolder.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Smolder.png"
         },
         {
           "campeon": "Ivern",
@@ -1403,7 +1403,7 @@
           "deaths": 6,
           "assists": 9,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ivern.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Ivern.png"
         }
       ],
       "n": 8
@@ -1424,38 +1424,38 @@
       "items": [
         {
           "nombre": "Antorcha de fuego negro",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2503.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/2503.png"
         },
         {
           "nombre": "Reloj de arena de Zhonya",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3157.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3157.png"
         },
         {
           "nombre": "Sombrero mortal de Rabadon",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3089.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3089.png"
         },
         {
           "nombre": "Guardián de control",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2055.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/2055.png"
         },
         null,
         {
           "nombre": "Anillo de Doran",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1056.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/1056.png"
         }
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -1477,7 +1477,7 @@
           "deaths": 12,
           "assists": 5,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Camille.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Camille.png"
         },
         {
           "campeon": "LeeSin",
@@ -1488,7 +1488,7 @@
           "deaths": 6,
           "assists": 11,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/LeeSin.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/LeeSin.png"
         },
         {
           "campeon": "Zed",
@@ -1499,7 +1499,7 @@
           "deaths": 0,
           "assists": 9,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Zed.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Zed.png"
         },
         {
           "campeon": "Varus",
@@ -1510,7 +1510,7 @@
           "deaths": 6,
           "assists": 13,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Varus.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Varus.png"
         },
         {
           "campeon": "Karma",
@@ -1521,7 +1521,7 @@
           "deaths": 7,
           "assists": 18,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Karma.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Karma.png"
         },
         {
           "campeon": "Renekton",
@@ -1532,7 +1532,7 @@
           "deaths": 11,
           "assists": 7,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Renekton.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Renekton.png"
         },
         {
           "campeon": "JarvanIV",
@@ -1543,7 +1543,7 @@
           "deaths": 8,
           "assists": 12,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/JarvanIV.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/JarvanIV.png"
         },
         {
           "campeon": "Taliyah",
@@ -1554,7 +1554,7 @@
           "deaths": 13,
           "assists": 5,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Taliyah.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Taliyah.png"
         },
         {
           "campeon": "Heimerdinger",
@@ -1565,7 +1565,7 @@
           "deaths": 10,
           "assists": 8,
           "protagonista": true,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Heimerdinger.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Heimerdinger.png"
         },
         {
           "campeon": "Senna",
@@ -1576,7 +1576,7 @@
           "deaths": 6,
           "assists": 16,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Senna.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Senna.png"
         }
       ],
       "n": 9
@@ -1597,38 +1597,38 @@
       "items": [
         {
           "nombre": "Cetro de cristal de Rylai",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3116.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3116.png"
         },
         {
           "nombre": "Reloj de arena de Zhonya",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3157.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3157.png"
         },
         {
           "nombre": "Perforaplanos de Zaz'Zak",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3871.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3871.png"
         },
         {
           "nombre": "Botas",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1001.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/1001.png"
         },
         {
           "nombre": "Eco de Luden",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6655.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/6655.png"
         },
         null
       ],
       "trinket": {
         "nombre": "Lente del oráculo",
-        "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3364.png"
+        "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/item/3364.png"
       },
       "hechizos": [
         {
           "nombre": "Destello",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerFlash.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerFlash.png"
         },
         {
           "nombre": "Prender",
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/spell/SummonerDot.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/spell/SummonerDot.png"
         }
       ],
       "runaPrincipal": {
@@ -1650,7 +1650,7 @@
           "deaths": 4,
           "assists": 10,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Maokai.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Maokai.png"
         },
         {
           "campeon": "Ekko",
@@ -1661,7 +1661,7 @@
           "deaths": 5,
           "assists": 5,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Ekko.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Ekko.png"
         },
         {
           "campeon": "Akshan",
@@ -1672,7 +1672,7 @@
           "deaths": 6,
           "assists": 5,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Akshan.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Akshan.png"
         },
         {
           "campeon": "MissFortune",
@@ -1683,7 +1683,7 @@
           "deaths": 11,
           "assists": 11,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/MissFortune.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/MissFortune.png"
         },
         {
           "campeon": "Heimerdinger",
@@ -1694,7 +1694,7 @@
           "deaths": 12,
           "assists": 14,
           "protagonista": true,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Heimerdinger.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Heimerdinger.png"
         },
         {
           "campeon": "Akali",
@@ -1705,7 +1705,7 @@
           "deaths": 6,
           "assists": 8,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Akali.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Akali.png"
         },
         {
           "campeon": "Viego",
@@ -1716,7 +1716,7 @@
           "deaths": 5,
           "assists": 6,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Viego.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Viego.png"
         },
         {
           "campeon": "Katarina",
@@ -1727,7 +1727,7 @@
           "deaths": 10,
           "assists": 8,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Katarina.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Katarina.png"
         },
         {
           "campeon": "Rammus",
@@ -1738,7 +1738,7 @@
           "deaths": 5,
           "assists": 17,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Rammus.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Rammus.png"
         },
         {
           "campeon": "Shaco",
@@ -1749,7 +1749,7 @@
           "deaths": 10,
           "assists": 13,
           "protagonista": false,
-          "icono": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/champion/Shaco.png"
+          "icono": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Shaco.png"
         }
       ],
       "n": 10
