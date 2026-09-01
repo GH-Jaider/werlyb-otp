@@ -13,7 +13,7 @@
     "paleta": "node scripts/paleta.mjs"
   },
   "dependencies": {
-    "@astrojs/markdown-satteri": "0.3.7",
+    "@astrojs/markdown-satteri": "0.3.8",
     "@fontsource/anton": "5.3.0",
     "@fontsource/archivo": "5.3.0",
     "@fontsource/ibm-plex-mono": "5.3.0",
