@@ -24235,6 +24235,137 @@
           "protagonista": false
         }
       ]
+    },
+    "EUW1_8031233533": {
+      "campeon": "Mordekaiser",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-10-31T11:08:48.412Z",
+      "duracionSeg": 1457,
+      "queueId": 420,
+      "victoria": false,
+      "nivel": 15,
+      "kills": 4,
+      "deaths": 6,
+      "assists": 3,
+      "cs": 199,
+      "items": [
+        3116,
+        1029,
+        3009,
+        4633,
+        2508,
+        1052
+      ],
+      "trinket": 3340,
+      "hechizos": [
+        4,
+        3
+      ],
+      "runaPrincipal": 8010,
+      "estiloSecundario": 8400,
+      "ganaAzul": true,
+      "jugadores": [
+        {
+          "campeon": "Camille",
+          "nombre": "DonPromill0#187",
+          "equipo": "azul",
+          "posicion": "TOP",
+          "kills": 3,
+          "deaths": 3,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "Udyr",
+          "nombre": "IDKCARSON#6464",
+          "equipo": "azul",
+          "posicion": "JUNGLE",
+          "kills": 11,
+          "deaths": 2,
+          "assists": 14,
+          "protagonista": false
+        },
+        {
+          "campeon": "Katarina",
+          "nombre": "Danskugamerr#69420",
+          "equipo": "azul",
+          "posicion": "MIDDLE",
+          "kills": 8,
+          "deaths": 4,
+          "assists": 6,
+          "protagonista": false
+        },
+        {
+          "campeon": "Yunara",
+          "nombre": "Corwe#1453",
+          "equipo": "azul",
+          "posicion": "BOTTOM",
+          "kills": 9,
+          "deaths": 4,
+          "assists": 9,
+          "protagonista": false
+        },
+        {
+          "campeon": "Alistar",
+          "nombre": "Reznov#LAIN",
+          "equipo": "azul",
+          "posicion": "UTILITY",
+          "kills": 6,
+          "deaths": 4,
+          "assists": 17,
+          "protagonista": false
+        },
+        {
+          "campeon": "Mordekaiser",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "rojo",
+          "posicion": "TOP",
+          "kills": 4,
+          "deaths": 6,
+          "assists": 3,
+          "protagonista": true
+        },
+        {
+          "campeon": "Qiyana",
+          "nombre": "Convolka#EUW",
+          "equipo": "rojo",
+          "posicion": "JUNGLE",
+          "kills": 2,
+          "deaths": 9,
+          "assists": 7,
+          "protagonista": false
+        },
+        {
+          "campeon": "Yasuo",
+          "nombre": "Lunarr#Twtv",
+          "equipo": "rojo",
+          "posicion": "MIDDLE",
+          "kills": 3,
+          "deaths": 5,
+          "assists": 5,
+          "protagonista": false
+        },
+        {
+          "campeon": "Ezreal",
+          "nombre": "FOR ISRAEL#Judas",
+          "equipo": "rojo",
+          "posicion": "BOTTOM",
+          "kills": 6,
+          "deaths": 9,
+          "assists": 3,
+          "protagonista": false
+        },
+        {
+          "campeon": "Leona",
+          "nombre": "Luka#010",
+          "equipo": "rojo",
+          "posicion": "UTILITY",
+          "kills": 2,
+          "deaths": 8,
+          "assists": 8,
+          "protagonista": false
+        }
+      ]
     }
   },
   "descartadas": {
@@ -24735,6 +24866,13 @@
     "EUW1_8030408210": "Zaahen",
     "EUW1_8030369904": "Fiddlesticks",
     "EUW1_8030328156": "Fiddlesticks",
-    "EUW1_8030291323": "Fiddlesticks"
+    "EUW1_8030291323": "Fiddlesticks",
+    "EUW1_8031430956": "KSante",
+    "EUW1_8031395304": "Gangplank",
+    "EUW1_8031373664": "Pantheon",
+    "EUW1_8031330169": "Corki",
+    "EUW1_8031306457": "Corki",
+    "EUW1_8031272438": "Olaf",
+    "EUW1_8031245162": "Olaf"
   }
 }
