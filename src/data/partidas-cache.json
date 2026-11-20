@@ -24366,6 +24366,137 @@
           "protagonista": false
         }
       ]
+    },
+    "EUW1_8051685963": {
+      "campeon": "Jax",
+      "cuenta": "lllIlIIIIlIll#EUW",
+      "inicio": "2026-11-20T01:09:15.504Z",
+      "duracionSeg": 2200,
+      "queueId": 420,
+      "victoria": false,
+      "nivel": 20,
+      "kills": 8,
+      "deaths": 11,
+      "assists": 6,
+      "cs": 278,
+      "items": [
+        3078,
+        3073,
+        6665,
+        4633,
+        3050,
+        3158
+      ],
+      "trinket": 3340,
+      "hechizos": [
+        4,
+        14
+      ],
+      "runaPrincipal": 8008,
+      "estiloSecundario": 8400,
+      "ganaAzul": true,
+      "jugadores": [
+        {
+          "campeon": "Fiora",
+          "nombre": "Master Jay#EUW",
+          "equipo": "azul",
+          "posicion": "TOP",
+          "kills": 11,
+          "deaths": 7,
+          "assists": 10,
+          "protagonista": false
+        },
+        {
+          "campeon": "Shyvana",
+          "nombre": "MiaMalkova towel#EUW",
+          "equipo": "azul",
+          "posicion": "JUNGLE",
+          "kills": 10,
+          "deaths": 2,
+          "assists": 12,
+          "protagonista": false
+        },
+        {
+          "campeon": "Syndra",
+          "nombre": "FireTimber#EUW",
+          "equipo": "azul",
+          "posicion": "MIDDLE",
+          "kills": 15,
+          "deaths": 4,
+          "assists": 10,
+          "protagonista": false
+        },
+        {
+          "campeon": "Jinx",
+          "nombre": "Kamillete#EUW",
+          "equipo": "azul",
+          "posicion": "BOTTOM",
+          "kills": 7,
+          "deaths": 8,
+          "assists": 14,
+          "protagonista": false
+        },
+        {
+          "campeon": "Thresh",
+          "nombre": "WellFlayedM8#EUW",
+          "equipo": "azul",
+          "posicion": "UTILITY",
+          "kills": 0,
+          "deaths": 5,
+          "assists": 21,
+          "protagonista": false
+        },
+        {
+          "campeon": "Jax",
+          "nombre": "lllIlIIIIlIll#EUW",
+          "equipo": "rojo",
+          "posicion": "TOP",
+          "kills": 8,
+          "deaths": 11,
+          "assists": 6,
+          "protagonista": true
+        },
+        {
+          "campeon": "Qiyana",
+          "nombre": "VICODINA#HIGH",
+          "equipo": "rojo",
+          "posicion": "JUNGLE",
+          "kills": 7,
+          "deaths": 9,
+          "assists": 2,
+          "protagonista": false
+        },
+        {
+          "campeon": "Gragas",
+          "nombre": "SlycooperXL#EUW",
+          "equipo": "rojo",
+          "posicion": "MIDDLE",
+          "kills": 4,
+          "deaths": 8,
+          "assists": 3,
+          "protagonista": false
+        },
+        {
+          "campeon": "KogMaw",
+          "nombre": "HeirOfTheErdtree#Grace",
+          "equipo": "rojo",
+          "posicion": "BOTTOM",
+          "kills": 5,
+          "deaths": 9,
+          "assists": 8,
+          "protagonista": false
+        },
+        {
+          "campeon": "Lulu",
+          "nombre": "ft Edelweiss#EUW",
+          "equipo": "rojo",
+          "posicion": "UTILITY",
+          "kills": 2,
+          "deaths": 6,
+          "assists": 10,
+          "protagonista": false
+        }
+      ]
     }
   },
   "descartadas": {
@@ -24881,6 +25012,8 @@
     "EUW1_8037136545": "Warwick",
     "EUW1_8037051252": "Chogath",
     "EUW1_8037011178": "Maokai",
-    "EUW1_8036970027": "Chogath"
+    "EUW1_8036970027": "Chogath",
+    "EUW1_8051659548": "Gangplank",
+    "EUW1_8051419600": "Camille"
   }
 }
